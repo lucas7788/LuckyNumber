@@ -275,6 +275,7 @@ def addReferral(toBeReferred, referral):
     Put(GetContext(), concatKey(REFERRAL_PREFIX, toBeReferred), referral)
     return True
 
+
 def buyPaper(account, paperAmount):
     RequireWitness(account)
     currentRound = getCurrentRound()
@@ -332,37 +333,40 @@ def buyPaper(account, paperAmount):
     return True
 
 
-def fillPaper(account, guessNumber):
+def fillPaper(account, guessNumberList):
     """
     :param account:
     :param number: should be 0 to 9999
     :return:
     """
     RequireWitness(account)
-    Require(guessNumber < 9999)
-
     currentRound = getCurrentRound()
     numberListKey = concatKey(concatKey(ROUND_PREFIX, currentRound), FILLED_NUMBER_LIST_KEY)
     numberMapKey = concatKey(concatKey(ROUND_PREFIX, currentRound), FILLED_NUMBER_MAP_KEY)
     numberList = Get(GetContext(), numberListKey)
     numberMap = Get(GetContext(), numberMapKey)
 
-    guessString = guessNumber + ""
-    if numberMap[guessString]:
-        numberMap[guessString].append(account)
-    else:
-        numberList.append(guessNumber)
+    numberList = Deserialize(numberList)
+    numberMap = Deserialize(numberMap)
+
+    for guessNumber in guessNumberList:
+        Require(guessNumber < 10000)
+        numberMap[guessNumber].append(account)
+        if not numberMap[guessNumber]:
+            numberList.append(guessNumber)
 
     # update the filled paper amount in current round
+    guessNumberLen = len(guessNumberList)
     key = concatKey(concatKey(ROUND_PREFIX, currentRound), FILLED_PAPER_AMOUNT)
-    Put(GetContext(), key, Add(1, getFilledPaperAmount(currentRound)))
+    Put(GetContext(), key, Add(guessNumberLen, getFilledPaperAmount(currentRound)))
 
     # update the filled paper balance in current round
-    key = concatKey(concatKey(ROUND_PREFIX, currentRound), FILLED_PAPER_BALANCE_PREFIX)
-    Put(GetContext(), key, Add(1, getFilledPaperBalance(currentRound)))
-
-
+    key1 = concatKey(ROUND_PREFIX, currentRound)
+    key2 = concatKey(FILLED_PAPER_BALANCE_PREFIX, account)
+    key = concatKey(key1, key2)
+    Put(GetContext(), key, Add(guessNumberLen, getFilledPaperBalance(account, currentRound)))
     return True
+
 
 def endGame():
     RequireWitness(Admin)
@@ -382,12 +386,21 @@ def endGame():
     minIndex = 10000
     luckyNumber = getLuckyNumber()
     for number in numberList:
+        playerAddressList = numberMap[number]
+        for playerAddress in playerAddressList:
+            if getFilledPaperBalance(playerAddress, currentRound):
+                Put(GetContext(), concatKey(PAPER_BALANCE_PREFIX, playerAddress), Sub(getPaperBalance(playerAddress), getFilledPaperBalance(playerAddress, currentRound)))
+                key1 = concatKey(ROUND_PREFIX, currentRound)
+                key2 = concatKey(FILLED_PAPER_BALANCE_PREFIX, playerAddress)
+                key = concatKey(key1, key2)
+                Delete(GetContext(), key)
         distance = ASub(number, luckyNumber)
         if distance < minDistance:
             minDistance = distance
             minIndex = number
-    luckyString = luckyNumber + ""
-    winnersList = numberMap[luckyString]
+
+
+    winnersList = numberMap[minIndex]
     winnersTotalPaper = 0
     for winner in winnersList:
         winnersTotalPaper = Add(winnersTotalPaper, getPaperBalance(winner))
@@ -399,8 +412,6 @@ def endGame():
 
 
     # need to delete the filled papers
-
-
 
 
 
@@ -417,20 +428,16 @@ def updateDividendBalance(account, roundNum):
     return True
 
 
-def getAddressByIndex(guessNum, roundNum):
-    """
-    :param guessNum: guessNum is the guessing number of user
-    :param roundNum:
-    :return:
-    """
+
 
 def getFilledPaperAmount(roundNum):
     key = concatKey(concatKey(ROUND_PREFIX, roundNum), FILLED_PAPER_AMOUNT)
     return Get(GetContext(), key)
 
-def getFilledPaperBalance(roundNum):
-    key = concatKey(concatKey(ROUND_PREFIX, roundNum), FILLED_PAPER_BALANCE_PREFIX)
-    return Get(GetContext(), key)
+def getFilledPaperBalance(account, roundNum):
+    key1 = concatKey(ROUND_PREFIX, roundNum)
+    key2 = concatKey(FILLED_PAPER_BALANCE_PREFIX, account)
+    return Get(GetContext(), concatKey(key1, key2))
 
 
 
