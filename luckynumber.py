@@ -213,7 +213,7 @@ STATUS_OFF = "END"
 
 InitialPrice = 1000000000
 PriceIncremental = 9260
-PaperHolderPercentage = 49
+PaperHolderPercentage = 50
 ReferralAwardPercentage = 1
 AwardPercentage = 35
 NextPercentage = 10
@@ -298,6 +298,10 @@ def Main(operation, args):
         # if len(args) != 0:
         #     return False
         return getCurrentRound()
+    if operation == "getCurrentPrice":
+        # if len(args) != 0:
+        #     return False
+        return getCurrentPrice()
     if operation == "getPaperBalance":
         if len(args) != 1:
             return False
@@ -317,7 +321,7 @@ def Main(operation, args):
         if len(args) != 1:
             return False
         account = args[0]
-        return getDividendBalance()
+        return getDividendBalance(account)
     if operation == "getAwardBalance":
         if len(args) != 1:
             return False
@@ -547,21 +551,23 @@ def buyPaper(account, paperAmount):
 
     Require(transferONG(account, ContractAddress, ongAmount))
 
+    # PaperHolderPercentage = 50
     dividend1 = Div(Mul(ongAmount, PaperHolderPercentage), 100)
     # update referral balance
     referral = Get(GetContext(), concatKey(REFERRAL_PREFIX, account))
     referralAmount = 0
     if referral:
+        # ReferralAwardPercentage = 1
         referralAmount = Div(Mul(ongAmount, ReferralAwardPercentage), 100)
         Put(GetContext(), concatKey(REFERRAL_BALANCE_OF_PREFIX, referral), Add(referralAmount, getReferralBalance(account)))
     dividend = Sub(dividend1, referralAmount)
 
-    # update next vault
+    # update next vault, NextPercentage = 10
     nextVaultToBeAdd = Div(Mul(ongAmount, NextPercentage), 100)
     nextVaultKey = concatKey(concatKey(ROUND_PREFIX, currentRound), NEXT_VAULT_KEY)
     Put(GetContext(), nextVaultKey, Add(nextVaultToBeAdd, getNextVault(currentRound)))
 
-    # update award vault
+    # update award vault, AwardPercentage = 35
     awardVaultToBeAdd = Div(Mul(ongAmount, AwardPercentage), 100)
     awardVaultKey = concatKey(concatKey(ROUND_PREFIX, currentRound), AWARD_VAULT_KEY)
     Put(GetContext(), awardVaultKey, Add(awardVaultToBeAdd, getAwardVault(currentRound)))
@@ -580,22 +586,28 @@ def buyPaper(account, paperAmount):
     key = concatKey(concatKey(ROUND_PREFIX, currentRound), ROUND_PAPER_AMOUNT)
     Put(GetContext(), key, Add(paperAmount, getRoundSoldPaperAmount(currentRound)))
 
+    # # # update the paper price in current round
+    # currentPrice = getCurrentPrice()
+    # Put(GetContext(), PRICE_PER_PAPER, Add(currentPrice, Mul(ongAmount, PriceIncremental)))
+
     # update paper balance of account
     Put(GetContext(), concatKey(PAPER_BALANCE_PREFIX, account), Add(paperAmount, getPaperBalance(account)))
 
     updateDividendBalance(account)
-
+    # Notify(["111_buy", dividend1, dividend, nextVaultToBeAdd, awardVaultToBeAdd, gasVaultToBeAdd, getGasVault()])
     # update profitPerPaper
     oldProfitPerPaper = Get(GetContext(), PROFIT_PER_PAPER_KEY)
     totalPaper = getTotalPaper()
-    profitPerPaperToBeAdd = 0
-    if totalPaper == 0:
-        # if totalPaper is ZERO, the dividend will go to the Gas Vault
-        Put(GetContext(), GAS_VAULT_KEY, Add(dividend, getGasVault()))
-    else:
-        profitPerPaperToBeAdd = Div(dividend, totalPaper)
+    # profitPerPaperToBeAdd = 0
+    # if totalPaper == 0:
+    #     # if totalPaper is ZERO, the dividend will go to the Gas Vault
+    #     Put(GetContext(), GAS_VAULT_KEY, Add(dividend, getGasVault()))
+    # else:
+    #     profitPerPaperToBeAdd = Div(dividend, totalPaper)
+    profitPerPaperToBeAdd = Div(dividend, totalPaper)
     Put(GetContext(), PROFIT_PER_PAPER_KEY, Add(profitPerPaperToBeAdd, oldProfitPerPaper))
 
+    # Notify(["222_buy", getGasVault()])
     # # update profitPerPaperFrom of account
     # key = concatKey(PROFIT_PER_PAPER_FROM_PREFIX, account)
     # Put(GetContext(), key, oldProfitPerPaper)
@@ -665,12 +677,13 @@ def reinvest(account, paperAmount):
     # update profitPerPaper
     oldProfitPerPaper = Get(GetContext(), PROFIT_PER_PAPER_KEY)
     totalPaper = getTotalPaper()
-    profitPerPaperToBeAdd = 0
-    if totalPaper == 0:
-        # if totalPaper is ZERO, the dividend will go to the Gas Vault
-        Put(GetContext(), GAS_VAULT_KEY, Add(dividend, getGasVault()))
-    else:
-        profitPerPaperToBeAdd = Div(dividend, totalPaper)
+    # profitPerPaperToBeAdd = 0
+    # if totalPaper == 0:
+    #     # if totalPaper is ZERO, the dividend will go to the Gas Vault
+    #     Put(GetContext(), GAS_VAULT_KEY, Add(dividend, getGasVault()))
+    # else:
+    #     profitPerPaperToBeAdd = Div(dividend, totalPaper)
+    profitPerPaperToBeAdd = Div(dividend, totalPaper)
     Put(GetContext(), PROFIT_PER_PAPER_KEY, Add(profitPerPaperToBeAdd, oldProfitPerPaper))
 
     # # update profitPerPaperFrom of account
@@ -792,6 +805,7 @@ def updateDividendBalance(account):
     profitPerPaperFrom = Get(GetContext(), key)
     profitPerPaperNow = Get(GetContext(), PROFIT_PER_PAPER_KEY)
     profitPerPaper = profitPerPaperNow - profitPerPaperFrom
+    profit = 0
     if profitPerPaper != 0:
         profit = Mul(profitPerPaper, getPaperBalance(account))
         Put(GetContext(), concatKey(PROFIT_PER_PAPER_FROM_PREFIX, account), profitPerPaperNow)
@@ -813,6 +827,12 @@ def getGasVault():
 
 def getCurrentRound():
     return Get(GetContext(), CURRET_ROUND_NUM_KEY)
+
+def getCurrentPrice():
+    currentRound = getCurrentRound()
+    currentRouldSoldAmount = getRoundSoldPaperAmount(currentRound)
+    currentPrice = InitialPrice + 9260 * currentRouldSoldAmount - 9260
+    return currentPrice
 ################## Global Info End #######################
 
 
@@ -827,7 +847,14 @@ def getReferralBalance(account):
     return Get(GetContext(), concatKey(REFERRAL_BALANCE_OF_PREFIX, account))
 
 def getDividendBalance(account):
-    return Get(GetContext(), concatKey(TOTAL_DIVIDEND_OF_PREFIX, account))
+    key = concatKey(PROFIT_PER_PAPER_FROM_PREFIX, account)
+    profitPerPaperFrom = Get(GetContext(), key)
+    profitPerPaperNow = Get(GetContext(), PROFIT_PER_PAPER_KEY)
+    profitPerPaper = profitPerPaperNow - profitPerPaperFrom
+    profit = 0
+    if profitPerPaper != 0:
+        profit = Mul(profitPerPaper, getPaperBalance(account))
+    return Add(Get(GetContext(), concatKey(TOTAL_DIVIDEND_OF_PREFIX, account)), profit)
 
 def getAwardBalance(account):
     return Get(GetContext(), concatKey(AWARD_BALANCE_OF_PREFFIX, account))
@@ -843,6 +870,8 @@ def getFilledPaperBalance(account, roundNum):
 ####################### User Info Start #####################
 
 ####################### Round Info Start #############################
+
+
 def getAwardVault(roundNum):
     return Get(GetContext(), concatKey(concatKey(ROUND_PREFIX, roundNum), AWARD_VAULT_KEY))
 
@@ -864,7 +893,8 @@ def getFilledPaperAmount(roundNum):
 ######################### Utility Methods Start #########################
 def paperToONG(round, paperAmount):
     currentPaperAmount = getRoundSoldPaperAmount(round)
-    ongAmount = InitialPrice + 9260 * currentPaperAmount + 4630 * paperAmount
+    averagePrice = InitialPrice + 9260 * currentPaperAmount + 4630 * paperAmount - 9260
+    ongAmount = averagePrice * paperAmount
     return ongAmount
 
 def getLuckyNumber():
@@ -876,6 +906,7 @@ def getLuckyNumber():
     blockHash = GetRandomHash()
     # The number should be in the range from 0 to 9999
     luckyNumber = blockHash % 10000
+    luckyNumber = abs(luckyNumber) % 10000
     Notify(["round lucky number is -- ", luckyNumber, getCurrentRound()])
     return luckyNumber
 
