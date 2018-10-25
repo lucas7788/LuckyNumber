@@ -374,6 +374,14 @@ def Main(operation, args):
         return getFilledPaperBalance(account, currentRound)
     if operation == "getLuckyNumber":
         return getLuckyNumber()
+    if operation == "getFilledNumberList":
+        currentRound = args[0]
+        return getFilledNumberList(currentRound)
+    if operation == "getPlayersList":
+        roundNum = args[0]
+        guessNumber = args[1]
+        return getPlayersList(roundNum, guessNumber)
+
     ######################### For testing purchase Begin ##############
     return False
 
@@ -452,7 +460,7 @@ def withdrawGas():
     :return:
     """
     Require(CheckWitness(Admin))
-    Require(transferONG(ContractAddress, Admin, getGasVault()))
+    Require(transferONGFromContact(Admin, getGasVault()))
     Delete(GetContext(), GAS_VAULT_KEY)
     return True
 
@@ -462,7 +470,9 @@ def endCurrentRound():
 
     # transfer Gas vault to admin to prepare for calculating winner of current round
     gasVault = getGasVault()
-    Require(transferONG(ContractAddress, Admin, gasVault))
+    Notify(["111_endCurrentRound", gasVault])
+    if gasVault:
+        Require(transferONGFromContact(Admin, gasVault))
 
     currentRound = getCurrentRound()
     Require(getGameStatus(currentRound) == STATUS_ON)
@@ -489,6 +499,7 @@ def endCurrentRound():
             minDistance = distance
             minIndex = number
 
+    Notify(["222_endCurrentEnd", luckyNumber, minIndex])
     winnersList = concatKey(concatKey(ROUND_PREFIX, currentRound), concatKey(FILLED_NUMBER_KEY, minIndex))
     winnersTotalPaper = 0
     for winner in winnersList:
@@ -718,8 +729,6 @@ def fillPaper(account, guessNumberList):
     # make sure his balance is greater or equal to current filled paper balance + guessNumberList length
     Require(getPaperBalance(account) > Add(currentFilledPaperBalance, guessNumberLen))
 
-
-
     numberListKey = concatKey(concatKey(ROUND_PREFIX, currentRound), FILLED_NUMBER_LIST_KEY)
     numberListInfo = Get(GetContext(), numberListKey)
     numberList = []
@@ -733,7 +742,7 @@ def fillPaper(account, guessNumberList):
         numberPlayersInfo = Get(GetContext(), numberPlayersKey)
 
         numberPlayers = []
-        if numberListInfo:
+        if numberPlayersInfo:
             numberPlayers = Deserialize(numberPlayersInfo)
 
             # make sure account has NOT filled the number before in this round
@@ -747,7 +756,7 @@ def fillPaper(account, guessNumberList):
 
         # Store the numberPlayers List
         numberPlayersInfo = Serialize(numberPlayers)
-        Put(GetContext(), numberPlayersKey, numberListInfo)
+        Put(GetContext(), numberPlayersKey, numberPlayersInfo)
     # Store the numberList
     numberListInfo = Serialize(numberList)
     Put(GetContext(), numberListKey, numberListInfo)
@@ -774,15 +783,15 @@ def withdraw(account):
     :return:
     """
     RequireWitness(account)
-
+    Notify(["111_withdraw", getDividendBalance(account)])
     updateDividendBalance(account)
     dividendBalance = getDividendBalance(account)
     awardBalance = getAwardBalance(account)
     referralBalance = getReferralBalance(account)
     assetToBeWithdrawn = Add(Add(dividendBalance, awardBalance), referralBalance)
-
-    Require(transferONG(ContractAddress, account, assetToBeWithdrawn))
-
+    Notify(["222_withdraw", dividendBalance])
+    Require(transferONGFromContact(account, assetToBeWithdrawn))
+    Notify(["333_withdraw", dividendBalance])
     Delete(GetContext(), concatKey(TOTAL_DIVIDEND_OF_PREFIX, account))
     Delete(GetContext(), concatKey(AWARD_BALANCE_OF_PREFFIX, account))
     Delete(GetContext(), concatKey(REFERRAL_BALANCE_OF_PREFIX, account))
@@ -888,6 +897,29 @@ def getRoundSoldPaperAmount(roundNum):
 def getFilledPaperAmount(roundNum):
     key = concatKey(concatKey(ROUND_PREFIX, roundNum), FILLED_PAPER_AMOUNT)
     return Get(GetContext(), key)
+
+
+def getFilledNumberList(roundNum):
+    numberListKey = concatKey(concatKey(ROUND_PREFIX, roundNum), FILLED_NUMBER_LIST_KEY)
+    numberListInfo = Get(GetContext(), numberListKey)
+    numberList = []
+    if numberListInfo:
+        numberList = Deserialize(numberListInfo)
+    Notify(["111_getFilledNumberList", numberList])
+    return numberList
+
+def getPlayersList(roundNum, guessNumber):
+    numberPlayersKey = concatKey(concatKey(ROUND_PREFIX, roundNum), concatKey(FILLED_NUMBER_KEY, guessNumber))
+    numberPlayersInfo = Get(GetContext(), numberPlayersKey)
+
+    numberPlayers = []
+    if numberPlayersInfo:
+        numberPlayers = Deserialize(numberPlayersInfo)
+    Notify(["111_getPlayersList", numberPlayers])
+    for player in numberPlayers:
+        Notify([player])
+
+    return numberPlayers
 ####################### Round Info End #############################
 
 ######################### Utility Methods Start #########################
@@ -929,6 +961,16 @@ def transferONG(fromAcct, toAcct, amount):
         Notify(["transferONG failure"])
         return False
 
+def transferONGFromContact(toAcct, amount):
+    param = state(ContractAddress, toAcct, amount)
+    res = Invoke(0, ONGAddress, 'transfer', [param])
+
+    if res and res == b'\x01':
+        Notify('transfer from contract succeed')
+        return True
+    else:
+        Notify('transfer from contract failed')
+        return False
 
 def concatKey(str1,str2):
     """
