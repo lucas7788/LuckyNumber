@@ -1,0 +1,16 @@
+{
+  "rpc_address": "http://127.0.0.1:20336",
+  "code": "./contract/LuckyNumber/luckynumber.avm",
+  "need_storage": "true",
+  "name": "LuckyNumberSmartContract",
+  "code_version": "codeVersion1",
+  "author": "Ontology Dev",
+  "email": "emailTest",
+  "desp": "Lucky Number",
+  "payer_address": "AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+  "payer_password":"xinhao",
+  "wallet_file_path":"./deploy_wallet.json",
+  "gas_limit": 24000000,
+  "gas_price": 500,
+  "save_file":"./contract/LuckyNumber/deploy.csv"
+}

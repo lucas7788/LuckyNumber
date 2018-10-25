@@ -332,6 +332,11 @@ def Main(operation, args):
             return False
         account = args[0]
         return getWithdrawnBalance(account)
+    if operation == "getReferral":
+        if len(args) != 1:
+            return False
+        account = args[0]
+        return getReferral(account)
     if operation == "getAwardVault":
         if len(args) != 1:
             return False
@@ -470,7 +475,7 @@ def endCurrentRound():
 
     # transfer Gas vault to admin to prepare for calculating winner of current round
     gasVault = getGasVault()
-    Notify(["111_endCurrentRound", gasVault])
+    # Notify(["111_endCurrentRound", gasVault])
     if gasVault:
         Require(transferONGFromContact(Admin, gasVault))
 
@@ -495,32 +500,44 @@ def endCurrentRound():
     for number in numberList:
         # the absolute value of sub(a, b)
         distance = ASub(number, luckyNumber)
+
         if distance < minDistance:
             minDistance = distance
             minIndex = number
+        Notify(["112", number, distance, minDistance, minIndex])
 
-    Notify(["222_endCurrentEnd", luckyNumber, minIndex])
-    winnersList = concatKey(concatKey(ROUND_PREFIX, currentRound), concatKey(FILLED_NUMBER_KEY, minIndex))
+    # Notify(["222_endCurrentEnd", luckyNumber, minIndex])
+
+    winnersListKey = concatKey(concatKey(ROUND_PREFIX, currentRound), concatKey(FILLED_NUMBER_KEY, minIndex))
+    winnersListInfo = Get(GetContext(), winnersListKey)
+    winnersList = Deserialize(winnersListInfo)
+    #           concatKey(concatKey(ROUND_PREFIX, currentRound), concatKey(FILLED_NUMBER_KEY, guessNumber))
     winnersTotalPaper = 0
     for winner in winnersList:
         winnersTotalPaper = Add(winnersTotalPaper, getPaperBalance(winner))
 
+    # Notify(["333_endCurrentEnd", winnersList])
     # split the Award Vault to the winners
     awardVault = getAwardVault(currentRound)
-    totalFee = 0
+
+    totalAward = 0
     for winner in winnersList:
         paperBalance = getPaperBalance(winner)
-        winnerAward = Div(Mul(awardVault, getPaperBalance(winner)), winnersTotalPaper)
+        winnerAward = Div(Mul(awardVault, paperBalance), winnersTotalPaper)
         winnerPercentage = winnerAward * 100 / getInvestOngBalance(winner)
         fee = 0
         if winnerPercentage > 100:
             fee = Div(Mul(winnerAward, WinnerFeeLarge), 100)
         else:
             fee = Div(Mul(winnerAward, WinnerFeeSmall), 100)
-        totalFee = Add(totalFee, fee)
-        Put(GetContext(), concatKey(AWARD_BALANCE_OF_PREFFIX, winner), Add(Sub(winnerAward, fee), getAwardBalance(winner)))
+
+        pureWinnerAwardToBeAdd = Sub(winnerAward, fee)
+        totalAward = Add(totalAward, pureWinnerAwardToBeAdd)
+        Put(GetContext(), concatKey(AWARD_BALANCE_OF_PREFFIX, winner), Add(pureWinnerAwardToBeAdd, getAwardBalance(winner)))
+        # Notify(["444_endCurrentEnd", getInvestOngBalance(winner), winnerAward, fee, pureWinnerAwardToBeAdd, winner])
 
     # give Admin some fee from winner
+    totalFee = Sub(awardVault, totalAward)
     Put(GetContext(), concatKey(TOTAL_DIVIDEND_OF_PREFIX, Admin), Add(totalFee, getDividendBalance(Admin)))
 
     # delete the filled paper in current round
@@ -539,13 +556,15 @@ def endCurrentRound():
                 key = concatKey(key1, key2)
                 Delete(GetContext(), key)
 
-
+    # Notify(["555_endCurrentEnd"])
     # update the paper total amount
     Put(GetContext(), TOTAL_PAPER, Sub(getTotalPaper(), getFilledPaperAmount(currentRound)))
     # mark this round game as END
     Put(GetContext(), concatKey(concatKey(ROUND_PREFIX, currentRound), ROUND_STATUS_KEY), STATUS_OFF)
 
     startNewRound()
+
+    # Notify(["666_endCurrentEnd"])
 
     return True
 ####################### Methods that only Admin can invoke End #######################
@@ -871,6 +890,8 @@ def getAwardBalance(account):
 def getWithdrawnBalance(account):
     return Get(GetContext(), concatKey(WITHDRAWN_BALANCEOF_PREFFIX, account))
 
+def getReferral(account):
+    return Get(GetContext, concatKey(REFERRAL_PREFIX, account))
 
 def getFilledPaperBalance(account, roundNum):
     key1 = concatKey(ROUND_PREFIX, roundNum)

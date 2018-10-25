@@ -1,0 +1,3 @@
+No,need_storage,name,code_version,author,email,desp,payer_address,gas_limit,gas_price,result
+1,true,LuckyNumberSmartContract,codeVersion1,Ontology Dev,emailTest,Lucky Number,AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p,24000000,500,success
+3,true,LuckyNumberSmartContract,codeVersion1,Ontology Dev,emailTest,Lucky Number,AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p,24000000,500,success

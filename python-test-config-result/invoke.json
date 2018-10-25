@@ -1,0 +1,364 @@
+{
+  "rpc_address": "http://127.0.0.1:20336",
+  "payer_address": "AUnhXaudVSBFqjH92a6HrhQySUTiQjf5VR",
+  "payer_password": "xinhao",
+  "wallet_file_path": "./invoke_wallet.json",
+  "gas_limit": 140000,
+  "gas_price": 500,
+  "abi_path": "./contract/LuckyNumber/abi.json",
+  "save_file": "./contract/LuckyNumber/invoke.csv",
+  "function": {
+    "deploy": {
+      "function_name": "init",
+      "function_param": {
+      },
+      "signers":[
+        {
+            "m": 1,
+            "signer":
+              {
+                "walletpath": "./invoke_wallet.json",
+                "address": "AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+                "password": "xinhao"
+              }
+          }
+      ],
+      "pre_exec": false
+    },
+
+    "addReferral": {
+      "function_name": "addReferral",
+      "function_param": {
+        "toBeReferred":"AWf8NiLzXSDf1JB2Ae6YUKSHke4yLHMVCm",
+        "referral":"ASUwFccvYFrrWR6vsZhhNszLFNvCLA5qS6"
+      },
+      "signers":[
+        {
+            "m": 1,
+            "signer":
+              {
+                "walletpath": "./invoke_wallet.json",
+                "address": "AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+                "password": "xinhao"
+              }
+          }
+      ],
+      "pre_exec": false
+    },
+    "addMultiReferral": {
+      "function_name": "addMultiReferral",
+      "function_param": {
+        "Array":[
+          {
+            "toBeReferred": "ByteArray:AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+            "referral": "ByteArray:AazEvfQPcQ2GEFFPLF1ZLwQ7K5jDn81hve"
+          },
+          {
+            "toBeReferred":"ByteArray:AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+            "referral": "ByteArray:AazEvfQPcQ2GEFFPLF1ZLwQ7K5jDn81hve"
+          }
+        ],
+        "signers":[
+        {
+            "m": 1,
+            "signer":
+              {
+                "walletpath": "./invoke_wallet.json",
+                "address": "AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+                "password": "xinhao"
+              }
+          }
+      ]
+      },
+      "signers":[
+        {
+            "m": 1,
+            "signer":
+              {
+                "walletpath": "./invoke_wallet.json",
+                "address": "AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+                "password": "xinhao"
+              }
+          }
+      ],
+      "pre_exec": false
+    },
+    "withdrawGas": {
+      "function_name": "withdrawGas",
+      "function_param": {
+      },
+      "signers":[
+        {
+            "m": 1,
+            "signer":
+              {
+                "walletpath": "./invoke_wallet.json",
+                "address": "AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+                "password": "xinhao"
+              }
+          }
+      ],
+      "pre_exec": false
+    },
+    "endCurrentRound": {
+      "function_name": "endCurrentRound",
+      "function_param": {
+      },
+      "signers":[
+        {
+            "m": 1,
+            "signer":
+              {
+                "walletpath": "./invoke_wallet.json",
+                "address": "AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+                "password": "xinhao"
+              }
+          }
+      ],
+      "pre_exec": false
+    },
+
+
+    "buyPaper": {
+      "function_name": "buyPaper",
+      "function_param": {
+        "account": "AazEvfQPcQ2GEFFPLF1ZLwQ7K5jDn81hve",
+        "paperAmount":10
+      },
+      "signers":[
+        {
+            "m": 1,
+            "signer":
+              {
+                "walletpath": "./invoke_wallet.json",
+                "address": "AazEvfQPcQ2GEFFPLF1ZLwQ7K5jDn81hve",
+                "password": "xinhao"
+              }
+          }
+      ],
+      "pre_exec": false
+    },
+    "reinvest": {
+      "function_name": "reinvest",
+      "function_param": {
+        "address": "AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+        "paperAmount":4
+      },
+      "signers":[
+        {
+            "m": 1,
+            "signer":
+              {
+                "walletpath": "./invoke_wallet.json",
+                "address": "AazEvfQPcQ2GEFFPLF1ZLwQ7K5jDn81hve",
+                "password": "xinhao"
+              }
+          }
+      ],
+      "pre_exec": true
+    },
+    "fillPaper": {
+      "function_name": "fillPaper",
+      "function_param": {
+        "account":"AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+        "Array":[
+          {
+            "guessNumber":1
+          },
+          {
+            "guessNumber":2
+          }
+        ]
+      },
+      "signers":
+        {
+        "m": 1,
+        "signer":
+          {
+            "walletpath": "invoke_wallet.json",
+            "address": "AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+            "password": "xinhao"
+          }
+      },
+      "pre_exec": false
+    },
+    "withdraw":{
+      "function_name": "withdraw",
+      "function_param":
+      {
+        "account":"AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p"
+      },
+
+      "signers":[
+           {
+              "m": 1,
+              "signer": {
+                "walletpath": "./invoke_wallet.json",
+                "address": "AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+                "password": "xinhao"
+              }
+           }
+      ],
+      "pre_exec": false
+    },
+    "updateDividendBalance": {
+      "function_name": "updateDividendBalance",
+      "function_param": {
+        "account":"AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p"
+      },
+      "signers":
+        {
+        "m": 1,
+        "signer":
+          {
+            "walletpath": "invoke_wallet.json",
+            "address": "AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+            "password": "xinhao"
+          }
+      },
+      "pre_exec": false
+    },
+
+
+
+    "getTotalPaper":{
+      "function_name": "getTotalPaper",
+      "function_param": { },
+      "pre_exec": true
+    },
+    "getGasVault":{
+      "function_name": "getGasVault",
+      "function_param": { },
+      "pre_exec": true
+    },
+    "getCurrentRound":{
+      "function_name": "getCurrentRound",
+      "function_param": { },
+      "pre_exec": true
+    },
+    "getCurrentPrice":{
+      "function_name": "getCurrentPrice",
+      "function_param": { },
+      "pre_exec": true
+    },
+
+
+    "getPaperBalance":{
+      "function_name": "getPaperBalance",
+      "function_param": {
+        "account":"AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p"
+      },
+      "pre_exec": true
+    },
+    "getInvestOngBalance":{
+      "function_name": "getInvestOngBalance",
+      "function_param": {
+        "account":"AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p"
+      },
+      "pre_exec": true
+    },
+    "getReferralBalance":{
+      "function_name": "getReferralBalance",
+      "function_param": {
+        "account":"AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p"
+      },
+      "pre_exec": true
+    },
+    "getDividendBalance":{
+      "function_name": "getDividendBalance",
+      "function_param": {
+        "account":"AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p"
+      },
+      "pre_exec": true
+    },
+    "getAwardBalance":{
+      "function_name": "getAwardBalance",
+      "function_param": {
+        "account":"AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p"
+      },
+      "pre_exec": true
+    },
+    "getWithdrawnBalance":{
+      "function_name": "getWithdrawnBalance",
+      "function_param": {
+        "account":"AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p"
+      },
+      "pre_exec": true
+    },
+    "getFilledPaperBalance":{
+      "function_name": "getFilledPaperBalance",
+      "function_param": {
+        "account":"AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p",
+        "roundNum":1
+      },
+      "pre_exec": true
+    },
+    "getReferral":{
+      "function_name": "getReferral",
+      "function_param": {
+        "account":"AWf8NiLzXSDf1JB2Ae6YUKSHke4yLHMVCm"
+      },
+      "pre_exec": true
+    },
+
+
+    "getAwardVault":{
+      "function_name": "getAwardVault",
+      "function_param": {
+        "roundNum":1
+      },
+      "pre_exec": true
+    },
+    "getNextVault":{
+      "function_name": "getNextVault",
+      "function_param": {
+        "roundNum":1
+      },
+      "pre_exec": true
+    },
+    "getGameStatus":{
+      "function_name": "getGameStatus",
+      "function_param": {
+        "roundNum":1
+      },
+      "pre_exec": true
+    },
+    "getRoundSoldPaperAmount":{
+      "function_name": "getRoundSoldPaperAmount",
+      "function_param": {
+        "roundNum":1
+      },
+      "pre_exec": true
+    },
+    "getFilledPaperAmount":{
+      "function_name": "getFilledPaperAmount",
+      "function_param": {
+        "roundNum":1
+      },
+      "pre_exec": true
+    },
+    "getFilledNumberList":{
+      "function_name": "getFilledNumberList",
+      "function_param": {
+        "roundNum":1
+      },
+      "pre_exec": true
+    },
+
+
+
+    "getPlayersList":{
+      "function_name": "getPlayersList",
+      "function_param": {
+        "roundNum":1,
+        "guessNumber":2
+      },
+      "pre_exec": true
+    },
+    "getLuckyNumber":{
+      "function_name": "getLuckyNumber",
+      "function_param": { },
+      "pre_exec": true
+    }
+  }
+}
