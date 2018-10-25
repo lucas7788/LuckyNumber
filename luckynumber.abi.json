@@ -1,0 +1,230 @@
+{
+    "CompilerVersion": "1.0.2",
+    "hash": "e06653a59be4bd849cb0d850cfea2dd2644524b1",
+    "entrypoint": "Main",
+    "functions": [
+        {
+            "name": "init",
+            "parameters": []
+        },
+        {
+            "name": "startNewRound",
+            "parameters": []
+        },
+        {
+            "name": "addReferral",
+            "parameters": [
+                {
+                    "name": "toBeReferred",
+                    "type": ""
+                },
+                {
+                    "name": "referral",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "name": "addMultiReferral",
+            "parameters": [
+                {
+                    "name": "args",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "name": "withdrawGas",
+            "parameters": []
+        },
+        {
+            "name": "endCurrentRound",
+            "parameters": []
+        },
+        {
+            "name": "buyPaper",
+            "parameters": [
+                {
+                    "name": "account",
+                    "type": ""
+                },
+                {
+                    "name": "paperAmount",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "name": "reinvest",
+            "parameters": [
+                {
+                    "name": "account",
+                    "type": ""
+                },
+                {
+                    "name": "paperAmount",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "name": "fillPaper",
+            "parameters": [
+                {
+                    "name": "account",
+                    "type": ""
+                },
+                {
+                    "name": "guessNumberList",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "name": "withdraw",
+            "parameters": [
+                {
+                    "name": "account",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "name": "updateDividendBalance",
+            "parameters": [
+                {
+                    "name": "account",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "name": "getTotalPaper",
+            "parameters": []
+        },
+        {
+            "name": "getGasVault",
+            "parameters": []
+        },
+        {
+            "name": "getCurrentRound",
+            "parameters": []
+        },
+        {
+            "name": "getPaperBalance",
+            "parameters": [
+                {
+                    "name": "account",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "name": "getInvestOngBalance",
+            "parameters": [
+                {
+                    "name": "account",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "name": "getReferralBalance",
+            "parameters": [
+                {
+                    "name": "account",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "name": "getDividendBalance",
+            "parameters": [
+                {
+                    "name": "account",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "name": "getAwardBalance",
+            "parameters": [
+                {
+                    "name": "account",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "name": "getWithdrawnBalance",
+            "parameters": [
+                {
+                    "name": "account",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "name": "getFilledPaperBalance",
+            "parameters": [
+                {
+                    "name": "account",
+                    "type": ""
+                },
+                {
+                    "name": "roundNum",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "name": "getAwardVault",
+            "parameters": [
+                {
+                    "name": "roundNum",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "name": "getNextVault",
+            "parameters": [
+                {
+                    "name": "roundNum",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "name": "getGameStatus",
+            "parameters": [
+                {
+                    "name": "roundNum",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "name": "getRoundSoldPaperAmount",
+            "parameters": [
+                {
+                    "name": "roundNum",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "name": "getFilledPaperAmount",
+            "parameters": [
+                {
+                    "name": "roundNum",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "name": "getLuckyNumber",
+            "parameters": []
+        }
+    ]
+}

@@ -1,0 +1,747 @@
+{
+    "Functions": [
+        {
+            "Method": "concatKey",
+            "VarMap": {
+                "str1": 0,
+                "str2": 1
+            }
+        },
+        {
+            "Method": "transferONG",
+            "VarMap": {
+                "fromAcct": 0,
+                "toAcct": 1,
+                "amount": 2,
+                "ONGAddress": 3,
+                "param": 4,
+                "res": 5
+            }
+        },
+        {
+            "Method": "getLuckyNumber",
+            "VarMap": {
+                "blockHash": 0,
+                "luckyNumber": 1
+            }
+        },
+        {
+            "Method": "paperToONG",
+            "VarMap": {
+                "round": 0,
+                "paperAmount": 1,
+                "InitialPrice": 2,
+                "currentPaperAmount": 3,
+                "ongAmount": 4
+            }
+        },
+        {
+            "Method": "getFilledPaperAmount",
+            "VarMap": {
+                "roundNum": 0,
+                "ROUND_PREFIX": 1,
+                "FILLED_PAPER_AMOUNT": 2,
+                "key": 3
+            }
+        },
+        {
+            "Method": "getRoundSoldPaperAmount",
+            "VarMap": {
+                "roundNum": 0,
+                "ROUND_PREFIX": 1,
+                "ROUND_PAPER_AMOUNT": 2,
+                "roundSoldPaperAmountKey": 3
+            }
+        },
+        {
+            "Method": "getGameStatus",
+            "VarMap": {
+                "roundNum": 0,
+                "ROUND_PREFIX": 1,
+                "ROUND_STATUS_KEY": 2
+            }
+        },
+        {
+            "Method": "getNextVault",
+            "VarMap": {
+                "roundNum": 0,
+                "ROUND_PREFIX": 1,
+                "NEXT_VAULT_KEY": 2
+            }
+        },
+        {
+            "Method": "getAwardVault",
+            "VarMap": {
+                "roundNum": 0,
+                "ROUND_PREFIX": 1,
+                "AWARD_VAULT_KEY": 2
+            }
+        },
+        {
+            "Method": "getFilledPaperBalance",
+            "VarMap": {
+                "account": 0,
+                "roundNum": 1,
+                "ROUND_PREFIX": 2,
+                "FILLED_PAPER_BALANCE_PREFIX": 3,
+                "key1": 4,
+                "key2": 5
+            }
+        },
+        {
+            "Method": "getWithdrawnBalance",
+            "VarMap": {
+                "account": 0,
+                "WITHDRAWN_BALANCEOF_PREFFIX": 1
+            }
+        },
+        {
+            "Method": "getAwardBalance",
+            "VarMap": {
+                "account": 0,
+                "AWARD_BALANCE_OF_PREFFIX": 1
+            }
+        },
+        {
+            "Method": "getDividendBalance",
+            "VarMap": {
+                "account": 0,
+                "TOTAL_DIVIDEND_OF_PREFIX": 1
+            }
+        },
+        {
+            "Method": "getReferralBalance",
+            "VarMap": {
+                "account": 0,
+                "REFERRAL_BALANCE_OF_PREFIX": 1
+            }
+        },
+        {
+            "Method": "getInvestOngBalance",
+            "VarMap": {
+                "account": 0,
+                "INVEST_BALANCE_PREFFIX": 1
+            }
+        },
+        {
+            "Method": "getPaperBalance",
+            "VarMap": {
+                "account": 0,
+                "PAPER_BALANCE_PREFIX": 1
+            }
+        },
+        {
+            "Method": "getCurrentRound",
+            "VarMap": {
+                "CURRET_ROUND_NUM_KEY": 0
+            }
+        },
+        {
+            "Method": "getGasVault",
+            "VarMap": {
+                "GAS_VAULT_KEY": 0
+            }
+        },
+        {
+            "Method": "getTotalPaper",
+            "VarMap": {
+                "TOTAL_PAPER": 0
+            }
+        },
+        {
+            "Method": "updateDividendBalance",
+            "VarMap": {
+                "account": 0,
+                "PROFIT_PER_PAPER_KEY": 1,
+                "TOTAL_DIVIDEND_OF_PREFIX": 2,
+                "PROFIT_PER_PAPER_FROM_PREFIX": 3,
+                "key": 4,
+                "profitPerPaperFrom": 5,
+                "profitPerPaperNow": 6,
+                "profitPerPaper": 7,
+                "profit": 8
+            }
+        },
+        {
+            "Method": "withdraw",
+            "VarMap": {
+                "account": 0,
+                "TOTAL_DIVIDEND_OF_PREFIX": 1,
+                "REFERRAL_BALANCE_OF_PREFIX": 2,
+                "AWARD_BALANCE_OF_PREFFIX": 3,
+                "WITHDRAWN_BALANCEOF_PREFFIX": 4,
+                "ContractAddress": 5,
+                "dividendBalance": 6,
+                "awardBalance": 7,
+                "referralBalance": 8,
+                "assetToBeWithdrawn": 9
+            }
+        },
+        {
+            "Method": "fillPaper",
+            "VarMap": {
+                "account": 0,
+                "guessNumberList": 1,
+                "ROUND_PREFIX": 2,
+                "FILLED_PAPER_BALANCE_PREFIX": 3,
+                "FILLED_PAPER_AMOUNT": 4,
+                "FILLED_NUMBER_LIST_KEY": 5,
+                "FILLED_NUMBER_KEY": 6,
+                "STATUS_ON": 7,
+                "currentRound": 8,
+                "guessNumberLen": 9,
+                "currentFilledPaperBalance": 10,
+                "numberListKey": 11,
+                "numberListInfo": 12,
+                "numberList": 13,
+                "guessNumber": 14,
+                "numberPlayersKey": 15,
+                "numberPlayersInfo": 16,
+                "numberPlayers": 17,
+                "player": 18,
+                "key": 19,
+                "key1": 20,
+                "key2": 21,
+                "forloop_counter_1": 22,
+                "forloop_length_1": 23,
+                "forloop_counter_2": 24,
+                "forloop_length_2": 25
+            }
+        },
+        {
+            "Method": "reinvest",
+            "VarMap": {
+                "account": 0,
+                "paperAmount": 1,
+                "ROUND_PREFIX": 2,
+                "GAS_VAULT_KEY": 3,
+                "TOTAL_PAPER": 4,
+                "PROFIT_PER_PAPER_KEY": 5,
+                "TOTAL_DIVIDEND_OF_PREFIX": 6,
+                "REFERRAL_BALANCE_OF_PREFIX": 7,
+                "PAPER_BALANCE_PREFIX": 8,
+                "AWARD_BALANCE_OF_PREFFIX": 9,
+                "INVEST_BALANCE_PREFFIX": 10,
+                "REFERRAL_PREFIX": 11,
+                "AWARD_VAULT_KEY": 12,
+                "NEXT_VAULT_KEY": 13,
+                "ROUND_PAPER_AMOUNT": 14,
+                "STATUS_ON": 15,
+                "PaperHolderPercentage": 16,
+                "ReferralAwardPercentage": 17,
+                "AwardPercentage": 18,
+                "NextPercentage": 19,
+                "currentRound": 20,
+                "ongAmount": 21,
+                "dividendBalance": 22,
+                "awardBalance": 23,
+                "referralBalance": 24,
+                "assetToBeReinvest": 25,
+                "dividend1": 26,
+                "referral": 27,
+                "referralAmount": 28,
+                "dividend": 29,
+                "nextVaultToBeAdd": 30,
+                "nextVaultKey": 31,
+                "awardVaultToBeAdd": 32,
+                "awardVaultKey": 33,
+                "gasVaultToBeAdd": 34,
+                "key": 35,
+                "oldProfitPerPaper": 36,
+                "totalPaper": 37,
+                "profitPerPaperToBeAdd": 38,
+                "ongAmountLeft": 39
+            }
+        },
+        {
+            "Method": "buyPaper",
+            "VarMap": {
+                "account": 0,
+                "paperAmount": 1,
+                "ROUND_PREFIX": 2,
+                "GAS_VAULT_KEY": 3,
+                "TOTAL_PAPER": 4,
+                "PROFIT_PER_PAPER_KEY": 5,
+                "REFERRAL_BALANCE_OF_PREFIX": 6,
+                "PAPER_BALANCE_PREFIX": 7,
+                "INVEST_BALANCE_PREFFIX": 8,
+                "REFERRAL_PREFIX": 9,
+                "AWARD_VAULT_KEY": 10,
+                "NEXT_VAULT_KEY": 11,
+                "ROUND_PAPER_AMOUNT": 12,
+                "STATUS_ON": 13,
+                "PaperHolderPercentage": 14,
+                "ReferralAwardPercentage": 15,
+                "AwardPercentage": 16,
+                "NextPercentage": 17,
+                "ContractAddress": 18,
+                "currentRound": 19,
+                "ongAmount": 20,
+                "dividend1": 21,
+                "referral": 22,
+                "referralAmount": 23,
+                "dividend": 24,
+                "nextVaultToBeAdd": 25,
+                "nextVaultKey": 26,
+                "awardVaultToBeAdd": 27,
+                "awardVaultKey": 28,
+                "gasVaultToBeAdd": 29,
+                "key": 30,
+                "oldProfitPerPaper": 31,
+                "totalPaper": 32,
+                "profitPerPaperToBeAdd": 33
+            }
+        },
+        {
+            "Method": "endCurrentRound",
+            "VarMap": {
+                "ROUND_PREFIX": 0,
+                "TOTAL_PAPER": 1,
+                "TOTAL_DIVIDEND_OF_PREFIX": 2,
+                "PAPER_BALANCE_PREFIX": 3,
+                "AWARD_BALANCE_OF_PREFFIX": 4,
+                "FILLED_PAPER_BALANCE_PREFIX": 5,
+                "FILLED_NUMBER_LIST_KEY": 6,
+                "FILLED_NUMBER_KEY": 7,
+                "ROUND_STATUS_KEY": 8,
+                "STATUS_ON": 9,
+                "STATUS_OFF": 10,
+                "WinnerFeeLarge": 11,
+                "WinnerFeeSmall": 12,
+                "ContractAddress": 13,
+                "Admin": 14,
+                "gasVault": 15,
+                "currentRound": 16,
+                "numberListKey": 17,
+                "numberListInfo": 18,
+                "numberList": 19,
+                "minDistance": 20,
+                "minIndex": 21,
+                "luckyNumber": 22,
+                "number": 23,
+                "distance": 24,
+                "winnersList": 25,
+                "winnersTotalPaper": 26,
+                "winner": 27,
+                "awardVault": 28,
+                "totalFee": 29,
+                "paperBalance": 30,
+                "winnerAward": 31,
+                "winnerPercentage": 32,
+                "fee": 33,
+                "numberPlayersKey": 34,
+                "numberPlayersInfo": 35,
+                "numberPlayers": 36,
+                "player": 37,
+                "key1": 38,
+                "key2": 39,
+                "key": 40,
+                "forloop_counter_1": 41,
+                "forloop_length_1": 42,
+                "forloop_counter_2": 43,
+                "forloop_length_2": 44,
+                "forloop_counter_3": 45,
+                "forloop_length_3": 46,
+                "forloop_counter_4": 47,
+                "forloop_length_4": 48,
+                "forloop_counter_5": 49,
+                "forloop_length_5": 50
+            }
+        },
+        {
+            "Method": "withdrawGas",
+            "VarMap": {
+                "GAS_VAULT_KEY": 0,
+                "ContractAddress": 1,
+                "Admin": 2
+            }
+        },
+        {
+            "Method": "addMultiReferral",
+            "VarMap": {
+                "args": 0,
+                "REFERRAL_PREFIX": 1,
+                "Admin": 2,
+                "p": 3,
+                "forloop_counter_1": 4,
+                "forloop_length_1": 5
+            }
+        },
+        {
+            "Method": "addReferral",
+            "VarMap": {
+                "toBeReferred": 0,
+                "referral": 1,
+                "REFERRAL_PREFIX": 2,
+                "Admin": 3
+            }
+        },
+        {
+            "Method": "startNewRound",
+            "VarMap": {
+                "ROUND_PREFIX": 0,
+                "CURRET_ROUND_NUM_KEY": 1,
+                "PRICE_PER_PAPER": 2,
+                "AWARD_VAULT_KEY": 3,
+                "NEXT_VAULT_KEY": 4,
+                "ROUND_STATUS_KEY": 5,
+                "STATUS_ON": 6,
+                "InitialPrice": 7,
+                "Admin": 8,
+                "currentRound": 9,
+                "nextRoundNum": 10,
+                "currentVaultForNext": 11,
+                "nextAwardVault": 12,
+                "nextAwardVaultKey": 13
+            }
+        },
+        {
+            "Method": "init",
+            "VarMap": {
+                "INIIT": 0,
+                "Admin": 1,
+                "inited": 2
+            }
+        },
+        {
+            "Method": "Main",
+            "VarMap": {
+                "operation": 0,
+                "args": 1,
+                "toBeReferred": 2,
+                "referral": 3,
+                "account": 4,
+                "paperAmount": 5,
+                "guessNumberList": 6,
+                "currentRound": 7
+            }
+        },
+        {
+            "Method": "Sqrt",
+            "VarMap": {
+                "a": 0,
+                "c": 1,
+                "b": 2
+            }
+        },
+        {
+            "Method": "Pwr",
+            "VarMap": {
+                "a": 0,
+                "b": 1,
+                "c": 2,
+                "i": 3
+            }
+        },
+        {
+            "Method": "Div",
+            "VarMap": {
+                "a": 0,
+                "b": 1,
+                "c": 2
+            }
+        },
+        {
+            "Method": "Mul",
+            "VarMap": {
+                "a": 0,
+                "b": 1,
+                "c": 2
+            }
+        },
+        {
+            "Method": "ASub",
+            "VarMap": {
+                "a": 0,
+                "b": 1
+            }
+        },
+        {
+            "Method": "Sub",
+            "VarMap": {
+                "a": 0,
+                "b": 1
+            }
+        },
+        {
+            "Method": "Add",
+            "VarMap": {
+                "a": 0,
+                "b": 1,
+                "c": 2
+            }
+        },
+        {
+            "Method": "RequireWitness",
+            "VarMap": {
+                "witness": 0
+            }
+        },
+        {
+            "Method": "RequireScriptHash",
+            "VarMap": {
+                "key": 0
+            }
+        },
+        {
+            "Method": "Require",
+            "VarMap": {
+                "condition": 0
+            }
+        },
+        {
+            "Method": "Revert",
+            "VarMap": {}
+        },
+        {
+            "Method": "RegisterAction",
+            "VarMap": {
+                "event_name": 0,
+                "args": 1
+            }
+        },
+        {
+            "Method": "breakpoint",
+            "VarMap": {}
+        },
+        {
+            "Method": "throw_if_null",
+            "VarMap": {
+                "item": 0
+            }
+        },
+        {
+            "Method": "verify_signature",
+            "VarMap": {
+                "pubkey": 0,
+                "signature": 1,
+                "message": 2
+            }
+        },
+        {
+            "Method": "hash256",
+            "VarMap": {
+                "data": 0
+            }
+        },
+        {
+            "Method": "hash160",
+            "VarMap": {
+                "data": 0
+            }
+        },
+        {
+            "Method": "sha256",
+            "VarMap": {
+                "data": 0
+            }
+        },
+        {
+            "Method": "sha1",
+            "VarMap": {
+                "data": 0
+            }
+        },
+        {
+            "Method": "range",
+            "VarMap": {
+                "start": 0,
+                "stop": 1,
+                "length": 2,
+                "out": 3,
+                "index": 4,
+                "orig_start": 5,
+                "val": 6
+            }
+        },
+        {
+            "Method": "take",
+            "VarMap": {
+                "source": 0,
+                "count": 1
+            }
+        },
+        {
+            "Method": "substr",
+            "VarMap": {
+                "source": 0,
+                "start_index": 1,
+                "count": 2
+            }
+        },
+        {
+            "Method": "concat",
+            "VarMap": {
+                "str1": 0,
+                "str2": 1
+            }
+        },
+        {
+            "Method": "GetTimestamp",
+            "VarMap": {
+                "header": 0
+            }
+        },
+        {
+            "Method": "GetPrevHash",
+            "VarMap": {
+                "header": 0
+            }
+        },
+        {
+            "Method": "GetHash",
+            "VarMap": {
+                "header": 0
+            }
+        },
+        {
+            "Method": "GetIndex",
+            "VarMap": {
+                "header": 0
+            }
+        },
+        {
+            "Method": "GetTransactionHeight",
+            "VarMap": {
+                "hash": 0
+            }
+        },
+        {
+            "Method": "GetContract",
+            "VarMap": {
+                "script_hash": 0
+            }
+        },
+        {
+            "Method": "GetTransaction",
+            "VarMap": {
+                "hash": 0
+            }
+        },
+        {
+            "Method": "GetBlock",
+            "VarMap": {
+                "height_or_hash": 0
+            }
+        },
+        {
+            "Method": "GetHeader",
+            "VarMap": {
+                "height_or_hash": 0
+            }
+        },
+        {
+            "Method": "GetHeight",
+            "VarMap": {}
+        },
+        {
+            "Method": "GetRandomHash",
+            "VarMap": {}
+        },
+        {
+            "Method": "AddressToBase58",
+            "VarMap": {
+                "arg": 0
+            }
+        },
+        {
+            "Method": "Base58ToAddress",
+            "VarMap": {
+                "arg": 0
+            }
+        },
+        {
+            "Method": "Invoke",
+            "VarMap": {
+                "param": 0,
+                "method": 1,
+                "contractAddress": 2,
+                "ver": 3
+            }
+        },
+        {
+            "Method": "GetEntryScriptHash",
+            "VarMap": {}
+        },
+        {
+            "Method": "GetCallingScriptHash",
+            "VarMap": {}
+        },
+        {
+            "Method": "GetExecutingScriptHash",
+            "VarMap": {}
+        },
+        {
+            "Method": "GetScriptContainer",
+            "VarMap": {}
+        },
+        {
+            "Method": "Deserialize",
+            "VarMap": {
+                "item": 0
+            }
+        },
+        {
+            "Method": "Serialize",
+            "VarMap": {
+                "item": 0
+            }
+        },
+        {
+            "Method": "GetTime",
+            "VarMap": {}
+        },
+        {
+            "Method": "Notify",
+            "VarMap": {
+                "arg": 0
+            }
+        },
+        {
+            "Method": "Log",
+            "VarMap": {
+                "message": 0
+            }
+        },
+        {
+            "Method": "CheckWitness",
+            "VarMap": {
+                "hash_or_pubkey": 0
+            }
+        },
+        {
+            "Method": "GetTrigger",
+            "VarMap": {}
+        },
+        {
+            "Method": "Delete",
+            "VarMap": {
+                "context": 0,
+                "key": 1
+            }
+        },
+        {
+            "Method": "Put",
+            "VarMap": {
+                "context": 0,
+                "key": 1,
+                "value": 2
+            }
+        },
+        {
+            "Method": "Get",
+            "VarMap": {
+                "context": 0,
+                "key": 1
+            }
+        },
+        {
+            "Method": "GetReadOnlyContext",
+            "VarMap": {}
+        },
+        {
+            "Method": "GetContext",
+            "VarMap": {}
+        }
+    ]
+}
