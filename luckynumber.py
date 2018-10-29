@@ -364,7 +364,6 @@ def Main(operation, args):
         return getFilledPaperAmount(currentRound)
     ######################### General Info to pre-execute Begin ##############
 
-
     ######################### For testing purchase Begin ##############
     if operation == "updateDividendBalance":
         if len(args) != 1:
@@ -386,8 +385,7 @@ def Main(operation, args):
         roundNum = args[0]
         guessNumber = args[1]
         return getPlayersList(roundNum, guessNumber)
-
-    ######################### For testing purchase Begin ##############
+    ######################### For testing purchase End ##############
     return False
 
 
@@ -440,6 +438,8 @@ def addReferral(toBeReferred, referral):
     RequireScriptHash(toBeReferred)
     RequireScriptHash(referral)
     Require(toBeReferred != referral)
+    # key = concatKey(REFERRAL_PREFIX, toBeReferred),
+    # value = referral
     Put(GetContext(), concatKey(REFERRAL_PREFIX, toBeReferred), referral)
     return True
 
@@ -584,12 +584,13 @@ def buyPaper(account, paperAmount):
     # PaperHolderPercentage = 50
     dividend1 = Div(Mul(ongAmount, PaperHolderPercentage), 100)
     # update referral balance
-    referral = Get(GetContext(), concatKey(REFERRAL_PREFIX, account))
+    referral = getReferral(account)
+        # Get(GetContext(), concatKey(REFERRAL_PREFIX, account))
     referralAmount = 0
     if referral:
         # ReferralAwardPercentage = 1
         referralAmount = Div(Mul(ongAmount, ReferralAwardPercentage), 100)
-        Put(GetContext(), concatKey(REFERRAL_BALANCE_OF_PREFIX, referral), Add(referralAmount, getReferralBalance(account)))
+        Put(GetContext(), concatKey(REFERRAL_BALANCE_OF_PREFIX, referral), Add(referralAmount, getReferralBalance(referral)))
     dividend = Sub(dividend1, referralAmount)
 
     # update next vault, NextPercentage = 10
@@ -958,8 +959,8 @@ def getLuckyNumber():
     '''
     blockHash = GetRandomHash()
     # The number should be in the range from 0 to 9999
-    luckyNumber = blockHash % 10000
-    luckyNumber = abs(luckyNumber) % 10000
+    luckyNumber = abs(blockHash) % 10000
+    luckyNumber = abs(luckyNumber)
     Notify(["round lucky number is -- ", luckyNumber, getCurrentRound()])
     return luckyNumber
 
