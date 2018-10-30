@@ -227,14 +227,14 @@ WinnerFeeSmall = 5
 ContractAddress = GetExecutingScriptHash()
 ONGAddress = bytearray(b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02')
 # Skyinglyh account
-# Admin = ToScriptHash('AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p')
+Admin = ToScriptHash('AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p')
 # LuckyNumber  account
-Admin = ToScriptHash('AYqCVffRcbPkf1BVCYPJqqoiFTFmvwYKhG')
+# Admin = ToScriptHash('AYqCVffRcbPkf1BVCYPJqqoiFTFmvwYKhG')
 
 # PurchaseEvent = RegisterAction("buy", "account", "ongAmount", "paperAmount")
 
 # Beijing time 2018-10-30-15:00:00
-StartTime = 1540882800
+StartTime = 1540882802
 
 def Main(operation, args):
     ######################## for Admin to invoke Begin ###############
@@ -484,11 +484,16 @@ def assignPaper(account, paperAmount):
     # update account paper balance
     accountKey = concatKey(PAPER_BALANCE_PREFIX, account)
     Put(GetContext(), accountKey, Add(paperAmount, getPaperBalance(account)))
-    Notify(["assignPaper", account, paperAmount, GetTime()])
 
     # update total paper amount
     Put(GetContext(), TOTAL_PAPER, Add(paperAmount, getTotalPaper()))
+    # update the sold paper amount in this round
+    currentRound = getCurrentRound()
+    Put(GetContext(), concatKey(concatKey(ROUND_PREFIX, currentRound), ROUND_PAPER_AMOUNT), Add(paperAmount, getRoundSoldPaperAmount(currentRound)))
+    Notify(["assignPaper", account, paperAmount, GetTime()])
+
     return True
+
 
 def multiAssignPaper(args):
     RequireWitness(Admin)
@@ -516,6 +521,7 @@ def endCurrentRound():
         Require(transferONGFromContact(Admin, gasVault))
 
     currentRound = getCurrentRound()
+    Require(GetTime() > getCurrentRoundEndTime() - 60)
     Require(getGameStatus(currentRound) == STATUS_ON)
 
     numberListKey = concatKey(concatKey(ROUND_PREFIX, currentRound), FILLED_NUMBER_LIST_KEY)
@@ -616,6 +622,7 @@ def buyPaper(account, paperAmount):
     # update referral balance <---> Get(GetContext(), concatKey(REFERRAL_PREFIX, account))
     referral = getReferral(account)
     referralAmount = 0
+
     if referral:
         # ReferralAwardPercentage = 1
         referralAmount = Div(Mul(ongAmount, ReferralAwardPercentage), 100)
@@ -819,8 +826,10 @@ def withdraw(account):
     awardBalance = getAwardBalance(account)
     referralBalance = getReferralBalance(account)
     assetToBeWithdrawn = Add(Add(dividendBalance, awardBalance), referralBalance)
-
-    Require(transferONGFromContact(account, assetToBeWithdrawn))
+    if assetToBeWithdrawn > 0:
+        Require(transferONGFromContact(account, assetToBeWithdrawn))
+    else:
+        return True
 
     Delete(GetContext(), concatKey(TOTAL_DIVIDEND_OF_PREFIX, account))
     Delete(GetContext(), concatKey(AWARD_BALANCE_OF_PREFFIX, account))
@@ -844,11 +853,10 @@ def updateDividendBalance(account):
     profitPerPaperFrom = Get(GetContext(), key)
     profitPerPaperNow = Get(GetContext(), PROFIT_PER_PAPER_KEY)
     profitPerPaper = Sub(profitPerPaperNow, profitPerPaperFrom)
-    profit = 0
+    # profit = 0
     if profitPerPaper != 0:
-        profit = Mul(profitPerPaper, getPaperBalance(account))
-        Put(GetContext(), concatKey(TOTAL_DIVIDEND_OF_PREFIX, account), Add(profit, getDividendBalance(account)))
-
+        # profit = Mul(profitPerPaper, getPaperBalance(account))
+        Put(GetContext(), concatKey(TOTAL_DIVIDEND_OF_PREFIX, account), getDividendBalance(account))
         Put(GetContext(), concatKey(PROFIT_PER_PAPER_FROM_PREFIX, account), profitPerPaperNow)
 
     return True
@@ -871,8 +879,8 @@ def getCurrentRound():
 
 def getCurrentPrice():
     currentRound = getCurrentRound()
-    currentRouldSoldAmount = getRoundSoldPaperAmount(currentRound)
-    currentPrice = InitialPrice + 9260 * currentRouldSoldAmount - 9260
+    currentRoundSoldAmount = getRoundSoldPaperAmount(currentRound)
+    currentPrice = InitialPrice + 9260 * currentRoundSoldAmount
     return currentPrice
 
 def getCurrentRoundEndTime():
@@ -900,6 +908,7 @@ def getDividendBalance(account):
     profit = 0
     if profitPerPaper != 0:
         profit = Mul(profitPerPaper, getPaperBalance(account))
+    # Get(GetContext(), concatKey(TOTAL_DIVIDEND_OF_PREFIX, account))
     return Add(Get(GetContext(), concatKey(TOTAL_DIVIDEND_OF_PREFIX, account)), profit)
 
 def getAwardBalance(account):
@@ -912,7 +921,7 @@ def getWithdrawnBalance(account):
     return Get(GetContext(), concatKey(WITHDRAWN_BALANCEOF_PREFFIX, account))
 
 def getReferral(account):
-    return Get(GetContext, concatKey(REFERRAL_PREFIX, account))
+    return Get(GetContext(), concatKey(REFERRAL_PREFIX, account))
 
 def getFilledPaperBalance(account, roundNum):
     key1 = concatKey(ROUND_PREFIX, roundNum)
