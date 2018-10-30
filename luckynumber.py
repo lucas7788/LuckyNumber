@@ -226,10 +226,15 @@ WinnerFeeSmall = 5
 # the script hash of this contract
 ContractAddress = GetExecutingScriptHash()
 ONGAddress = bytearray(b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02')
+# My account
 Admin = ToScriptHash('AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p')
+# Their account
+# Admin = ToScriptHash('AYqCVffRcbPkf1BVCYPJqqoiFTFmvwYKhG')
 
 # PurchaseEvent = RegisterAction("buy", "account", "ongAmount", "paperAmount")
 
+# UTC time 2018-10-30-00:00:00
+StartTime = 1540857600
 
 def Main(operation, args):
     ######################## for Admin to invoke Begin ###############
@@ -310,6 +315,8 @@ def Main(operation, args):
         # if len(args) != 0:
         #     return False
         return getCurrentPrice()
+    if operation == "getCurrentRoundEndTime":
+        return getCurrentRoundEndTime()
     if operation == "getPaperBalance":
         if len(args) != 1:
             return False
@@ -335,6 +342,11 @@ def Main(operation, args):
             return False
         account = args[0]
         return getAwardBalance(account)
+    if operation == "getDividendsBalance":
+        if len(args) != 1:
+            return False
+        account = args[0]
+        return getDividendsBalance(account)
     if operation == "getWithdrawnBalance":
         if len(args) != 1:
             return False
@@ -431,7 +443,7 @@ def startNewRound():
     Put(GetContext(), concatKey(concatKey(ROUND_PREFIX, nextRoundNum), ROUND_STATUS_KEY), STATUS_ON)
     Put(GetContext(), CURRET_ROUND_NUM_KEY, nextRoundNum)
     Put(GetContext(), PRICE_PER_PAPER, InitialPrice)
-    Notify(["start round", nextRoundNum])
+    Notify(["startRound", nextRoundNum])
     return True
 
 
@@ -471,8 +483,8 @@ def assignPaper(account, paperAmount):
     RequireWitness(Admin)
     # update account paper balance
     accountKey = concatKey(PAPER_BALANCE_PREFIX, account)
-    Put(GetContext(), accountKey, getPaperBalance(account) + paperAmount)
-    Notify(["transfer", "", account, paperAmount])
+    Put(GetContext(), accountKey, Add(paperAmount, getPaperBalance(account)))
+    Notify(["assignPaper", account, paperAmount, GetTime()])
 
     # update total paper amount
     Put(GetContext(), TOTAL_PAPER, Add(paperAmount, getTotalPaper()))
@@ -489,7 +501,7 @@ def withdrawGas():
     Only admin can withdraw
     :return:
     """
-    Require(CheckWitness(Admin))
+    RequireWitness(Admin)
     Require(transferONGFromContact(Admin, getGasVault()))
     Delete(GetContext(), GAS_VAULT_KEY)
     return True
@@ -513,6 +525,7 @@ def endCurrentRound():
     else:
         # if no one participate this round of game
         Put(GetContext(), concatKey(concatKey(ROUND_PREFIX, currentRound), ROUND_STATUS_KEY), STATUS_OFF)
+        Notify(["endRound", currentRound])
         startNewRound()
         return True
 
@@ -558,7 +571,7 @@ def endCurrentRound():
     totalFee = Sub(awardVault, totalTaxedAward)
     Put(GetContext(), concatKey(TOTAL_DIVIDEND_OF_PREFIX, Admin), Add(totalFee, getDividendBalance(Admin)))
 
-    # delete the filled paper in current round
+    # delete the filled paper in current round and update their PROFIT_PER_PAPER_FROM_PREFIX
     for number in numberList:
         numberPlayersKey = concatKey(concatKey(ROUND_PREFIX, currentRound), concatKey(FILLED_NUMBER_KEY, number))
         numberPlayersInfo = Get(GetContext(), numberPlayersKey)
@@ -571,18 +584,16 @@ def endCurrentRound():
 
                 # update the player's paper balance
                 Put(GetContext(), concatKey(PAPER_BALANCE_PREFIX, player), Sub(getPaperBalance(player), getFilledPaperBalance(player, currentRound)))
-                # delete the filled paper balance of this round
-                key1 = concatKey(ROUND_PREFIX, currentRound)
-                key2 = concatKey(FILLED_PAPER_BALANCE_PREFIX, player)
-                key = concatKey(key1, key2)
-                Delete(GetContext(), key)
-
-    # Notify(["555_endCurrentEnd"])
+                # # delete the filled paper balance of this round
+                # key = concatKey(concatKey(ROUND_PREFIX, currentRound), concatKey(FILLED_PAPER_BALANCE_PREFIX, player))
+                # Delete(GetContext(), key)
+                Notify(["destroyPaper", player, getFilledPaperBalance(player, currentRound), GetTime()])
     # update the paper total amount
     Put(GetContext(), TOTAL_PAPER, Sub(getTotalPaper(), getFilledPaperAmount(currentRound)))
+    # Notify(["destroy",getFilledPaperAmount(currentRound), GetTime()])
     # mark this round game as END
     Put(GetContext(), concatKey(concatKey(ROUND_PREFIX, currentRound), ROUND_STATUS_KEY), STATUS_OFF)
-
+    Notify(["endRound", currentRound])
     startNewRound()
 
     # Notify(["666_endCurrentEnd"])
@@ -604,9 +615,8 @@ def buyPaper(account, paperAmount):
 
     # PaperHolderPercentage = 50
     dividend1 = Div(Mul(ongAmount, PaperHolderPercentage), 100)
-    # update referral balance
+    # update referral balance <---> Get(GetContext(), concatKey(REFERRAL_PREFIX, account))
     referral = getReferral(account)
-        # Get(GetContext(), concatKey(REFERRAL_PREFIX, account))
     referralAmount = 0
     if referral:
         # ReferralAwardPercentage = 1
@@ -638,10 +648,6 @@ def buyPaper(account, paperAmount):
     key = concatKey(concatKey(ROUND_PREFIX, currentRound), ROUND_PAPER_AMOUNT)
     Put(GetContext(), key, Add(paperAmount, getRoundSoldPaperAmount(currentRound)))
 
-    # # # update the paper price in current round
-    # currentPrice = getCurrentPrice()
-    # Put(GetContext(), PRICE_PER_PAPER, Add(currentPrice, Mul(ongAmount, PriceIncremental)))
-
     # update paper balance of account
     Put(GetContext(), concatKey(PAPER_BALANCE_PREFIX, account), Add(paperAmount, getPaperBalance(account)))
 
@@ -650,22 +656,16 @@ def buyPaper(account, paperAmount):
     # update profitPerPaper
     oldProfitPerPaper = Get(GetContext(), PROFIT_PER_PAPER_KEY)
     totalPaper = getTotalPaper()
-    # profitPerPaperToBeAdd = 0
-    # if totalPaper == 0:
-    #     # if totalPaper is ZERO, the dividend will go to the Gas Vault
-    #     Put(GetContext(), GAS_VAULT_KEY, Add(dividend, getGasVault()))
-    # else:
-    #     profitPerPaperToBeAdd = Div(dividend, totalPaper)
+
     profitPerPaperToBeAdd = Div(dividend, totalPaper)
     Put(GetContext(), PROFIT_PER_PAPER_KEY, Add(profitPerPaperToBeAdd, oldProfitPerPaper))
 
     # Notify(["222_buy", getGasVault()])
     # # update profitPerPaperFrom of account
-    # key = concatKey(PROFIT_PER_PAPER_FROM_PREFIX, account)
-    # Put(GetContext(), key, oldProfitPerPaper)
+    # Put(GetContext(), concatKey(PROFIT_PER_PAPER_FROM_PREFIX, account), oldProfitPerPaper)
 
     # PurchaseEvent(account, ongAmount, paperAmount)
-    Notify(["buy", account, ongAmount, paperAmount])
+    Notify(["buyPaper", account, ongAmount, paperAmount, GetTime()])
 
     return True
 
@@ -687,17 +687,13 @@ def reinvest(account, paperAmount):
 
     Require(assetToBeReinvest >= ongAmount)
 
-    # Delete(GetContext(), concatKey(TOTAL_DIVIDEND_OF_PREFIX, account))
-    # Delete(GetContext(), concatKey(AWARD_BALANCE_OF_PREFFIX, account))
-    # Delete(GetContext(), concatKey(REFERRAL_BALANCE_OF_PREFIX, account))
-
     dividend1 = Div(Mul(ongAmount, PaperHolderPercentage), 100)
     # update referral balance
     referral = Get(GetContext(), concatKey(REFERRAL_PREFIX, account))
     referralAmount = 0
     if referral:
         referralAmount = Div(Mul(ongAmount, ReferralAwardPercentage), 100)
-        Put(GetContext(), concatKey(REFERRAL_BALANCE_OF_PREFIX, referral), Add(referralAmount, getReferralBalance(account)))
+        Put(GetContext(), concatKey(REFERRAL_BALANCE_OF_PREFIX, referral), Add(referralAmount, getReferralBalance(referral)))
     dividend = Sub(dividend1, referralAmount)
 
     # update next vault
@@ -728,14 +724,7 @@ def reinvest(account, paperAmount):
 
     # update profitPerPaper
     oldProfitPerPaper = Get(GetContext(), PROFIT_PER_PAPER_KEY)
-    totalPaper = getTotalPaper()
-    # profitPerPaperToBeAdd = 0
-    # if totalPaper == 0:
-    #     # if totalPaper is ZERO, the dividend will go to the Gas Vault
-    #     Put(GetContext(), GAS_VAULT_KEY, Add(dividend, getGasVault()))
-    # else:
-    #     profitPerPaperToBeAdd = Div(dividend, totalPaper)
-    profitPerPaperToBeAdd = Div(dividend, totalPaper)
+    profitPerPaperToBeAdd = Div(dividend, getTotalPaper())
     Put(GetContext(), PROFIT_PER_PAPER_KEY, Add(profitPerPaperToBeAdd, oldProfitPerPaper))
 
     # update profitPerPaperFrom of account
@@ -752,7 +741,7 @@ def reinvest(account, paperAmount):
     Put(GetContext(), concatKey(INVEST_BALANCE_PREFFIX, account), Add(ongAmount, getInvestOngBalance(account)))
 
     # PurchaseEvent(account, ongAmount, paperAmount)
-    Notify(["rebuy", account, ongAmount, paperAmount])
+    Notify(["reBuyPaper", account, ongAmount, paperAmount, GetTime()])
 
 
 def fillPaper(account, guessNumberList):
@@ -812,7 +801,7 @@ def fillPaper(account, guessNumberList):
     key = concatKey(key1, key2)
     Put(GetContext(), key, Add(guessNumberLen, currentFilledPaperBalance))
 
-    Notify(["fillPaper", account, guessNumberList])
+    Notify(["fillPaper", account, guessNumberList, GetTime()])
 
     return True
 
@@ -824,22 +813,22 @@ def withdraw(account):
     :return:
     """
     RequireWitness(account)
-    Notify(["111_withdraw", getDividendBalance(account)])
+
     updateDividendBalance(account)
     dividendBalance = getDividendBalance(account)
     awardBalance = getAwardBalance(account)
     referralBalance = getReferralBalance(account)
     assetToBeWithdrawn = Add(Add(dividendBalance, awardBalance), referralBalance)
-    Notify(["222_withdraw", dividendBalance])
+
     Require(transferONGFromContact(account, assetToBeWithdrawn))
-    Notify(["333_withdraw", dividendBalance])
+
     Delete(GetContext(), concatKey(TOTAL_DIVIDEND_OF_PREFIX, account))
     Delete(GetContext(), concatKey(AWARD_BALANCE_OF_PREFFIX, account))
     Delete(GetContext(), concatKey(REFERRAL_BALANCE_OF_PREFIX, account))
 
     Put(GetContext(), concatKey(WITHDRAWN_BALANCEOF_PREFFIX, account), assetToBeWithdrawn)
 
-    Notify(["withdraw", ContractAddress, account, assetToBeWithdrawn])
+    Notify(["withdraw", ContractAddress, account, assetToBeWithdrawn, GetTime()])
 
     return True
 
@@ -854,13 +843,14 @@ def updateDividendBalance(account):
     key = concatKey(PROFIT_PER_PAPER_FROM_PREFIX, account)
     profitPerPaperFrom = Get(GetContext(), key)
     profitPerPaperNow = Get(GetContext(), PROFIT_PER_PAPER_KEY)
-    profitPerPaper = profitPerPaperNow - profitPerPaperFrom
+    profitPerPaper = Sub(profitPerPaperNow, profitPerPaperFrom)
     profit = 0
     if profitPerPaper != 0:
         profit = Mul(profitPerPaper, getPaperBalance(account))
         Put(GetContext(), concatKey(TOTAL_DIVIDEND_OF_PREFIX, account), Add(profit, getDividendBalance(account)))
 
-    Put(GetContext(), concatKey(PROFIT_PER_PAPER_FROM_PREFIX, account), profitPerPaperNow)
+        Put(GetContext(), concatKey(PROFIT_PER_PAPER_FROM_PREFIX, account), profitPerPaperNow)
+
     return True
 ######################## Methods for Users Start ######################################
 
@@ -884,6 +874,11 @@ def getCurrentPrice():
     currentRouldSoldAmount = getRoundSoldPaperAmount(currentRound)
     currentPrice = InitialPrice + 9260 * currentRouldSoldAmount - 9260
     return currentPrice
+
+def getCurrentRoundEndTime():
+    currentRound = getCurrentRound()
+    currentRoundEndTime = StartTime + Mul(currentRound, 3* 60 * 60)
+    return currentRoundEndTime
 ################## Global Info End #######################
 
 
@@ -909,6 +904,9 @@ def getDividendBalance(account):
 
 def getAwardBalance(account):
     return Get(GetContext(), concatKey(AWARD_BALANCE_OF_PREFFIX, account))
+
+def getDividendsBalance(account):
+    return [getReferral(account), getDividendBalance(account), getAwardBalance(account)]
 
 def getWithdrawnBalance(account):
     return Get(GetContext(), concatKey(WITHDRAWN_BALANCEOF_PREFFIX, account))
@@ -949,7 +947,7 @@ def getFilledNumberList(roundNum):
     numberList = []
     if numberListInfo:
         numberList = Deserialize(numberListInfo)
-    Notify(["111_getFilledNumberList", numberList])
+
     return numberList
 
 def getPlayersList(roundNum, guessNumber):
@@ -959,7 +957,7 @@ def getPlayersList(roundNum, guessNumber):
     numberPlayers = []
     if numberPlayersInfo:
         numberPlayers = Deserialize(numberPlayersInfo)
-    Notify(["111_getPlayersList", numberPlayers])
+
     for player in numberPlayers:
         Notify([player])
 
@@ -983,7 +981,6 @@ def getLuckyNumber():
     # The number should be in the range from 0 to 9999
     luckyNumber = abs(blockHash) % 10000
     luckyNumber = abs(luckyNumber)
-    Notify(["round lucky number is -- ", luckyNumber, getCurrentRound()])
     return luckyNumber
 
 
@@ -999,10 +996,8 @@ def transferONG(fromAcct, toAcct, amount):
     param = state(fromAcct, toAcct, amount)
     res = Invoke(0, ONGAddress, 'transfer', [param])
     if res and res == b'\x01':
-        Notify(["transferONG success"])
         return True
     else:
-        Notify(["transferONG failure"])
         return False
 
 def transferONGFromContact(toAcct, amount):
@@ -1010,10 +1005,8 @@ def transferONGFromContact(toAcct, amount):
     res = Invoke(0, ONGAddress, 'transfer', [param])
 
     if res and res == b'\x01':
-        Notify('transfer from contract succeed')
         return True
     else:
-        Notify('transfer from contract failed')
         return False
 
 def concatKey(str1,str2):
