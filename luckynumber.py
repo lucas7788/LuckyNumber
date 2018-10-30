@@ -142,67 +142,67 @@ def Sqrt(a):
 
 
 ######################### Global game info ########################
-ROUND_PREFIX = 'round'
+ROUND_PREFIX = "G1"
 # GAS_VAULT_KEY -- store the fee for calculating the winner
-GAS_VAULT_KEY = "GasVault"
+GAS_VAULT_KEY = "G02"
 
-TOTAL_PAPER = "TotalPaper"
+TOTAL_PAPER = "G03"
 # CURRET_ROUND_NUM_KEY -- store the current round number
-CURRET_ROUND_NUM_KEY = 'CurrentRoundNumber'
+CURRET_ROUND_NUM_KEY = "G04"
 
 
-PRICE_PER_PAPER = "PricePerPaper"
+PRICE_PER_PAPER = "G05"
 
 # PROFIT_PER_PAPER_KEY -- store the profit per paper (when it is bought)
-PROFIT_PER_PAPER_KEY = "ProfitPerPaper"
+PROFIT_PER_PAPER_KEY = "G06"
 
 # TOTAL_DIVIDEND_OF_PREFIX + account -- store the total accumulated dividend of account
 # when user withdraws, the total dividend will go to ZERO
-TOTAL_DIVIDEND_OF_PREFIX = "TotalDividend"
-REFERRAL_BALANCE_OF_PREFIX = "ReferralBalance"
+TOTAL_DIVIDEND_OF_PREFIX = "G07"
+REFERRAL_BALANCE_OF_PREFIX = "G08"
 # PAPER_BALANCE_PREFIX + account -- store the current blank paper amount of account
-PAPER_BALANCE_PREFIX = "PaperBalanceOf"
-AWARD_BALANCE_OF_PREFFIX = "AwardOf"
+PAPER_BALANCE_PREFIX = "G09"
+AWARD_BALANCE_OF_PREFFIX = "G10"
 # WITHDRAWN_BALANCEOF_PREFFIX + account -- store the asset value that has been withdrawn
-WITHDRAWN_BALANCEOF_PREFFIX = "withdrawnOf"
-INVEST_BALANCE_PREFFIX = "InvestAmount"
-REFERRAL_PREFIX = "Referral"
+WITHDRAWN_BALANCEOF_PREFFIX = "G11"
+INVEST_BALANCE_PREFFIX = "G12"
+REFERRAL_PREFIX = "G13"
 
 # PROFIT_PER_PAPER_FROM_PREFIX + account -- store the filled paper amount in round i
-PROFIT_PER_PAPER_FROM_PREFIX = "ProfitPerPaperFrom"
+PROFIT_PER_PAPER_FROM_PREFIX = "G14"
 
 
 ################## Round i User info ##################
 # ROUND_PREFIX + CURRET_ROUND_NUM_KEY + FILLED_PAPER_BALANCE_PREFIX + account -- store the filled paper amount in round i
-FILLED_PAPER_BALANCE_PREFIX = "FilledPaperBalanceOf"
+FILLED_PAPER_BALANCE_PREFIX = "U01"
 
 
 # ROUND_PREFIX + CURRET_ROUND_NUM_KEY + ROUND_DIVIDEND_PREFIX + account -- store the filled paper amount in round i,
 # when user withdraws, the dividend in round i will be cleared to ZERO
-ROUND_DIVIDEND_PREFIX = "RoundDividendOf"
+ROUND_DIVIDEND_PREFIX = "U02"
 
 
 ###################### Round i Public info ###########################
 # ROUND_PREFIX + CURRET_ROUND_NUM_KEY + AWARD_VAULT_KEY -- store the total award for the winner in roung i
-AWARD_VAULT_KEY = "AwardVault"
+AWARD_VAULT_KEY = "R01"
 
 # ROUND_PREFIX + CURRET_ROUND_NUM_KEY + NEXT_VAULT_KEY -- store the asset for the next round in round i+1
-NEXT_VAULT_KEY = "NextVault"
+NEXT_VAULT_KEY = "R02"
 
 
 # ROUND_PREFIX + CURRET_ROUND_NUM_KEY + ROUND_PAPER_AMOUNT -- store the paper amount sold in this round
-ROUND_PAPER_AMOUNT = "PaperAmount"
+ROUND_PAPER_AMOUNT = "R03"
 
 # ROUND_PREFIX + CURRET_ROUND_NUM_KEY + FILLED_PAPER_AMOUNT -- store the asset for the next round in round i+1
-FILLED_PAPER_AMOUNT = "FilledPaperAmount"
+FILLED_PAPER_AMOUNT = "R04"
 
 # ROUND_PREFIX + CURRET_ROUND_NUM_KEY + FILLED_NUMBER_LIST_KEY -- store the filled number on papers
-FILLED_NUMBER_LIST_KEY = "NumberList"
+FILLED_NUMBER_LIST_KEY = "R05"
 
 # ROUND_PREFIX + CURRET_ROUND_NUM_KEY + FILLED_NUMBER_KEY + number -- store the accounts that filled number
 # key = ROUND_PREFIX + CURRET_ROUND_NUM_KEY + FILLED_NUMBER_KEY + number
 # value = [account1, account2, account3]
-FILLED_NUMBER_KEY = "FilledNumber"
+FILLED_NUMBER_KEY = "R06"
 
 
 ############################### other info ###################################
@@ -755,6 +755,8 @@ def fillPaper(account, guessNumberList):
     Require(getGameStatus(currentRound) == STATUS_ON)
     guessNumberLen = len(guessNumberList)
 
+    Require(guessNumberLen >= 1)
+
     currentFilledPaperBalance = getFilledPaperBalance(account, currentRound)
     # make sure his balance is greater or equal to current filled paper balance + guessNumberList length
     Require(getPaperBalance(account) > Add(currentFilledPaperBalance, guessNumberLen))
@@ -766,7 +768,7 @@ def fillPaper(account, guessNumberList):
         numberList = Deserialize(numberListInfo)
 
     for guessNumber in guessNumberList:
-        Require(guessNumber < 10000)
+        Require(guessNumber < 10000 and guessNumber >= 0)
 
         numberPlayersKey = concatKey(concatKey(ROUND_PREFIX, currentRound), concatKey(FILLED_NUMBER_KEY, guessNumber))
         numberPlayersInfo = Get(GetContext(), numberPlayersKey)
@@ -826,7 +828,7 @@ def withdraw(account):
     Delete(GetContext(), concatKey(AWARD_BALANCE_OF_PREFFIX, account))
     Delete(GetContext(), concatKey(REFERRAL_BALANCE_OF_PREFIX, account))
 
-    Put(GetContext(), concatKey(WITHDRAWN_BALANCEOF_PREFFIX, account), assetToBeWithdrawn)
+    Put(GetContext(), concatKey(WITHDRAWN_BALANCEOF_PREFFIX, account), Add(assetToBeWithdrawn, getWithdrawnBalance(account)))
 
     Notify(["withdraw", ContractAddress, account, assetToBeWithdrawn, GetTime()])
 
