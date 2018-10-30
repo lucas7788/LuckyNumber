@@ -226,15 +226,15 @@ WinnerFeeSmall = 5
 # the script hash of this contract
 ContractAddress = GetExecutingScriptHash()
 ONGAddress = bytearray(b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02')
-# My account
-Admin = ToScriptHash('AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p')
-# Their account
-# Admin = ToScriptHash('AYqCVffRcbPkf1BVCYPJqqoiFTFmvwYKhG')
+# Skyinglyh account
+# Admin = ToScriptHash('AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p')
+# LuckyNumber  account
+Admin = ToScriptHash('AYqCVffRcbPkf1BVCYPJqqoiFTFmvwYKhG')
 
 # PurchaseEvent = RegisterAction("buy", "account", "ongAmount", "paperAmount")
 
-# UTC time 2018-10-30-00:00:00
-StartTime = 1540857600
+# Beijing time 2018-10-30-15:00:00
+StartTime = 1540882800
 
 def Main(operation, args):
     ######################## for Admin to invoke Begin ###############
@@ -584,9 +584,9 @@ def endCurrentRound():
 
                 # update the player's paper balance
                 Put(GetContext(), concatKey(PAPER_BALANCE_PREFIX, player), Sub(getPaperBalance(player), getFilledPaperBalance(player, currentRound)))
-                # # delete the filled paper balance of this round
-                # key = concatKey(concatKey(ROUND_PREFIX, currentRound), concatKey(FILLED_PAPER_BALANCE_PREFIX, player))
-                # Delete(GetContext(), key)
+                # delete the filled paper balance of this round
+                key = concatKey(concatKey(ROUND_PREFIX, currentRound), concatKey(FILLED_PAPER_BALANCE_PREFIX, player))
+                Delete(GetContext(), key)
                 Notify(["destroyPaper", player, getFilledPaperBalance(player, currentRound), GetTime()])
     # update the paper total amount
     Put(GetContext(), TOTAL_PAPER, Sub(getTotalPaper(), getFilledPaperAmount(currentRound)))
@@ -595,8 +595,6 @@ def endCurrentRound():
     Put(GetContext(), concatKey(concatKey(ROUND_PREFIX, currentRound), ROUND_STATUS_KEY), STATUS_OFF)
     Notify(["endRound", currentRound])
     startNewRound()
-
-    # Notify(["666_endCurrentEnd"])
 
     return True
 ####################### Methods that only Admin can invoke End #######################
@@ -759,7 +757,7 @@ def fillPaper(account, guessNumberList):
 
     currentFilledPaperBalance = getFilledPaperBalance(account, currentRound)
     # make sure his balance is greater or equal to current filled paper balance + guessNumberList length
-    Require(getPaperBalance(account) > Add(currentFilledPaperBalance, guessNumberLen))
+    Require(getPaperBalance(account) >= Add(currentFilledPaperBalance, guessNumberLen))
 
     numberListKey = concatKey(concatKey(ROUND_PREFIX, currentRound), FILLED_NUMBER_LIST_KEY)
     numberListInfo = Get(GetContext(), numberListKey)
