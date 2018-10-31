@@ -227,14 +227,15 @@ WinnerFeeSmall = 5
 ContractAddress = GetExecutingScriptHash()
 ONGAddress = bytearray(b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02')
 # Skyinglyh account
-Admin = ToScriptHash('AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p')
+# Admin = ToScriptHash('AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p')
 # LuckyNumber  account
-# Admin = ToScriptHash('AYqCVffRcbPkf1BVCYPJqqoiFTFmvwYKhG')
+Admin = ToScriptHash('AYqCVffRcbPkf1BVCYPJqqoiFTFmvwYKhG')
 
 # PurchaseEvent = RegisterAction("buy", "account", "ongAmount", "paperAmount")
 
-# Beijing time 2018-10-30-15:00:00
-StartTime = 1540882802
+# Beijing time 2018-10-31-10:00:00
+# each round will last 30 minutes
+StartTime = 1540951200
 
 def Main(operation, args):
     ######################## for Admin to invoke Begin ###############
@@ -885,7 +886,7 @@ def getCurrentPrice():
 
 def getCurrentRoundEndTime():
     currentRound = getCurrentRound()
-    currentRoundEndTime = StartTime + Mul(currentRound, 3* 60 * 60)
+    currentRoundEndTime = StartTime + Mul(currentRound, 30 * 60)
     return currentRoundEndTime
 ################## Global Info End #######################
 
