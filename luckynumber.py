@@ -227,15 +227,15 @@ WinnerFeeSmall = 5
 ContractAddress = GetExecutingScriptHash()
 ONGAddress = bytearray(b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02')
 # Skyinglyh account
-# Admin = ToScriptHash('AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p')
+Admin = ToScriptHash('AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p')
 # LuckyNumber  account
-Admin = ToScriptHash('AYqCVffRcbPkf1BVCYPJqqoiFTFmvwYKhG')
+# Admin = ToScriptHash('AYqCVffRcbPkf1BVCYPJqqoiFTFmvwYKhG')
 
 # PurchaseEvent = RegisterAction("buy", "account", "ongAmount", "paperAmount")
 
 # Beijing time 2018-10-31-10:00:00
 # each round will last 30 minutes
-StartTime = 1540951200
+StartTime = 1540951201
 
 def Main(operation, args):
     ######################## for Admin to invoke Begin ###############
@@ -515,16 +515,16 @@ def withdrawGas():
 
 def endCurrentRound():
     RequireWitness(Admin)
-
+    Notify(["11111"])
     # transfer Gas vault to admin to prepare for calculating winner of current round
     gasVault = getGasVault()
     if gasVault:
         Require(transferONGFromContact(Admin, gasVault))
-
+    Notify(["2222"])
     currentRound = getCurrentRound()
     Require(GetTime() > getCurrentRoundEndTime() - 60)
     Require(getGameStatus(currentRound) == STATUS_ON)
-
+    Notify(["33333"])
     numberListKey = concatKey(concatKey(ROUND_PREFIX, currentRound), FILLED_NUMBER_LIST_KEY)
     numberListInfo = Get(GetContext(), numberListKey)
     if numberListInfo:
@@ -535,7 +535,7 @@ def endCurrentRound():
         Notify(["endRound", currentRound])
         startNewRound()
         return True
-
+    Notify(["444444"])
     # to record the minimum distance
     minDistance = 10000
     # to record the number corresponding with minimum distance
@@ -548,7 +548,7 @@ def endCurrentRound():
         if distance < minDistance:
             minDistance = distance
             minIndex = number
-
+    Notify(["555555"])
     winnersListKey = concatKey(concatKey(ROUND_PREFIX, currentRound), concatKey(FILLED_NUMBER_KEY, minIndex))
     winnersListInfo = Get(GetContext(), winnersListKey)
     winnersList = Deserialize(winnersListInfo)
@@ -558,7 +558,7 @@ def endCurrentRound():
 
     # split the Award Vault to the winners
     awardVault = getAwardVault(currentRound)
-
+    Notify(["666666"])
     totalTaxedAward = 0
     for winner in winnersList:
         paperBalance = getPaperBalance(winner)
@@ -573,12 +573,13 @@ def endCurrentRound():
         pureWinnerAwardToBeAdd = Sub(winnerAward, fee)
         totalTaxedAward = Add(totalTaxedAward, pureWinnerAwardToBeAdd)
         Put(GetContext(), concatKey(AWARD_BALANCE_OF_PREFFIX, winner), Add(pureWinnerAwardToBeAdd, getAwardBalance(winner)))
-
+    Notify(["777777"])
     # give Admin some fee from winner
     totalFee = Sub(awardVault, totalTaxedAward)
     Put(GetContext(), concatKey(TOTAL_DIVIDEND_OF_PREFIX, Admin), Add(totalFee, getDividendBalance(Admin)))
-
+    Notify(["88888"])
     # delete the filled paper in current round and update their PROFIT_PER_PAPER_FROM_PREFIX
+
     for number in numberList:
         numberPlayersKey = concatKey(concatKey(ROUND_PREFIX, currentRound), concatKey(FILLED_NUMBER_KEY, number))
         numberPlayersInfo = Get(GetContext(), numberPlayersKey)
@@ -593,10 +594,12 @@ def endCurrentRound():
                 Put(GetContext(), concatKey(PAPER_BALANCE_PREFIX, player), Sub(getPaperBalance(player), getFilledPaperBalance(player, currentRound)))
                 # delete the filled paper balance of this round
                 key = concatKey(concatKey(ROUND_PREFIX, currentRound), concatKey(FILLED_PAPER_BALANCE_PREFIX, player))
-                Delete(GetContext(), key)
                 Notify(["destroyPaper", player, getFilledPaperBalance(player, currentRound), GetTime()])
+                Delete(GetContext(), key)
+
     # update the paper total amount
     Put(GetContext(), TOTAL_PAPER, Sub(getTotalPaper(), getFilledPaperAmount(currentRound)))
+    Notify(["999999"])
     # Notify(["destroy",getFilledPaperAmount(currentRound), GetTime()])
     # mark this round game as END
     Put(GetContext(), concatKey(concatKey(ROUND_PREFIX, currentRound), ROUND_STATUS_KEY), STATUS_OFF)
@@ -757,16 +760,17 @@ def fillPaper(account, guessNumberList):
     :return:
     """
     RequireWitness(account)
+    Notify(["11111"])
     currentRound = getCurrentRound()
     Require(getGameStatus(currentRound) == STATUS_ON)
     guessNumberLen = len(guessNumberList)
-
+    Notify(["2222222"])
     Require(guessNumberLen >= 1)
 
     currentFilledPaperBalance = getFilledPaperBalance(account, currentRound)
     # make sure his balance is greater or equal to current filled paper balance + guessNumberList length
     Require(getPaperBalance(account) >= Add(currentFilledPaperBalance, guessNumberLen))
-
+    Notify(["3333", guessNumberList])
     numberListKey = concatKey(concatKey(ROUND_PREFIX, currentRound), FILLED_NUMBER_LIST_KEY)
     numberListInfo = Get(GetContext(), numberListKey)
     numberList = []
@@ -849,11 +853,12 @@ def updateDividendBalance(account):
     :param account:
     :return:
     """
-    RequireWitness(account)
+    # Require(CheckWitness(account) or CheckWitness(Admin))
     key = concatKey(PROFIT_PER_PAPER_FROM_PREFIX, account)
     profitPerPaperFrom = Get(GetContext(), key)
     profitPerPaperNow = Get(GetContext(), PROFIT_PER_PAPER_KEY)
     profitPerPaper = Sub(profitPerPaperNow, profitPerPaperFrom)
+    Notify(["update", profitPerPaperNow, profitPerPaperFrom, profitPerPaper])
     # profit = 0
     if profitPerPaper != 0:
         # profit = Mul(profitPerPaper, getPaperBalance(account))
@@ -976,8 +981,8 @@ def getPlayersList(roundNum, guessNumber):
 
 ######################### Utility Methods Start #########################
 def paperToONG(round, paperAmount):
-    currentPaperAmount = getRoundSoldPaperAmount(round)
-    averagePrice = InitialPrice + 9260 * currentPaperAmount + 4630 * paperAmount - 9260
+    roundSoldPaperAmount = getRoundSoldPaperAmount(round)
+    averagePrice = InitialPrice + 9260 * roundSoldPaperAmount + 4630 * paperAmount - 4630
     ongAmount = averagePrice * paperAmount
     return ongAmount
 
@@ -989,7 +994,7 @@ def getLuckyNumber():
     '''
     blockHash = GetRandomHash()
     # The number should be in the range from 0 to 9999
-    luckyNumber = abs(blockHash) % 10000
+    luckyNumber = blockHash % 10000
     luckyNumber = abs(luckyNumber)
     return luckyNumber
 
