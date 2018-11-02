@@ -1,6 +1,7 @@
 '''
 Lucky Number Game
 '''
+from boa.interop.Ontology.Contract import Migrate
 from boa.interop.System.Storage import GetContext, Get, Put, Delete
 from boa.interop.System.Runtime import CheckWitness, GetTime, Notify, Serialize, Deserialize
 from boa.interop.System.ExecutionEngine import GetExecutingScriptHash
@@ -233,9 +234,9 @@ Admin = ToScriptHash('AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p')
 
 # PurchaseEvent = RegisterAction("buy", "account", "ongAmount", "paperAmount")
 
-# Beijing time 2018-10-31-18:00:00
+# Beijing time 2018-11-2-16:30:00
 # each round will last 30 minutes
-StartTime = 1540980000
+StartTime = 1541147400
 
 def Main(operation, args):
     ######################## for Admin to invoke Begin ###############
@@ -297,6 +298,17 @@ def Main(operation, args):
             return False
         account = args[0]
         return withdraw(account)
+    if operation == "migrateContract":
+        if len(args)!= 7:
+            return False
+        code = args[0]
+        needStorage = args[1]
+        name = args[2]
+        version = args[3]
+        author = args[4]
+        email = args[5]
+        description = args[6]
+        return migrateContract(code, needStorage, name, version, author, email, description)
     ######################## for User to invoke End ###############
     ######################### General Info to pre-execute Begin ##############
     if operation == "getTotalPaper":
@@ -632,7 +644,7 @@ def buyPaper(account, paperAmount):
         referralAmount = Div(Mul(ongAmount, ReferralAwardPercentage), 100)
         Put(GetContext(), concatKey(REFERRAL_BALANCE_OF_PREFIX, referral), Add(referralAmount, getReferralBalance(referral)))
     dividend = Sub(dividend1, referralAmount)
-
+    Notify(["111", dividend, dividend1])
     # update next vault, NextPercentage = 10
     nextVaultToBeAdd = Div(Mul(ongAmount, NextPercentage), 100)
     nextVaultKey = concatKey(concatKey(ROUND_PREFIX, currentRound), NEXT_VAULT_KEY)
@@ -641,6 +653,7 @@ def buyPaper(account, paperAmount):
     # update award vault, AwardPercentage = 35
     awardVaultToBeAdd = Div(Mul(ongAmount, AwardPercentage), 100)
     awardVaultKey = concatKey(concatKey(ROUND_PREFIX, currentRound), AWARD_VAULT_KEY)
+    Notify(["222", nextVaultToBeAdd, awardVaultToBeAdd, getAwardVault(currentRound)])
     Put(GetContext(), awardVaultKey, Add(awardVaultToBeAdd, getAwardVault(currentRound)))
 
     # update gas vault
@@ -675,6 +688,7 @@ def buyPaper(account, paperAmount):
 
     # PurchaseEvent(account, ongAmount, paperAmount)
     Notify(["buyPaper", account, ongAmount, paperAmount, GetTime()])
+
 
     return True
 
@@ -846,6 +860,13 @@ def withdraw(account):
 
     return True
 
+def migrateContract(code, needStorage, name, version, author, email, description):
+    RequireWitness(Admin)
+    Migrate(code, needStorage, name, version, author, email, description)
+    Notify(["Migrate Contract successfully", Admin, GetTime()])
+    return True
+
+
 
 def updateDividendBalance(account):
     """
@@ -858,7 +879,7 @@ def updateDividendBalance(account):
     profitPerPaperFrom = Get(GetContext(), key)
     profitPerPaperNow = Get(GetContext(), PROFIT_PER_PAPER_KEY)
     profitPerPaper = Sub(profitPerPaperNow, profitPerPaperFrom)
-    Notify(["update", profitPerPaperNow, profitPerPaperFrom, profitPerPaper])
+    # Notify(["update", profitPerPaperNow, profitPerPaperFrom, profitPerPaper])
     # profit = 0
     if profitPerPaper != 0:
         # profit = Mul(profitPerPaper, getPaperBalance(account))
