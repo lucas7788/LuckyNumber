@@ -234,19 +234,19 @@ Admin = ToScriptHash('AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p')
 
 # PurchaseEvent = RegisterAction("buy", "account", "ongAmount", "paperAmount")
 
-# Beijing time 2018-11-2-16:30:00
+# Beijing time 2018-11-2-16:30:01
 # each round will last 30 minutes
-StartTime = 1541147400
+StartTime = 1541147401
 
 def Main(operation, args):
     ######################## for Admin to invoke Begin ###############
     if operation == "init":
-        # if len(args) != 0:
-        #     return False
+        if len(args) != 0:
+            return False
         return init()
     if operation == "startNewRound":
-        # if len(args) != 0:
-        #     return False
+        if len(args) != 0:
+            return False
         return startNewRound()
     if operation =="addReferral":
         if len(args) != 2:
@@ -265,12 +265,12 @@ def Main(operation, args):
     if operation == "multiAssignPaper":
         return multiAssignPaper(args)
     if operation == "withdrawGas":
-        # if len(args) != 0:
-        #     return False
+        if len(args) != 0:
+            return False
         return  withdrawGas()
     if operation == "endCurrentRound":
-        # if len(args) != 0:
-        #     return False
+        if len(args) != 0:
+            return False
         return endCurrentRound()
     ######################## for Admin to invoke End ###############
     ######################## for User to invoke Begin ###############
@@ -312,21 +312,21 @@ def Main(operation, args):
     ######################## for User to invoke End ###############
     ######################### General Info to pre-execute Begin ##############
     if operation == "getTotalPaper":
-        # if len(args) != 0:
-        #     return False
+        if len(args) != 0:
+            return False
         return getTotalPaper()
     if operation == "getGasVault":
-        # if len(args) != 0:
-        #     return False
+        if len(args) != 0:
+            return False
         return getGasVault()
 
     if operation == "getCurrentRound":
-        # if len(args) != 0:
-        #     return False
+        if len(args) != 0:
+            return False
         return getCurrentRound()
     if operation == "getCurrentPrice":
-        # if len(args) != 0:
-        #     return False
+        if len(args) != 0:
+            return False
         return getCurrentPrice()
     if operation == "getCurrentRoundEndTime":
         return getCurrentRoundEndTime()
@@ -615,7 +615,7 @@ def endCurrentRound():
     # Notify(["destroy",getFilledPaperAmount(currentRound), GetTime()])
     # mark this round game as END
     Put(GetContext(), concatKey(concatKey(ROUND_PREFIX, currentRound), ROUND_STATUS_KEY), STATUS_OFF)
-    Notify(["endRound", currentRound])
+    Notify(["endRound", currentRound, luckyNumber, winnersList])
     startNewRound()
 
     return True
@@ -644,7 +644,7 @@ def buyPaper(account, paperAmount):
         referralAmount = Div(Mul(ongAmount, ReferralAwardPercentage), 100)
         Put(GetContext(), concatKey(REFERRAL_BALANCE_OF_PREFIX, referral), Add(referralAmount, getReferralBalance(referral)))
     dividend = Sub(dividend1, referralAmount)
-    Notify(["111", dividend, dividend1])
+
     # update next vault, NextPercentage = 10
     nextVaultToBeAdd = Div(Mul(ongAmount, NextPercentage), 100)
     nextVaultKey = concatKey(concatKey(ROUND_PREFIX, currentRound), NEXT_VAULT_KEY)
@@ -653,7 +653,6 @@ def buyPaper(account, paperAmount):
     # update award vault, AwardPercentage = 35
     awardVaultToBeAdd = Div(Mul(ongAmount, AwardPercentage), 100)
     awardVaultKey = concatKey(concatKey(ROUND_PREFIX, currentRound), AWARD_VAULT_KEY)
-    Notify(["222", nextVaultToBeAdd, awardVaultToBeAdd, getAwardVault(currentRound)])
     Put(GetContext(), awardVaultKey, Add(awardVaultToBeAdd, getAwardVault(currentRound)))
 
     # update gas vault
@@ -670,10 +669,12 @@ def buyPaper(account, paperAmount):
     key = concatKey(concatKey(ROUND_PREFIX, currentRound), ROUND_PAPER_AMOUNT)
     Put(GetContext(), key, Add(paperAmount, getRoundSoldPaperAmount(currentRound)))
 
+    updateDividendBalance(account)
+
     # update paper balance of account
     Put(GetContext(), concatKey(PAPER_BALANCE_PREFIX, account), Add(paperAmount, getPaperBalance(account)))
 
-    updateDividendBalance(account)
+    # updateDividendBalance(account)
     # Notify(["111_buy", dividend1, dividend, nextVaultToBeAdd, awardVaultToBeAdd, gasVaultToBeAdd, getGasVault()])
     # update profitPerPaper
     oldProfitPerPaper = Get(GetContext(), PROFIT_PER_PAPER_KEY)
@@ -688,7 +689,6 @@ def buyPaper(account, paperAmount):
 
     # PurchaseEvent(account, ongAmount, paperAmount)
     Notify(["buyPaper", account, ongAmount, paperAmount, GetTime()])
-
 
     return True
 
@@ -740,10 +740,10 @@ def reinvest(account, paperAmount):
     key = concatKey(concatKey(ROUND_PREFIX, currentRound), ROUND_PAPER_AMOUNT)
     Put(GetContext(), key, Add(paperAmount, getRoundSoldPaperAmount(currentRound)))
 
+    updateDividendBalance(account)
+
     # update paper balance of account
     Put(GetContext(), concatKey(PAPER_BALANCE_PREFIX, account), Add(paperAmount, getPaperBalance(account)))
-
-    updateDividendBalance(account)
 
     # update profitPerPaper
     oldProfitPerPaper = Get(GetContext(), PROFIT_PER_PAPER_KEY)
@@ -792,7 +792,9 @@ def fillPaper(account, guessNumberList):
         numberList = Deserialize(numberListInfo)
 
     for guessNumber in guessNumberList:
-        Require(guessNumber < 10000 and guessNumber >= 0)
+
+        Require(guessNumber < 10000)
+        Require(guessNumber >= 0)
 
         numberPlayersKey = concatKey(concatKey(ROUND_PREFIX, currentRound), concatKey(FILLED_NUMBER_KEY, guessNumber))
         numberPlayersInfo = Get(GetContext(), numberPlayersKey)
