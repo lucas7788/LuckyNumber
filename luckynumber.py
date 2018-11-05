@@ -152,7 +152,6 @@ TOTAL_PAPER = "G03"
 CURRET_ROUND_NUM_KEY = "G04"
 
 
-PRICE_PER_PAPER = "G05"
 
 # PROFIT_PER_PAPER_KEY -- store the profit per paper (when it is bought)
 PROFIT_PER_PAPER_KEY = "G06"
@@ -228,25 +227,25 @@ WinnerFeeSmall = 5
 ContractAddress = GetExecutingScriptHash()
 ONGAddress = bytearray(b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02')
 # Skyinglyh account
-Admin = ToScriptHash('AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p')
+# Admin = ToScriptHash('AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p')
 # LuckyNumber  account
-# Admin = ToScriptHash('AYqCVffRcbPkf1BVCYPJqqoiFTFmvwYKhG')
+Admin = ToScriptHash('AYqCVffRcbPkf1BVCYPJqqoiFTFmvwYKhG')
 
 # PurchaseEvent = RegisterAction("buy", "account", "ongAmount", "paperAmount")
 
 # Beijing time 2018-11-2-16:30:01
 # each round will last 30 minutes
-StartTime = 1541147401
+StartTime = 1541147410
 
 def Main(operation, args):
     ######################## for Admin to invoke Begin ###############
     if operation == "init":
-        if len(args) != 0:
-            return False
+        # if len(args) != 0:
+        #     return False
         return init()
     if operation == "startNewRound":
-        if len(args) != 0:
-            return False
+        # if len(args) != 0:
+        #     return False
         return startNewRound()
     if operation =="addReferral":
         if len(args) != 2:
@@ -265,12 +264,12 @@ def Main(operation, args):
     if operation == "multiAssignPaper":
         return multiAssignPaper(args)
     if operation == "withdrawGas":
-        if len(args) != 0:
-            return False
+        # if len(args) != 0:
+        #     return False
         return  withdrawGas()
     if operation == "endCurrentRound":
-        if len(args) != 0:
-            return False
+        # if len(args) != 0:
+        #     return False
         return endCurrentRound()
     ######################## for Admin to invoke End ###############
     ######################## for User to invoke Begin ###############
@@ -312,21 +311,21 @@ def Main(operation, args):
     ######################## for User to invoke End ###############
     ######################### General Info to pre-execute Begin ##############
     if operation == "getTotalPaper":
-        if len(args) != 0:
-            return False
+        # if len(args) != 0:
+        #     return False
         return getTotalPaper()
     if operation == "getGasVault":
-        if len(args) != 0:
-            return False
+        # if len(args) != 0:
+        #     return False
         return getGasVault()
 
     if operation == "getCurrentRound":
-        if len(args) != 0:
-            return False
+        # if len(args) != 0:
+        #     return False
         return getCurrentRound()
     if operation == "getCurrentPrice":
-        if len(args) != 0:
-            return False
+        # if len(args) != 0:
+        #     return False
         return getCurrentPrice()
     if operation == "getCurrentRoundEndTime":
         return getCurrentRoundEndTime()
@@ -455,7 +454,6 @@ def startNewRound():
 
     Put(GetContext(), concatKey(concatKey(ROUND_PREFIX, nextRoundNum), ROUND_STATUS_KEY), STATUS_ON)
     Put(GetContext(), CURRET_ROUND_NUM_KEY, nextRoundNum)
-    Put(GetContext(), PRICE_PER_PAPER, InitialPrice)
     Notify(["startRound", nextRoundNum])
     return True
 
@@ -544,6 +542,8 @@ def endCurrentRound():
     else:
         # if no one participate this round of game
         Put(GetContext(), concatKey(concatKey(ROUND_PREFIX, currentRound), ROUND_STATUS_KEY), STATUS_OFF)
+        # update the next vault -- pass the award vault (coming from previous round) to the next round
+        Put(GetContext(), concatKey(concatKey(ROUND_PREFIX, currentRound), NEXT_VAULT_KEY), getAwardVault(currentRound))
         Notify(["endRound", currentRound])
         startNewRound()
         return True
@@ -590,6 +590,9 @@ def endCurrentRound():
     totalFee = Sub(awardVault, totalTaxedAward)
     Put(GetContext(), concatKey(TOTAL_DIVIDEND_OF_PREFIX, Admin), Add(totalFee, getDividendBalance(Admin)))
 
+    # delete the award vault of this current round
+    # Delete(GetContext(), concatKey(concatKey(ROUND_PREFIX, currentRound), AWARD_VAULT_KEY))
+
     # delete the filled paper in current round and update their PROFIT_PER_PAPER_FROM_PREFIX
 
     for number in numberList:
@@ -619,6 +622,8 @@ def endCurrentRound():
     startNewRound()
 
     return True
+
+
 ####################### Methods that only Admin can invoke End #######################
 
 
@@ -712,7 +717,7 @@ def reinvest(account, paperAmount):
 
     dividend1 = Div(Mul(ongAmount, PaperHolderPercentage), 100)
     # update referral balance
-    referral = Get(GetContext(), concatKey(REFERRAL_PREFIX, account))
+    referral = getReferral(account)
     referralAmount = 0
     if referral:
         referralAmount = Div(Mul(ongAmount, ReferralAwardPercentage), 100)
@@ -944,7 +949,7 @@ def getAwardBalance(account):
     return Get(GetContext(), concatKey(AWARD_BALANCE_OF_PREFFIX, account))
 
 def getDividendsBalance(account):
-    return [getReferral(account), getDividendBalance(account), getAwardBalance(account)]
+    return [getReferralBalance(account), getDividendBalance(account), getAwardBalance(account)]
 
 def getWithdrawnBalance(account):
     return Get(GetContext(), concatKey(WITHDRAWN_BALANCEOF_PREFFIX, account))
