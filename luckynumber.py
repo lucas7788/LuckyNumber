@@ -205,6 +205,7 @@ FILLED_NUMBER_LIST_KEY = "R05"
 FILLED_NUMBER_KEY = "R06"
 
 
+
 ############################### other info ###################################
 INIIT = "Initialized"
 ROUND_STATUS_KEY = "Status"
@@ -227,9 +228,9 @@ WinnerFeeSmall = 5
 ContractAddress = GetExecutingScriptHash()
 ONGAddress = bytearray(b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02')
 # Skyinglyh account
-# Admin = ToScriptHash('AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p')
+Admin = ToScriptHash('AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p')
 # LuckyNumber  account
-Admin = ToScriptHash('AYqCVffRcbPkf1BVCYPJqqoiFTFmvwYKhG')
+# Admin = ToScriptHash('AYqCVffRcbPkf1BVCYPJqqoiFTFmvwYKhG')
 
 # PurchaseEvent = RegisterAction("buy", "account", "ongAmount", "paperAmount")
 
@@ -517,23 +518,42 @@ def withdrawGas():
     Only admin can withdraw
     :return:
     """
-    RequireWitness(Admin)
-    Require(transferONGFromContact(Admin, getGasVault()))
+    # RequireWitness(Admin)
+    # Require(transferONGFromContact(Admin, getGasVault()))
+    if CheckWitness(Admin) == False:
+        Notify(["withdrawGas checkwitness failed"])
+        return False
+    if transferONGFromContact(Admin, getGasVault()) == False:
+        Notify(["withdrawGas transfer failed"])
+        return False
     Delete(GetContext(), GAS_VAULT_KEY)
     return True
 
 
 def endCurrentRound():
-    RequireWitness(Admin)
+    if CheckWitness(Admin) == False:
+        Notify(["checkwitness failed"])
+        return False
 
     # transfer Gas vault to admin to prepare for calculating winner of current round
     gasVault = getGasVault()
     if gasVault:
-        Require(withdrawGas())
+        # Require(withdrawGas())
+        if withdrawGas() == False:
+
+            return False
 
     currentRound = getCurrentRound()
-    Require(GetTime() > getCurrentRoundEndTime() - 60)
-    Require(getGameStatus(currentRound) == STATUS_ON)
+
+    # Require(GetTime() > getCurrentRoundEndTime() - 60)
+    if GetTime() <= getCurrentRoundEndTime() - 60:
+        Notify(["current round endtime error"])
+        return False
+
+    # Require(getGameStatus(currentRound) == STATUS_ON)
+    if getGameStatus(currentRound) == STATUS_OFF:
+        Notify(["game status error"])
+        return False
 
     numberListKey = concatKey(concatKey(ROUND_PREFIX, currentRound), FILLED_NUMBER_LIST_KEY)
     numberListInfo = Get(GetContext(), numberListKey)
@@ -1022,7 +1042,7 @@ def getLuckyNumber():
     '''
     blockHash = GetRandomHash()
     # The number should be in the range from 0 to 9999
-    luckyNumber = blockHash % 10000
+    luckyNumber = abs(blockHash) % 10000
     luckyNumber = abs(luckyNumber)
     return luckyNumber
 
