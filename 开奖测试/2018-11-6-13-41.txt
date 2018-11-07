@@ -1,0 +1,1025 @@
+Testing started at 13:40 ...
+D:\SDK\pythontest\pythontest-master\pythontest-master\venv\Scripts\python.exe "C:\Program Files\JetBrains\PyCharm 2018.2.1\helpers\pycharm\_jb_unittest_runner.py" --target runTestLuckyNumber.TestAsset.test_buyPapers
+Launching unittests with arguments python -m unittest runTestLuckyNumber.TestAsset.test_buyPapers in D:\SDK\current-pythontest\contract\LuckyNumber
+test-getCurrentRound is  2
+1  account is loading... 
+2  account is loading... 
+3  account is loading... 
+4  account is loading... 
+5  account is loading... 
+6  account is loading... 
+7  account is loading... 
+8  account is loading... 
+9  account is loading... 
+10  account is loading... 
+11  account is loading... 
+12  account is loading... 
+13  account is loading... 
+14  account is loading... 
+15  account is loading... 
+16  account is loading... 
+17  account is loading... 
+18  account is loading... 
+19  account is loading... 
+20  account is loading... 
+21  account is loading... 
+22  account is loading... 
+23  account is loading... 
+24  account is loading... 
+25  account is loading... 
+26  account is loading... 
+27  account is loading... 
+28  account is loading... 
+29  account is loading... 
+30  account is loading... 
+31  account is loading... 
+32  account is loading... 
+33  account is loading... 
+34  account is loading... 
+35  account is loading... 
+36  account is loading... 
+37  account is loading... 
+38  account is loading... 
+39  account is loading... 
+40  account is loading... 
+41  account is loading... 
+42  account is loading... 
+43  account is loading... 
+44  account is loading... 
+45  account is loading... 
+46  account is loading... 
+47  account is loading... 
+48  account is loading... 
+49  account is loading... 
+50  account is loading... 
+51  account is loading... 
+52  account is loading... 
+53  account is loading... 
+54  account is loading... 
+55  account is loading... 
+56  account is loading... 
+57  account is loading... 
+58  account is loading... 
+59  account is loading... 
+60  account is loading... 
+61  account is loading... 
+62  account is loading... 
+63  account is loading... 
+64  account is loading... 
+65  account is loading... 
+66  account is loading... 
+67  account is loading... 
+68  account is loading... 
+69  account is loading... 
+70  account is loading... 
+71  account is loading... 
+72  account is loading... 
+73  account is loading... 
+74  account is loading... 
+75  account is loading... 
+76  account is loading... 
+77  account is loading... 
+78  account is loading... 
+79  account is loading... 
+80  account is loading... 
+81  account is loading... 
+82  account is loading... 
+83  account is loading... 
+84  account is loading... 
+85  account is loading... 
+86  account is loading... 
+87  account is loading... 
+88  account is loading... 
+89  account is loading... 
+90  account is loading... 
+91  account is loading... 
+92  account is loading... 
+93  account is loading... 
+94  account is loading... 
+95  account is loading... 
+96  account is loading... 
+97  account is loading... 
+98  account is loading... 
+99  account is loading... 
+100  account is loading... 
+***** finished transfer ONG to these accounts ***********
+
+< 1 >  Balance --  AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p  --  53797867467962777
+< 2 >  Balance --  ASUwFccvYFrrWR6vsZhhNszLFNvCLA5qS6  --  120000000000
+< 3 >  Balance --  AWf8NiLzXSDf1JB2Ae6YUKSHke4yLHMVCm  --  120000000000
+< 4 >  Balance --  ANTPeXCffDZCaCXxY9u2UdssB2EYpP4BMh  --  120000000000
+< 5 >  Balance --  ARR5ywDEx3ybXkMGmZPFYu9hiC8J4xvNdc  --  120000000000
+< 6 >  Balance --  AacHGsQVbTtbvSWkqZfvdKePLS6K659dgp  --  120000000000
+< 7 >  Balance --  AT4dGijAQSMcN5mj2q7ePTWcKFEnG1qeu3  --  120000000000
+< 8 >  Balance --  AKTN6YDdnY8GXcD6oSEDdSFnXscJzjT3Sn  --  120000000000
+< 9 >  Balance --  AdVFX4vzxpaREQHRc7n5fnN65GvydWQNP2  --  120000000000
+< 10 >  Balance --  AUnhXaudVSBFqjH92a6HrhQySUTiQjf5VR  --  120000000000
+< 11 >  Balance --  AKYeDDU8918ndDdyMFnkmGUC4QsXrG6aY5  --  120000000000
+< 12 >  Balance --  AVCnRrxZDn3bKj9ZqRmsnx3Ts7JgpGtELc  --  120000000000
+< 13 >  Balance --  AVkYjBWL9NQ68Gb4Y2C26yCJovy2X9Pnf5  --  120000000000
+< 14 >  Balance --  ASeG8AcqcJMjQz5dWmC9RY2FsjvpDLymKC  --  120000000000
+< 15 >  Balance --  AQFttMk56apS1kYRrKoNHhwoV9jhRtB6Jj  --  120000000000
+< 16 >  Balance --  AYwFqWbc6LNLhjqh6Qc4Qg5ov2zfYe83cm  --  120000000000
+< 17 >  Balance --  APt8mCvQmdVgnqjsDW2HUPQSqNrzJrGeV3  --  120000000000
+< 18 >  Balance --  ATacy39ZERRfrgDEf3PmjH1hAWxyXtob9s  --  120000000000
+< 19 >  Balance --  ANjxYTtJyBGisBJNbNCzjGyxQFA9qqNwd8  --  120000000000
+< 20 >  Balance --  ASc8qG992Z9W5h3YWDHbdxCN3mBxpC75dT  --  120000000000
+< 21 >  Balance --  Ad6LbPwAJV9jDaDDdY1caYADeL1LgGV86r  --  120000000000
+< 22 >  Balance --  AG3Nqkr3apQwKsvBkuE6ZjGgZhCgaR3qPG  --  120000000000
+< 23 >  Balance --  APgiffusKMY7Um6rbyia5QAvP3BtMed6N5  --  120000000000
+< 24 >  Balance --  AehNf6dGCWF9gnXWRNy45ZVTxFci9mfRBQ  --  120000000000
+< 25 >  Balance --  AHVr8s42HqzB8s14fGTXBnCJhqDszhsy5e  --  120000000000
+< 26 >  Balance --  AK41GeFpNSidsPT64zRmxnjogMEeogStdT  --  120000000000
+< 27 >  Balance --  AXZzGtaPBEXfrGa6uvEFxBsK4wsyom1PuS  --  120000000000
+< 28 >  Balance --  ARNb34q4j65wDqZPAnC8bUXeaRyAoTRiNT  --  120000000000
+< 29 >  Balance --  AH9JiTyTBoS2KQ9YXCAcssqHH4d4kAtLhu  --  120000000000
+< 30 >  Balance --  AJBeicSmG5fiDWZdzmK5kQGyth1knzVurK  --  120000000000
+< 31 >  Balance --  ASYzhe9Ai5VkaZhWsuEvEsZUed4CRqAykh  --  120000000000
+< 32 >  Balance --  AaTgHtb1iUi8ohKJHUJBzgkkZELCkdRhhv  --  120000000000
+< 33 >  Balance --  AQsR4u8vA68bcQVLYLrkRZbaienrhhkEia  --  120000000000
+< 34 >  Balance --  AGDGRo5ANYbbjRMxCPNVgC4mH5npgNUeuq  --  120000000000
+< 35 >  Balance --  AMHJFxdn4EZqbLUHLeRGCaYsko5YNf6nbt  --  120000000000
+< 36 >  Balance --  AHDTXCJkXfrzhuyTDBJDnu7zsjNemnpz2B  --  120000000000
+< 37 >  Balance --  AMRJCJmrJ3tcYDNxAzEEnJKHCkqbzYP7uy  --  120000000000
+< 38 >  Balance --  APaiA4979sHgnAnqSUswR1jQFjxkpbFHpS  --  120000000000
+< 39 >  Balance --  AW3Wh9AqUHNqYbtthSL5SzQKmwaZdRKbra  --  120000000000
+< 40 >  Balance --  AHM5pZcoVXsBuo5jqYnnwM9hbC71uENERC  --  120000000000
+< 41 >  Balance --  AZR6qbb13ZX4tw5Bubqtaig16cQofvHreh  --  120000000000
+< 42 >  Balance --  ARiBrHrPtDD3ZLwGrbBEKvYrYg4dPpxKgf  --  120000000000
+< 43 >  Balance --  AKuahZdyzdH1KBfTswSuTYkr1y55xNdmq8  --  120000000000
+< 44 >  Balance --  AScmcu56pz7MByGHcwqi5u7XHrHn4WJk6P  --  120000000000
+< 45 >  Balance --  AX1XL9QZxqdyVZXu7baciGUThzY5Mv58vZ  --  120000000000
+< 46 >  Balance --  AbC3DNGwtsJPSnEWHYzvh4jkMsQNucwJa1  --  120000000000
+< 47 >  Balance --  AdtEQQGp9qxQLYNiREQYU4puPdgRWQdDEQ  --  120000000000
+< 48 >  Balance --  AewBKJK52b557qUUYpz4fxD2EJk5NeJsyf  --  120000000000
+< 49 >  Balance --  AUjr5xvWhXgWy9H2T31qG6z4dLmAG1NHdJ  --  120000000000
+< 50 >  Balance --  AbTWqEGnnbDjB8t6FZdjbsNoCgE7ELr6yZ  --  120000000000
+< 51 >  Balance --  AQ8Cmrsa77FcsUCXfTvvfzWXPXa3Z4n1zv  --  120000000000
+< 52 >  Balance --  AasNs763mSwYFqyfMiuDgSi4F9HGt1bPbA  --  120000000000
+< 53 >  Balance --  AR3XscjsXFSA86xYjK6v356Z4pF5fyn4N3  --  120000000000
+< 54 >  Balance --  AbfpR7j5hntHfiJ9HGwJT4BqFyErEQUzWW  --  120000000000
+< 55 >  Balance --  AYb4fW2V8Mxkf7nCJxdbdaQ2wteuKSrGs3  --  120000000000
+< 56 >  Balance --  AKT8TSHMArpJimgfrD5J3GnEREiCwFCHum  --  120000000000
+< 57 >  Balance --  AKfWwsoiLWKbm21gFXxvDuxs2frvwtG6Qw  --  120000000000
+< 58 >  Balance --  AL45ChpDuGgxACMGeHeiyLepjWSSuj1rq8  --  120000000000
+< 59 >  Balance --  ALxoufbQkwkCBrNmdSiZiCcYwNm5WSFyEc  --  120000000000
+< 60 >  Balance --  AJPJq3cTRM7GVw9HR5QNuF57XQKvjeRsDm  --  120000000000
+< 61 >  Balance --  AHwzEto3pnrbjcAM3pv55bX1yxArYUM9qz  --  120000000000
+< 62 >  Balance --  AJY87Zje9eVnXE9g7VUGUDVsHu1opxnvZU  --  120000000000
+< 63 >  Balance --  ARD4PAVRQeheTQLPcdW6nBxab2RYxEBkLs  --  120000000000
+< 64 >  Balance --  AP7i2w5HmzdbvwpeksPhpUsJGPJbkNtmFH  --  120000000000
+< 65 >  Balance --  AYzZQeQfz7kZqRmR4iv2wFq5xaNurvK6pB  --  120000000000
+< 66 >  Balance --  AabBUcdLMoo1bC6prGtPkQqLNQSoCqaLsV  --  120000000000
+< 67 >  Balance --  AURFc4dTeah2YeRVuM6seJviJ9kNzJ2fwv  --  120000000000
+< 68 >  Balance --  AMYywoRTyDvGrAViEEKKkrkixEa4ebVF43  --  120000000000
+< 69 >  Balance --  AU9FXFMRvzhDdqF7ncVYJEM8N6LVcDD487  --  120000000000
+< 70 >  Balance --  AL5k33Aad4bV9YSiyyc6R3BhHeubfjoxdk  --  120000000000
+< 71 >  Balance --  ARxpeJzxexcsh9xXF2YGf5jMjckPGKJ5uu  --  120000000000
+< 72 >  Balance --  APyxLwd1rn1VRrJMuM2hDGTqjosHphpDKT  --  120000000000
+< 73 >  Balance --  AHUADorBf4NCqPcioxSNBNEYkzaQnJRjfx  --  120000000000
+< 74 >  Balance --  AUWRGnWJZx1Ng9j4cRXqJYS79jinmRmyc7  --  120000000000
+< 75 >  Balance --  ANfpLmG1JR5bBu9Eke1stGhK5h3Y6cbdoa  --  120000000000
+< 76 >  Balance --  AWJrKZcrL5NnEBxT2Pn7KzagghmJjqteew  --  120000000000
+< 77 >  Balance --  AXx741sz5qyYofWtDgEqhJtRURgj5uovr6  --  120000000000
+< 78 >  Balance --  AUJGf5kjFCfJSmFG2TeazznJhYeMs5zHqs  --  120000000000
+< 79 >  Balance --  AKyToGGevoNGNnHpVG6jtZdLgMdzkZHyPG  --  120000000000
+< 80 >  Balance --  AGTQu7LMrb2pnppSyMMPV2XmqmVn3gyCdr  --  120000000000
+< 81 >  Balance --  AK4KiAfhuMUJ4xYNB5JXvSiR9TbThc2sY6  --  120000000000
+< 82 >  Balance --  AScLCEnJnWQizbqPzG99BjtYnzf6nmwGEK  --  120000000000
+< 83 >  Balance --  AWjaiUYdqidELnVLMiFhQhQv1MGmXpEmKB  --  120000000000
+< 84 >  Balance --  APu8nsNLkPDLkkSkGUaaQLfUrN8MdE2sXm  --  120000000000
+< 85 >  Balance --  AMLvFb4nRP9EbDDVsqnP4xowtYvqH9pGqS  --  120000000000
+< 86 >  Balance --  AZ1oREcCbwqSRcamRkDurLe8r8My6MoZfy  --  120000000000
+< 87 >  Balance --  AYL6p8BjUzM61UmY5TzfMm6kLDoaUjMySM  --  120000000000
+< 88 >  Balance --  AcSkScoM6R8TGsPeK2WmGjHyLJGVF5Bck3  --  120000000000
+< 89 >  Balance --  APiqJ5wWriju2LL4a8RLAbtKL4XPZn619w  --  120000000000
+< 90 >  Balance --  AanorhF6775UePxGrcXYXjuAXvFnKVhabm  --  120000000000
+< 91 >  Balance --  ASAHJaCgJ98R7N4UDXPMvKtbiWGuqXvcep  --  120000000000
+< 92 >  Balance --  APJmf2TBvWzcM9Tf62PNDrbE7mZtKZzTNZ  --  120000000000
+< 93 >  Balance --  ASRdX5zWkmMS3QujG4qRzu14J2jtJoqEVw  --  120000000000
+< 94 >  Balance --  Aebrz1HLkkrL1wAWtVaPdajLRKRsy3E7A5  --  120000000000
+< 95 >  Balance --  AeeFPUkX6PAnEj9jS9qtpBpcVrcoeSKvCY  --  120000000000
+< 96 >  Balance --  AH7u3mN4ySAXDirXJpoKWaK4sYkPv4w11R  --  120000000000
+< 97 >  Balance --  AKhj5jaWCpBnqgxzWfgfK5uFDBBentQ4xa  --  120000000000
+< 98 >  Balance --  AZd1eSFiEozA5UYS5MoqfCjkc8CM7PDKYE  --  120000000000
+< 99 >  Balance --  AVEJtWW4xQSdkw8BwfwjqU3933QE48BY8q  --  120000000000
+< 100 >  Balance --  AXf3ocW8radaYFpjWR17Y55YGxetwhPJ1U  --  120000000000
+<Player 1 > buy --  707f9ee2ffe1287106ca1b90ed238290e951fa7aa65f055205bcdca7310e5ac8
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 2 > buy --  41b38e18814c99f6d3daf4973a3680ec8dbb3d30525f18e5a7efcec9fa604b2e
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 3 > buy --  7361cdfcc602f48ae747fbed5c1c80d0b10538780c61710ae51ec105fac58eef
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 4 > buy --  07f906bde5a2698e7155270c65ed1fd7c1e1f49ed5a245773d0a60b8934bf2b6
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 5 > buy --  b73b4dd3223ecbc21506067abc34daebf232e841fe8e2839411c295673a5a657
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 6 > buy --  9aa6cef617ea040b56dc2bfbcecdd3564777f79d2bb014c728db4f67fb513257
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 7 > buy --  c26226dbc66d57e1e0fa497c60979be7fe909124d36e4579f6bc098885f3d71f
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 8 > buy --  a13ffdb6932e9e818a3361475a3349101fef4a1e15ecbed610e241db023bf190
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 9 > buy --  09cf4871007dbd6d81283cb8c4820e8401799f74e0f4c71f09f5f383914fa3fa
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 10 > buy --  bd483d9b604cd628049715c6d42fbfc8c2c349ff57142abdee69e05eef542631
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 11 > buy --  bf4306ff3936c2319bec09036bd3b8b186681c9308f32a67681533037924b3e0
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 12 > buy --  fc9f7369bd17ac09ddf861c8b6c4c83b75d617194a919789dc5607fbfa5c91c5
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 13 > buy --  11597c0796fa9b318e71b4f772933e2490ca6f021a682a1bbb3fbaa6db3e0e98
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 14 > buy --  dd0a8dd3b3943cd13a7dfa7953e0b639913372fbf01a494d95803fac4e486df4
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 15 > buy --  270daf9af15467dc019a56729506f25f532654f20a5164aceab8ed2043f674c9
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 16 > buy --  a695e9fed35c0a5d9692d12bae980faf0f4cdc0afeebdc847c9409b26390881b
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 17 > buy --  7c8c3eb7b74fb5a45d2457401352963572550853d862fb7b84cd26a1770c2433
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 18 > buy --  c48c52d96402760e23a8e5ff875dc3c30fe28a44c6a3498bb95a07029707e444
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 19 > buy --  58e2601c911106af7d3452eac0a76265c176dddce9d7269fd56db32f50d49c1d
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 20 > buy --  461f187d2658bdac431ce49d713a307946ef418471c473140bddb19c6f41894f
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 21 > buy --  e3a36e285caa76254b14b366b3af0929939df75b807bd9bc891078b898fcb244
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 22 > buy --  c4b8f9f7432ef47f3dd572eeb6d591b8f8492f2704b024ce58c31fbf11e4bd92
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 23 > buy --  f003b86946f4f6206e6745901cb4b4c3546622d52cdacffdeff8d81e2cacf0e5
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 24 > buy --  87fb9c910efd14a54c58f82593d98c988fcbef3e107a71849e973bdbbca55ebc
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 25 > buy --  cc97e8d32deb91962bdaea4346aa9fca584348d2c4c40be46aa24554a9743faf
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 26 > buy --  54a35cb617cc955cb58e43ad4bce0aa8502a52aeee0ed07f906458074e6d7203
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 27 > buy --  6c0ed981717d79cb767adb86001b984e88b15f1bf6b24feeeab431398c09ebbb
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 28 > buy --  1348173c617c89ae0580e4097030a19b0130cb0dd4e1559153abc9d917d29973
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 29 > buy --  549b50e729c708dc9fcc49bd625938ac8191b3f1a17bc8dcefc44dc1c9d88c0c
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 30 > buy --  a5c8923c5581a14fc31c136daa5d2adcb02c0229148102aae5b15400c98159e4
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 31 > buy --  0130bf7b367501a1b10cdec8ca7fd672be1d78e07ebd44f8a04a17a932677c7f
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 32 > buy --  cc584cd0f177bdee82cf4c3573094645d40565c9d561136394d212738ad639bc
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 33 > buy --  0bdb19463a38f8fd9738eeac953b75491ea508432a065b7dc2e7da75081f5595
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 34 > buy --  9cd172d0057eee0cec3d000f1293b00caa9b55f2b238db6b591a3144b4dceccf
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 35 > buy --  4ea5e696d06d28f6298b7d4bc1838fc1dc0aa7e2f549d55bced20150c7c98362
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 36 > buy --  aa7f5d0b3d147ae1ac759632bf78236e352c11c6cc7d1ce20cd16c2a424a5ff7
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 37 > buy --  d35526affe126cf13cb02fa833c01dc44e17076d697570c255f1887e84d6f231
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 38 > buy --  420f6e83d389352102dccb762633794cc596511f83ae07310886b67847c8b138
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 39 > buy --  a103717589bf2112ae67b0d4be5f10e6470eb91a7a5b5c1830a97eb67921a35f
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 40 > buy --  58ed2d612d4b4eed9751fa0d2c9804a7b6c70663774db63fa267a8abc8862a32
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 41 > buy --  551012d506dcc02e03bc8057b69bad3d87e28c396fe06bb72e82eacd0171ee0a
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 42 > buy --  5faa31eb03fb0bbd9b4a40c765b7c7c1b2506bc713a6b920e3771fe906a0773a
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 43 > buy --  cf6e2a5fbf2ea0bb1fd0a471d909e034702082ca7c2e3715dcb7f8a81e28429e
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 44 > buy --  de60a39f5df566f396852eab66d51068a1715dadaebd00c9e81066209fc37a72
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 45 > buy --  2ee0d6a3502b0f0e6ff0bda8d1e6d8e2c4dc6fc197bc98f9c44df68b4418f602
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 46 > buy --  cb6ffa74f8b4454b9b5af690dbefe66273c077020e1008c26779435722e2d5cc
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 47 > buy --  b9cf15c263f844a37cbb3868553e295b11108885bf56b852becafc381266f0d9
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 48 > buy --  0b954df575ea6276ad338c52525200cfaf28472fba77dfad29c6ce64bf05d442
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 49 > buy --  e80280748d8b2347d16ba6864dae3bdfb57bd0ce7a0416dd4f48bbc28440dd77
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 50 > buy --  a73fc3a5d7a2a96b69a4c7684a7ec356311af56903fe6e923b7e1196f34c2806
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 51 > buy --  0d6f16675150ac1097694d94c3a8699d51e6bd90ac798f1191403be8f0eb14c8
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 52 > buy --  24a0d8d8ca009df7ef13fccc44248b29ccdc87cfd125bf27e5d0bf20246c118e
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 53 > buy --  38ac712d91eb9f80b0c6ecfe2e7882410bf1c91673ababa060746e44d0e04661
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 54 > buy --  ff1689cdb3fe344f1f531fb55c8a541df340e39d8017cc512feeced60e9dbc5a
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 55 > buy --  af9aa37656cd3e1b94aa37d4eb07f57e4ac174d64663ced0a2ecf559128cfd65
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 56 > buy --  8f1f9c6f7b654a93b26a6ad1bc128b2dc663cf1813a593956d808812260cbe35
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 57 > buy --  294690321f35850b364120d8ad88a0e63a639cd6950b520c35b339624c782f41
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 58 > buy --  ba00031ebe61bb51d5f1cd44194f26eef264889e0d0530799347155a77104685
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 59 > buy --  baea7b4eff2bb8165837c26681b8d0887fb376c03c4e299bf1c51ba6b084237b
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 60 > buy --  2d96aa36e07b8da0c130eb5483f37a28334f9c06c9e2781ab7b37efa313e2957
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 61 > buy --  e6d86ea73258af1e33b21e473353e7cdef8bfaec1386ba32dfe01cbac012aa06
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 62 > buy --  4935fa2823030f5ad6d3225c2910d567b7c84d8ca6ca942e7985b66bfaa21e79
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 63 > buy --  cbd3273ea0f66d7127ab3600de5595201cb34715224daf12e3e52cb8a534a396
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 64 > buy --  6d31d76d0b9493e824882fdea217369b401af1ac2d88220a7fe85733344a86de
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 65 > buy --  1896239bc0fb989fc198bce9ebc71e4e1a75269205196823157b6341828d158c
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 66 > buy --  b433cdea71174968e7a276c111bf8a5f143085d3696b6c7c8f1b88acbcf61f49
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 67 > buy --  1c71a55c7cbc91404a18ecbd3c6ab203d3da79e82a397bebada68c081e13d644
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 68 > buy --  743de3919ebb06c9be33256055a4103d058b18090a60078bf06886a3d8f87b89
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 69 > buy --  344c5a55816a779afe7449b6e5faadb947b37aca4ae4457a6f801ed6a355240c
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 70 > buy --  cc33cf38899b1ec0eb8dd303bd835823981857cc4b0d624f5f88d8a9b54108c9
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 71 > buy --  11665e09c7a177b4d8a43fe31451fc51e021a814d5fdb9d83bc01a8549bebbe7
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 72 > buy --  25f054d87d7fe400f33da7acc77944bd06fd3dc0a7e556790a5bf03d10fc7aa7
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 73 > buy --  b1701ed20a03a6c086647fa81677cee66c8af4751ccb8d0b6e4e01bb739928b0
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 74 > buy --  89ed1d799bac0d0e179784507c4182e7b50af63fd01547efa41440a151627acb
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 75 > buy --  ec2e81fb1e50e70c02ef7743fb22f51d754e22d00dee353094a0b9333fcc48db
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 76 > buy --  2d705c0a3ae23df04eb439dfc98cace56b28160e0ab5aeae5b723cf86b02a88d
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 77 > buy --  50023ddbb9a22f56a4ea879f481f6967f139f00b5c1a5bf2fcd0aec96ca04c66
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 78 > buy --  c6b8f9731fd58e1cac7e49e1731d548a5b39e2b68318a980291f36e346b130ea
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 79 > buy --  0fcc8f73fa7e75d0ea02e638ef58295e067455f30463a83060c449cf7eed3688
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 80 > buy --  fe1f9a1da23d2728bc7cc26d4f7fe7deab7e1a1a46901cafc76a484df7195146
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 81 > buy --  60216c77e87c76677fad515fdd1cdc237841a73b665d808ae1a8b86ebd38975e
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 82 > buy --  f04137c1f85990582a2f9596b065d35321dec1e5d89cb6c2b63eac202774776f
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 83 > buy --  73112f8bb960ef5e8b4d79645541a48d0a86be65f7a89f0ea153d5672a2523ee
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 84 > buy --  40bfef2562a23c4b24bf7c105ec53ae058a2635318a47eeb5c9f64049ff32b40
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 85 > buy --  81e7f2f44f2bba02a42155290955aa6cd796fcfd64fcb4db426995027b41828d
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 86 > buy --  4ba14504317381da866bab765278a7538a761337818101c03745fd52d827af46
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 87 > buy --  fe83827e4bcc1f482878a1e27330c5e7d5aef87c898589f27d8595f323f332ad
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 88 > buy --  105441a0d43f13bad24ddb52f39ae67476b261a888ba209c25f821db8ae2f35f
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 89 > buy --  078a26112c47b393ead54e22752de9553949167fd7c8e9592d7885ae88978559
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 90 > buy --  00b92608334db505b8fbffd310cf11484f3dadd5f35c019bc6ab394e7a5a76c3
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 91 > buy --  51b09ba50bb59742765a586cd744834a539d92d83f903c4913ce59ef8ab57657
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 92 > buy --  c6bfa3fad6d1a44c50fa124c113160ac980676d9f8410570bc03a18b4a19f815
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 93 > buy --  7cd485b300594066fab90baf79f8a87b17a0c9748dd0f1ab0c0546df2f6d803f
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 94 > buy --  872d20b0c0a5e4c87b9df94fe3a49e5bddb7fff0cdd863f7cb0f84065f421149
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 95 > buy --  a033eef44de82e288d0a52dc66fa04a9eb99f111f7bd5ecd37ac16474c50d9bb
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 96 > buy --  42552bc071de0f877566c68b7b6c5aad877afce6dbb77d250595f99e2354bc3b
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 97 > buy --  31d70dc5c4c3abb2083c52778aa5f336612a3172a62eed12668708407a5219e2
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 98 > buy --  3cafafc18f7f2c99e6ceb92fe46c72335cdedde36343fa979f4d339326d1f388
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 99 > buy --  3f4b51dca72676513b4009e06de5301130a131ab8cc7776ec7c33b5e3da58dc2
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 100 > buy --  25d1b509f03445f8c6e52caa31917f2b3f08a15fb9922fcc11505318c0f7bd69
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+***** fillPaper1 [b'fillPaper', [b'ao*J89o\xf2\x03\xea\x01\xe6\xc0p\xaeB\x1b\xb8\xce-', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]]]
+<Player 1 > fill --  6a18916c3f432bddb0eacbd70e0147e75b1f0c8095ae2289e9ded9ddeb0b3e25
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'uuRk\xc0f\xa3\xac\xc6\xab\xb14\x11\x9c\xd6\xd4\xa9\x04\x19i', [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109]]]
+<Player 2 > fill --  cd804c028a50b1b5e5d98d6ded8754744ae95c7d7f84d9bd18e3505646178a61
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xa3CD\xeb?~\xa6\xee\x80\x88\xadm\x13\xf5\xcf\xac\xc8\x99\xdd\x88', [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119]]]
+<Player 3 > fill --  a45fa94e046ae8d15b5138bfb4493c76a201c7767a23aa5b17609db575fb29f2
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'IJ\x051h\xf6\xe1CO%\xd8W\x98-\xcdK\x0b\xcbM{', [30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129]]]
+<Player 4 > fill --  eb06e3f3d2f195b062065515c9c3e201334a1dc32d527576d9b3acda5f0e0cfd
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'i\xc2\xd1\xc9\x9f\x03Y\xf3{\xde\xffe\xe2\xb7\xbb\x8c<e-\xd3', [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139]]]
+<Player 5 > fill --  bfb25790e3e502a03ba2e45b30ccab982b84272ca4e6bff6b9af6eb046c75673
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xce\x99\xf4\x03\x9a\xde*\x84\xec\xde\x1b\xd0\xdc\xe9\xd9\xc3\x9b?\xa0\x85', [50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149]]]
+<Player 6 > fill --  b26752c3ff777bf77c991acb0ca7ae4df6a357bd2501b3e7120c408f4a365b5e
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'{\xd4tu\xc6\xa2\xd5\x05\x88\xe3\x81=#J\x02\xb7\xf3\xaf\x8aS', [60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159]]]
+<Player 7 > fill --  e525c1aa8cfa92d39b82743f1f48c885f68513b6b42ebd251376e24409d6545b
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'(`Y\x0e$\xb0\xcd\x12\xb1\xadc\x13\xd5\x9cJ^\xee\x91\xe5p', [70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169]]]
+<Player 8 > fill --  27daf7e75a8d9294062a9ef4ec210cf3243ec373a51e7e3e5617a8bbc236e318
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xee-\xf4!\x82*zuR\x84\xc2\x88\xb4\xb7^I \xb1\xed:', [80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179]]]
+<Player 9 > fill --  7b3f7bbd334b01802695a288e9a18125a1a32a0317675ca9ffb6dfaad30bcb44
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x8e\xc1\x9a\xa4\xdeh\xed\xeb\x8f\xbf\x92e\xd8]f\xd0\x7f8>\x17', [90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189]]]
+<Player 10 > fill --  acad0efac56b67bfda4edf98ab22efc239d406a1bad1a7c1c7b1bdec4d89f95b
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b')_\xe1AF\xca.8\xdf\x92>\xd0\xf2\xb1\xebX^\xda\xe3\x04', [100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199]]]
+<Player 11 > fill --  74f94ebbffada8a6767c1ef1a9fe6fd228e7169e67b9875fe412d63c9688e807
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x93O\xad\xb7c\x00\xe9\x98,d\xaf\xf1\xe2\xdc\xcd\xcc\xecR\xd9\x11', [110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209]]]
+<Player 12 > fill --  5f356a982b4b46fddcaa01df8641bed055148b2801792271a7a453acdd220bd5
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x99Q\x8dQ\x11\xea\xa9f\xccY\xd8\xf7\xfaW\xf8\xf5\r\xd6\x03\n', [120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219]]]
+<Player 13 > fill --  063878acb673c16fd1d198e39c991b7a644109c9fddd32a40b09c5c0a0dfac34
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'w8\xd1\x9d\xe0\x9b\x1a\x87\x1c\x84\xd7\xea\xeaJ]\xb1\x96V\x1a8', [130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229]]]
+<Player 14 > fill --  a8e8da9fc3a524d494fb7ca16fa2554bb2d205ebeb853d01ed861aec5e920bc9
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b']\r\xaf\xfb\xf60 \xfd\xdf\x08\xf6\x83\xb4w\x8e\x94\x07\xd1h\xb0', [140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239]]]
+<Player 15 > fill --  d9eaa9d78dadfd12576e60d8b874c8298050c8bee790b8e29c7d2dfc796f51c5
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xbc@g\xb8E\xcc\x05\xa8\xf3?${\xb4\x14\x11 \x88\x07[\xc1', [150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249]]]
+<Player 16 > fill --  a73d752660aae56f80df3b0616be1fe0c68c8c3850031d7cc80a97f3e8e78dcc
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'X\xf0\x1e\xb5[\x06\xf4$\x96\x92K\x109c\xc4!\x85\xbb\x0fi', [160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259]]]
+<Player 17 > fill --  ee70fe73a3a0a51b11dda5f457b78f04b0ab5ebb2dc1cdbf553d207e22d92c0f
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x81\x80\xad\xe5\x8dw\xe0\x9e\x15\x0f\xd2\xd9\xa7\xebBO\xa8\x0f\x14\xf9', [170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269]]]
+<Player 18 > fill --  91366fc722d8898d9e9fc6e47275d9d43b41b09273644ff9dc368f656171573c
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'Ll"\xb0\xbd\x0e\xfe\x82$\xf4[\x16@\xcf>\xea\xd3H\x11\x07', [180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279]]]
+<Player 19 > fill --  7adea870b9653e966585988053e02ed653960715699b944a34fcce135240f34f
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'v\xd1\xe6y"\x9b\xe7l\x03(C\x1f\xd7,BkH&\xda\x83', [190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289]]]
+<Player 20 > fill --  20cf55840dc73af71ebfd3ae6b0b8241fc67b8973bd6393d39dd274c3f9dc76a
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xe9\xd8\x9fb\rH/\x8c\xfb\x13\xa9L\xad\x8d\xc7b\x98\x07s\xa6', [200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299]]]
+<Player 21 > fill --  19791a97842f662b92c3c7999c0e4df49655457e951a082d938f0f1bc0974e9e
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x02\xee\x9c\x04~\x85m\x11\xe0\x9d\xeb\x1a\x80\xecK\x9a\x87\xd0\xd4\xd8', [210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309]]]
+<Player 22 > fill --  91e43741c0136bb66d7e187351e37b4e9278de6bbde87821a5e4c93f16407a48
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'V\xc7n7\t\xa2e\x1c\x87\xe5\xc6\xfc\xc3/\xafU\x94K\xdb\xa8', [220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319]]]
+<Player 23 > fill --  dab48cd788de866ac437a2f2cd93fd7c710677e4753ac91708d22fd834df143e
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xfbq\x07\xa2\xb91\x9e<\xf7w\x9b\xf2\x18_\x1c\x1a\x95\xdd\xd7\xfa', [230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329]]]
+<Player 24 > fill --  6de81a405ed779944fedd81b30e90a1318646d70e5020625fe72a6494fc56943
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x12\xe8U\xbc\x9fA\x17\x8fH`S\xf1\xcc\xb2*\xb1\xf4\xce\xd9\xad', [240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339]]]
+<Player 25 > fill --  3f901ffe16056f34d52208c244604ebe5d3251a23deca71a41f84378f62660ad
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'#\xf5eq\x03o\xb4v\xc1F\x8e\x91\xfb\x01\x08\xd2\xc5$-\xfe', [250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349]]]
+<Player 26 > fill --  c5a0df4becfa12a888051b432dee6547d487ef21aeb768316b7c7d7ce4359802
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xadB\x8d\xa5\xbc\xb6\x8aJ@\xf01E\x92\r\xc4\x8f\xd2taI', [260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359]]]
+<Player 27 > fill --  705ae936a3324c7fec775decbf4bea6dfd4db23318493646c6f83c6796403ad2
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'iI\xd3\x1b\xfa\xc8=\xcbxg\xbd\x15\x82&\xc4\xc6\xdb$\xfd\xab', [270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369]]]
+<Player 28 > fill --  f9fcf853445689a81c72e7b7a5ff4ce6b349a97af090434d2c193f937b36c019
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x0f\x05\xc9z\xfb\xb5j\x9f\xfa\xd6={\x84\xf8\x01\xfaG\x7f\xbf\xd3', [280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379]]]
+<Player 29 > fill --  27d8df08ca4d05f6cfaf5d23c387e2ed6af7b7d454d284dff262f99f3ee182bf
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b"\x1aoq'\x01Z\xc91\xd6\xc4\xcc\xe0#\xe1\xe4QRE\x89%", [290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389]]]
+<Player 30 > fill --  327f1f5457373214b8b1ffc39f52e6262ca0dde4d7bba0238306de018e3aaac0
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'v9\xddZ*\xb45\xe8\xe1\xd3\x07k+\xe1\x0e`\x94\xd8\x8a\xee', [300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399]]]
+<Player 31 > fill --  76ad6cc007fc26a3435bf540d493de833cdabf278d9233c90d7f9bbadc97a697
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xcc\xf9ls\xd6\xa9\x93\x8f\xd12b\xe9fRN\xba\xee+$\x1a', [310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409]]]
+<Player 32 > fill --  eab6f9fc6f5d6c8c9bdb3ed6ed72c89ab4050379da6243f6de133928650baaf6
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'c\xc5p\xc8#h\xf6X`\xfc\xff-P\x07l\x1a\xb8\x91:\x1e', [320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419]]]
+<Player 33 > fill --  445bcc35f8408ce4132f41b94a1d376a1ddf5841d9b1e858b914643e1dd03a11
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x04\xcdjg\xf9\\\x82\xf8\xfare<|\x98\x8b\xedu\x01i\xc6', [330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429]]]
+<Player 34 > fill --  92cd6ce1f23825a9c7e7fd1244402387cbf118cf04dd1d66c3ce2cd8610b8982
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'<i<\x83f\xff!\x18\x10.\x1dE:\xae\xe0\xec\xd7^\x16\x0b', [340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439]]]
+<Player 35 > fill --  9d5cda308eff56cb742d8768d27e0974c42daf01cd76c53c0d8d7563f9326d2b
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x0f\xce\xcd.\xf4\x8dV\xec,\t{0A\xac\x17p\xbe\xb3\xc9\x18', [350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449]]]
+<Player 36 > fill --  08b59769c7bb9a68594f2b873116e207238688c48c4963b2e85320130a36f4df
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'=\xec\x82\xf1\xd0\x0b\x95v{j#\xf2~HX\x8a\xa1JIX', [360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459]]]
+<Player 37 > fill --  ebfed2665399855ab8a02bf314ef69359a7ab90c7a124b55122cbf4197ebb41a
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'U\xa4\x82-\x1f\x9c\xdeY\xa6\xebN@J8;\x11\x89\\\x88\xd5', [370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469]]]
+<Player 38 > fill --  d8e748eea00b379cc37473bcbeec94f1b17103af6a179a4892fdd2ec46e541d4
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x9c\x86\xec\xabDKY\xf7J\xb2\x10\x06h\xbbgM\x0e\xe2&I', [380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479]]]
+<Player 39 > fill --  4b7d119499a9b1f301bc141ad8f3f8701176d18381292fe9e709a886bbda73d0
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x11@\x03\xb4\xab\xfc\x1cW$8\xe9<[\xfb\xd4\xf50\x02\xeb5', [390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489]]]
+<Player 40 > fill --  7a217238ad21f59664680d43bb19e4acc750a6f0204e0a05ad20ce43185833b5
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b"\xc1\x84\x8a^X\x98\xfdF\x83i\xd3'{\xc8v,t\xfeK2", [400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499]]]
+<Player 41 > fill --  bf49a3f32c52a89cf8c414fc3a5543d4568903b2c0c5b6bada8fba62831770df
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'l\xfe\xca\x13\xbe(\xfb\x9a\xf0\xc0},\x15\x8d\xc2\xd9\x048\x89G', [410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509]]]
+<Player 42 > fill --  d21731694faead350dc03be0d0ddad5e9e460e3dbd2aef4224cff986c9b8e0ac
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'-U\xaf\x1e\x895\xd61\x91\xb2\xda8\x1f\xb7\xcd5\x1b \x04\xdc', [420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519]]]
+<Player 43 > fill --  e840bb0558d7ac669c599782e1879d5bfc527eaf387779a29d832fddcf131638
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'v\xf0\x9b\xbf\xaf\x0e|\xd7\xbd,}\xf8\xc1\x8c\xea\xa6\x1e\xf6\x0f\xc7', [430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529]]]
+<Player 44 > fill --  cb75cc90449b614bce9c662c0c27d4aa6989e186efac20ad97470635e089bbdc
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xa7\x1e\xc0<\xa3\xb8\x80\x86i\xec\xd1m\x1fn@\xf2\xf3\x99\xf0\xe3', [440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539]]]
+<Player 45 > fill --  8c36f320bfdafb35b7093084defdc31c391fb5fb46642d2c8a4346b3ca83a4d2
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xd4\xfc[\xde~\xe1\xa9\xa9\xac$\xd1t\xe0\xbd.\xec\x82\xca\x97+', [450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549]]]
+<Player 46 > fill --  d47ae309535485a57db511cf5d3a7722035f4d9f09cbfbd48f7bd7ecdbdaf127
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xf2\x86\x97\r\xab\xc9\xeb\x98\x1e_\xa3\x1c\xc4\x97\xeb:\xe2R\xb1\x8d', [460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559]]]
+<Player 47 > fill --  82fd98e2ce0ca1a335a7725672b02de888461e269a6c62eae0e0abe4eb1394b3
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xfe\rb\xd1R\x8d,\x1e\xac\xc6\\\xff-\xea\tL\xfd\xaa\x8f]', [470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569]]]
+<Player 48 > fill --  c9e8061c293598f86fbce8df88090869528e06567dc556ad7f514ee4a7928b62
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x8e7\x80\x12\x0f\xc37\xb1\xb3c\x99\x9a\x12\x8dU\xba\r>\x08\xdd', [480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579]]]
+<Player 49 > fill --  512c092b5590be323b920a36d4c759d3c08765ec33416522416428b4f6571457
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xd7\xe9\xa7$&\xc7B\x87\xa1\xd2\xc2\xe2\x92\xec\x04\xc6\x8d\xb9\xb2y', [490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589]]]
+<Player 50 > fill --  58b09fa5d4d467d07e4d339c132f1f1b2f0ca7da748ed4d5f1f2002e704b3820
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'[\x99J\xb7\xed_\n \x0c\xb2\x06\xd7\xbc\xed\x9bV\xb9@\x97_', [500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599]]]
+<Player 51 > fill --  7fba6d4a156bffcc5fae06a8ed4042fcede952ba6b5fe3e90b5c88caa511dbda
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xd1t\xdb\xf0\x1d\xd1\xe0\x89\x8a\x95n\xc0,\x1b\xa1\xf8\x8du\xc2$', [510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609]]]
+<Player 52 > fill --  7f05336fd4131fb2bb511ce39a487f4d55202966d7a6498e3fbdf977137db4bb
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'e\xafG\xf5\xacDxT\t\x9d6\xe7UN\xccb\xf3D7\xbe', [520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619]]]
+<Player 53 > fill --  0a368e6344f5045eafeb920f17e92a99551337786a1761de6847c186d265daea
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xda=R\xb2\xa7\x83\xb5[\x12\xef\x8d\xa6k\xa1\xb7\x15~k[\xda', [530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629]]]
+<Player 54 > fill --  5c840aaaacc066feed24e1ac330c089fe6eb69957e8b0544abe92a4d5d1d9533
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xb8n\xc2o\xafQi\xef\xca\x1c\xbaeX\x97\xb0\xba\xe2\xb2\xa4\xe4', [540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639]]]
+<Player 55 > fill --  b940ced473bd8df578cd615f4305b430118d65bef58b4cc81bbe256fe5f220e5
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'(T\xf6GpGa\xa4\xa8Z\xa6\x01W2\x8d\x8f%s\xd7[', [550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649]]]
+<Player 56 > fill --  1b7b8e09382a5a71194b33acac25854bc46f992cc18ff2eb237bf1be017a1599
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'*\xac\xbaA\xa7\xd4r\x9b\xbf\xed\x01N\xc4\x1a\x8d_\xd6\x1a\x9d\x18', [560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659]]]
+<Player 57 > fill --  c3b95f0bf3c67e6d38efabefa5ddbed75bba61d841b8bc75837ff27bbf3010de
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'.\xf0\xcd\xec*\xf6l\xec\xa0ap\x8c$\xe6>\x05\xa1H\x89\x14', [570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669]]]
+<Player 58 > fill --  7093db8ad68d9f89b184aaf1d58aec7cf9d5435485b17f1da23ee601750a230c
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'8\xea\x15q\xdeP\xd50\xa5Y\x84v{\xa9\xd3\x05Uu\x1b\x88', [580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679]]]
+<Player 59 > fill --  4f4d3e6eadf490940fdefc2013407e1ec146b38c09ff9de530e0a1820e0b119f
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x1c\xa3\xd4\xbbMj\xfe\x05*\xc4\xadt\xfc\x03\xb752P,\x05', [590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689]]]
+<Player 60 > fill --  aff888a505ba6777046ed2cda9d5c3dc1cd40de242ce81a1bd2a7dc277cdc033
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x17\xd9\xea.\x1c\x9bFx)M\x84\x96]\xad&\x18\x04\x1d\xd6;', [600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699]]]
+<Player 61 > fill --  18fdd19c194ca23a815666ed35812115ff8112010c4a0c3410e5fab6b674dd19
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x1eN\xa1KC+\xbc=2o\x10\xa6\x1a\xd9 kv\xdf6e', [610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709]]]
+<Player 62 > fill --  80d0b86c0136b14a14ddfe5b97b0834b153e362920514784f688f57305b93c7e
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'g|~$\x8c\x02~\x98B\x90\x86\xba\xb214"D\x95\xc0\xe2', [620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719]]]
+<Player 63 > fill --  dd0ae1720c7d2e7c93f58c856595c9272c96dad38ba0cc9b635fd801235368f8
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'P\x89,\xce\xf1\xe2\x0c\xfa\x04\xaf\xa4A\x8b-q\xea\t\xc1{\xcd', [630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729]]]
+<Player 64 > fill --  10e710779b9cc86f35f68b858035b02dc6413231fcacf0117d34a0a2e732a784
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xbc\xe0R \xcf\x12\x9f\xbcL\xf4\x8e\xdc\x19\x96\x03\xed\xb1\xe6\xe0o', [640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739]]]
+<Player 65 > fill --  43fc21051e7042cd8e9e9559ca5cafc05f6956a40d00f217ab13c57dc30f6bb7
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xced\xb2\x9d<\xeb+^kIJ\xa4\xebS\xa9\xef6\xe3o\xf3', [650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749]]]
+<Player 66 > fill --  ef3b59f6f1c5d8195f22f9fbf79726cb6dfe02dc559ab279825816bf43a10faa
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x8a\xb3:\xc8\x81\xcb\xc1\n\xc5L@\xdd`\x7f\xa9\xb3\xe2m\xb7!', [660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759]]]
+<Player 67 > fill --  97c9434bc2ed8cd04d01a40e573f70803c51f70338b174c3e7ae3d46a06f84d0
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'?`\x9a\xd2\xa3\x0e>]7EQ\x94\xe6\xfc\xe7\xe0\xac\xcca\xdc', [670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769]]]
+<Player 68 > fill --  92a4ea210189f374998213fdd8dd02fbb5a5855b0cd7c7310e071ed9226a86bc
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x87\xac\x81CANr\x87\xd7+\x1e\xd3\xc5\xa9\xb9\x80e3\x03%', [680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779]]]
+<Player 69 > fill --  8e58be702f3bf750a421c8831d72e3688cc66700b843dd5f0674f459a570947e
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'/A\xa3\x04[\x8a\x86\x81\xd6-\x8a$\x14\xb3\x93\x07\xcf\x06s\x14', [690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789]]]
+<Player 70 > fill --  314f722736a8e3eb382bfd9563df6f956e0574f1e324de24fc7f6fb902428b0b
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'o\xc3S\x924\r3\xa1\xba\xb9\xa9\xb4\xaf<\xc0K\x92\x1e\x9eb', [700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799]]]
+<Player 71 > fill --  4540b83ca9e88cbf149c28d038b8c42ae6979fd7230e58ca5e66df34490f0671
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'Z\t\xeb?$\x1e\xb7a\x12UIU\x08\xfe\xa3\xfb\xb4\x8cNO', [710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809]]]
+<Player 72 > fill --  e22507eda8c84bcceddf9aeb9b918fd643aef5c9bd230912cea45788eda70ccf
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x12\x96\x99\x8c:\x0c\xd5d\xe8\x03\xefh\xa8[\x02UC\xcb\xfa\x0c', [720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819]]]
+<Player 73 > fill --  3b06a76db177176b28d4d8395869111dd9cc681b3e34a06ce83227ae12b6cec1
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x8b\xada*z\xbf;<84R\x04\xf8\xa5\xaa\x18\x14\xd0\x9ea', [730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829]]]
+<Player 74 > fill --  3ec8c6b927e8d8072608eef0607c1bd86265c673de5ff256e4e33bc17d36fb0e
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'K\xa3\xa0\r/\x81\xf2\xe8m\xb22se\xa4\x01H \xfe\x8a\t', [740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839]]]
+<Player 75 > fill --  7747a160e919a3d1e92eb0e446f6deb92e02694820e5292a0dee8bed605d100f
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x9fm\x8ck\x13>{\x98\x8e\xaa\x85\x10\xfa\x006[\xb3@\x14\xfa', [750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849]]]
+<Player 76 > fill --  6a7bd8a2f7d0d2fa40102d6462790f389c199db654354af5b7da67b4f3e5cb64
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xb1q\\\xcb\xed\x83\x92\xdc\xa0\xd5[v\r\xe0\x9e\xb5\x98\x15H~', [760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859]]]
+<Player 77 > fill --  3c3b7b43182dbf7e8633e30a6154f69521c14c42ea0d887feb431c92321f6a59
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x89a23\xdb\xfdQ\x94\xae\xf8\xca\xdd\x01{\xa6@\x90)\\\x1b', [770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869]]]
+<Player 78 > fill --  791feec9c5d3552e8a931a285859057e2fa32da0f15e5b638c7fbc9271d9f96b
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'.\x11\x96.iJ\xf4p\xa2\xcf\xfdncfF\xdf\xf2\x83\xb7\xa9', [780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879]]]
+<Player 79 > fill --  51f9284cdf44aca964dff689ba565c075542da4fc00cac3750d2dde5eed96a16
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x07zOp\x0e\xae\x92$!\xa6\x0b\x90\xc4\xfe\xe8H@\xa1\xe6g', [790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889]]]
+<Player 80 > fill --  603dd3fd8a663611503398786a4a74d7fac143cbb09663abe0fb5bcc3804a7eb
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'$\x04\xca\x0c\x9d\xdf\x81f&8\xb2\x87rnf\x16\xa8\xa1\xf3\xba', [800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899]]]
+<Player 81 > fill --  d9a6fa1c0570fe2732d1c201945b20df3f598c9bce9c35d626c504c45674ab76
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'v\xdbbpN\x16\x1f\x82\xdb;\x99\xe3T\xe2l\xadd\x08]\x1c', [810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909]]]
+<Player 82 > fill --  6bb304743f45c5031d91bc828cfe39c9797a39c766e32edbfcc645a0daa01624
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xa4\x1a\xeb\xd3?\\\x86\x10Pe\xb4,\x97\xe03\x06\xff\x94\xa6\x06', [820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919]]]
+<Player 83 > fill --  d36620e7cdcf7264a5da9156fa959283b8de36b5af2059c66e3c687e63368cba
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'Y \x8fRI\xb6\xac\xea\xd5\xa6g\xf4@G\xb9\xea&O\x1d\xd5', [830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929]]]
+<Player 84 > fill --  4cb18c1854d3351e6af029f920d2bed9542874c4353032e533f583f2a1180b6d
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'=\x18\x87\xbb-L\xf0\xef\xdf\x8f\x04\xd3\xcc4\xb2\x1e\xb4\xd8\xcb\xb7', [840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939]]]
+<Player 85 > fill --  ceee8f5773f13f5a5e1e3a0cc126e80037731ecc45c4cce66eaddcb19b42c6c2
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xbd\x1cn\x8f4\x16\x06T\xcd\x00\xbe\x06\x11\xe6\xefw_\xc6\x9f\xed', [850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949]]]
+<Player 86 > fill --  e2a01669efe4a5af2c0d412fb3eec4b98a34079e92f872834690f73020174b37
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xb5\x9aPO\xcb*wD\x8f\xda\xf6\x13\r\xa78\xbc\xfe\xa0\x9f`', [860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959]]]
+<Player 87 > fill --  2eca4e0ab0427b7653739f543d9c5ad32c4b8610104054b1b1360c54622f1f29
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xe2\xbc\xb9Q\x1e\x97o\xf3\xc7D\xaf\x9d\xdc\xd1\x8e{\x9aV\x0f\xcd', [870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969]]]
+<Player 88 > fill --  eec4f3737e3b131d62ba7cbfc84ee6e11db49f128b6ea810149c07f5ea7aca15
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b"W-\xcb\x8a\xcf\n\xd4\xa2\xae\xa4\xfd\xb0P\xce^\xe1'\x83\x1c\xfb", [880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979]]]
+<Player 89 > fill --  1fa086a17eb5573b1b1396a33e6b68b31368d1f5d453530043f7e61088d2a1c0
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xd0\x97\xa4qp}\xed\rI\x97J\x994\x97\xec\x85x<sK', [890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989]]]
+<Player 90 > fill --  9477d663e13cfe85783e88dc8a85e6074b9b3fdb071d019cbecef6aea7c223b0
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'q\xee(\x0b\x13\x9d\xc0Z~\xa6\x7fMp`\x8f\x89\xa2|1?', [900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999]]]
+<Player 91 > fill --  2dbb0b1c627e14d96f1d1b3b9520f9ef89a4d71b63a67bda716a18fdec417e8d
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b"R\xa0\xc6;\x8f\xd3\xd1\x00\xde\xeb\xdeo'\x1d\xf1\x86\xd8\x8c\xee'", [910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009]]]
+<Player 92 > fill --  7ea6936ee14a4692b98c17f94eb54a926abad87ef0ce9ac7a1483eca13d3cb1c
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b't\xd5Eg2\xae\xdf \xd8un\x90\xcd\xf4\x12\xbcg4(\xd5', [920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019]]]
+<Player 93 > fill --  83ad3203f5bdffac5086196fd85731eabc2b64e2418684f694a1b16f67dec9f5
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xfaf-\xed\xb1K\x12\xdc\xfdg\xb5\x1d\x03\x05\x0bNu\x16\x1ds', [930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029]]]
+<Player 94 > fill --  317fed7c32130643dd02e1a581fcb58e12c89938e0a2d50b34d6518be7d09d2b
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xfa\xd9\xb6\xbe\xba]\x14$C\t0\r4\xb8\x14\x0f\x08>\xfcv', [940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031, 1032, 1033, 1034, 1035, 1036, 1037, 1038, 1039]]]
+<Player 95 > fill --  a0e2c719d2ea132df6ed41e04e1f6215db0662fa1a22e888c837d81d770cc3e8
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x0e\xc1\x9dY\xb9\xeeN^\x07\x17\x81y\xbaO\xd0\x0e\rg\x82\x87', [950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031, 1032, 1033, 1034, 1035, 1036, 1037, 1038, 1039, 1040, 1041, 1042, 1043, 1044, 1045, 1046, 1047, 1048, 1049]]]
+<Player 96 > fill --  3cc5dac908d71b0b295be0c14ff21771d92f9c0672cdd5d8b7cbcdef43cd6e40
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'+\x17\xb0\x8e\xeb\xd9\xee1\xe6\xb3\xfeO\xa8\x1a#\x017\xd6\xa0\xb8', [960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031, 1032, 1033, 1034, 1035, 1036, 1037, 1038, 1039, 1040, 1041, 1042, 1043, 1044, 1045, 1046, 1047, 1048, 1049, 1050, 1051, 1052, 1053, 1054, 1055, 1056, 1057, 1058, 1059]]]
+<Player 97 > fill --  474d4d2be063e0428d7faf22b6f32f60d1b001e2b1ff60c591a5d0fb85d8b5ef
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xc3\xc52\x97W5\x05\x04\t\xc5\xa7\x93"\x87\xf758<\xd0R', [970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031, 1032, 1033, 1034, 1035, 1036, 1037, 1038, 1039, 1040, 1041, 1042, 1043, 1044, 1045, 1046, 1047, 1048, 1049, 1050, 1051, 1052, 1053, 1054, 1055, 1056, 1057, 1058, 1059, 1060, 1061, 1062, 1063, 1064, 1065, 1066, 1067, 1068, 1069]]]
+<Player 98 > fill --  eff388158af8a19a2df780d43529bdca7935b3855eb09f80a2805d59ddbcb1d6
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x93\x99\x85S\x07Y\x87"\xda\x1c\n\r\x10\x8ePj\x0ce\xbeZ', [980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031, 1032, 1033, 1034, 1035, 1036, 1037, 1038, 1039, 1040, 1041, 1042, 1043, 1044, 1045, 1046, 1047, 1048, 1049, 1050, 1051, 1052, 1053, 1054, 1055, 1056, 1057, 1058, 1059, 1060, 1061, 1062, 1063, 1064, 1065, 1066, 1067, 1068, 1069, 1070, 1071, 1072, 1073, 1074, 1075, 1076, 1077, 1078, 1079]]]
+<Player 99 > fill --  764e9d218150e537c44adcd8b77ceb0ba0e737af4d5cc25aa27bc6a85a4afe35
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xae7\x94^\x96XH\x00\x04\xc9\xae\xdd\xf6l^x\xa9\x1eYc', [990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031, 1032, 1033, 1034, 1035, 1036, 1037, 1038, 1039, 1040, 1041, 1042, 1043, 1044, 1045, 1046, 1047, 1048, 1049, 1050, 1051, 1052, 1053, 1054, 1055, 1056, 1057, 1058, 1059, 1060, 1061, 1062, 1063, 1064, 1065, 1066, 1067, 1068, 1069, 1070, 1071, 1072, 1073, 1074, 1075, 1076, 1077, 1078, 1079, 1080, 1081, 1082, 1083, 1084, 1085, 1086, 1087, 1088, 1089]]]
+<Player 100 > fill --  d652e88e963e5a03c8126c1de3e65904c904990504403abccb6f5696a87d7f97
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+<Player 1 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p', 100323637000, 100, '2018-11-06 05:41:44']
+continus fillPaper-res-event is :  ['fillPaper', 'AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99], '2018-11-06 05:43:02']
+<Player 2 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ASUwFccvYFrrWR6vsZhhNszLFNvCLA5qS6', 100879237000, 100, '2018-11-06 05:41:44']
+continus fillPaper-res-event is :  ['fillPaper', 'ASUwFccvYFrrWR6vsZhhNszLFNvCLA5qS6', [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109], '2018-11-06 05:43:02']
+<Player 3 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AWf8NiLzXSDf1JB2Ae6YUKSHke4yLHMVCm', 101064437000, 100, '2018-11-06 05:41:44']
+continus fillPaper-res-event is :  ['fillPaper', 'AWf8NiLzXSDf1JB2Ae6YUKSHke4yLHMVCm', [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119], '2018-11-06 05:43:02']
+<Player 4 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ANTPeXCffDZCaCXxY9u2UdssB2EYpP4BMh', 100694037000, 100, '2018-11-06 05:41:44']
+continus fillPaper-res-event is :  ['fillPaper', 'ANTPeXCffDZCaCXxY9u2UdssB2EYpP4BMh', [30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129], '2018-11-06 05:43:02']
+<Player 5 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ARR5ywDEx3ybXkMGmZPFYu9hiC8J4xvNdc', 100786637000, 100, '2018-11-06 05:41:44']
+continus fillPaper-res-event is :  ['fillPaper', 'ARR5ywDEx3ybXkMGmZPFYu9hiC8J4xvNdc', [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139], '2018-11-06 05:43:02']
+<Player 6 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AacHGsQVbTtbvSWkqZfvdKePLS6K659dgp', 100508837000, 100, '2018-11-06 05:41:44']
+continus fillPaper-res-event is :  ['fillPaper', 'AacHGsQVbTtbvSWkqZfvdKePLS6K659dgp', [50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149], '2018-11-06 05:43:02']
+<Player 7 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AT4dGijAQSMcN5mj2q7ePTWcKFEnG1qeu3', 100045837000, 100, '2018-11-06 05:41:44']
+continus fillPaper-res-event is :  ['fillPaper', 'AT4dGijAQSMcN5mj2q7ePTWcKFEnG1qeu3', [60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159], '2018-11-06 05:43:02']
+<Player 8 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AKTN6YDdnY8GXcD6oSEDdSFnXscJzjT3Sn', 100601437000, 100, '2018-11-06 05:41:44']
+continus fillPaper-res-event is :  ['fillPaper', 'AKTN6YDdnY8GXcD6oSEDdSFnXscJzjT3Sn', [70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169], '2018-11-06 05:43:02']
+<Player 9 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AdVFX4vzxpaREQHRc7n5fnN65GvydWQNP2', 100971837000, 100, '2018-11-06 05:41:44']
+continus fillPaper-res-event is :  ['fillPaper', 'AdVFX4vzxpaREQHRc7n5fnN65GvydWQNP2', [80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179], '2018-11-06 05:43:02']
+<Player 10 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AUnhXaudVSBFqjH92a6HrhQySUTiQjf5VR', 100416237000, 100, '2018-11-06 05:41:44']
+continus fillPaper-res-event is :  ['fillPaper', 'AUnhXaudVSBFqjH92a6HrhQySUTiQjf5VR', [90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189], '2018-11-06 05:43:02']
+<Player 11 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AKYeDDU8918ndDdyMFnkmGUC4QsXrG6aY5', 100138437000, 100, '2018-11-06 05:41:44']
+continus fillPaper-res-event is :  ['fillPaper', 'AKYeDDU8918ndDdyMFnkmGUC4QsXrG6aY5', [100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199], '2018-11-06 05:43:08']
+<Player 12 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AVCnRrxZDn3bKj9ZqRmsnx3Ts7JgpGtELc', 100231037000, 100, '2018-11-06 05:41:44']
+continus fillPaper-res-event is :  ['fillPaper', 'AVCnRrxZDn3bKj9ZqRmsnx3Ts7JgpGtELc', [110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209], '2018-11-06 05:43:08']
+<Player 13 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AVkYjBWL9NQ68Gb4Y2C26yCJovy2X9Pnf5', 103101637000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AVkYjBWL9NQ68Gb4Y2C26yCJovy2X9Pnf5', [120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219], '2018-11-06 05:43:08']
+<Player 14 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ASeG8AcqcJMjQz5dWmC9RY2FsjvpDLymKC', 102916437000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'ASeG8AcqcJMjQz5dWmC9RY2FsjvpDLymKC', [130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229], '2018-11-06 05:43:08']
+<Player 15 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AQFttMk56apS1kYRrKoNHhwoV9jhRtB6Jj', 103657237000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AQFttMk56apS1kYRrKoNHhwoV9jhRtB6Jj', [140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239], '2018-11-06 05:43:08']
+<Player 16 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AYwFqWbc6LNLhjqh6Qc4Qg5ov2zfYe83cm', 102546037000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AYwFqWbc6LNLhjqh6Qc4Qg5ov2zfYe83cm', [150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249], '2018-11-06 05:43:08']
+<Player 17 > ********************
+buyPaper-res-event is :  ['buyPaper', 'APt8mCvQmdVgnqjsDW2HUPQSqNrzJrGeV3', 104212837000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'APt8mCvQmdVgnqjsDW2HUPQSqNrzJrGeV3', [160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259], '2018-11-06 05:43:08']
+<Player 18 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ATacy39ZERRfrgDEf3PmjH1hAWxyXtob9s', 101157037000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'ATacy39ZERRfrgDEf3PmjH1hAWxyXtob9s', [170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269], '2018-11-06 05:43:08']
+<Player 19 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ANjxYTtJyBGisBJNbNCzjGyxQFA9qqNwd8', 103009037000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'ANjxYTtJyBGisBJNbNCzjGyxQFA9qqNwd8', [180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279], '2018-11-06 05:43:08']
+<Player 20 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ASc8qG992Z9W5h3YWDHbdxCN3mBxpC75dT', 103194237000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'ASc8qG992Z9W5h3YWDHbdxCN3mBxpC75dT', [190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289], '2018-11-06 05:43:08']
+<Player 21 > ********************
+buyPaper-res-event is :  ['buyPaper', 'Ad6LbPwAJV9jDaDDdY1caYADeL1LgGV86r', 102638637000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'Ad6LbPwAJV9jDaDDdY1caYADeL1LgGV86r', [200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299], '2018-11-06 05:43:08']
+<Player 22 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AG3Nqkr3apQwKsvBkuE6ZjGgZhCgaR3qPG', 103935037000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AG3Nqkr3apQwKsvBkuE6ZjGgZhCgaR3qPG', [210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309], '2018-11-06 05:43:08']
+<Player 23 > ********************
+buyPaper-res-event is :  ['buyPaper', 'APgiffusKMY7Um6rbyia5QAvP3BtMed6N5', 101897837000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'APgiffusKMY7Um6rbyia5QAvP3BtMed6N5', [220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319], '2018-11-06 05:43:08']
+<Player 24 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AehNf6dGCWF9gnXWRNy45ZVTxFci9mfRBQ', 104305437000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AehNf6dGCWF9gnXWRNy45ZVTxFci9mfRBQ', [230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329], '2018-11-06 05:43:08']
+<Player 25 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AHVr8s42HqzB8s14fGTXBnCJhqDszhsy5e', 103379437000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AHVr8s42HqzB8s14fGTXBnCJhqDszhsy5e', [240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339], '2018-11-06 05:43:08']
+<Player 26 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AK41GeFpNSidsPT64zRmxnjogMEeogStdT', 101990437000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AK41GeFpNSidsPT64zRmxnjogMEeogStdT', [250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349], '2018-11-06 05:43:14']
+<Player 27 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AXZzGtaPBEXfrGa6uvEFxBsK4wsyom1PuS', 101712637000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AXZzGtaPBEXfrGa6uvEFxBsK4wsyom1PuS', [260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359], '2018-11-06 05:43:14']
+<Player 28 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ARNb34q4j65wDqZPAnC8bUXeaRyAoTRiNT', 102268237000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'ARNb34q4j65wDqZPAnC8bUXeaRyAoTRiNT', [270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369], '2018-11-06 05:43:14']
+<Player 29 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AH9JiTyTBoS2KQ9YXCAcssqHH4d4kAtLhu', 104027637000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AH9JiTyTBoS2KQ9YXCAcssqHH4d4kAtLhu', [280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379], '2018-11-06 05:43:14']
+<Player 30 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AJBeicSmG5fiDWZdzmK5kQGyth1knzVurK', 102083037000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AJBeicSmG5fiDWZdzmK5kQGyth1knzVurK', [290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389], '2018-11-06 05:43:14']
+<Player 31 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ASYzhe9Ai5VkaZhWsuEvEsZUed4CRqAykh', 103749837000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'ASYzhe9Ai5VkaZhWsuEvEsZUed4CRqAykh', [300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399], '2018-11-06 05:43:14']
+<Player 32 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AaTgHtb1iUi8ohKJHUJBzgkkZELCkdRhhv', 103286837000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AaTgHtb1iUi8ohKJHUJBzgkkZELCkdRhhv', [310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409], '2018-11-06 05:43:14']
+<Player 33 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AQsR4u8vA68bcQVLYLrkRZbaienrhhkEia', 102731237000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AQsR4u8vA68bcQVLYLrkRZbaienrhhkEia', [320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419], '2018-11-06 05:43:14']
+<Player 34 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AGDGRo5ANYbbjRMxCPNVgC4mH5npgNUeuq', 102823837000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AGDGRo5ANYbbjRMxCPNVgC4mH5npgNUeuq', [330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429], '2018-11-06 05:43:14']
+<Player 35 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AMHJFxdn4EZqbLUHLeRGCaYsko5YNf6nbt', 102360837000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AMHJFxdn4EZqbLUHLeRGCaYsko5YNf6nbt', [340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439], '2018-11-06 05:43:14']
+<Player 36 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AHDTXCJkXfrzhuyTDBJDnu7zsjNemnpz2B', 104398037000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AHDTXCJkXfrzhuyTDBJDnu7zsjNemnpz2B', [350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449], '2018-11-06 05:43:14']
+<Player 37 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AMRJCJmrJ3tcYDNxAzEEnJKHCkqbzYP7uy', 101249637000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AMRJCJmrJ3tcYDNxAzEEnJKHCkqbzYP7uy', [360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459], '2018-11-06 05:43:14']
+<Player 38 > ********************
+buyPaper-res-event is :  ['buyPaper', 'APaiA4979sHgnAnqSUswR1jQFjxkpbFHpS', 103842437000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'APaiA4979sHgnAnqSUswR1jQFjxkpbFHpS', [370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469], '2018-11-06 05:43:20']
+<Player 39 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AW3Wh9AqUHNqYbtthSL5SzQKmwaZdRKbra', 101342237000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AW3Wh9AqUHNqYbtthSL5SzQKmwaZdRKbra', [380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479], '2018-11-06 05:43:20']
+<Player 40 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AHM5pZcoVXsBuo5jqYnnwM9hbC71uENERC', 103472037000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AHM5pZcoVXsBuo5jqYnnwM9hbC71uENERC', [390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489], '2018-11-06 05:43:20']
+<Player 41 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AZR6qbb13ZX4tw5Bubqtaig16cQofvHreh', 101434837000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AZR6qbb13ZX4tw5Bubqtaig16cQofvHreh', [400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499], '2018-11-06 05:43:20']
+<Player 42 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ARiBrHrPtDD3ZLwGrbBEKvYrYg4dPpxKgf', 101527437000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'ARiBrHrPtDD3ZLwGrbBEKvYrYg4dPpxKgf', [410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509], '2018-11-06 05:43:20']
+<Player 43 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AKuahZdyzdH1KBfTswSuTYkr1y55xNdmq8', 101620037000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AKuahZdyzdH1KBfTswSuTYkr1y55xNdmq8', [420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519], '2018-11-06 05:43:20']
+<Player 44 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AScmcu56pz7MByGHcwqi5u7XHrHn4WJk6P', 104120237000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AScmcu56pz7MByGHcwqi5u7XHrHn4WJk6P', [430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529], '2018-11-06 05:43:20']
+<Player 45 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AX1XL9QZxqdyVZXu7baciGUThzY5Mv58vZ', 102453437000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AX1XL9QZxqdyVZXu7baciGUThzY5Mv58vZ', [440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539], '2018-11-06 05:43:20']
+<Player 46 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AbC3DNGwtsJPSnEWHYzvh4jkMsQNucwJa1', 102175637000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AbC3DNGwtsJPSnEWHYzvh4jkMsQNucwJa1', [450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549], '2018-11-06 05:43:20']
+<Player 47 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AdtEQQGp9qxQLYNiREQYU4puPdgRWQdDEQ', 101805237000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AdtEQQGp9qxQLYNiREQYU4puPdgRWQdDEQ', [460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559], '2018-11-06 05:43:20']
+<Player 48 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AewBKJK52b557qUUYpz4fxD2EJk5NeJsyf', 103564637000, 100, '2018-11-06 05:41:50']
+continus fillPaper-res-event is :  ['fillPaper', 'AewBKJK52b557qUUYpz4fxD2EJk5NeJsyf', [470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569], '2018-11-06 05:43:20']
+<Player 49 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AUjr5xvWhXgWy9H2T31qG6z4dLmAG1NHdJ', 105787037000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AUjr5xvWhXgWy9H2T31qG6z4dLmAG1NHdJ', [480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579], '2018-11-06 05:43:20']
+<Player 50 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AbTWqEGnnbDjB8t6FZdjbsNoCgE7ELr6yZ', 105879637000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AbTWqEGnnbDjB8t6FZdjbsNoCgE7ELr6yZ', [490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589], '2018-11-06 05:43:26']
+<Player 51 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AQ8Cmrsa77FcsUCXfTvvfzWXPXa3Z4n1zv', 107083437000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AQ8Cmrsa77FcsUCXfTvvfzWXPXa3Z4n1zv', [500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599], '2018-11-06 05:43:26']
+<Player 52 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AasNs763mSwYFqyfMiuDgSi4F9HGt1bPbA', 105601837000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AasNs763mSwYFqyfMiuDgSi4F9HGt1bPbA', [510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609], '2018-11-06 05:43:26']
+<Player 53 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AR3XscjsXFSA86xYjK6v356Z4pF5fyn4N3', 107268637000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AR3XscjsXFSA86xYjK6v356Z4pF5fyn4N3', [520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619], '2018-11-06 05:43:26']
+<Player 54 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AbfpR7j5hntHfiJ9HGwJT4BqFyErEQUzWW', 106898237000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AbfpR7j5hntHfiJ9HGwJT4BqFyErEQUzWW', [530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629], '2018-11-06 05:43:26']
+<Player 55 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AYb4fW2V8Mxkf7nCJxdbdaQ2wteuKSrGs3', 105972237000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AYb4fW2V8Mxkf7nCJxdbdaQ2wteuKSrGs3', [540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639], '2018-11-06 05:43:26']
+<Player 56 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AKT8TSHMArpJimgfrD5J3GnEREiCwFCHum', 104861037000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AKT8TSHMArpJimgfrD5J3GnEREiCwFCHum', [550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649], '2018-11-06 05:43:26']
+<Player 57 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AKfWwsoiLWKbm21gFXxvDuxs2frvwtG6Qw', 104490637000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AKfWwsoiLWKbm21gFXxvDuxs2frvwtG6Qw', [560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659], '2018-11-06 05:43:26']
+<Player 58 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AL45ChpDuGgxACMGeHeiyLepjWSSuj1rq8', 104953637000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AL45ChpDuGgxACMGeHeiyLepjWSSuj1rq8', [570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669], '2018-11-06 05:43:26']
+<Player 59 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ALxoufbQkwkCBrNmdSiZiCcYwNm5WSFyEc', 105138837000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'ALxoufbQkwkCBrNmdSiZiCcYwNm5WSFyEc', [580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679], '2018-11-06 05:43:26']
+<Player 60 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AJPJq3cTRM7GVw9HR5QNuF57XQKvjeRsDm', 106990837000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AJPJq3cTRM7GVw9HR5QNuF57XQKvjeRsDm', [590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689], '2018-11-06 05:43:26']
+<Player 61 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AHwzEto3pnrbjcAM3pv55bX1yxArYUM9qz', 107546437000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AHwzEto3pnrbjcAM3pv55bX1yxArYUM9qz', [600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699], '2018-11-06 05:43:26']
+<Player 62 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AJY87Zje9eVnXE9g7VUGUDVsHu1opxnvZU', 105416637000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AJY87Zje9eVnXE9g7VUGUDVsHu1opxnvZU', [610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709], '2018-11-06 05:43:26']
+<Player 63 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ARD4PAVRQeheTQLPcdW6nBxab2RYxEBkLs', 105046237000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'ARD4PAVRQeheTQLPcdW6nBxab2RYxEBkLs', [620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719], '2018-11-06 05:43:32']
+<Player 64 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AP7i2w5HmzdbvwpeksPhpUsJGPJbkNtmFH', 106805637000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AP7i2w5HmzdbvwpeksPhpUsJGPJbkNtmFH', [630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729], '2018-11-06 05:43:32']
+<Player 65 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AYzZQeQfz7kZqRmR4iv2wFq5xaNurvK6pB', 105694437000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AYzZQeQfz7kZqRmR4iv2wFq5xaNurvK6pB', [640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739], '2018-11-06 05:43:32']
+<Player 66 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AabBUcdLMoo1bC6prGtPkQqLNQSoCqaLsV', 106620437000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AabBUcdLMoo1bC6prGtPkQqLNQSoCqaLsV', [650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749], '2018-11-06 05:43:32']
+<Player 67 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AURFc4dTeah2YeRVuM6seJviJ9kNzJ2fwv', 106157437000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AURFc4dTeah2YeRVuM6seJviJ9kNzJ2fwv', [660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759], '2018-11-06 05:43:32']
+<Player 68 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AMYywoRTyDvGrAViEEKKkrkixEa4ebVF43', 105509237000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AMYywoRTyDvGrAViEEKKkrkixEa4ebVF43', [670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769], '2018-11-06 05:43:32']
+<Player 69 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AU9FXFMRvzhDdqF7ncVYJEM8N6LVcDD487', 104675837000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AU9FXFMRvzhDdqF7ncVYJEM8N6LVcDD487', [680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779], '2018-11-06 05:43:32']
+<Player 70 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AL5k33Aad4bV9YSiyyc6R3BhHeubfjoxdk', 105231437000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AL5k33Aad4bV9YSiyyc6R3BhHeubfjoxdk', [690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789], '2018-11-06 05:43:32']
+<Player 71 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ARxpeJzxexcsh9xXF2YGf5jMjckPGKJ5uu', 106250037000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'ARxpeJzxexcsh9xXF2YGf5jMjckPGKJ5uu', [700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799], '2018-11-06 05:43:32']
+<Player 72 > ********************
+buyPaper-res-event is :  ['buyPaper', 'APyxLwd1rn1VRrJMuM2hDGTqjosHphpDKT', 107639037000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'APyxLwd1rn1VRrJMuM2hDGTqjosHphpDKT', [710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809], '2018-11-06 05:43:32']
+<Player 73 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AHUADorBf4NCqPcioxSNBNEYkzaQnJRjfx', 107361237000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AHUADorBf4NCqPcioxSNBNEYkzaQnJRjfx', [720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819], '2018-11-06 05:43:32']
+<Player 74 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AUWRGnWJZx1Ng9j4cRXqJYS79jinmRmyc7', 107453837000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AUWRGnWJZx1Ng9j4cRXqJYS79jinmRmyc7', [730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829], '2018-11-06 05:43:38']
+<Player 75 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ANfpLmG1JR5bBu9Eke1stGhK5h3Y6cbdoa', 106064837000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'ANfpLmG1JR5bBu9Eke1stGhK5h3Y6cbdoa', [740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839], '2018-11-06 05:43:38']
+<Player 76 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AWJrKZcrL5NnEBxT2Pn7KzagghmJjqteew', 106713037000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AWJrKZcrL5NnEBxT2Pn7KzagghmJjqteew', [750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849], '2018-11-06 05:43:38']
+<Player 77 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AXx741sz5qyYofWtDgEqhJtRURgj5uovr6', 104583237000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AXx741sz5qyYofWtDgEqhJtRURgj5uovr6', [760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859], '2018-11-06 05:43:38']
+<Player 78 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AUJGf5kjFCfJSmFG2TeazznJhYeMs5zHqs', 106342637000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AUJGf5kjFCfJSmFG2TeazznJhYeMs5zHqs', [770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869], '2018-11-06 05:43:38']
+<Player 79 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AKyToGGevoNGNnHpVG6jtZdLgMdzkZHyPG', 106435237000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AKyToGGevoNGNnHpVG6jtZdLgMdzkZHyPG', [780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879], '2018-11-06 05:43:38']
+<Player 80 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AGTQu7LMrb2pnppSyMMPV2XmqmVn3gyCdr', 105324037000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AGTQu7LMrb2pnppSyMMPV2XmqmVn3gyCdr', [790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889], '2018-11-06 05:43:38']
+<Player 81 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AK4KiAfhuMUJ4xYNB5JXvSiR9TbThc2sY6', 104768437000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AK4KiAfhuMUJ4xYNB5JXvSiR9TbThc2sY6', [800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899], '2018-11-06 05:43:38']
+<Player 82 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AScLCEnJnWQizbqPzG99BjtYnzf6nmwGEK', 106527837000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AScLCEnJnWQizbqPzG99BjtYnzf6nmwGEK', [810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909], '2018-11-06 05:43:38']
+<Player 83 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AWjaiUYdqidELnVLMiFhQhQv1MGmXpEmKB', 107176037000, 100, '2018-11-06 05:41:56']
+continus fillPaper-res-event is :  ['fillPaper', 'AWjaiUYdqidELnVLMiFhQhQv1MGmXpEmKB', [820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919], '2018-11-06 05:43:38']
+<Player 84 > ********************
+buyPaper-res-event is :  ['buyPaper', 'APu8nsNLkPDLkkSkGUaaQLfUrN8MdE2sXm', 108935437000, 100, '2018-11-06 05:42:02']
+continus fillPaper-res-event is :  ['fillPaper', 'APu8nsNLkPDLkkSkGUaaQLfUrN8MdE2sXm', [830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929], '2018-11-06 05:43:38']
+<Player 85 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AMLvFb4nRP9EbDDVsqnP4xowtYvqH9pGqS', 108287237000, 100, '2018-11-06 05:42:02']
+continus fillPaper-res-event is :  ['fillPaper', 'AMLvFb4nRP9EbDDVsqnP4xowtYvqH9pGqS', [840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939], '2018-11-06 05:43:38']
+<Player 86 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AZ1oREcCbwqSRcamRkDurLe8r8My6MoZfy', 108842837000, 100, '2018-11-06 05:42:02']
+continus fillPaper-res-event is :  ['fillPaper', 'AZ1oREcCbwqSRcamRkDurLe8r8My6MoZfy', [850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949], '2018-11-06 05:43:44']
+<Player 87 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AYL6p8BjUzM61UmY5TzfMm6kLDoaUjMySM', 109028037000, 100, '2018-11-06 05:42:02']
+continus fillPaper-res-event is :  ['fillPaper', 'AYL6p8BjUzM61UmY5TzfMm6kLDoaUjMySM', [860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959], '2018-11-06 05:43:44']
+<Player 88 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AcSkScoM6R8TGsPeK2WmGjHyLJGVF5Bck3', 107731637000, 100, '2018-11-06 05:42:02']
+continus fillPaper-res-event is :  ['fillPaper', 'AcSkScoM6R8TGsPeK2WmGjHyLJGVF5Bck3', [870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969], '2018-11-06 05:43:44']
+<Player 89 > ********************
+buyPaper-res-event is :  ['buyPaper', 'APiqJ5wWriju2LL4a8RLAbtKL4XPZn619w', 107824237000, 100, '2018-11-06 05:42:02']
+continus fillPaper-res-event is :  ['fillPaper', 'APiqJ5wWriju2LL4a8RLAbtKL4XPZn619w', [880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979], '2018-11-06 05:43:44']
+<Player 90 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AanorhF6775UePxGrcXYXjuAXvFnKVhabm', 108379837000, 100, '2018-11-06 05:42:02']
+continus fillPaper-res-event is :  ['fillPaper', 'AanorhF6775UePxGrcXYXjuAXvFnKVhabm', [890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989], '2018-11-06 05:43:44']
+<Player 91 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ASAHJaCgJ98R7N4UDXPMvKtbiWGuqXvcep', 109213237000, 100, '2018-11-06 05:42:02']
+continus fillPaper-res-event is :  ['fillPaper', 'ASAHJaCgJ98R7N4UDXPMvKtbiWGuqXvcep', [900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999], '2018-11-06 05:43:44']
+<Player 92 > ********************
+buyPaper-res-event is :  ['buyPaper', 'APJmf2TBvWzcM9Tf62PNDrbE7mZtKZzTNZ', 108102037000, 100, '2018-11-06 05:42:02']
+continus fillPaper-res-event is :  ['fillPaper', 'APJmf2TBvWzcM9Tf62PNDrbE7mZtKZzTNZ', [910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009], '2018-11-06 05:43:44']
+<Player 93 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ASRdX5zWkmMS3QujG4qRzu14J2jtJoqEVw', 108472437000, 100, '2018-11-06 05:42:02']
+continus fillPaper-res-event is :  ['fillPaper', 'ASRdX5zWkmMS3QujG4qRzu14J2jtJoqEVw', [920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019], '2018-11-06 05:43:44']
+<Player 94 > ********************
+buyPaper-res-event is :  ['buyPaper', 'Aebrz1HLkkrL1wAWtVaPdajLRKRsy3E7A5', 108565037000, 100, '2018-11-06 05:42:02']
+continus fillPaper-res-event is :  ['fillPaper', 'Aebrz1HLkkrL1wAWtVaPdajLRKRsy3E7A5', [930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029], '2018-11-06 05:43:44']
+<Player 95 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AeeFPUkX6PAnEj9jS9qtpBpcVrcoeSKvCY', 108657637000, 100, '2018-11-06 05:42:02']
+continus fillPaper-res-event is :  ['fillPaper', 'AeeFPUkX6PAnEj9jS9qtpBpcVrcoeSKvCY', [940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031, 1032, 1033, 1034, 1035, 1036, 1037, 1038, 1039], '2018-11-06 05:43:44']
+<Player 96 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AH7u3mN4ySAXDirXJpoKWaK4sYkPv4w11R', 108750237000, 100, '2018-11-06 05:42:02']
+continus fillPaper-res-event is :  ['fillPaper', 'AH7u3mN4ySAXDirXJpoKWaK4sYkPv4w11R', [950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031, 1032, 1033, 1034, 1035, 1036, 1037, 1038, 1039, 1040, 1041, 1042, 1043, 1044, 1045, 1046, 1047, 1048, 1049], '2018-11-06 05:43:44']
+<Player 97 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AKhj5jaWCpBnqgxzWfgfK5uFDBBentQ4xa', 108194637000, 100, '2018-11-06 05:42:02']
+continus fillPaper-res-event is :  ['fillPaper', 'AKhj5jaWCpBnqgxzWfgfK5uFDBBentQ4xa', [960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031, 1032, 1033, 1034, 1035, 1036, 1037, 1038, 1039, 1040, 1041, 1042, 1043, 1044, 1045, 1046, 1047, 1048, 1049, 1050, 1051, 1052, 1053, 1054, 1055, 1056, 1057, 1058, 1059], '2018-11-06 05:43:50']
+<Player 98 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AZd1eSFiEozA5UYS5MoqfCjkc8CM7PDKYE', 109120637000, 100, '2018-11-06 05:42:02']
+continus fillPaper-res-event is :  ['fillPaper', 'AZd1eSFiEozA5UYS5MoqfCjkc8CM7PDKYE', [970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031, 1032, 1033, 1034, 1035, 1036, 1037, 1038, 1039, 1040, 1041, 1042, 1043, 1044, 1045, 1046, 1047, 1048, 1049, 1050, 1051, 1052, 1053, 1054, 1055, 1056, 1057, 1058, 1059, 1060, 1061, 1062, 1063, 1064, 1065, 1066, 1067, 1068, 1069], '2018-11-06 05:43:50']
+<Player 99 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AVEJtWW4xQSdkw8BwfwjqU3933QE48BY8q', 108009437000, 100, '2018-11-06 05:42:02']
+continus fillPaper-res-event is :  ['fillPaper', 'AVEJtWW4xQSdkw8BwfwjqU3933QE48BY8q', [980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031, 1032, 1033, 1034, 1035, 1036, 1037, 1038, 1039, 1040, 1041, 1042, 1043, 1044, 1045, 1046, 1047, 1048, 1049, 1050, 1051, 1052, 1053, 1054, 1055, 1056, 1057, 1058, 1059, 1060, 1061, 1062, 1063, 1064, 1065, 1066, 1067, 1068, 1069, 1070, 1071, 1072, 1073, 1074, 1075, 1076, 1077, 1078, 1079], '2018-11-06 05:43:50']
+<Player 100 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AXf3ocW8radaYFpjWR17Y55YGxetwhPJ1U', 107916837000, 100, '2018-11-06 05:42:02']
+continus fillPaper-res-event is :  ['fillPaper', 'AXf3ocW8radaYFpjWR17Y55YGxetwhPJ1U', [990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031, 1032, 1033, 1034, 1035, 1036, 1037, 1038, 1039, 1040, 1041, 1042, 1043, 1044, 1045, 1046, 1047, 1048, 1049, 1050, 1051, 1052, 1053, 1054, 1055, 1056, 1057, 1058, 1059, 1060, 1061, 1062, 1063, 1064, 1065, 1066, 1067, 1068, 1069, 1070, 1071, 1072, 1073, 1074, 1075, 1076, 1077, 1078, 1079, 1080, 1081, 1082, 1083, 1084, 1085, 1086, 1087, 1088, 1089], '2018-11-06 05:43:50']
+test-getCurrentRound is  2
+test-getCurrentRound is  2
+test-getFilledPaperAmount is  10000
+
+
+Ran 1 test in 315.947s
+
+OK
+
+Process finished with exit code 0
+
+
+
+
+endCurrentRound-hash is  88700f32d22c681357e78c6fd1fe9f18edcd59be8fd0b908ab0498a4debec2f4
+endCurrentRound-res is  {'TxHash': '88700f32d22c681357e78c6fd1fe9f18edcd59be8fd0b908ab0498a4debec2f4', 'State': 1, 'GasConsumed': 74352500, 'Notify': [{'ContractAddress': 'e3429080188b289a42d94a4b49131dfc2d89d597', 'States': ['656e64526f756e64', '02', '4f23', ['ae37945e9658480004c9aeddf66c5e78a91e5963']]}, {'ContractAddress': 'e3429080188b289a42d94a4b49131dfc2d89d597', 'States': ['7374617274526f756e64', '03']}, {'ContractAddress': '0200000000000000000000000000000000000000', 'States': ['transfer', 'AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p', 'AFmseVrdL9f9oyCzZefL9tG6UbviEH9ugK', 74352500]}]}
+endCurrentRound event - < 1 >  -- endCurrentRound-res-event is :  ['endRound', 2, 9039, ["['ae37945e9658480004c9aeddf66c5e78a91e5963']"]]
+endCurrentRound event - < 2 >  -- endCurrentRound-res-event is :  ['startRound', 3]
+endCurrentRound-consume-ong-amount is :  0.0743525  ONG

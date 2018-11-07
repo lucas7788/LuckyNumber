@@ -1,0 +1,180 @@
+Testing started at 15:56 ...
+D:\SDK\pythontest\pythontest-master\pythontest-master\venv\Scripts\python.exe "C:\Program Files\JetBrains\PyCharm 2018.2.1\helpers\pycharm\_jb_unittest_runner.py" --target runTestLuckyNumber.TestAsset.test_buyPapers
+Launching unittests with arguments python -m unittest runTestLuckyNumber.TestAsset.test_buyPapers in D:\SDK\current-pythontest\contract\LuckyNumber
+test-getCurrentRound is  1
+1  account is loading... 
+2  account is loading... 
+3  account is loading... 
+4  account is loading... 
+5  account is loading... 
+6  account is loading... 
+7  account is loading... 
+8  account is loading... 
+9  account is loading... 
+10  account is loading... 
+***** finished transfer ONG to these accounts ***********
+
+< 1 >  Balance --  AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p  --  53706921285233777
+< 2 >  Balance --  ASUwFccvYFrrWR6vsZhhNszLFNvCLA5qS6  --  100000000000
+< 3 >  Balance --  AWf8NiLzXSDf1JB2Ae6YUKSHke4yLHMVCm  --  100000000000
+< 4 >  Balance --  ANTPeXCffDZCaCXxY9u2UdssB2EYpP4BMh  --  100000000000
+< 5 >  Balance --  ARR5ywDEx3ybXkMGmZPFYu9hiC8J4xvNdc  --  100000000000
+< 6 >  Balance --  AacHGsQVbTtbvSWkqZfvdKePLS6K659dgp  --  100000000000
+< 7 >  Balance --  AT4dGijAQSMcN5mj2q7ePTWcKFEnG1qeu3  --  100000000000
+< 8 >  Balance --  AKTN6YDdnY8GXcD6oSEDdSFnXscJzjT3Sn  --  100000000000
+< 9 >  Balance --  AdVFX4vzxpaREQHRc7n5fnN65GvydWQNP2  --  100000000000
+< 10 >  Balance --  AUnhXaudVSBFqjH92a6HrhQySUTiQjf5VR  --  100000000000
+<Player 1 > buy --  a83c6ea87e41e95d13398c174466766bdf58bbae93225b25c0999aadb668b375
+Before Buy, paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 2 > buy --  65745656c64ea301d18279276d43624f17b6f0950f7296c1b5211da39652fca7
+Before Buy, paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 3 > buy --  00a2fbb3b4c147620724e49cc8c34504d94ba6e50b99ac5da7de7338df034a7e
+Before Buy, paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 4 > buy --  bcb4378298643da0c18eb7daa649f0875d7ce922ab4c035cedebfd8fadd66d9e
+Before Buy, paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 5 > buy --  dc96a0ccfeffef7cfc38370083efcf155641df2e9d5b59c11fc7884077fd7206
+Before Buy, paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 6 > buy --  3ad6b94bef2538db85e98e1c8530785a873a2614ae6a17778e4e1c5499d42405
+Before Buy, paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 7 > buy --  d57e1ce90fe9cd907feb9f9396aaaaf93196588422e2b64ef1118731c17ba862
+Before Buy, paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 8 > buy --  fed0a84cc2db5653318136724fecd0a48bb9108317d31cd722decd296ee41811
+Before Buy, paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 9 > buy --  588198ee27bacc336bf320bd6f4708888aa925b0cbbddc7f46ccd8fd9ab15ad5
+Before Buy, paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 10 > buy --  39c936712cfc64240a3039512f26dfc2109620f9f4a69b958c6156c600041b3e
+Before Buy, paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+***** fillPaper1 [b'fillPaper', [b'ao*J89o\xf2\x03\xea\x01\xe6\xc0p\xaeB\x1b\xb8\xce-', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]]]
+<Player 1 > fill --  a26367f7369c9cac9e61e590227c9b7662721ba4cd3317a4f1ce940cb9db4596
+After Buy, paperBalance :  10  filledPaperBalance :  0  unfilledPaperBalance :  10
+***** fillPaper1 [b'fillPaper', [b'uuRk\xc0f\xa3\xac\xc6\xab\xb14\x11\x9c\xd6\xd4\xa9\x04\x19i', [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]]]
+<Player 2 > fill --  f35dd869ff43b7072f0d76e2edb60e0aeabc50f2c25cefd81dcd0f4e399769a6
+After Buy, paperBalance :  10  filledPaperBalance :  0  unfilledPaperBalance :  10
+***** fillPaper1 [b'fillPaper', [b'\xa3CD\xeb?~\xa6\xee\x80\x88\xadm\x13\xf5\xcf\xac\xc8\x99\xdd\x88', [20, 21, 22, 23, 24, 25, 26, 27, 28, 29]]]
+<Player 3 > fill --  c79d2be4d879f12ccac19bc2822a0e2059ac60c5ec322a91c30fe78ff880911f
+After Buy, paperBalance :  10  filledPaperBalance :  0  unfilledPaperBalance :  10
+***** fillPaper1 [b'fillPaper', [b'IJ\x051h\xf6\xe1CO%\xd8W\x98-\xcdK\x0b\xcbM{', [30, 31, 32, 33, 34, 35, 36, 37, 38, 39]]]
+<Player 4 > fill --  fe0f6d1989058531d5fddaa492cd0264f688423bc321d3d253aa27c9ea745391
+After Buy, paperBalance :  10  filledPaperBalance :  0  unfilledPaperBalance :  10
+***** fillPaper1 [b'fillPaper', [b'i\xc2\xd1\xc9\x9f\x03Y\xf3{\xde\xffe\xe2\xb7\xbb\x8c<e-\xd3', [40, 41, 42, 43, 44, 45, 46, 47, 48, 49]]]
+<Player 5 > fill --  0887f4ffb7ad957c3762ea4221564dad44d5ed0c702939a65d19763bc619bf2c
+After Buy, paperBalance :  10  filledPaperBalance :  0  unfilledPaperBalance :  10
+***** fillPaper1 [b'fillPaper', [b'\xce\x99\xf4\x03\x9a\xde*\x84\xec\xde\x1b\xd0\xdc\xe9\xd9\xc3\x9b?\xa0\x85', [50, 51, 52, 53, 54, 55, 56, 57, 58, 59]]]
+<Player 6 > fill --  5d07a0c8c369557ebc799f7bc458ddfba465f3a2902a240a7779d6cb0d0a810f
+After Buy, paperBalance :  10  filledPaperBalance :  0  unfilledPaperBalance :  10
+***** fillPaper1 [b'fillPaper', [b'{\xd4tu\xc6\xa2\xd5\x05\x88\xe3\x81=#J\x02\xb7\xf3\xaf\x8aS', [60, 61, 62, 63, 64, 65, 66, 67, 68, 69]]]
+<Player 7 > fill --  51f08da07ae7bd36d787964467d84fc2364154663d36a7b1e555d23153903a57
+After Buy, paperBalance :  10  filledPaperBalance :  0  unfilledPaperBalance :  10
+***** fillPaper1 [b'fillPaper', [b'(`Y\x0e$\xb0\xcd\x12\xb1\xadc\x13\xd5\x9cJ^\xee\x91\xe5p', [70, 71, 72, 73, 74, 75, 76, 77, 78, 79]]]
+<Player 8 > fill --  7b644941f35544c1ab0af352b30be93e36ec2a4750372ba3591dec5607ff2dff
+After Buy, paperBalance :  10  filledPaperBalance :  0  unfilledPaperBalance :  10
+***** fillPaper1 [b'fillPaper', [b'\xee-\xf4!\x82*zuR\x84\xc2\x88\xb4\xb7^I \xb1\xed:', [80, 81, 82, 83, 84, 85, 86, 87, 88, 89]]]
+<Player 9 > fill --  521d1542e1b74b741bbaebad5a46fd93c52fdef604e8a1f928927fd37d95ac39
+After Buy, paperBalance :  10  filledPaperBalance :  0  unfilledPaperBalance :  10
+***** fillPaper1 [b'fillPaper', [b'\x8e\xc1\x9a\xa4\xdeh\xed\xeb\x8f\xbf\x92e\xd8]f\xd0\x7f8>\x17', [90, 91, 92, 93, 94, 95, 96, 97, 98, 99]]]
+<Player 10 > fill --  7addd443bf5b6fe7b4d5959f550b0b6fdd6fc7b976224d4149af923371f44441
+After Buy, paperBalance :  10  filledPaperBalance :  0  unfilledPaperBalance :  10
+<Player 1 > ********************
+test notify message is :  ['3232325f627579', '02ecb42c', '60a1a436']
+buyPaper-res-event 1  is :  ['222_buy', ['3232325f627579', '02ecb42c', '60a1a436']]
+buyPaper-res-event 2  is :  ['buyPaper', 'AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p', 10002268700, 10, '2018-11-06 07:56:44']
+buyPaper-res-events is :  [['222_buy', ['3232325f627579', '02ecb42c', '60a1a436']], ['buyPaper', 'AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p', 10002268700, 10, '2018-11-06 07:56:44']]
+random fillPaper-res-event 2  is :  ['fillPaper', 'AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], '2018-11-06 07:57:20']
+continus fillPaper-res-event is :  []
+<Player 2 > ********************
+test notify message is :  ['3232325f627579', 'b14d0749', '32de494d']
+buyPaper-res-event 1  is :  ['222_buy', ['3232325f627579', 'b14d0749', '32de494d']]
+buyPaper-res-event 2  is :  ['buyPaper', 'ASUwFccvYFrrWR6vsZhhNszLFNvCLA5qS6', 10005972700, 10, '2018-11-06 07:56:44']
+buyPaper-res-events is :  [['222_buy', ['3232325f627579', 'b14d0749', '32de494d']], ['buyPaper', 'ASUwFccvYFrrWR6vsZhhNszLFNvCLA5qS6', 10005972700, 10, '2018-11-06 07:56:44']]
+random fillPaper-res-event 2  is :  ['fillPaper', 'ASUwFccvYFrrWR6vsZhhNszLFNvCLA5qS6', [10, 11, 12, 13, 14, 15, 16, 17, 18, 19], '2018-11-06 07:57:20']
+continus fillPaper-res-event is :  []
+<Player 3 > ********************
+test notify message is :  ['3232325f627579', '9d96183e', '94180f44']
+buyPaper-res-event 1  is :  ['222_buy', ['3232325f627579', '9d96183e', '94180f44']]
+buyPaper-res-event 2  is :  ['buyPaper', 'AWf8NiLzXSDf1JB2Ae6YUKSHke4yLHMVCm', 10004120700, 10, '2018-11-06 07:56:44']
+buyPaper-res-events is :  [['222_buy', ['3232325f627579', '9d96183e', '94180f44']], ['buyPaper', 'AWf8NiLzXSDf1JB2Ae6YUKSHke4yLHMVCm', 10004120700, 10, '2018-11-06 07:56:44']]
+random fillPaper-res-event 2  is :  ['fillPaper', 'AWf8NiLzXSDf1JB2Ae6YUKSHke4yLHMVCm', [20, 21, 22, 23, 24, 25, 26, 27, 28, 29], '2018-11-06 07:57:20']
+continus fillPaper-res-event is :  []
+<Player 4 > ********************
+test notify message is :  ['3232325f627579', '63b6cd1d', '02ecb42c']
+buyPaper-res-event 1  is :  ['222_buy', ['3232325f627579', '63b6cd1d', '02ecb42c']]
+buyPaper-res-event 2  is :  ['buyPaper', 'ANTPeXCffDZCaCXxY9u2UdssB2EYpP4BMh', 10001342700, 10, '2018-11-06 07:56:44']
+buyPaper-res-events is :  [['222_buy', ['3232325f627579', '63b6cd1d', '02ecb42c']], ['buyPaper', 'ANTPeXCffDZCaCXxY9u2UdssB2EYpP4BMh', 10001342700, 10, '2018-11-06 07:56:44']]
+random fillPaper-res-event 2  is :  ['fillPaper', 'ANTPeXCffDZCaCXxY9u2UdssB2EYpP4BMh', [30, 31, 32, 33, 34, 35, 36, 37, 38, 39], '2018-11-06 07:57:20']
+continus fillPaper-res-event is :  []
+<Player 5 > ********************
+test notify message is :  ['3232325f627579', '94180f44', 'b14d0749']
+buyPaper-res-event 1  is :  ['222_buy', ['3232325f627579', '94180f44', 'b14d0749']]
+buyPaper-res-event 2  is :  ['buyPaper', 'ARR5ywDEx3ybXkMGmZPFYu9hiC8J4xvNdc', 10005046700, 10, '2018-11-06 07:56:44']
+buyPaper-res-events is :  [['222_buy', ['3232325f627579', '94180f44', 'b14d0749']], ['buyPaper', 'ARR5ywDEx3ybXkMGmZPFYu9hiC8J4xvNdc', 10005046700, 10, '2018-11-06 07:56:44']]
+random fillPaper-res-event 2  is :  ['fillPaper', 'ARR5ywDEx3ybXkMGmZPFYu9hiC8J4xvNdc', [40, 41, 42, 43, 44, 45, 46, 47, 48, 49], '2018-11-06 07:57:20']
+continus fillPaper-res-event is :  []
+<Player 6 > ********************
+test notify message is :  ['3232325f627579', '', '63b6cd1d']
+buyPaper-res-event 1  is :  ['222_buy', ['3232325f627579', '', '63b6cd1d']]
+buyPaper-res-event 2  is :  ['buyPaper', 'AacHGsQVbTtbvSWkqZfvdKePLS6K659dgp', 10000416700, 10, '2018-11-06 07:56:44']
+buyPaper-res-events is :  [['222_buy', ['3232325f627579', '', '63b6cd1d']], ['buyPaper', 'AacHGsQVbTtbvSWkqZfvdKePLS6K659dgp', 10000416700, 10, '2018-11-06 07:56:44']]
+random fillPaper-res-event 2  is :  ['fillPaper', 'AacHGsQVbTtbvSWkqZfvdKePLS6K659dgp', [50, 51, 52, 53, 54, 55, 56, 57, 58, 59], '2018-11-06 07:57:20']
+continus fillPaper-res-event is :  []
+<Player 7 > ********************
+test notify message is :  ['3232325f627579', '60a1a436', '9d96183e']
+buyPaper-res-event 1  is :  ['222_buy', ['3232325f627579', '60a1a436', '9d96183e']]
+buyPaper-res-event 2  is :  ['buyPaper', 'AT4dGijAQSMcN5mj2q7ePTWcKFEnG1qeu3', 10003194700, 10, '2018-11-06 07:56:44']
+buyPaper-res-events is :  [['222_buy', ['3232325f627579', '60a1a436', '9d96183e']], ['buyPaper', 'AT4dGijAQSMcN5mj2q7ePTWcKFEnG1qeu3', 10003194700, 10, '2018-11-06 07:56:44']]
+random fillPaper-res-event 2  is :  ['fillPaper', 'AT4dGijAQSMcN5mj2q7ePTWcKFEnG1qeu3', [60, 61, 62, 63, 64, 65, 66, 67, 68, 69], '2018-11-06 07:57:20']
+continus fillPaper-res-event is :  []
+<Player 8 > ********************
+test notify message is :  ['3232325f627579', '32de494d', '3e330451']
+buyPaper-res-event 1  is :  ['222_buy', ['3232325f627579', '32de494d', '3e330451']]
+buyPaper-res-event 2  is :  ['buyPaper', 'AKTN6YDdnY8GXcD6oSEDdSFnXscJzjT3Sn', 10006898700, 10, '2018-11-06 07:56:50']
+buyPaper-res-events is :  [['222_buy', ['3232325f627579', '32de494d', '3e330451']], ['buyPaper', 'AKTN6YDdnY8GXcD6oSEDdSFnXscJzjT3Sn', 10006898700, 10, '2018-11-06 07:56:50']]
+random fillPaper-res-event 2  is :  ['fillPaper', 'AKTN6YDdnY8GXcD6oSEDdSFnXscJzjT3Sn', [70, 71, 72, 73, 74, 75, 76, 77, 78, 79], '2018-11-06 07:57:20']
+continus fillPaper-res-event is :  []
+<Player 9 > ********************
+test notify message is :  ['3232325f627579', 'f0925454', '592e5057']
+buyPaper-res-event 1  is :  ['222_buy', ['3232325f627579', 'f0925454', '592e5057']]
+buyPaper-res-event 2  is :  ['buyPaper', 'AdVFX4vzxpaREQHRc7n5fnN65GvydWQNP2', 10008750700, 10, '2018-11-06 07:56:50']
+buyPaper-res-events is :  [['222_buy', ['3232325f627579', 'f0925454', '592e5057']], ['buyPaper', 'AdVFX4vzxpaREQHRc7n5fnN65GvydWQNP2', 10008750700, 10, '2018-11-06 07:56:50']]
+random fillPaper-res-event 2  is :  ['fillPaper', 'AdVFX4vzxpaREQHRc7n5fnN65GvydWQNP2', [80, 81, 82, 83, 84, 85, 86, 87, 88, 89], '2018-11-06 07:57:20']
+continus fillPaper-res-event is :  []
+<Player 10 > ********************
+test notify message is :  ['3232325f627579', '3e330451', 'f0925454']
+buyPaper-res-event 1  is :  ['222_buy', ['3232325f627579', '3e330451', 'f0925454']]
+buyPaper-res-event 2  is :  ['buyPaper', 'AUnhXaudVSBFqjH92a6HrhQySUTiQjf5VR', 10007824700, 10, '2018-11-06 07:56:50']
+buyPaper-res-events is :  [['222_buy', ['3232325f627579', '3e330451', 'f0925454']], ['buyPaper', 'AUnhXaudVSBFqjH92a6HrhQySUTiQjf5VR', 10007824700, 10, '2018-11-06 07:56:50']]
+random fillPaper-res-event 2  is :  ['fillPaper', 'AUnhXaudVSBFqjH92a6HrhQySUTiQjf5VR', [90, 91, 92, 93, 94, 95, 96, 97, 98, 99], '2018-11-06 07:57:20']
+continus fillPaper-res-event is :  []
+test-getCurrentRound is  1
+test-getCurrentRound is  1
+
+
+Ran 1 test in 104.600s
+
+OK
+test-getFilledPaperAmount is  100
+
+Process finished with exit code 0
+
+test-getCurrentRound is  1
+test-getCurrentRound is  1
+test-getFilledPaperAmount is  100
+endCurrentRound -> hash :  772d4ef759cb152600d5e17ce4bca53cad609fbe44bf742142b75ecba58dda50
+endCurrentRound-hash is  772d4ef759cb152600d5e17ce4bca53cad609fbe44bf742142b75ecba58dda50
+endCurrentRound-res is  {'TxHash': '772d4ef759cb152600d5e17ce4bca53cad609fbe44bf742142b75ecba58dda50', 'State': 1, 'GasConsumed': 20312500, 'Notify': [{'ContractAddress': '1abb705fce2a82dc390c52837b09d75702fbc6be', 'States': ['656e64526f756e64', '01', '4015', ['8ec19aa4de68edeb8fbf9265d85d66d07f383e17']]}, {'ContractAddress': '1abb705fce2a82dc390c52837b09d75702fbc6be', 'States': ['7374617274526f756e64', '02']}, {'ContractAddress': '0200000000000000000000000000000000000000', 'States': ['transfer', 'AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p', 'AFmseVrdL9f9oyCzZefL9tG6UbviEH9ugK', 20312500]}]}
+endCurrentRound event - < 1 >  -- endCurrentRound-res-event is :  ['endRound', 1, 5440, ["['8ec19aa4de68edeb8fbf9265d85d66d07f383e17']"]]
+endCurrentRound event - < 2 >  -- endCurrentRound-res-event is :  ['startRound', 2]
+endCurrentRound-res-events is :  [['endRound', 1, 5440, ["['8ec19aa4de68edeb8fbf9265d85d66d07f383e17']"]], ['startRound', 2]]
+endCurrentRound-consume-ong-amount is :  0.0203125  ONG
+
+
+
+
+# luckyNumberContractAddress = "1abb705fce2a82dc390c52837b09d75702fbc6be"  # without magnitude
+
+Player10 should get his dividend : 10007824700 * 0.5 / 100 * 10 = 0.500391235
+Actually Player10 gets his dividends : ["","0ecff73e",""]  which is 1.056427790 ONG
+
+player10 should update the profitPerPaper as [new - old = 50043753.5]
+For player10 oldProfitPerPaper = 1359229758, newProfitPerPaper = 1414828784, so he shares (new - old ) * 10 = 55599026* 10 = 555990260
+
+

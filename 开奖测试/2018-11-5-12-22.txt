@@ -1,0 +1,27 @@
+Testing started at 12:18 ...
+D:\SDK\pythontest\pythontest-master\pythontest-master\venv\Scripts\python.exe "C:\Program Files\JetBrains\PyCharm 2018.2.1\helpers\pycharm\_jb_unittest_runner.py" --target runTestLuckyNumber.TestAsset.test_buyPapers
+Launching unittests with arguments python -m unittest runTestLuckyNumber.TestAsset.test_buyPapers in D:\SDK\current-pythontest\contract\LuckyNumber
+< 1 >  Balance --  ASUwFccvYFrrWR6vsZhhNszLFNvCLA5qS6  --  100000000000
+<Player 1 > buy --  47c7bf2d66dbcab4406eac896e4d2a8a9fafd30e8c1e2f860163e46985202a33
+paperBalance :  2  filledPaperBalance :  0  unfilledPaperBalance :  2
+***** fillPaper1 [b'fillPaper', [b'uuRk\xc0f\xa3\xac\xc6\xab\xb14\x11\x9c\xd6\xd4\xa9\x04\x19i', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]]]
+<Player 1 > fill --  85c6574ffca7344cc8b6bc5cf09bb530688115f8d12ad274ddff0e3da6940a38
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+<Player 1 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ASUwFccvYFrrWR6vsZhhNszLFNvCLA5qS6', 18001750140, 18, '2018-11-05 04:19:22']
+continus fillPaper-res-event is :  ['fillPaper', 'ASUwFccvYFrrWR6vsZhhNszLFNvCLA5qS6', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19], '2018-11-05 04:20:22']
+test-getCurrentRound is  3
+
+
+Ran 1 test in 240.933s
+
+OK
+test-getFilledPaperAmount is  20
+
+Process finished with exit code 0
+endCurrentRound-hash is  4606a4af931f1713f5d67e0d20a587425b29f9b145804e5d42b1d63273056880
+endCurrentRound-res is  {'TxHash': '4606a4af931f1713f5d67e0d20a587425b29f9b145804e5d42b1d63273056880', 'State': 1, 'GasConsumed': 34768500, 'Notify': [{'ContractAddress': '0200000000000000000000000000000000000000', 'States': ['transfer', 'AUr8TDySCZT73ym4PGVtkpxspHW1PAzvbm', 'AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p', 1000087970]}, {'ContractAddress': '96df6058ed643b1a74e3d56ae0c3f2687ca8678f', 'States': ['64657374726f795061706572', '7575526bc066a3acc6abb134119cd6d4a9041969', '14', 'c0c5df5b']}, {'ContractAddress': '96df6058ed643b1a74e3d56ae0c3f2687ca8678f', 'States': ['656e64526f756e64', '03', 'd121', ['7575526bc066a3acc6abb134119cd6d4a9041969']]}, {'ContractAddress': '96df6058ed643b1a74e3d56ae0c3f2687ca8678f', 'States': ['7374617274526f756e64', '04']}, {'ContractAddress': '0200000000000000000000000000000000000000', 'States': ['transfer', 'AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p', 'AFmseVrdL9f9oyCzZefL9tG6UbviEH9ugK', 34768500]}]}
+endCurrentRound event - < 1 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'ASUwFccvYFrrWR6vsZhhNszLFNvCLA5qS6', 20, '2018-11-05 04:23:28']
+endCurrentRound event - < 2 >  -- endCurrentRound-res-event is :  ['endRound', 3, 8657, ["['7575526bc066a3acc6abb134119cd6d4a9041969']"]]
+endCurrentRound event - < 3 >  -- endCurrentRound-res-event is :  ['startRound', 4]
+endCurrentRound-consume-ong-amount is :  0.0347685  ONG

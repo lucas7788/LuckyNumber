@@ -1,0 +1,1022 @@
+Testing started at 17:56 ...
+D:\SDK\pythontest\pythontest-master\pythontest-master\venv\Scripts\python.exe "C:\Program Files\JetBrains\PyCharm 2018.2.1\helpers\pycharm\_jb_unittest_runner.py" --target runTestLuckyNumber.TestAsset.test_buyPapers
+Launching unittests with arguments python -m unittest runTestLuckyNumber.TestAsset.test_buyPapers in D:\SDK\current-pythontest\contract\LuckyNumber
+< 1 >  Balance --  ASUwFccvYFrrWR6vsZhhNszLFNvCLA5qS6  --  100000000000
+< 2 >  Balance --  AWf8NiLzXSDf1JB2Ae6YUKSHke4yLHMVCm  --  100000000000
+< 3 >  Balance --  ANTPeXCffDZCaCXxY9u2UdssB2EYpP4BMh  --  100000000000
+< 4 >  Balance --  ARR5ywDEx3ybXkMGmZPFYu9hiC8J4xvNdc  --  100000000000
+< 5 >  Balance --  AacHGsQVbTtbvSWkqZfvdKePLS6K659dgp  --  100000000000
+< 6 >  Balance --  AT4dGijAQSMcN5mj2q7ePTWcKFEnG1qeu3  --  100000000000
+< 7 >  Balance --  AKTN6YDdnY8GXcD6oSEDdSFnXscJzjT3Sn  --  100000000000
+< 8 >  Balance --  AdVFX4vzxpaREQHRc7n5fnN65GvydWQNP2  --  100000000000
+< 9 >  Balance --  AUnhXaudVSBFqjH92a6HrhQySUTiQjf5VR  --  100000000000
+< 10 >  Balance --  AKYeDDU8918ndDdyMFnkmGUC4QsXrG6aY5  --  100000000000
+< 11 >  Balance --  AVCnRrxZDn3bKj9ZqRmsnx3Ts7JgpGtELc  --  100000000000
+< 12 >  Balance --  AVkYjBWL9NQ68Gb4Y2C26yCJovy2X9Pnf5  --  100000000000
+< 13 >  Balance --  ASeG8AcqcJMjQz5dWmC9RY2FsjvpDLymKC  --  100000000000
+< 14 >  Balance --  AQFttMk56apS1kYRrKoNHhwoV9jhRtB6Jj  --  100000000000
+< 15 >  Balance --  AYwFqWbc6LNLhjqh6Qc4Qg5ov2zfYe83cm  --  100000000000
+< 16 >  Balance --  APt8mCvQmdVgnqjsDW2HUPQSqNrzJrGeV3  --  100000000000
+< 17 >  Balance --  ATacy39ZERRfrgDEf3PmjH1hAWxyXtob9s  --  100000000000
+< 18 >  Balance --  ANjxYTtJyBGisBJNbNCzjGyxQFA9qqNwd8  --  100000000000
+< 19 >  Balance --  ASc8qG992Z9W5h3YWDHbdxCN3mBxpC75dT  --  100000000000
+< 20 >  Balance --  Ad6LbPwAJV9jDaDDdY1caYADeL1LgGV86r  --  100000000000
+< 21 >  Balance --  AG3Nqkr3apQwKsvBkuE6ZjGgZhCgaR3qPG  --  100000000000
+< 22 >  Balance --  APgiffusKMY7Um6rbyia5QAvP3BtMed6N5  --  100000000000
+< 23 >  Balance --  AehNf6dGCWF9gnXWRNy45ZVTxFci9mfRBQ  --  100000000000
+< 24 >  Balance --  AHVr8s42HqzB8s14fGTXBnCJhqDszhsy5e  --  100000000000
+< 25 >  Balance --  AK41GeFpNSidsPT64zRmxnjogMEeogStdT  --  100000000000
+< 26 >  Balance --  AXZzGtaPBEXfrGa6uvEFxBsK4wsyom1PuS  --  100000000000
+< 27 >  Balance --  ARNb34q4j65wDqZPAnC8bUXeaRyAoTRiNT  --  100000000000
+< 28 >  Balance --  AH9JiTyTBoS2KQ9YXCAcssqHH4d4kAtLhu  --  100000000000
+< 29 >  Balance --  AJBeicSmG5fiDWZdzmK5kQGyth1knzVurK  --  100000000000
+< 30 >  Balance --  ASYzhe9Ai5VkaZhWsuEvEsZUed4CRqAykh  --  100000000000
+< 31 >  Balance --  AaTgHtb1iUi8ohKJHUJBzgkkZELCkdRhhv  --  100000000000
+< 32 >  Balance --  AQsR4u8vA68bcQVLYLrkRZbaienrhhkEia  --  100000000000
+< 33 >  Balance --  AGDGRo5ANYbbjRMxCPNVgC4mH5npgNUeuq  --  100000000000
+< 34 >  Balance --  AMHJFxdn4EZqbLUHLeRGCaYsko5YNf6nbt  --  100000000000
+< 35 >  Balance --  AHDTXCJkXfrzhuyTDBJDnu7zsjNemnpz2B  --  100000000000
+< 36 >  Balance --  AMRJCJmrJ3tcYDNxAzEEnJKHCkqbzYP7uy  --  100000000000
+< 37 >  Balance --  APaiA4979sHgnAnqSUswR1jQFjxkpbFHpS  --  100000000000
+< 38 >  Balance --  AW3Wh9AqUHNqYbtthSL5SzQKmwaZdRKbra  --  100000000000
+< 39 >  Balance --  AHM5pZcoVXsBuo5jqYnnwM9hbC71uENERC  --  100000000000
+< 40 >  Balance --  AZR6qbb13ZX4tw5Bubqtaig16cQofvHreh  --  100000000000
+< 41 >  Balance --  ARiBrHrPtDD3ZLwGrbBEKvYrYg4dPpxKgf  --  100000000000
+< 42 >  Balance --  AKuahZdyzdH1KBfTswSuTYkr1y55xNdmq8  --  100000000000
+< 43 >  Balance --  AScmcu56pz7MByGHcwqi5u7XHrHn4WJk6P  --  100000000000
+< 44 >  Balance --  AX1XL9QZxqdyVZXu7baciGUThzY5Mv58vZ  --  100000000000
+< 45 >  Balance --  AbC3DNGwtsJPSnEWHYzvh4jkMsQNucwJa1  --  100000000000
+< 46 >  Balance --  AdtEQQGp9qxQLYNiREQYU4puPdgRWQdDEQ  --  100000000000
+< 47 >  Balance --  AewBKJK52b557qUUYpz4fxD2EJk5NeJsyf  --  100000000000
+< 48 >  Balance --  AUjr5xvWhXgWy9H2T31qG6z4dLmAG1NHdJ  --  100000000000
+< 49 >  Balance --  AbTWqEGnnbDjB8t6FZdjbsNoCgE7ELr6yZ  --  100000000000
+< 50 >  Balance --  AQ8Cmrsa77FcsUCXfTvvfzWXPXa3Z4n1zv  --  100000000000
+< 51 >  Balance --  AasNs763mSwYFqyfMiuDgSi4F9HGt1bPbA  --  100000000000
+< 52 >  Balance --  AR3XscjsXFSA86xYjK6v356Z4pF5fyn4N3  --  100000000000
+< 53 >  Balance --  AbfpR7j5hntHfiJ9HGwJT4BqFyErEQUzWW  --  100000000000
+< 54 >  Balance --  AYb4fW2V8Mxkf7nCJxdbdaQ2wteuKSrGs3  --  100000000000
+< 55 >  Balance --  AKT8TSHMArpJimgfrD5J3GnEREiCwFCHum  --  100000000000
+< 56 >  Balance --  AKfWwsoiLWKbm21gFXxvDuxs2frvwtG6Qw  --  100000000000
+< 57 >  Balance --  AL45ChpDuGgxACMGeHeiyLepjWSSuj1rq8  --  100000000000
+< 58 >  Balance --  ALxoufbQkwkCBrNmdSiZiCcYwNm5WSFyEc  --  100000000000
+< 59 >  Balance --  AJPJq3cTRM7GVw9HR5QNuF57XQKvjeRsDm  --  100000000000
+< 60 >  Balance --  AHwzEto3pnrbjcAM3pv55bX1yxArYUM9qz  --  100000000000
+< 61 >  Balance --  AJY87Zje9eVnXE9g7VUGUDVsHu1opxnvZU  --  100000000000
+< 62 >  Balance --  ARD4PAVRQeheTQLPcdW6nBxab2RYxEBkLs  --  100000000000
+< 63 >  Balance --  AP7i2w5HmzdbvwpeksPhpUsJGPJbkNtmFH  --  100000000000
+< 64 >  Balance --  AYzZQeQfz7kZqRmR4iv2wFq5xaNurvK6pB  --  100000000000
+< 65 >  Balance --  AabBUcdLMoo1bC6prGtPkQqLNQSoCqaLsV  --  100000000000
+< 66 >  Balance --  AURFc4dTeah2YeRVuM6seJviJ9kNzJ2fwv  --  100000000000
+< 67 >  Balance --  AMYywoRTyDvGrAViEEKKkrkixEa4ebVF43  --  100000000000
+< 68 >  Balance --  AU9FXFMRvzhDdqF7ncVYJEM8N6LVcDD487  --  100000000000
+< 69 >  Balance --  AL5k33Aad4bV9YSiyyc6R3BhHeubfjoxdk  --  100000000000
+< 70 >  Balance --  ARxpeJzxexcsh9xXF2YGf5jMjckPGKJ5uu  --  100000000000
+< 71 >  Balance --  APyxLwd1rn1VRrJMuM2hDGTqjosHphpDKT  --  100000000000
+< 72 >  Balance --  AHUADorBf4NCqPcioxSNBNEYkzaQnJRjfx  --  100000000000
+< 73 >  Balance --  AUWRGnWJZx1Ng9j4cRXqJYS79jinmRmyc7  --  100000000000
+< 74 >  Balance --  ANfpLmG1JR5bBu9Eke1stGhK5h3Y6cbdoa  --  100000000000
+< 75 >  Balance --  AWJrKZcrL5NnEBxT2Pn7KzagghmJjqteew  --  100000000000
+< 76 >  Balance --  AXx741sz5qyYofWtDgEqhJtRURgj5uovr6  --  100000000000
+< 77 >  Balance --  AUJGf5kjFCfJSmFG2TeazznJhYeMs5zHqs  --  100000000000
+< 78 >  Balance --  AKyToGGevoNGNnHpVG6jtZdLgMdzkZHyPG  --  100000000000
+< 79 >  Balance --  AGTQu7LMrb2pnppSyMMPV2XmqmVn3gyCdr  --  100000000000
+< 80 >  Balance --  AK4KiAfhuMUJ4xYNB5JXvSiR9TbThc2sY6  --  100000000000
+< 81 >  Balance --  AScLCEnJnWQizbqPzG99BjtYnzf6nmwGEK  --  100000000000
+< 82 >  Balance --  AWjaiUYdqidELnVLMiFhQhQv1MGmXpEmKB  --  100000000000
+< 83 >  Balance --  APu8nsNLkPDLkkSkGUaaQLfUrN8MdE2sXm  --  100000000000
+< 84 >  Balance --  AMLvFb4nRP9EbDDVsqnP4xowtYvqH9pGqS  --  100000000000
+< 85 >  Balance --  AZ1oREcCbwqSRcamRkDurLe8r8My6MoZfy  --  100000000000
+< 86 >  Balance --  AYL6p8BjUzM61UmY5TzfMm6kLDoaUjMySM  --  100000000000
+< 87 >  Balance --  AcSkScoM6R8TGsPeK2WmGjHyLJGVF5Bck3  --  100000000000
+< 88 >  Balance --  APiqJ5wWriju2LL4a8RLAbtKL4XPZn619w  --  100000000000
+< 89 >  Balance --  AanorhF6775UePxGrcXYXjuAXvFnKVhabm  --  100000000000
+< 90 >  Balance --  ASAHJaCgJ98R7N4UDXPMvKtbiWGuqXvcep  --  100000000000
+< 91 >  Balance --  APJmf2TBvWzcM9Tf62PNDrbE7mZtKZzTNZ  --  100000000000
+< 92 >  Balance --  ASRdX5zWkmMS3QujG4qRzu14J2jtJoqEVw  --  100000000000
+< 93 >  Balance --  Aebrz1HLkkrL1wAWtVaPdajLRKRsy3E7A5  --  100000000000
+< 94 >  Balance --  AeeFPUkX6PAnEj9jS9qtpBpcVrcoeSKvCY  --  100000000000
+< 95 >  Balance --  AH7u3mN4ySAXDirXJpoKWaK4sYkPv4w11R  --  100000000000
+< 96 >  Balance --  AKhj5jaWCpBnqgxzWfgfK5uFDBBentQ4xa  --  100000000000
+< 97 >  Balance --  AZd1eSFiEozA5UYS5MoqfCjkc8CM7PDKYE  --  100000000000
+< 98 >  Balance --  AVEJtWW4xQSdkw8BwfwjqU3933QE48BY8q  --  100000000000
+< 99 >  Balance --  AXf3ocW8radaYFpjWR17Y55YGxetwhPJ1U  --  100000000000
+< 100 >  Balance --  AU8tA4HRnSb8ucf4kLzXt2DbgLG5oVLmEB  --  100000000000
+<Player 1 > buy --  efa5c5394fea053e68dba4b3bfdd7dcc8f9ab41600a08ef907a70be36b6f7ee8
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 2 > buy --  cddd6b25a6cb4a7116068c2bd153415c8c5fba9b707cf4aaf602f49adce8afa5
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 3 > buy --  c65ae5fdbf652ca10ae61d2acaba91bd5d3364ec3b4fe613e6337fdaaa6deca4
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 4 > buy --  99e980f1a146e7c512d70d45a3d5ef617f5cefd010cc879f789e592a3c7401f3
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 5 > buy --  9fe25a9fc1c3097c81a5c9f5ec0f5f5fbf4da49daf90763ab91403edfe1d4a2f
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 6 > buy --  ff20dd4d25d4e3ac7e3f488a9b108c9e1d7660a31826c5c432b7e439fe282bb8
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 7 > buy --  3a9b8a816681bc16c6a8e8f88ac3ce3cd0c033083b50255b1341c0fb691520e8
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 8 > buy --  68266358f4fee37b77ca5909347646c1e33eb41e993f4dab63ff7f86f8c2e190
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 9 > buy --  4607627da23d078f3c84c8ad8534d47737abc953c18cffeca830c17b9a90abaa
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 10 > buy --  67d3f4de2bcf4c92ccd4c3133cc849102c16fcdce8c5bc511ec5192da6b13349
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 11 > buy --  1b7199363d0bbe51f10736948f680412697a9b14abefdf0b67f296dc9f87639d
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 12 > buy --  f2233d98661f1b12e813331481b1c232de69b9e02ec92dbe046fc2b6488b4306
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 13 > buy --  693d4ec79dacd9557e0a3714e13658a460f60377868b5b5addf7639d083a8a72
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 14 > buy --  169c416a0be59571a89d076ec05b0e15ecd90c4b1888684d72e6be168e56e4c3
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 15 > buy --  8a1b74c61d771e8e82c6f3ba12e2aca17d48cb431f291504512b9c612cdd565c
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 16 > buy --  d050916f3d4d5d6fad919f411fc639b96d79e8a3b006bef965c9e1801ba54056
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 17 > buy --  4cb534d861cb4d54d1b013cafc2f18f5861dec40e6cce4846f8ed5069db9cd84
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 18 > buy --  44abc19161b452fb46928fe4288838c7373567e83d74f66493ff4e6f5648a6c6
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 19 > buy --  b213ffe22d78ac1ef9c7dc896fdeb932b3efacb422a83aba927506c0a385b8c5
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 20 > buy --  ce4e281abbb24b2f0e5f578cbd088bd5db3f4c42e9c08ee2d113f85f8208e0a2
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 21 > buy --  81ddf41ff42dd46ed3b2173c943952008c3c615dbc3926723b9136043e2460e4
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 22 > buy --  3bf6aac55214231444b2fd93f2e0e3fc1f1c359f4c2677743e3c5d543b38f201
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 23 > buy --  1fb5a08e22bbfe019832d2cc648d6fec4a341fabeb93846a8eb9b901145b4bb7
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 24 > buy --  fb6bee276285a6b3d5b693ebd685dbc034a8a41d4facf42c3beb057dd8339d8c
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 25 > buy --  536c892e4eadd749cc1f1c3d4ee33651ef0795331a96c0fccee0afa63859d505
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 26 > buy --  1953668f9cbd6bd20e3a0744c4a7c2f7be788a91fcd36349dfa42085175ef64c
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 27 > buy --  4ac758bbc6e31295a3f1368ec35bac8cf1c5311c143b784287320b830c3df937
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 28 > buy --  9571d83e3b273ea75a76dbe929e595915687094fae64321c27bf33481292502b
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 29 > buy --  2dfc9daf133654e9d88fc06e5f90625e19bc9291157024ad84c1d3fe281876d7
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 30 > buy --  d6c093957d08762b6231be077aaa3cf451802e4d244dc239f755e07988eda8a2
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 31 > buy --  f997a7408078e15d046716b086d63ed48ef860aa32a560a539a744121f843a07
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 32 > buy --  27f7ec86e0ccc30cc27cf76dab3ee0bae4672d8a881ac410b947abbb7c3af13c
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 33 > buy --  5d8fddaed144ec299fd5efd6f65af90644b7fb7f54799812b41fafc27b87a640
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 34 > buy --  b43a3f94c7d5070b460972e71a87fb99c7354b942e352eaceed569fbdd69e7b3
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 35 > buy --  5396eee29ded0b7bd3e94fbeae43fe2c936ca11da28f2c7b1550e0bce5c2346e
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 36 > buy --  07247919c279b016eca395dc96743d45d2641ea42499716d7ae3bd280e0615a8
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 37 > buy --  16230a9ad6cecfddd4ad34fe0814f7397a662ad419c396bc06b55d431cfb8c74
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 38 > buy --  08ca054019cd016d9f67adcece3c7ea1d73d3241720ad076726f60cbbbfc4644
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 39 > buy --  a5b705f50986c46cd2267d9ec7d504c3dd88a69bd07c779d1df1c8e41e960d52
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 40 > buy --  4b6289349fc8900816ed7a0ab2d1ffec6cc786c1ffe88a18212e400b99496444
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 41 > buy --  d46a805842a7413ad314ba59ace9c4971c4c4c3e3f41ef7f1747b2e2c5630f52
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 42 > buy --  f1a873dc32db02dae9d5a0f0a011974489bc86f64db5f4e9a2c579745f799bcc
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 43 > buy --  7c19b8d2c7e4cc52c2c0db112640c9027aff077cfab6fe5e21901158c7def880
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 44 > buy --  1dde255a9cd8af20b914b67276b91ec78c6ea2d3766eb078c84bcc391372338e
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 45 > buy --  05bb1fcdcd5742cccf64aa56ff80cc471fa66526446f2c491286c37f23f88889
+paperBalance :  20  filledPaperBalance :  20  unfilledPaperBalance :  0
+<Player 46 > buy --  115016dabbf03da70b7bd82b627678df56bfdbc8c8d584799a24f69cafe2e6ea
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 47 > buy --  ea41afe9e6c0e58503f0b324fc942cce80b9957a597ac583b8ddfbc68144a4fc
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 48 > buy --  9fce2901f4bfff93d7a737ac2ff3482adf8a5e2ec103c844d5d5eff77c71b970
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 49 > buy --  b769c3ce6b8b03e66cac3e5cb6a61a388a1b74108d21bb16dda0119bc2788d7a
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 50 > buy --  28348e5d269054eed57499109e4de996ea0c7bfe890cf86a404056d4af17c2f9
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 51 > buy --  dd2cb32bf8f3b6a0654538bf713636c200c432246dfd0ad8ee0ada40376d5fdc
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 52 > buy --  905400ef20739566fb071abc871b1acd7fe54254a23b2eeacc9e6424e6626354
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 53 > buy --  24bcfe8281509826e9e81d22e1921cdd3b92d5cf3cb207b2b4495769163fea53
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 54 > buy --  ceeadcc2c7523c19c0183dc93a304c4d15087c29bbb9df76ab35918f97bb5bd8
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 55 > buy --  94e64d2dc720379e4e42339efb6a47d76c67c80a75253f15e6b1feb55e9dc2eb
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 56 > buy --  7af1f8e718a7242248fd89798e1605a8303df2c527bc6ac6233f5487853e9628
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 57 > buy --  295b8e31fbf8ad7b7d2e0a040a314bf0a68cd725040f18ff7d607cc101a680c4
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 58 > buy --  34f82182e2ddbd94c91d25fa3060f6a3f79dbe7a94bea9de2e36f6d0a1beda2d
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 59 > buy --  314c740b6bef646996965b97ec74f4556de5e7541fa5be75e33580b47abada1c
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 60 > buy --  389fdfead8046d7a83fb0dbf24d43add0b00d28caa9511050af5dd0ae116da8a
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 61 > buy --  c9016f455309b2266d98451a90b7110b005b05ada48369146d53b65fa6ec3e7b
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 62 > buy --  d9cf2f711517653323a6ef40b02b22894491b64b77779595fd1a33b8b5a18a38
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 63 > buy --  5c600ab6390a42ba11cea00e7396021d3b02521ac4d21f002d663082fc916379
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 64 > buy --  eb1b444f50107b8acd72c51c8bec177c65b6e6f7eebb71983d9edc9a59ae663c
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 65 > buy --  741296104c44d3b9e44226ded72f188c0b6f0c861cccd493001036dff927087d
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 66 > buy --  4a01581a1494fbb0d614ac0c5a9d47400a94965b35802075a27b6b43fa3ca860
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 67 > buy --  9fb94e1ef0d5a674ce17c5cf4a670d3a80b4366b2a8bba29c0a651148cfeb413
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 68 > buy --  544ce544f053c006c5927595793b89b199505ef004e9c72f7dd9dcdd73a21dbe
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 69 > buy --  9f522da42e9f0caee41003ef852de9dc9a5b7a307d25ecc96551d546ef672f17
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 70 > buy --  41b3e2d15b077d677957fdc9c59db4fa63c519510acd96c516364a1836730840
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 71 > buy --  787194739a009012c2ced05926314b594f7340016cc355415b81c0d3d2dbbfb6
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 72 > buy --  52445cf80e4e7bc502f3c9ec502c8d1fa8c2c45a46ce8cc5600daf8c8efee453
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 73 > buy --  5029b4a088efbd0144429e72b5cd8752ecbfc1efe1c23090e2526612cd8fc123
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 74 > buy --  03510f4cc4c0dde1ca2f1f98aec5956b027aa6fb48accb6b07dc4d51c57a8d4d
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 75 > buy --  735b89abaf849f129dc3371663ba9c097b14564185cb180c1a4517ff2466c778
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 76 > buy --  4bb9bdb509cec06a09b569d6432766979fb89cdbb0aef008ff97e8797ff9b04a
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 77 > buy --  e14b9d1d2e59441559a095d7f70fdd1d387958996a3beb646535f2e36242251b
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 78 > buy --  83fd2d4e1b0917e828ce9abede89550505427ee2248285c04ba24880385e8b1d
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 79 > buy --  ecfb2f4a1c05c0bbd05bb0677c20803d40d5c60c0c5ab21fcec55582bc531806
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 80 > buy --  5e508e108700e9f97066779768d32aba4c228557e7c2c791935ff4624720aff2
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 81 > buy --  1b42f8730dc5735a11643a07bb198dd7dbad806ae0f1b03109bf8b56b66fdc69
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 82 > buy --  fa8cbd4828485de7f73439c0243573c4863142c3ceafc607cd0a64b97117f659
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 83 > buy --  5689b841fa1900a20cbf822f12028da147d98c9165f7fce3d466e18055184095
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 84 > buy --  b5da101a1b7f16edc547e7cef2d2e846175c0b397b7a1fc42ad225d5577b4619
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 85 > buy --  9270921e033ae2f9f9b25bea74d95d365e23c5481880ec513886f579634c000c
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 86 > buy --  3de196165cfb13f1ca2e46a36bff984e10f1c8fb3c2211f2c37ed4bec8036082
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 87 > buy --  b8dea2016f23b81500e5e0b985f651137bbc7efe5aca0c42b976b874d911a84f
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 88 > buy --  5e89c9bc4cb261b5d912aa151584df970e1fa2fd338aefd7f01ec32a50481c51
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 89 > buy --  d009877669982adc27ce6a6116f49f3db7335c0bc0ba62411ff4c428b8f659e1
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 90 > buy --  6ac5258e64d4f8bce25259641649b4e51b01598fd70e2c005c09e1a69b3b694b
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 91 > buy --  d8fb9f9f34579e2ac2fb96e48dafb1301e144ac3c2c08aa9c5840b048ab21f32
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 92 > buy --  623d676f98e36d155730e4b24bae871f9fd9e4b2146f66b8404560f83762fa71
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 93 > buy --  3a655ea245cdbd2fc558e928be857b60bc63f06693d97a346e8c230e9b981de6
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 94 > buy --  85850cf7ba7d2b86d494d06a674a455cbc2bc192bf2c1ec12cbea0b315b7c908
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 95 > buy --  47702d701166461acbb676980ed6dc7ec771dac3033102f01c36f7ec7f0d786a
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 96 > buy --  7242a97351ffbd35e2c5de5ba70dfa5f8906b84c9f73fbd6371ff333650abe2f
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 97 > buy --  6ef95518fed17b6aef0f46a65d5b9706ae4370bab838820114df3cca5aeff34f
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 98 > buy --  0e67176a36259f39ddaa085602f35283f294dc2ba2ff06f3b73436ee69002d56
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 99 > buy --  db8b0b8302c623d2cbf2532b19d3444911897fbcd61f0c59fa92221448bdc7a2
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 100 > buy --  fc8cf120523e51c501e9497eb6012d7fe6a26fd4b428691715297022dc2b6795
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+***** fillPaper1 [b'fillPaper', [b'uuRk\xc0f\xa3\xac\xc6\xab\xb14\x11\x9c\xd6\xd4\xa9\x04\x19i', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]]]
+<Player 1 > fill --  9acc4d8172689fe44d31369d0a3f063f4673767f083b7eff611d27db2ca66575
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xa3CD\xeb?~\xa6\xee\x80\x88\xadm\x13\xf5\xcf\xac\xc8\x99\xdd\x88', [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]]]
+<Player 2 > fill --  38b0d9f4881e1340b1a3e4a88840ad4d1dd68251775a1cb815a0fd950ebb5caf
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'IJ\x051h\xf6\xe1CO%\xd8W\x98-\xcdK\x0b\xcbM{', [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]]]
+<Player 3 > fill --  c58a68bdd3f3f67f47fea88e2154c7538584c09a92a5ec921c79a491fc04b8a6
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'i\xc2\xd1\xc9\x9f\x03Y\xf3{\xde\xffe\xe2\xb7\xbb\x8c<e-\xd3', [30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49]]]
+<Player 4 > fill --  1c648e9fd480684cfaf5e8d4d1e77e5e99f4edf15c6b845eb215a0cfad367156
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xce\x99\xf4\x03\x9a\xde*\x84\xec\xde\x1b\xd0\xdc\xe9\xd9\xc3\x9b?\xa0\x85', [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59]]]
+<Player 5 > fill --  0d59c60a067f91b32f9c7faeaeeaf045cd3e25e6a25bd5e4f59e9bfbaba943d8
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'{\xd4tu\xc6\xa2\xd5\x05\x88\xe3\x81=#J\x02\xb7\xf3\xaf\x8aS', [50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69]]]
+<Player 6 > fill --  671c01bfc1d80cf4c7c677e596cc36bc13a84d08c76bf63ee3af76e261e5553c
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'(`Y\x0e$\xb0\xcd\x12\xb1\xadc\x13\xd5\x9cJ^\xee\x91\xe5p', [60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79]]]
+<Player 7 > fill --  624d1bd1a3c467a4ab5f43f5a90a3bf8d5495a699baf982bf00ab58ff858ca54
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xee-\xf4!\x82*zuR\x84\xc2\x88\xb4\xb7^I \xb1\xed:', [70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89]]]
+<Player 8 > fill --  5bad2db079d6ba7b9f2de71d7e17ba66475f83a902d68d1f1351c9a0f7256cfb
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x8e\xc1\x9a\xa4\xdeh\xed\xeb\x8f\xbf\x92e\xd8]f\xd0\x7f8>\x17', [80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]]]
+<Player 9 > fill --  ad2da9d5ca0bdc11580a365933fe30ab147b8af3703dc80f6b0f0c13ccf33252
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b')_\xe1AF\xca.8\xdf\x92>\xd0\xf2\xb1\xebX^\xda\xe3\x04', [90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109]]]
+<Player 10 > fill --  2ab13081df7c1b35a50db581311f46adda57037f1c13b1391bed5f22e81a39c5
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x93O\xad\xb7c\x00\xe9\x98,d\xaf\xf1\xe2\xdc\xcd\xcc\xecR\xd9\x11', [100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119]]]
+<Player 11 > fill --  8ffa02dc9809c10fa34331024fefbead08ec4df210087122142725efc881a786
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x99Q\x8dQ\x11\xea\xa9f\xccY\xd8\xf7\xfaW\xf8\xf5\r\xd6\x03\n', [110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129]]]
+<Player 12 > fill --  bcf4675c6ceff620595aff84c8040144ab2c3f9f01df35ad468ee66b8ee7df86
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'w8\xd1\x9d\xe0\x9b\x1a\x87\x1c\x84\xd7\xea\xeaJ]\xb1\x96V\x1a8', [120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139]]]
+<Player 13 > fill --  4c5515c8018cd4cb667d253f4343eaf1e921186596e3f50884a65754c2846045
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b']\r\xaf\xfb\xf60 \xfd\xdf\x08\xf6\x83\xb4w\x8e\x94\x07\xd1h\xb0', [130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149]]]
+<Player 14 > fill --  3b712e4ead584fe92f1abaa7d983d612d14658cdd688c4a162622bb49cf60998
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xbc@g\xb8E\xcc\x05\xa8\xf3?${\xb4\x14\x11 \x88\x07[\xc1', [140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159]]]
+<Player 15 > fill --  ac536207c4df9bb54df607e6cb236fd5605e24184f1fa52cdebe8f72a59ed015
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'X\xf0\x1e\xb5[\x06\xf4$\x96\x92K\x109c\xc4!\x85\xbb\x0fi', [150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169]]]
+<Player 16 > fill --  ed4abe91724a5fc052082f01963666faaaead6c2f7f480683dc7cbed2395c975
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x81\x80\xad\xe5\x8dw\xe0\x9e\x15\x0f\xd2\xd9\xa7\xebBO\xa8\x0f\x14\xf9', [160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179]]]
+<Player 17 > fill --  e1bd8b377280615497520b2a96b2585850442a832dc1d2a90cac765d9f8aade3
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'Ll"\xb0\xbd\x0e\xfe\x82$\xf4[\x16@\xcf>\xea\xd3H\x11\x07', [170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189]]]
+<Player 18 > fill --  aa02bbb6b3e04a78e9f8f3eff61c33d52ce642317e40b167015864b0e1a40d0d
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'v\xd1\xe6y"\x9b\xe7l\x03(C\x1f\xd7,BkH&\xda\x83', [180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199]]]
+<Player 19 > fill --  7cf74871fc4390909910c8a08fb9fb797e43868adb447196dfe859bd571c64d8
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xe9\xd8\x9fb\rH/\x8c\xfb\x13\xa9L\xad\x8d\xc7b\x98\x07s\xa6', [190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209]]]
+<Player 20 > fill --  707916e82c702e7e6b39d289e0d4ea4b2a078aa7482dd91d23d6080942022168
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x02\xee\x9c\x04~\x85m\x11\xe0\x9d\xeb\x1a\x80\xecK\x9a\x87\xd0\xd4\xd8', [200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219]]]
+<Player 21 > fill --  d761698165285ab1d6a9341cd289173477329ec5893ea971690c11815e60ccde
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'V\xc7n7\t\xa2e\x1c\x87\xe5\xc6\xfc\xc3/\xafU\x94K\xdb\xa8', [210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229]]]
+<Player 22 > fill --  4365ab6448fe99a50db1ef9d6349e72c24d6080d0ff3650ff408b077baf1da59
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xfbq\x07\xa2\xb91\x9e<\xf7w\x9b\xf2\x18_\x1c\x1a\x95\xdd\xd7\xfa', [220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239]]]
+<Player 23 > fill --  9f277e83d8737f60e75c5479ea56486d73d58d803406cfe13becbc59c8ad5623
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x12\xe8U\xbc\x9fA\x17\x8fH`S\xf1\xcc\xb2*\xb1\xf4\xce\xd9\xad', [230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249]]]
+<Player 24 > fill --  92b9e71c63a93ec3e8c21b3fc397641ab178a9f4e6ae60530025f926ae28830e
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'#\xf5eq\x03o\xb4v\xc1F\x8e\x91\xfb\x01\x08\xd2\xc5$-\xfe', [240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259]]]
+<Player 25 > fill --  284beb7e37306d2dceb9a1802ac02523337e1c0ba1c45ed375b212791028b002
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xadB\x8d\xa5\xbc\xb6\x8aJ@\xf01E\x92\r\xc4\x8f\xd2taI', [250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269]]]
+<Player 26 > fill --  0d45d1d12dfd3fc1ba65c506dc88106e7a46995f98ee5b63f574637accd32e00
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'iI\xd3\x1b\xfa\xc8=\xcbxg\xbd\x15\x82&\xc4\xc6\xdb$\xfd\xab', [260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279]]]
+<Player 27 > fill --  b9f8ce43c45ffe6c8b55d1ea131182ef57b883f6dc6be82329fdbe8c1c477db5
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x0f\x05\xc9z\xfb\xb5j\x9f\xfa\xd6={\x84\xf8\x01\xfaG\x7f\xbf\xd3', [270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289]]]
+<Player 28 > fill --  bd562550595ab79db2793d98b10f3fbbd2a1f45abc2e0fc25085466e0b01f167
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b"\x1aoq'\x01Z\xc91\xd6\xc4\xcc\xe0#\xe1\xe4QRE\x89%", [280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299]]]
+<Player 29 > fill --  935be13f9c2f9e545c62ddb5652138685bc6296e83c73d431fd3980670fa95a3
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'v9\xddZ*\xb45\xe8\xe1\xd3\x07k+\xe1\x0e`\x94\xd8\x8a\xee', [290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309]]]
+<Player 30 > fill --  e59ba190e20b21393f5028f603528e12b53c7a55c6d949c25acec7531899eb90
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xcc\xf9ls\xd6\xa9\x93\x8f\xd12b\xe9fRN\xba\xee+$\x1a', [300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319]]]
+<Player 31 > fill --  ab2a36992256e0e9ad9deef771e3974c399a70e04a4cd7b5f726506f4187f42b
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'c\xc5p\xc8#h\xf6X`\xfc\xff-P\x07l\x1a\xb8\x91:\x1e', [310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329]]]
+<Player 32 > fill --  ab8b6d459ff19014b2af7bcd689ce686304595058348727b7e47c3a33123fe56
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x04\xcdjg\xf9\\\x82\xf8\xfare<|\x98\x8b\xedu\x01i\xc6', [320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339]]]
+<Player 33 > fill --  b9b1727ff04e8a8f7a10b0dc655543abc611e38a146382195f9d4b4a12c3a5c0
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'<i<\x83f\xff!\x18\x10.\x1dE:\xae\xe0\xec\xd7^\x16\x0b', [330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349]]]
+<Player 34 > fill --  72279098583718225468bb880c31ade34fbdf88da5689c30f7ad3aa072a6fe4f
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x0f\xce\xcd.\xf4\x8dV\xec,\t{0A\xac\x17p\xbe\xb3\xc9\x18', [340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359]]]
+<Player 35 > fill --  a82df78bcaca596b307ae74a10bfb57fd86439b21e0d16077ff0570fb0f0c8ff
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'=\xec\x82\xf1\xd0\x0b\x95v{j#\xf2~HX\x8a\xa1JIX', [350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369]]]
+<Player 36 > fill --  1d1fcc8d2d9515bbaed60cc37ed5264ac2913505317615205f530adef85aad31
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'U\xa4\x82-\x1f\x9c\xdeY\xa6\xebN@J8;\x11\x89\\\x88\xd5', [360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379]]]
+<Player 37 > fill --  dde1b28401b9f2fdb967163847333f68f8ddeddbdfb71a48ef2a7a1b295cc353
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x9c\x86\xec\xabDKY\xf7J\xb2\x10\x06h\xbbgM\x0e\xe2&I', [370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389]]]
+<Player 38 > fill --  a2b46fc077ed737c8246eb649a1df6a84b7fd9b691525d9c0a5f28338fccb21c
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x11@\x03\xb4\xab\xfc\x1cW$8\xe9<[\xfb\xd4\xf50\x02\xeb5', [380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399]]]
+<Player 39 > fill --  7901c2fff3e2f6c4fc943abe1d643429b25a81fc2c5f585271fbd016a5c6af84
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b"\xc1\x84\x8a^X\x98\xfdF\x83i\xd3'{\xc8v,t\xfeK2", [390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409]]]
+<Player 40 > fill --  2d61c25e507a2108556147ef490c6499e557725f875aebe5d74caf875cab94d3
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'l\xfe\xca\x13\xbe(\xfb\x9a\xf0\xc0},\x15\x8d\xc2\xd9\x048\x89G', [400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419]]]
+<Player 41 > fill --  27ae6d058560214262065f4e0e4c25051c04e0e7c84dfdb2c8107dfe510f63bd
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'-U\xaf\x1e\x895\xd61\x91\xb2\xda8\x1f\xb7\xcd5\x1b \x04\xdc', [410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429]]]
+<Player 42 > fill --  afdcd81105a6ff427e299d889d7810324b013128b6859497f5044f3e5f20b43f
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'v\xf0\x9b\xbf\xaf\x0e|\xd7\xbd,}\xf8\xc1\x8c\xea\xa6\x1e\xf6\x0f\xc7', [420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439]]]
+<Player 43 > fill --  68d015559a4cc8c8b9acc850457acb76394ba94e4c68e2f91257cb186e71f770
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xa7\x1e\xc0<\xa3\xb8\x80\x86i\xec\xd1m\x1fn@\xf2\xf3\x99\xf0\xe3', [430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449]]]
+<Player 44 > fill --  fc66b3145da104a9201c38d680aec1168bbd0cdc91a8e5b7c8e2e506530b60d9
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xd4\xfc[\xde~\xe1\xa9\xa9\xac$\xd1t\xe0\xbd.\xec\x82\xca\x97+', [460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479]]]
+<Player 45 > fill --  771bffdd3fd0e7d8840402bf2cec864d4a2cc4e43269019193ff30e8982ff8b3
+paperBalance :  40  filledPaperBalance :  20  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xf2\x86\x97\r\xab\xc9\xeb\x98\x1e_\xa3\x1c\xc4\x97\xeb:\xe2R\xb1\x8d', [450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469]]]
+<Player 46 > fill --  035ac61354a0ac9bfe0b219c5b5068035299d4ab62340a52fda3713de8d0c314
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xfe\rb\xd1R\x8d,\x1e\xac\xc6\\\xff-\xea\tL\xfd\xaa\x8f]', [460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479]]]
+<Player 47 > fill --  c1ae494468d906527ab19a5c91c55b591d6fef5f6853b40d85a76721b8e4d35d
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x8e7\x80\x12\x0f\xc37\xb1\xb3c\x99\x9a\x12\x8dU\xba\r>\x08\xdd', [470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489]]]
+<Player 48 > fill --  9501cdd4526ad3bc2326e48abc8c2c9faf5cda2e81de23682af7d305918c17d9
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xd7\xe9\xa7$&\xc7B\x87\xa1\xd2\xc2\xe2\x92\xec\x04\xc6\x8d\xb9\xb2y', [480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499]]]
+<Player 49 > fill --  2768fb2de20ae2b4fa19bf632fe0d4462a545ef29d1aee8134a65d9f7e2c4dae
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'[\x99J\xb7\xed_\n \x0c\xb2\x06\xd7\xbc\xed\x9bV\xb9@\x97_', [490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509]]]
+<Player 50 > fill --  29bc674f381c653d2359eeeabe92c4cc59a5a076657a917b96be5d3a8882616d
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xd1t\xdb\xf0\x1d\xd1\xe0\x89\x8a\x95n\xc0,\x1b\xa1\xf8\x8du\xc2$', [500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519]]]
+<Player 51 > fill --  0ea902a190f85aff93c253cb385e5d45e64efeb96457518f7a2bb0cbd2db6616
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'e\xafG\xf5\xacDxT\t\x9d6\xe7UN\xccb\xf3D7\xbe', [510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529]]]
+<Player 52 > fill --  cfd44f017678fcc2f093e83e770a5225aa4876c6730b05c581994571335d0417
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xda=R\xb2\xa7\x83\xb5[\x12\xef\x8d\xa6k\xa1\xb7\x15~k[\xda', [520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539]]]
+<Player 53 > fill --  ec19d7987b57931dbab53950bc7c14d14e88b427bf469efa190adb4b1468d156
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xb8n\xc2o\xafQi\xef\xca\x1c\xbaeX\x97\xb0\xba\xe2\xb2\xa4\xe4', [530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549]]]
+<Player 54 > fill --  a4cac5380749cd13349a407da06c69bb5678d445fac069cdc142ae6056289479
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'(T\xf6GpGa\xa4\xa8Z\xa6\x01W2\x8d\x8f%s\xd7[', [540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559]]]
+<Player 55 > fill --  ceab1be3aaa171cd3c2d4d0ad843fa0f6907c20653a47c9695fadbe5f4ef3221
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'*\xac\xbaA\xa7\xd4r\x9b\xbf\xed\x01N\xc4\x1a\x8d_\xd6\x1a\x9d\x18', [550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569]]]
+<Player 56 > fill --  f3b5e06dcd29bef5cff0602cb6c6ea199e68fee1a2dd2998b91ab530c969433f
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'.\xf0\xcd\xec*\xf6l\xec\xa0ap\x8c$\xe6>\x05\xa1H\x89\x14', [560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579]]]
+<Player 57 > fill --  f006b85bb6d90a887440e9d6790ee14d641e084c3df1751c1834c4cc0abf7143
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'8\xea\x15q\xdeP\xd50\xa5Y\x84v{\xa9\xd3\x05Uu\x1b\x88', [570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589]]]
+<Player 58 > fill --  65c1f8dcb7b0010e5a25b8bd378848591397cdf4b3a73b2bd626da8e052492e9
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x1c\xa3\xd4\xbbMj\xfe\x05*\xc4\xadt\xfc\x03\xb752P,\x05', [580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599]]]
+<Player 59 > fill --  b3c8ba1953eb490bd663c0703da0462b5ed22e037dcb7fa4b665dfc84b6d9f30
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x17\xd9\xea.\x1c\x9bFx)M\x84\x96]\xad&\x18\x04\x1d\xd6;', [590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609]]]
+<Player 60 > fill --  8bb3a108a5c8e9c1cd9f03c7d240a5fea035a7ead883c51f43e070d43fabe342
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x1eN\xa1KC+\xbc=2o\x10\xa6\x1a\xd9 kv\xdf6e', [600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619]]]
+<Player 61 > fill --  d280a6e48dd4acc54ae381370553947ee537f74476f73194469a6f2f84810cd8
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'g|~$\x8c\x02~\x98B\x90\x86\xba\xb214"D\x95\xc0\xe2', [610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629]]]
+<Player 62 > fill --  002983a7e3e5f2fed2f1656b7c6afe9d51b3680519f4cd1bd5e378b740674d34
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'P\x89,\xce\xf1\xe2\x0c\xfa\x04\xaf\xa4A\x8b-q\xea\t\xc1{\xcd', [620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639]]]
+<Player 63 > fill --  4e571dc8e93e5c1a3186efceca36963e85d60c7ee9d068b673c96e49b3074d86
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xbc\xe0R \xcf\x12\x9f\xbcL\xf4\x8e\xdc\x19\x96\x03\xed\xb1\xe6\xe0o', [630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649]]]
+<Player 64 > fill --  260cc15357b82eb8f57456803b4d5783731fce5cdc4b7d4f475e6669e828cc6d
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xced\xb2\x9d<\xeb+^kIJ\xa4\xebS\xa9\xef6\xe3o\xf3', [640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659]]]
+<Player 65 > fill --  ea3ea60ea0dddb114929f55fc0796dc6781dae7311bc5d74d903482bcf44ca53
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x8a\xb3:\xc8\x81\xcb\xc1\n\xc5L@\xdd`\x7f\xa9\xb3\xe2m\xb7!', [650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669]]]
+<Player 66 > fill --  d8518a2df0d19b80bb9c672342d6357302b914bee1ae8e9da2d80bb75b8c4652
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'?`\x9a\xd2\xa3\x0e>]7EQ\x94\xe6\xfc\xe7\xe0\xac\xcca\xdc', [660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679]]]
+<Player 67 > fill --  cc9dfb1df097ab3617a3c6e22bd8397d77a2e3e805e40a457ac91dc5d8f14d27
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x87\xac\x81CANr\x87\xd7+\x1e\xd3\xc5\xa9\xb9\x80e3\x03%', [670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689]]]
+<Player 68 > fill --  4879039de5d09b3dd2674cadca11eea2de10a57ced4ccb57e0fcbda7c2787998
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'/A\xa3\x04[\x8a\x86\x81\xd6-\x8a$\x14\xb3\x93\x07\xcf\x06s\x14', [680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699]]]
+<Player 69 > fill --  2a118e79339d3042a2c7f5127cfe2e26430046a6756d2716c6d7118c0dad2309
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'o\xc3S\x924\r3\xa1\xba\xb9\xa9\xb4\xaf<\xc0K\x92\x1e\x9eb', [690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709]]]
+<Player 70 > fill --  6287797ae2421a761460d6c748a4181eea9f8e939b55263e623402cc9b78cc22
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'Z\t\xeb?$\x1e\xb7a\x12UIU\x08\xfe\xa3\xfb\xb4\x8cNO', [700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719]]]
+<Player 71 > fill --  2f3823e864b8d766e7cf1db46e6a9638b550c3b209f75066a81c6c80a705698a
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x12\x96\x99\x8c:\x0c\xd5d\xe8\x03\xefh\xa8[\x02UC\xcb\xfa\x0c', [710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729]]]
+<Player 72 > fill --  abe1704913b2c93842b1461780bc3ad28b982709f199846bd8e20bd9b274a5d8
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x8b\xada*z\xbf;<84R\x04\xf8\xa5\xaa\x18\x14\xd0\x9ea', [720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739]]]
+<Player 73 > fill --  ee0fb4982681b59d08f738a11b45945d1f4df738a853f2ad614fd429ccb2b878
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'K\xa3\xa0\r/\x81\xf2\xe8m\xb22se\xa4\x01H \xfe\x8a\t', [730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749]]]
+<Player 74 > fill --  856f37d11d724b773965560b8fbaf7ff862c44f8883558a2f1138f95e1e9bcc5
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x9fm\x8ck\x13>{\x98\x8e\xaa\x85\x10\xfa\x006[\xb3@\x14\xfa', [740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759]]]
+<Player 75 > fill --  340f7c2c9a0ed2bdf96310c26ad198d1d67814dfbe93a5f9c114dc057c33e585
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xb1q\\\xcb\xed\x83\x92\xdc\xa0\xd5[v\r\xe0\x9e\xb5\x98\x15H~', [750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769]]]
+<Player 76 > fill --  fd4f7ff9afde7d25ac5d04cf44ead363db79098d482c37f8db3ea7c70d4e988b
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x89a23\xdb\xfdQ\x94\xae\xf8\xca\xdd\x01{\xa6@\x90)\\\x1b', [760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779]]]
+<Player 77 > fill --  a63e5ee5acc81425d7c73c365a2e1b2cfcee760e89b6ca94b6916bd48e998ee6
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'.\x11\x96.iJ\xf4p\xa2\xcf\xfdncfF\xdf\xf2\x83\xb7\xa9', [770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789]]]
+<Player 78 > fill --  822113a3b4a33b68de443109adfd5e89b97f2ba6e5c6eb73412ae9a61459f205
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x07zOp\x0e\xae\x92$!\xa6\x0b\x90\xc4\xfe\xe8H@\xa1\xe6g', [780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799]]]
+<Player 79 > fill --  f940508a1fd5e8913db8d2834968833978875b07d4966b988770c1f7c8e3de1b
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'$\x04\xca\x0c\x9d\xdf\x81f&8\xb2\x87rnf\x16\xa8\xa1\xf3\xba', [790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809]]]
+<Player 80 > fill --  b8805e38eb558d803184c7add2c6572ef614090aa74646d98ffac6b4e0aa4c80
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'v\xdbbpN\x16\x1f\x82\xdb;\x99\xe3T\xe2l\xadd\x08]\x1c', [800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819]]]
+<Player 81 > fill --  f0e30cab105b1bb5e31facf024ca193244e0a0854da4481dc4a75fa930cf983a
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xa4\x1a\xeb\xd3?\\\x86\x10Pe\xb4,\x97\xe03\x06\xff\x94\xa6\x06', [810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829]]]
+<Player 82 > fill --  5215425b08555f6fde4e1e1588b45ee1040fe6ffce55a5d61df397aec3cab5e6
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'Y \x8fRI\xb6\xac\xea\xd5\xa6g\xf4@G\xb9\xea&O\x1d\xd5', [820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839]]]
+<Player 83 > fill --  2c7310d1056624a37bd127f85186940af83f93e11d2e22ab096bd4705d75d4f3
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'=\x18\x87\xbb-L\xf0\xef\xdf\x8f\x04\xd3\xcc4\xb2\x1e\xb4\xd8\xcb\xb7', [830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849]]]
+<Player 84 > fill --  1689922d891dc74c800b34a5a03bfd7c834d8a0932bfd81b99fdaee829f70ccd
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xbd\x1cn\x8f4\x16\x06T\xcd\x00\xbe\x06\x11\xe6\xefw_\xc6\x9f\xed', [840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859]]]
+<Player 85 > fill --  d8e064d0096fd492135cac0d04b829223f18584fbad03f0cc99387810c8e1652
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xb5\x9aPO\xcb*wD\x8f\xda\xf6\x13\r\xa78\xbc\xfe\xa0\x9f`', [850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869]]]
+<Player 86 > fill --  af4585c8ec72fd99ee23d271851530e2bb2c19317dec2baf9baa6ee68a9c9871
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xe2\xbc\xb9Q\x1e\x97o\xf3\xc7D\xaf\x9d\xdc\xd1\x8e{\x9aV\x0f\xcd', [860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879]]]
+<Player 87 > fill --  c0c2133e6eb9d3b7adf307fcefd4ff2c3b884b89a9b3276c20d371393a6a526a
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b"W-\xcb\x8a\xcf\n\xd4\xa2\xae\xa4\xfd\xb0P\xce^\xe1'\x83\x1c\xfb", [870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889]]]
+<Player 88 > fill --  7a5268d976446acdfcc11f5a3994df6116f3f920d9b7fb24067e934f971e74ae
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xd0\x97\xa4qp}\xed\rI\x97J\x994\x97\xec\x85x<sK', [880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899]]]
+<Player 89 > fill --  8365cb13ab9abea6338c63f2f25c23b822207e2710cf739ff7b604570d41f5ea
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'q\xee(\x0b\x13\x9d\xc0Z~\xa6\x7fMp`\x8f\x89\xa2|1?', [890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909]]]
+<Player 90 > fill --  1a1d17b30dad0316cf11037b2d98fd633dd62f5658cea054ed906901923eb84a
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b"R\xa0\xc6;\x8f\xd3\xd1\x00\xde\xeb\xdeo'\x1d\xf1\x86\xd8\x8c\xee'", [900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919]]]
+<Player 91 > fill --  4f655be7b0341aed59d09e4af1504ccca7fc03f3cb6ed18466565305cecde7bc
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b't\xd5Eg2\xae\xdf \xd8un\x90\xcd\xf4\x12\xbcg4(\xd5', [910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929]]]
+<Player 92 > fill --  50efe4f06f20236f0e0b5f2edd220bee36176ab8947eba9e3724f45ab3217b3f
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xfaf-\xed\xb1K\x12\xdc\xfdg\xb5\x1d\x03\x05\x0bNu\x16\x1ds', [920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939]]]
+<Player 93 > fill --  6b535c4e15017fc0e33163d320cd37b3a79d03a77e1703ab5df33bf03dd4e959
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xfa\xd9\xb6\xbe\xba]\x14$C\t0\r4\xb8\x14\x0f\x08>\xfcv', [930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949]]]
+<Player 94 > fill --  92230e0650ca47bdf8f6981c60b8cbaa86fa519bb248f78e43387db04a885758
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x0e\xc1\x9dY\xb9\xeeN^\x07\x17\x81y\xbaO\xd0\x0e\rg\x82\x87', [940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959]]]
+<Player 95 > fill --  573229a015cd27e8814e0c9c8227f2884c83623ef598cb190d76b4a38a061d93
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'+\x17\xb0\x8e\xeb\xd9\xee1\xe6\xb3\xfeO\xa8\x1a#\x017\xd6\xa0\xb8', [950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969]]]
+<Player 96 > fill --  d59cc9fc60e0d34ac3fd69604c4911a7121dc9cd2fca3efed98a8290fbf2fade
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xc3\xc52\x97W5\x05\x04\t\xc5\xa7\x93"\x87\xf758<\xd0R', [960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979]]]
+<Player 97 > fill --  a5c327ec5a9031fe5f096831a549bf077bc64cdac6b51d8e3ee68a1d9836eab1
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x93\x99\x85S\x07Y\x87"\xda\x1c\n\r\x10\x8ePj\x0ce\xbeZ', [970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989]]]
+<Player 98 > fill --  a05f038da4a8f8bec4929bdf451072ea2e30d6ac98a4cac31cbac556727b1370
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\xae7\x94^\x96XH\x00\x04\xc9\xae\xdd\xf6l^x\xa9\x1eYc', [980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999]]]
+<Player 99 > fill --  df478b9f82e2158f43f8056c8e8233d7fc51e6a5aa21763b230ce72f6373f900
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+***** fillPaper1 [b'fillPaper', [b'\x87\x9a\xab\x86\xfe\xd4\x95\\\xca\xa0(\xa0\xb2\xb0\x7f|fZ\xa9x', [990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009]]]
+<Player 100 > fill --  e0653e7e28d542b47544978fd7947ba9763599bd5661115bf5fe58083c58e4b4
+paperBalance :  20  filledPaperBalance :  0  unfilledPaperBalance :  20
+<Player 1 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ASUwFccvYFrrWR6vsZhhNszLFNvCLA5qS6', 20027687400, 20, '2018-11-04 09:58:42']
+continus fillPaper-res-event is :  ['fillPaper', 'ASUwFccvYFrrWR6vsZhhNszLFNvCLA5qS6', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19], '2018-11-04 09:59:54']
+<Player 2 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AWf8NiLzXSDf1JB2Ae6YUKSHke4yLHMVCm', 20031391400, 20, '2018-11-04 09:58:42']
+continus fillPaper-res-event is :  ['fillPaper', 'AWf8NiLzXSDf1JB2Ae6YUKSHke4yLHMVCm', [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], '2018-11-04 09:59:54']
+<Player 3 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ANTPeXCffDZCaCXxY9u2UdssB2EYpP4BMh', 20005463400, 20, '2018-11-04 09:58:42']
+continus fillPaper-res-event is :  ['fillPaper', 'ANTPeXCffDZCaCXxY9u2UdssB2EYpP4BMh', [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39], '2018-11-04 09:59:54']
+<Player 4 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ARR5ywDEx3ybXkMGmZPFYu9hiC8J4xvNdc', 20009167400, 20, '2018-11-04 09:58:42']
+continus fillPaper-res-event is :  ['fillPaper', 'ARR5ywDEx3ybXkMGmZPFYu9hiC8J4xvNdc', [30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49], '2018-11-04 09:59:54']
+<Player 5 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AacHGsQVbTtbvSWkqZfvdKePLS6K659dgp', 20012871400, 20, '2018-11-04 09:58:42']
+continus fillPaper-res-event is :  ['fillPaper', 'AacHGsQVbTtbvSWkqZfvdKePLS6K659dgp', [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59], '2018-11-04 09:59:54']
+<Player 6 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AT4dGijAQSMcN5mj2q7ePTWcKFEnG1qeu3', 20023983400, 20, '2018-11-04 09:58:42']
+continus fillPaper-res-event is :  ['fillPaper', 'AT4dGijAQSMcN5mj2q7ePTWcKFEnG1qeu3', [50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69], '2018-11-04 09:59:54']
+<Player 7 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AKTN6YDdnY8GXcD6oSEDdSFnXscJzjT3Sn', 20016575400, 20, '2018-11-04 09:58:42']
+continus fillPaper-res-event is :  ['fillPaper', 'AKTN6YDdnY8GXcD6oSEDdSFnXscJzjT3Sn', [60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79], '2018-11-04 09:59:54']
+<Player 8 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AdVFX4vzxpaREQHRc7n5fnN65GvydWQNP2', 20020279400, 20, '2018-11-04 09:58:42']
+continus fillPaper-res-event is :  ['fillPaper', 'AdVFX4vzxpaREQHRc7n5fnN65GvydWQNP2', [70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89], '2018-11-04 09:59:54']
+<Player 9 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AUnhXaudVSBFqjH92a6HrhQySUTiQjf5VR', 20061023400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AUnhXaudVSBFqjH92a6HrhQySUTiQjf5VR', [80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99], '2018-11-04 09:59:54']
+<Player 10 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AKYeDDU8918ndDdyMFnkmGUC4QsXrG6aY5', 20038799400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AKYeDDU8918ndDdyMFnkmGUC4QsXrG6aY5', [90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109], '2018-11-04 09:59:54']
+<Player 11 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AVCnRrxZDn3bKj9ZqRmsnx3Ts7JgpGtELc', 20127695400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AVCnRrxZDn3bKj9ZqRmsnx3Ts7JgpGtELc', [100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119], '2018-11-04 09:59:54']
+<Player 12 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AVkYjBWL9NQ68Gb4Y2C26yCJovy2X9Pnf5', 20331415400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AVkYjBWL9NQ68Gb4Y2C26yCJovy2X9Pnf5', [110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129], '2018-11-04 09:59:54']
+<Player 13 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ASeG8AcqcJMjQz5dWmC9RY2FsjvpDLymKC', 20120287400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'ASeG8AcqcJMjQz5dWmC9RY2FsjvpDLymKC', [120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139], '2018-11-04 09:59:54']
+<Player 14 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AQFttMk56apS1kYRrKoNHhwoV9jhRtB6Jj', 20301783400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AQFttMk56apS1kYRrKoNHhwoV9jhRtB6Jj', [130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149], '2018-11-04 09:59:54']
+<Player 15 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AYwFqWbc6LNLhjqh6Qc4Qg5ov2zfYe83cm', 20161031400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AYwFqWbc6LNLhjqh6Qc4Qg5ov2zfYe83cm', [140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159], '2018-11-04 09:59:54']
+<Player 16 > ********************
+buyPaper-res-event is :  ['buyPaper', 'APt8mCvQmdVgnqjsDW2HUPQSqNrzJrGeV3', 20257335400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'APt8mCvQmdVgnqjsDW2HUPQSqNrzJrGeV3', [150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169], '2018-11-04 09:59:54']
+<Player 17 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ATacy39ZERRfrgDEf3PmjH1hAWxyXtob9s', 20335119400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'ATacy39ZERRfrgDEf3PmjH1hAWxyXtob9s', [160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179], '2018-11-04 09:59:54']
+<Player 18 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ANjxYTtJyBGisBJNbNCzjGyxQFA9qqNwd8', 20290671400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'ANjxYTtJyBGisBJNbNCzjGyxQFA9qqNwd8', [170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189], '2018-11-04 09:59:54']
+<Player 19 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ASc8qG992Z9W5h3YWDHbdxCN3mBxpC75dT', 20194367400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'ASc8qG992Z9W5h3YWDHbdxCN3mBxpC75dT', [180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199], '2018-11-04 09:59:54']
+<Player 20 > ********************
+buyPaper-res-event is :  ['buyPaper', 'Ad6LbPwAJV9jDaDDdY1caYADeL1LgGV86r', 20305487400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'Ad6LbPwAJV9jDaDDdY1caYADeL1LgGV86r', [190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209], '2018-11-04 09:59:54']
+<Player 21 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AG3Nqkr3apQwKsvBkuE6ZjGgZhCgaR3qPG', 20042503400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AG3Nqkr3apQwKsvBkuE6ZjGgZhCgaR3qPG', [200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219], '2018-11-04 09:59:54']
+<Player 22 > ********************
+buyPaper-res-event is :  ['buyPaper', 'APgiffusKMY7Um6rbyia5QAvP3BtMed6N5', 20346231400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'APgiffusKMY7Um6rbyia5QAvP3BtMed6N5', [210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229], '2018-11-04 09:59:54']
+<Player 23 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AehNf6dGCWF9gnXWRNy45ZVTxFci9mfRBQ', 20083247400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AehNf6dGCWF9gnXWRNy45ZVTxFci9mfRBQ', [220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239], '2018-11-04 09:59:54']
+<Player 24 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AHVr8s42HqzB8s14fGTXBnCJhqDszhsy5e', 20098063400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AHVr8s42HqzB8s14fGTXBnCJhqDszhsy5e', [230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249], '2018-11-04 09:59:54']
+<Player 25 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AK41GeFpNSidsPT64zRmxnjogMEeogStdT', 20272151400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AK41GeFpNSidsPT64zRmxnjogMEeogStdT', [240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259], '2018-11-04 09:59:54']
+<Player 26 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AXZzGtaPBEXfrGa6uvEFxBsK4wsyom1PuS', 20275855400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AXZzGtaPBEXfrGa6uvEFxBsK4wsyom1PuS', [250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269], '2018-11-04 09:59:54']
+<Player 27 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ARNb34q4j65wDqZPAnC8bUXeaRyAoTRiNT', 20168439400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'ARNb34q4j65wDqZPAnC8bUXeaRyAoTRiNT', [260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279], '2018-11-04 09:59:54']
+<Player 28 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AH9JiTyTBoS2KQ9YXCAcssqHH4d4kAtLhu', 20324007400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AH9JiTyTBoS2KQ9YXCAcssqHH4d4kAtLhu', [270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289], '2018-11-04 09:59:54']
+<Player 29 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AJBeicSmG5fiDWZdzmK5kQGyth1knzVurK', 20312895400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AJBeicSmG5fiDWZdzmK5kQGyth1knzVurK', [280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299], '2018-11-04 09:59:54']
+<Player 30 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ASYzhe9Ai5VkaZhWsuEvEsZUed4CRqAykh', 20086951400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'ASYzhe9Ai5VkaZhWsuEvEsZUed4CRqAykh', [290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309], '2018-11-04 09:59:54']
+<Player 31 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AaTgHtb1iUi8ohKJHUJBzgkkZELCkdRhhv', 20212887400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AaTgHtb1iUi8ohKJHUJBzgkkZELCkdRhhv', [300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319], '2018-11-04 09:59:54']
+<Player 32 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AQsR4u8vA68bcQVLYLrkRZbaienrhhkEia', 20220295400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AQsR4u8vA68bcQVLYLrkRZbaienrhhkEia', [310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329], '2018-11-04 09:59:54']
+<Player 33 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AGDGRo5ANYbbjRMxCPNVgC4mH5npgNUeuq', 20261039400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AGDGRo5ANYbbjRMxCPNVgC4mH5npgNUeuq', [320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339], '2018-11-04 09:59:54']
+<Player 34 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AMHJFxdn4EZqbLUHLeRGCaYsko5YNf6nbt', 20046207400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AMHJFxdn4EZqbLUHLeRGCaYsko5YNf6nbt', [330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349], '2018-11-04 09:59:54']
+<Player 35 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AHDTXCJkXfrzhuyTDBJDnu7zsjNemnpz2B', 20146215400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AHDTXCJkXfrzhuyTDBJDnu7zsjNemnpz2B', [340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359], '2018-11-04 09:59:54']
+<Player 36 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AMRJCJmrJ3tcYDNxAzEEnJKHCkqbzYP7uy', 20153623400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AMRJCJmrJ3tcYDNxAzEEnJKHCkqbzYP7uy', [350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369], '2018-11-04 09:59:54']
+<Player 37 > ********************
+buyPaper-res-event is :  ['buyPaper', 'APaiA4979sHgnAnqSUswR1jQFjxkpbFHpS', 20286967400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'APaiA4979sHgnAnqSUswR1jQFjxkpbFHpS', [360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379], '2018-11-04 09:59:54']
+<Player 38 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AW3Wh9AqUHNqYbtthSL5SzQKmwaZdRKbra', 20105471400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AW3Wh9AqUHNqYbtthSL5SzQKmwaZdRKbra', [370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389], '2018-11-04 09:59:54']
+<Player 39 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AHM5pZcoVXsBuo5jqYnnwM9hbC71uENERC', 20157327400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AHM5pZcoVXsBuo5jqYnnwM9hbC71uENERC', [380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399], '2018-11-04 09:59:54']
+<Player 40 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AZR6qbb13ZX4tw5Bubqtaig16cQofvHreh', 20349935400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AZR6qbb13ZX4tw5Bubqtaig16cQofvHreh', [390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409], '2018-11-04 09:59:54']
+<Player 41 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ARiBrHrPtDD3ZLwGrbBEKvYrYg4dPpxKgf', 20264743400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'ARiBrHrPtDD3ZLwGrbBEKvYrYg4dPpxKgf', [400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419], '2018-11-04 09:59:54']
+<Player 42 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AKuahZdyzdH1KBfTswSuTYkr1y55xNdmq8', 20227703400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AKuahZdyzdH1KBfTswSuTYkr1y55xNdmq8', [410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429], '2018-11-04 09:59:54']
+<Player 43 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AScmcu56pz7MByGHcwqi5u7XHrHn4WJk6P', 20064727400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AScmcu56pz7MByGHcwqi5u7XHrHn4WJk6P', [420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439], '2018-11-04 09:59:54']
+<Player 44 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AX1XL9QZxqdyVZXu7baciGUThzY5Mv58vZ', 20068431400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AX1XL9QZxqdyVZXu7baciGUThzY5Mv58vZ', [430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449], '2018-11-04 09:59:54']
+<Player 45 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AbC3DNGwtsJPSnEWHYzvh4jkMsQNucwJa1', 20268447400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AbC3DNGwtsJPSnEWHYzvh4jkMsQNucwJa1', [460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479], '2018-11-04 09:59:54']
+<Player 46 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AdtEQQGp9qxQLYNiREQYU4puPdgRWQdDEQ', 20231407400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AdtEQQGp9qxQLYNiREQYU4puPdgRWQdDEQ', [450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469], '2018-11-04 09:59:54']
+<Player 47 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AewBKJK52b557qUUYpz4fxD2EJk5NeJsyf', 20216591400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AewBKJK52b557qUUYpz4fxD2EJk5NeJsyf', [460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479], '2018-11-04 09:59:54']
+<Player 48 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AUjr5xvWhXgWy9H2T31qG6z4dLmAG1NHdJ', 20186959400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AUjr5xvWhXgWy9H2T31qG6z4dLmAG1NHdJ', [470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489], '2018-11-04 09:59:54']
+<Player 49 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AbTWqEGnnbDjB8t6FZdjbsNoCgE7ELr6yZ', 20172143400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AbTWqEGnnbDjB8t6FZdjbsNoCgE7ELr6yZ', [480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499], '2018-11-04 09:59:54']
+<Player 50 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AQ8Cmrsa77FcsUCXfTvvfzWXPXa3Z4n1zv', 20112879400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AQ8Cmrsa77FcsUCXfTvvfzWXPXa3Z4n1zv', [490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509], '2018-11-04 09:59:54']
+<Player 51 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AasNs763mSwYFqyfMiuDgSi4F9HGt1bPbA', 20131399400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AasNs763mSwYFqyfMiuDgSi4F9HGt1bPbA', [500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519], '2018-11-04 09:59:54']
+<Player 52 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AR3XscjsXFSA86xYjK6v356Z4pF5fyn4N3', 20249927400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AR3XscjsXFSA86xYjK6v356Z4pF5fyn4N3', [510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529], '2018-11-04 09:59:54']
+<Player 53 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AbfpR7j5hntHfiJ9HGwJT4BqFyErEQUzWW', 20090655400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AbfpR7j5hntHfiJ9HGwJT4BqFyErEQUzWW', [520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539], '2018-11-04 09:59:54']
+<Player 54 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AYb4fW2V8Mxkf7nCJxdbdaQ2wteuKSrGs3', 20198071400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AYb4fW2V8Mxkf7nCJxdbdaQ2wteuKSrGs3', [530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549], '2018-11-04 09:59:54']
+<Player 55 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AKT8TSHMArpJimgfrD5J3GnEREiCwFCHum', 20294375400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AKT8TSHMArpJimgfrD5J3GnEREiCwFCHum', [540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559], '2018-11-04 09:59:54']
+<Player 56 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AKfWwsoiLWKbm21gFXxvDuxs2frvwtG6Qw', 20201775400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AKfWwsoiLWKbm21gFXxvDuxs2frvwtG6Qw', [550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569], '2018-11-04 09:59:54']
+<Player 57 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AL45ChpDuGgxACMGeHeiyLepjWSSuj1rq8', 20223999400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AL45ChpDuGgxACMGeHeiyLepjWSSuj1rq8', [560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579], '2018-11-04 09:59:54']
+<Player 58 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ALxoufbQkwkCBrNmdSiZiCcYwNm5WSFyEc', 20279559400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'ALxoufbQkwkCBrNmdSiZiCcYwNm5WSFyEc', [570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589], '2018-11-04 09:59:54']
+<Player 59 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AJPJq3cTRM7GVw9HR5QNuF57XQKvjeRsDm', 20316599400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AJPJq3cTRM7GVw9HR5QNuF57XQKvjeRsDm', [580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599], '2018-11-04 09:59:54']
+<Player 60 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AHwzEto3pnrbjcAM3pv55bX1yxArYUM9qz', 20101767400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AHwzEto3pnrbjcAM3pv55bX1yxArYUM9qz', [590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609], '2018-11-04 09:59:54']
+<Player 61 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AJY87Zje9eVnXE9g7VUGUDVsHu1opxnvZU', 20238815400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AJY87Zje9eVnXE9g7VUGUDVsHu1opxnvZU', [600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619], '2018-11-04 09:59:54']
+<Player 62 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ARD4PAVRQeheTQLPcdW6nBxab2RYxEBkLs', 20298079400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'ARD4PAVRQeheTQLPcdW6nBxab2RYxEBkLs', [610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629], '2018-11-04 09:59:54']
+<Player 63 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AP7i2w5HmzdbvwpeksPhpUsJGPJbkNtmFH', 20035095400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AP7i2w5HmzdbvwpeksPhpUsJGPJbkNtmFH', [620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639], '2018-11-04 09:59:54']
+<Player 64 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AYzZQeQfz7kZqRmR4iv2wFq5xaNurvK6pB', 20327711400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AYzZQeQfz7kZqRmR4iv2wFq5xaNurvK6pB', [630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649], '2018-11-04 09:59:54']
+<Player 65 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AabBUcdLMoo1bC6prGtPkQqLNQSoCqaLsV', 20320303400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AabBUcdLMoo1bC6prGtPkQqLNQSoCqaLsV', [640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659], '2018-11-04 09:59:54']
+<Player 66 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AURFc4dTeah2YeRVuM6seJviJ9kNzJ2fwv', 20338823400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AURFc4dTeah2YeRVuM6seJviJ9kNzJ2fwv', [650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669], '2018-11-04 09:59:54']
+<Player 67 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AMYywoRTyDvGrAViEEKKkrkixEa4ebVF43', 20049911400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AMYywoRTyDvGrAViEEKKkrkixEa4ebVF43', [660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679], '2018-11-04 09:59:54']
+<Player 68 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AU9FXFMRvzhDdqF7ncVYJEM8N6LVcDD487', 20109175400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AU9FXFMRvzhDdqF7ncVYJEM8N6LVcDD487', [670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689], '2018-11-04 09:59:54']
+<Player 69 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AL5k33Aad4bV9YSiyyc6R3BhHeubfjoxdk', 20242519400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AL5k33Aad4bV9YSiyyc6R3BhHeubfjoxdk', [680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699], '2018-11-04 09:59:54']
+<Player 70 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ARxpeJzxexcsh9xXF2YGf5jMjckPGKJ5uu', 20179551400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'ARxpeJzxexcsh9xXF2YGf5jMjckPGKJ5uu', [690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709], '2018-11-04 09:59:54']
+<Player 71 > ********************
+buyPaper-res-event is :  ['buyPaper', 'APyxLwd1rn1VRrJMuM2hDGTqjosHphpDKT', 20205479400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'APyxLwd1rn1VRrJMuM2hDGTqjosHphpDKT', [700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719], '2018-11-04 09:59:54']
+<Player 72 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AHUADorBf4NCqPcioxSNBNEYkzaQnJRjfx', 20253631400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AHUADorBf4NCqPcioxSNBNEYkzaQnJRjfx', [710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729], '2018-11-04 09:59:54']
+<Player 73 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AUWRGnWJZx1Ng9j4cRXqJYS79jinmRmyc7', 20072135400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AUWRGnWJZx1Ng9j4cRXqJYS79jinmRmyc7', [720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739], '2018-11-04 09:59:54']
+<Player 74 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ANfpLmG1JR5bBu9Eke1stGhK5h3Y6cbdoa', 20190663400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'ANfpLmG1JR5bBu9Eke1stGhK5h3Y6cbdoa', [730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749], '2018-11-04 09:59:54']
+<Player 75 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AWJrKZcrL5NnEBxT2Pn7KzagghmJjqteew', 20075839400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AWJrKZcrL5NnEBxT2Pn7KzagghmJjqteew', [740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759], '2018-11-04 09:59:54']
+<Player 76 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AXx741sz5qyYofWtDgEqhJtRURgj5uovr6', 20209183400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AXx741sz5qyYofWtDgEqhJtRURgj5uovr6', [750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769], '2018-11-04 09:59:54']
+<Player 77 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AUJGf5kjFCfJSmFG2TeazznJhYeMs5zHqs', 20053615400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AUJGf5kjFCfJSmFG2TeazznJhYeMs5zHqs', [760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779], '2018-11-04 09:59:54']
+<Player 78 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AKyToGGevoNGNnHpVG6jtZdLgMdzkZHyPG', 20246223400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AKyToGGevoNGNnHpVG6jtZdLgMdzkZHyPG', [770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789], '2018-11-04 09:59:54']
+<Player 79 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AGTQu7LMrb2pnppSyMMPV2XmqmVn3gyCdr', 20149919400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AGTQu7LMrb2pnppSyMMPV2XmqmVn3gyCdr', [780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799], '2018-11-04 09:59:54']
+<Player 80 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AK4KiAfhuMUJ4xYNB5JXvSiR9TbThc2sY6', 20142511400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AK4KiAfhuMUJ4xYNB5JXvSiR9TbThc2sY6', [790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809], '2018-11-04 09:59:54']
+<Player 81 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AScLCEnJnWQizbqPzG99BjtYnzf6nmwGEK', 20342527400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AScLCEnJnWQizbqPzG99BjtYnzf6nmwGEK', [800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819], '2018-11-04 09:59:54']
+<Player 82 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AWjaiUYdqidELnVLMiFhQhQv1MGmXpEmKB', 20309191400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AWjaiUYdqidELnVLMiFhQhQv1MGmXpEmKB', [810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829], '2018-11-04 09:59:54']
+<Player 83 > ********************
+buyPaper-res-event is :  ['buyPaper', 'APu8nsNLkPDLkkSkGUaaQLfUrN8MdE2sXm', 20164735400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'APu8nsNLkPDLkkSkGUaaQLfUrN8MdE2sXm', [820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839], '2018-11-04 10:00:00']
+<Player 84 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AMLvFb4nRP9EbDDVsqnP4xowtYvqH9pGqS', 20183255400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AMLvFb4nRP9EbDDVsqnP4xowtYvqH9pGqS', [830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849], '2018-11-04 10:00:00']
+<Player 85 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AZ1oREcCbwqSRcamRkDurLe8r8My6MoZfy', 20094359400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AZ1oREcCbwqSRcamRkDurLe8r8My6MoZfy', [840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859], '2018-11-04 10:00:00']
+<Player 86 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AYL6p8BjUzM61UmY5TzfMm6kLDoaUjMySM', 20138807400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AYL6p8BjUzM61UmY5TzfMm6kLDoaUjMySM', [850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869], '2018-11-04 10:00:00']
+<Player 87 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AcSkScoM6R8TGsPeK2WmGjHyLJGVF5Bck3', 20079543400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AcSkScoM6R8TGsPeK2WmGjHyLJGVF5Bck3', [860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879], '2018-11-04 10:00:00']
+<Player 88 > ********************
+buyPaper-res-event is :  ['buyPaper', 'APiqJ5wWriju2LL4a8RLAbtKL4XPZn619w', 20123991400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'APiqJ5wWriju2LL4a8RLAbtKL4XPZn619w', [870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889], '2018-11-04 10:00:00']
+<Player 89 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AanorhF6775UePxGrcXYXjuAXvFnKVhabm', 20283263400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AanorhF6775UePxGrcXYXjuAXvFnKVhabm', [880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899], '2018-11-04 10:00:00']
+<Player 90 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ASAHJaCgJ98R7N4UDXPMvKtbiWGuqXvcep', 20116583400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'ASAHJaCgJ98R7N4UDXPMvKtbiWGuqXvcep', [890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909], '2018-11-04 10:00:00']
+<Player 91 > ********************
+buyPaper-res-event is :  ['buyPaper', 'APJmf2TBvWzcM9Tf62PNDrbE7mZtKZzTNZ', 20175847400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'APJmf2TBvWzcM9Tf62PNDrbE7mZtKZzTNZ', [900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919], '2018-11-04 10:00:00']
+<Player 92 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ASRdX5zWkmMS3QujG4qRzu14J2jtJoqEVw', 20235111400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'ASRdX5zWkmMS3QujG4qRzu14J2jtJoqEVw', [910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929], '2018-11-04 10:00:00']
+<Player 93 > ********************
+buyPaper-res-event is :  ['buyPaper', 'Aebrz1HLkkrL1wAWtVaPdajLRKRsy3E7A5', 20057319400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'Aebrz1HLkkrL1wAWtVaPdajLRKRsy3E7A5', [920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939], '2018-11-04 10:00:00']
+<Player 94 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AeeFPUkX6PAnEj9jS9qtpBpcVrcoeSKvCY', 20135103400, 20, '2018-11-04 09:58:48']
+continus fillPaper-res-event is :  ['fillPaper', 'AeeFPUkX6PAnEj9jS9qtpBpcVrcoeSKvCY', [930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949], '2018-11-04 10:00:00']
+<Player 95 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AH7u3mN4ySAXDirXJpoKWaK4sYkPv4w11R', 20368455400, 20, '2018-11-04 09:58:54']
+continus fillPaper-res-event is :  ['fillPaper', 'AH7u3mN4ySAXDirXJpoKWaK4sYkPv4w11R', [940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959], '2018-11-04 10:00:00']
+<Player 96 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AKhj5jaWCpBnqgxzWfgfK5uFDBBentQ4xa', 20357343400, 20, '2018-11-04 09:58:54']
+continus fillPaper-res-event is :  ['fillPaper', 'AKhj5jaWCpBnqgxzWfgfK5uFDBBentQ4xa', [950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969], '2018-11-04 10:00:00']
+<Player 97 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AZd1eSFiEozA5UYS5MoqfCjkc8CM7PDKYE', 20361047400, 20, '2018-11-04 09:58:54']
+continus fillPaper-res-event is :  ['fillPaper', 'AZd1eSFiEozA5UYS5MoqfCjkc8CM7PDKYE', [960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979], '2018-11-04 10:00:00']
+<Player 98 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AVEJtWW4xQSdkw8BwfwjqU3933QE48BY8q', 20364751400, 20, '2018-11-04 09:58:54']
+continus fillPaper-res-event is :  ['fillPaper', 'AVEJtWW4xQSdkw8BwfwjqU3933QE48BY8q', [970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989], '2018-11-04 10:00:00']
+<Player 99 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AXf3ocW8radaYFpjWR17Y55YGxetwhPJ1U', 20353639400, 20, '2018-11-04 09:58:54']
+continus fillPaper-res-event is :  ['fillPaper', 'AXf3ocW8radaYFpjWR17Y55YGxetwhPJ1U', [980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999], '2018-11-04 10:00:00']
+<Player 100 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AU8tA4HRnSb8ucf4kLzXt2DbgLG5oVLmEB', 20372159400, 20, '2018-11-04 09:58:54']
+
+
+Ran 1 test in 251.578s
+
+OK
+continus fillPaper-res-event is :  ['fillPaper', 'AU8tA4HRnSb8ucf4kLzXt2DbgLG5oVLmEB', [990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009], '2018-11-04 10:00:00']
+
+Process finished with exit code 0
+
+
+
+
+test-getCurrentRound is  19
+test-getFilledPaperAmount is  2020
+endCurrentRound -> hash :  8555726bc95c0441b9f0e8664bb62c351f740ecb5f5c04e6188aecd248b2f1dc
+endCurrentRound-hash is  8555726bc95c0441b9f0e8664bb62c351f740ecb5f5c04e6188aecd248b2f1dc
+endCurrentRound-res is  {'TxHash': '8555726bc95c0441b9f0e8664bb62c351f740ecb5f5c04e6188aecd248b2f1dc', 'State': 1, 'GasConsumed': 1402670000, 'Notify': [{'ContractAddress': '0200000000000000000000000000000000000000', 'States': ['transfer', 'AV2yPpPpizTuoUecJtJPzdP61LMm7oyXxe', 'AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p', 101944144970]}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'd4fc5bde7ee1a9a9ac24d174e0bd2eec82ca972b', '28', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'a71ec03ca3b8808669ecd16d1f6e40f2f399f0e3', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'f286970dabc9eb981e5fa31cc497eb3ae252b18d', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '5b994ab7ed5f0a200cb206d7bced9b56b940975f', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'd7e9a72426c74287a1d2c2e292ec04c68db9b279', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'd174dbf01dd1e0898a956ec02c1ba1f88d75c224', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '55a4822d1f9cde59a6eb4e404a383b11895c88d5', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '3dec82f1d00b95767b6a23f27e48588aa14a4958', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '9c86ecab444b59f74ab2100668bb674d0ee22649', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '6949d31bfac83dcb7867bd158226c4c6db24fdab', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'ad428da5bcb68a4a40f03145920dc48fd2746149', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '0f05c97afbb56a9ffad63d7b84f801fa477fbfd3', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '2d55af1e8935d63191b2da381fb7cd351b2004dc', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '6cfeca13be28fb9af0c07d2c158dc2d904388947', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '76f09bbfaf0e7cd7bd2c7df8c18ceaa61ef60fc7', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'fe0d62d1528d2c1eacc65cff2dea094cfdaa8f5d', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '2e11962e694af470a2cffd6e636646dff283b7a9', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '89613233dbfd5194aef8cadd017ba64090295c1b', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '077a4f700eae922421a60b90c4fee84840a1e667', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '2860590e24b0cd12b1ad6313d59c4a5eee91e570', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '7bd47475c6a2d50588e3813d234a02b7f3af8a53', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'ee2df421822a7a755284c288b4b75e4920b1ed3a', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '114003b4abfc1c572438e93c5bfbd4f53002eb35', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'c1848a5e5898fd468369d3277bc8762c74fe4b32', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '76d1e679229be76c0328431fd72c426b4826da83', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '4c6c22b0bd0efe8224f45b1640cf3eead3481107', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'e9d89f620d482f8cfb13a94cad8dc762980773a6', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'fb7107a2b9319e3cf7779bf2185f1c1a95ddd7fa', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '56c76e3709a2651c87e5c6fcc32faf55944bdba8', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '12e855bc9f41178f486053f1ccb22ab1f4ced9ad', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '23f56571036fb476c1468e91fb0108d2c5242dfe', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '2854f647704761a4a85aa60157328d8f2573d75b', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'b86ec26faf5169efca1cba655897b0bae2b2a4e4', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '2aacba41a7d4729bbfed014ec41a8d5fd61a9d18', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '76db62704e161f82db3b99e354e26cad64085d1c', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '2404ca0c9ddf81662638b287726e6616a8a1f3ba', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'a41aebd33f5c86105065b42c97e03306ff94a606', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '2ef0cdec2af66ceca061708c24e63e05a1488914', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '50892ccef1e20cfa04afa4418b2d71ea09c17bcd', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '677c7e248c027e98429086bab23134224495c0e2', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'bce05220cf129fbc4cf48edc199603edb1e6e06f', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '5a09eb3f241eb7611255495508fea3fbb48c4e4f', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '6fc35392340d33a1bab9a9b4af3cc04b921e9e62', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '1296998c3a0cd564e803ef68a85b025543cbfa0c', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '9f6d8c6b133e7b988eaa8510fa00365bb34014fa', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '4ba3a00d2f81f2e86db2327365a4014820fe8a09', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'b1715ccbed8392dca0d55b760de09eb59815487e', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '02ee9c047e856d11e09deb1a80ec4b9a87d0d4d8', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'bc4067b845cc05a8f33f247bb414112088075bc1', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '5d0daffbf63020fddf08f683b4778e9407d168b0', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '58f01eb55b06f42496924b103963c42185bb0f69', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '65af47f5ac447854099d36e7554ecc62f34437be', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'ce64b29d3ceb2b5e6b494aa4eb53a9ef36e36ff3', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '8180ade58d77e09e150fd2d9a7eb424fa80f14f9', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '2f41a3045b8a8681d62d8a2414b39307cf067314', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '87ac8143414e7287d72b1ed3c5a9b98065330325', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'ccf96c73d6a9938fd13262e966524ebaee2b241a', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '7639dd5a2ab435e8e1d3076b2be10e6094d88aee', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '63c570c82368f65860fcff2d50076c1ab8913a1e', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '295fe14146ca2e38df923ed0f2b1eb585edae304', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '8ec19aa4de68edeb8fbf9265d85d66d07f383e17', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '934fadb76300e9982c64aff1e2dccdccec52d911', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '99518d5111eaa966cc59d8f7fa57f8f50dd6030a', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '1a6f7127015ac931d6c4cce023e1e45152458925', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'da3d52b2a783b55b12ef8da66ba1b7157e6b5bda', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '0fcecd2ef48d56ec2c097b3041ac1770beb3c918', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '7738d19de09b1a871c84d7eaea4a5db196561a38', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '8e3780120fc337b1b363999a128d55ba0d3e08dd', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '04cd6a67f95c82f8fa72653c7c988bed750169c6', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '8bad612a7abf3b3c38345204f8a5aa1814d09e61', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'ce99f4039ade2a84ecde1bd0dce9d9c39b3fa085', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '69c2d1c99f0359f37bdeff65e2b7bb8c3c652dd3', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '3f609ad2a30e3e5d37455194e6fce7e0accc61dc', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '1ca3d4bb4d6afe052ac4ad74fc03b73532502c05', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '38ea1571de50d530a55984767ba9d30555751b88', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '17d9ea2e1c9b4678294d84965dad2618041dd63b', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '1e4ea14b432bbc3d326f10a61ad9206b76df3665', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '3c693c8366ff2118102e1d453aaee0ecd75e160b', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'a34344eb3f7ea6ee8088ad6d13f5cfacc899dd88', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '7575526bc066a3acc6abb134119cd6d4a9041969', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '494a053168f6e1434f25d857982dcd4b0bcb4d7b', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '8ab33ac881cbc10ac54c40dd607fa9b3e26db721', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '59208f5249b6acead5a667f44047b9ea264f1dd5', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '3d1887bb2d4cf0efdf8f04d3cc34b21eb4d8cbb7', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'bd1c6e8f34160654cd00be0611e6ef775fc69fed', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '71ee280b139dc05a7ea67f4d70608f89a27c313f', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'd097a471707ded0d49974a993497ec85783c734b', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '52a0c63b8fd3d100deebde6f271df186d88cee27', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'ae37945e9658480004c9aeddf66c5e78a91e5963', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '9399855307598722da1c0a0d108e506a0c65be5a', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '879aab86fed4955ccaa028a0b2b07f7c665aa978', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'c3c532975735050409c5a7932287f735383cd052', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '74d5456732aedf20d8756e90cdf412bc673428d5', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '572dcb8acf0ad4a2aea4fdb050ce5ee127831cfb', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'e2bcb9511e976ff3c744af9ddcd18e7b9a560fcd', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'fad9b6beba5d14244309300d34b8140f083efc76', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'fa662dedb14b12dcfd67b51d03050b4e75161d73', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '0ec19d59b9ee4e5e07178179ba4fd00e0d678287', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', '2b17b08eebd9ee31e6b3fe4fa81a230137d6a0b8', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['64657374726f795061706572', 'b59a504fcb2a77448fdaf6130da738bcfea09f60', '14', '8ec4de5b']}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['656e64526f756e64', '13', '8318', ['879aab86fed4955ccaa028a0b2b07f7c665aa978']]}, {'ContractAddress': 'ddfd7f8e3d320f7e78cdb512df2b2a3400ac7491', 'States': ['7374617274526f756e64', '14']}, {'ContractAddress': '0200000000000000000000000000000000000000', 'States': ['transfer', 'AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p', 'AFmseVrdL9f9oyCzZefL9tG6UbviEH9ugK', 1402670000]}]}
+endCurrentRound event - < 1 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AbC3DNGwtsJPSnEWHYzvh4jkMsQNucwJa1', 40, '2018-11-04 10:06:06']
+endCurrentRound event - < 2 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AX1XL9QZxqdyVZXu7baciGUThzY5Mv58vZ', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 3 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AdtEQQGp9qxQLYNiREQYU4puPdgRWQdDEQ', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 4 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AQ8Cmrsa77FcsUCXfTvvfzWXPXa3Z4n1zv', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 5 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AbTWqEGnnbDjB8t6FZdjbsNoCgE7ELr6yZ', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 6 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AasNs763mSwYFqyfMiuDgSi4F9HGt1bPbA', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 7 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'APaiA4979sHgnAnqSUswR1jQFjxkpbFHpS', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 8 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AMRJCJmrJ3tcYDNxAzEEnJKHCkqbzYP7uy', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 9 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AW3Wh9AqUHNqYbtthSL5SzQKmwaZdRKbra', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 10 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'ARNb34q4j65wDqZPAnC8bUXeaRyAoTRiNT', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 11 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AXZzGtaPBEXfrGa6uvEFxBsK4wsyom1PuS', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 12 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AH9JiTyTBoS2KQ9YXCAcssqHH4d4kAtLhu', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 13 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AKuahZdyzdH1KBfTswSuTYkr1y55xNdmq8', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 14 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'ARiBrHrPtDD3ZLwGrbBEKvYrYg4dPpxKgf', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 15 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AScmcu56pz7MByGHcwqi5u7XHrHn4WJk6P', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 16 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AewBKJK52b557qUUYpz4fxD2EJk5NeJsyf', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 17 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AKyToGGevoNGNnHpVG6jtZdLgMdzkZHyPG', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 18 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AUJGf5kjFCfJSmFG2TeazznJhYeMs5zHqs', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 19 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AGTQu7LMrb2pnppSyMMPV2XmqmVn3gyCdr', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 20 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AKTN6YDdnY8GXcD6oSEDdSFnXscJzjT3Sn', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 21 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AT4dGijAQSMcN5mj2q7ePTWcKFEnG1qeu3', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 22 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AdVFX4vzxpaREQHRc7n5fnN65GvydWQNP2', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 23 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AHM5pZcoVXsBuo5jqYnnwM9hbC71uENERC', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 24 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AZR6qbb13ZX4tw5Bubqtaig16cQofvHreh', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 25 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'ASc8qG992Z9W5h3YWDHbdxCN3mBxpC75dT', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 26 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'ANjxYTtJyBGisBJNbNCzjGyxQFA9qqNwd8', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 27 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'Ad6LbPwAJV9jDaDDdY1caYADeL1LgGV86r', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 28 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AehNf6dGCWF9gnXWRNy45ZVTxFci9mfRBQ', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 29 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'APgiffusKMY7Um6rbyia5QAvP3BtMed6N5', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 30 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AHVr8s42HqzB8s14fGTXBnCJhqDszhsy5e', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 31 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AK41GeFpNSidsPT64zRmxnjogMEeogStdT', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 32 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AKT8TSHMArpJimgfrD5J3GnEREiCwFCHum', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 33 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AYb4fW2V8Mxkf7nCJxdbdaQ2wteuKSrGs3', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 34 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AKfWwsoiLWKbm21gFXxvDuxs2frvwtG6Qw', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 35 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AScLCEnJnWQizbqPzG99BjtYnzf6nmwGEK', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 36 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AK4KiAfhuMUJ4xYNB5JXvSiR9TbThc2sY6', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 37 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AWjaiUYdqidELnVLMiFhQhQv1MGmXpEmKB', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 38 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AL45ChpDuGgxACMGeHeiyLepjWSSuj1rq8', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 39 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AP7i2w5HmzdbvwpeksPhpUsJGPJbkNtmFH', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 40 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'ARD4PAVRQeheTQLPcdW6nBxab2RYxEBkLs', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 41 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AYzZQeQfz7kZqRmR4iv2wFq5xaNurvK6pB', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 42 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'APyxLwd1rn1VRrJMuM2hDGTqjosHphpDKT', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 43 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'ARxpeJzxexcsh9xXF2YGf5jMjckPGKJ5uu', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 44 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AHUADorBf4NCqPcioxSNBNEYkzaQnJRjfx', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 45 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AWJrKZcrL5NnEBxT2Pn7KzagghmJjqteew', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 46 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'ANfpLmG1JR5bBu9Eke1stGhK5h3Y6cbdoa', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 47 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AXx741sz5qyYofWtDgEqhJtRURgj5uovr6', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 48 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AG3Nqkr3apQwKsvBkuE6ZjGgZhCgaR3qPG', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 49 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AYwFqWbc6LNLhjqh6Qc4Qg5ov2zfYe83cm', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 50 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AQFttMk56apS1kYRrKoNHhwoV9jhRtB6Jj', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 51 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'APt8mCvQmdVgnqjsDW2HUPQSqNrzJrGeV3', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 52 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AR3XscjsXFSA86xYjK6v356Z4pF5fyn4N3', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 53 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AabBUcdLMoo1bC6prGtPkQqLNQSoCqaLsV', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 54 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'ATacy39ZERRfrgDEf3PmjH1hAWxyXtob9s', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 55 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AL5k33Aad4bV9YSiyyc6R3BhHeubfjoxdk', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 56 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AU9FXFMRvzhDdqF7ncVYJEM8N6LVcDD487', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 57 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AaTgHtb1iUi8ohKJHUJBzgkkZELCkdRhhv', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 58 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'ASYzhe9Ai5VkaZhWsuEvEsZUed4CRqAykh', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 59 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AQsR4u8vA68bcQVLYLrkRZbaienrhhkEia', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 60 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AKYeDDU8918ndDdyMFnkmGUC4QsXrG6aY5', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 61 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AUnhXaudVSBFqjH92a6HrhQySUTiQjf5VR', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 62 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AVCnRrxZDn3bKj9ZqRmsnx3Ts7JgpGtELc', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 63 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AVkYjBWL9NQ68Gb4Y2C26yCJovy2X9Pnf5', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 64 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AJBeicSmG5fiDWZdzmK5kQGyth1knzVurK', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 65 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AbfpR7j5hntHfiJ9HGwJT4BqFyErEQUzWW', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 66 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AHDTXCJkXfrzhuyTDBJDnu7zsjNemnpz2B', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 67 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'ASeG8AcqcJMjQz5dWmC9RY2FsjvpDLymKC', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 68 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AUjr5xvWhXgWy9H2T31qG6z4dLmAG1NHdJ', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 69 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AGDGRo5ANYbbjRMxCPNVgC4mH5npgNUeuq', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 70 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AUWRGnWJZx1Ng9j4cRXqJYS79jinmRmyc7', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 71 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AacHGsQVbTtbvSWkqZfvdKePLS6K659dgp', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 72 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'ARR5ywDEx3ybXkMGmZPFYu9hiC8J4xvNdc', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 73 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AMYywoRTyDvGrAViEEKKkrkixEa4ebVF43', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 74 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AJPJq3cTRM7GVw9HR5QNuF57XQKvjeRsDm', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 75 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'ALxoufbQkwkCBrNmdSiZiCcYwNm5WSFyEc', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 76 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AHwzEto3pnrbjcAM3pv55bX1yxArYUM9qz', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 77 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AJY87Zje9eVnXE9g7VUGUDVsHu1opxnvZU', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 78 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AMHJFxdn4EZqbLUHLeRGCaYsko5YNf6nbt', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 79 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AWf8NiLzXSDf1JB2Ae6YUKSHke4yLHMVCm', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 80 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'ASUwFccvYFrrWR6vsZhhNszLFNvCLA5qS6', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 81 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'ANTPeXCffDZCaCXxY9u2UdssB2EYpP4BMh', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 82 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AURFc4dTeah2YeRVuM6seJviJ9kNzJ2fwv', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 83 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'APu8nsNLkPDLkkSkGUaaQLfUrN8MdE2sXm', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 84 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AMLvFb4nRP9EbDDVsqnP4xowtYvqH9pGqS', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 85 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AZ1oREcCbwqSRcamRkDurLe8r8My6MoZfy', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 86 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'ASAHJaCgJ98R7N4UDXPMvKtbiWGuqXvcep', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 87 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AanorhF6775UePxGrcXYXjuAXvFnKVhabm', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 88 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'APJmf2TBvWzcM9Tf62PNDrbE7mZtKZzTNZ', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 89 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AXf3ocW8radaYFpjWR17Y55YGxetwhPJ1U', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 90 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AVEJtWW4xQSdkw8BwfwjqU3933QE48BY8q', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 91 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AU8tA4HRnSb8ucf4kLzXt2DbgLG5oVLmEB', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 92 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AZd1eSFiEozA5UYS5MoqfCjkc8CM7PDKYE', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 93 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'ASRdX5zWkmMS3QujG4qRzu14J2jtJoqEVw', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 94 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'APiqJ5wWriju2LL4a8RLAbtKL4XPZn619w', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 95 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AcSkScoM6R8TGsPeK2WmGjHyLJGVF5Bck3', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 96 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AeeFPUkX6PAnEj9jS9qtpBpcVrcoeSKvCY', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 97 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'Aebrz1HLkkrL1wAWtVaPdajLRKRsy3E7A5', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 98 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AH7u3mN4ySAXDirXJpoKWaK4sYkPv4w11R', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 99 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AKhj5jaWCpBnqgxzWfgfK5uFDBBentQ4xa', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 100 >  -- endCurrentRound-res-event is :  ['destroyPaper', 'AYL6p8BjUzM61UmY5TzfMm6kLDoaUjMySM', 20, '2018-11-04 10:06:06']
+endCurrentRound event - < 101 >  -- endCurrentRound-res-event is :  ['endRound', 19, 6275, ["['879aab86fed4955ccaa028a0b2b07f7c665aa978']"]]
+endCurrentRound event - < 102 >  -- endCurrentRound-res-event is :  ['startRound', 20]
+endCurrentRound-consume-ong-amount is :  1.40267  ONG

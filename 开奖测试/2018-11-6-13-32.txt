@@ -1,0 +1,129 @@
+Testing started at 13:29 ...
+D:\SDK\pythontest\pythontest-master\pythontest-master\venv\Scripts\python.exe "C:\Program Files\JetBrains\PyCharm 2018.2.1\helpers\pycharm\_jb_unittest_runner.py" --target runTestLuckyNumber.TestAsset.test_buyPapers
+Launching unittests with arguments python -m unittest runTestLuckyNumber.TestAsset.test_buyPapers in D:\SDK\current-pythontest\contract\LuckyNumber
+test-getCurrentRound is  1
+1  account is loading... 
+2  account is loading... 
+3  account is loading... 
+4  account is loading... 
+5  account is loading... 
+6  account is loading... 
+7  account is loading... 
+8  account is loading... 
+9  account is loading... 
+10  account is loading... 
+***** finished transfer ONG to these accounts ***********
+
+< 1 >  Balance --  AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p  --  53802501269823377
+< 2 >  Balance --  ASUwFccvYFrrWR6vsZhhNszLFNvCLA5qS6  --  120000000000
+< 3 >  Balance --  AWf8NiLzXSDf1JB2Ae6YUKSHke4yLHMVCm  --  120000000000
+< 4 >  Balance --  ANTPeXCffDZCaCXxY9u2UdssB2EYpP4BMh  --  120000000000
+< 5 >  Balance --  ARR5ywDEx3ybXkMGmZPFYu9hiC8J4xvNdc  --  120000000000
+< 6 >  Balance --  AacHGsQVbTtbvSWkqZfvdKePLS6K659dgp  --  120000000000
+< 7 >  Balance --  AT4dGijAQSMcN5mj2q7ePTWcKFEnG1qeu3  --  120000000000
+< 8 >  Balance --  AKTN6YDdnY8GXcD6oSEDdSFnXscJzjT3Sn  --  120000000000
+< 9 >  Balance --  AdVFX4vzxpaREQHRc7n5fnN65GvydWQNP2  --  120000000000
+< 10 >  Balance --  AUnhXaudVSBFqjH92a6HrhQySUTiQjf5VR  --  120000000000
+<Player 1 > buy --  eaa5e89746c2e177725174c669c1b5a4229311ec3b011280ebaf0057470475cb
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 2 > buy --  938296c8a50d0df4bfb1da599bbd27c28cc7c2b9fc8376e2451c0d4744fcb6f0
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 3 > buy --  1eb159497d175c60d0a1135a80cc8359dcb628562e6a13c8509bbadbb8d0eff6
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 4 > buy --  e320787d099172df65bbccb0cee717e22d044cf2f8c7b7b4a049f91f578430c8
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 5 > buy --  f6a87bac1071d79a1a4f3651ecd089f49390de45724580336655a7ff6558721c
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 6 > buy --  9c44e0d10cfc2e9d928511850b2f67cbf5ac5f67488132da02ed92a969d81c5a
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 7 > buy --  fc1c86cdf92a13e37e19daef88d55f0e3d35959eb634a77720eac99095d44e72
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 8 > buy --  1abf3eca0d21ce04fa62ebd2029dfccf9b0cb8556a5ad502a8ecfcd0e3fd2eb6
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 9 > buy --  8e70030741c4ae15d21a53271b220a0e149768e4ccd0f1c32fe64d8ae88e4867
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+<Player 10 > buy --  092cfa88e6181b5658d4f4ec7c696bf736fa36d2480853fcd884b65f9b88d63c
+paperBalance :  0  filledPaperBalance :  0  unfilledPaperBalance :  0
+***** fillPaper1 [b'fillPaper', [b'ao*J89o\xf2\x03\xea\x01\xe6\xc0p\xaeB\x1b\xb8\xce-', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]]]
+<Player 1 > fill --  095fb321f89df19434d44741f58f5d0efd076c7632dfb5287fc3e1fba0a9b5b6
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'uuRk\xc0f\xa3\xac\xc6\xab\xb14\x11\x9c\xd6\xd4\xa9\x04\x19i', [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109]]]
+<Player 2 > fill --  964b33c22e9d84ead4f7427231c4e1c637f0390235e67cba758060162646a1ec
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xa3CD\xeb?~\xa6\xee\x80\x88\xadm\x13\xf5\xcf\xac\xc8\x99\xdd\x88', [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119]]]
+<Player 3 > fill --  62f4a4e45ce2112bfb943dd0abc42d146b8a75d79327f651a21edfb9bcd8bb07
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'IJ\x051h\xf6\xe1CO%\xd8W\x98-\xcdK\x0b\xcbM{', [30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129]]]
+<Player 4 > fill --  25d2db2698fa248f069e5245045dad09d3118b0cd57f9e1ee00a106bb0ecad13
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'i\xc2\xd1\xc9\x9f\x03Y\xf3{\xde\xffe\xe2\xb7\xbb\x8c<e-\xd3', [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139]]]
+<Player 5 > fill --  40279866f51e23ebd962a218cfed41aaf0bf51b5465a8e172e0f795ea1ad294c
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xce\x99\xf4\x03\x9a\xde*\x84\xec\xde\x1b\xd0\xdc\xe9\xd9\xc3\x9b?\xa0\x85', [50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149]]]
+<Player 6 > fill --  a7c4e6bf7eacc2310c06bd30cb71be6382893f8bd7634c7107a8bc81c30030fa
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'{\xd4tu\xc6\xa2\xd5\x05\x88\xe3\x81=#J\x02\xb7\xf3\xaf\x8aS', [60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159]]]
+<Player 7 > fill --  ef3b104713674f96bcc5c3120d167b5e99e2d0cb5831a17abe40c767a5783594
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'(`Y\x0e$\xb0\xcd\x12\xb1\xadc\x13\xd5\x9cJ^\xee\x91\xe5p', [70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169]]]
+<Player 8 > fill --  b66c106abfb3a6198523c844796a0610fc6872190d891df976b5061eb5ac0eeb
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\xee-\xf4!\x82*zuR\x84\xc2\x88\xb4\xb7^I \xb1\xed:', [80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179]]]
+<Player 9 > fill --  959a956ef05dd9bc1beb2f103f83edfe13d96e0ea47f86b0ce291848b95e4bf9
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+***** fillPaper1 [b'fillPaper', [b'\x8e\xc1\x9a\xa4\xdeh\xed\xeb\x8f\xbf\x92e\xd8]f\xd0\x7f8>\x17', [90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189]]]
+<Player 10 > fill --  82b3186176d82a7f439a6de1de1b4af3179063fafea2866046dce0ba7b5ba637
+paperBalance :  100  filledPaperBalance :  0  unfilledPaperBalance :  100
+<Player 1 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p', 100045837000, 100, '2018-11-06 05:30:14']
+continus fillPaper-res-event is :  ['fillPaper', 'AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99], '2018-11-06 05:31:14']
+<Player 2 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ASUwFccvYFrrWR6vsZhhNszLFNvCLA5qS6', 100138437000, 100, '2018-11-06 05:30:14']
+continus fillPaper-res-event is :  ['fillPaper', 'ASUwFccvYFrrWR6vsZhhNszLFNvCLA5qS6', [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109], '2018-11-06 05:31:14']
+<Player 3 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AWf8NiLzXSDf1JB2Ae6YUKSHke4yLHMVCm', 100694037000, 100, '2018-11-06 05:30:14']
+continus fillPaper-res-event is :  ['fillPaper', 'AWf8NiLzXSDf1JB2Ae6YUKSHke4yLHMVCm', [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119], '2018-11-06 05:31:14']
+<Player 4 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ANTPeXCffDZCaCXxY9u2UdssB2EYpP4BMh', 100231037000, 100, '2018-11-06 05:30:14']
+continus fillPaper-res-event is :  ['fillPaper', 'ANTPeXCffDZCaCXxY9u2UdssB2EYpP4BMh', [30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129], '2018-11-06 05:31:14']
+<Player 5 > ********************
+buyPaper-res-event is :  ['buyPaper', 'ARR5ywDEx3ybXkMGmZPFYu9hiC8J4xvNdc', 100786637000, 100, '2018-11-06 05:30:14']
+continus fillPaper-res-event is :  ['fillPaper', 'ARR5ywDEx3ybXkMGmZPFYu9hiC8J4xvNdc', [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139], '2018-11-06 05:31:14']
+<Player 6 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AacHGsQVbTtbvSWkqZfvdKePLS6K659dgp', 100879237000, 100, '2018-11-06 05:30:14']
+continus fillPaper-res-event is :  ['fillPaper', 'AacHGsQVbTtbvSWkqZfvdKePLS6K659dgp', [50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149], '2018-11-06 05:31:14']
+<Player 7 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AT4dGijAQSMcN5mj2q7ePTWcKFEnG1qeu3', 100323637000, 100, '2018-11-06 05:30:14']
+continus fillPaper-res-event is :  ['fillPaper', 'AT4dGijAQSMcN5mj2q7ePTWcKFEnG1qeu3', [60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159], '2018-11-06 05:31:14']
+<Player 8 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AKTN6YDdnY8GXcD6oSEDdSFnXscJzjT3Sn', 100416237000, 100, '2018-11-06 05:30:14']
+continus fillPaper-res-event is :  ['fillPaper', 'AKTN6YDdnY8GXcD6oSEDdSFnXscJzjT3Sn', [70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169], '2018-11-06 05:31:14']
+<Player 9 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AdVFX4vzxpaREQHRc7n5fnN65GvydWQNP2', 100508837000, 100, '2018-11-06 05:30:14']
+continus fillPaper-res-event is :  ['fillPaper', 'AdVFX4vzxpaREQHRc7n5fnN65GvydWQNP2', [80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179], '2018-11-06 05:31:14']
+<Player 10 > ********************
+buyPaper-res-event is :  ['buyPaper', 'AUnhXaudVSBFqjH92a6HrhQySUTiQjf5VR', 100601437000, 100, '2018-11-06 05:30:14']
+continus fillPaper-res-event is :  ['fillPaper', 'AUnhXaudVSBFqjH92a6HrhQySUTiQjf5VR', [90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189], '2018-11-06 05:31:14']
+test-getCurrentRound is  1
+test-getCurrentRound is  1
+
+
+Ran 1 test in 245.889s
+
+OK
+test-getFilledPaperAmount is  1000
+
+Process finished with exit code 0
+
+
+
+test-getCurrentRound is  1
+test-getFilledPaperAmount is  1000
+endCurrentRound -> hash :  119afc8849aaec85515d112e687ce38400f4e0d31d3250511c76cd0f918385ba
+
+
+endCurrentRound-res is  {'TxHash': '119afc8849aaec85515d112e687ce38400f4e0d31d3250511c76cd0f918385ba', 'State': 1, 'GasConsumed': 25727500, 'Notify': [{'ContractAddress': 'e3429080188b289a42d94a4b49131dfc2d89d597', 'States': ['656e64526f756e64', '01', '9c05', ['8ec19aa4de68edeb8fbf9265d85d66d07f383e17']]}, {'ContractAddress': 'e3429080188b289a42d94a4b49131dfc2d89d597', 'States': ['7374617274526f756e64', '02']}, {'ContractAddress': '0200000000000000000000000000000000000000', 'States': ['transfer', 'AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p', 'AFmseVrdL9f9oyCzZefL9tG6UbviEH9ugK', 25727500]}]}
+endCurrentRound event - < 1 >  -- endCurrentRound-res-event is :  ['endRound', 1, 1436, ["['8ec19aa4de68edeb8fbf9265d85d66d07f383e17']"]]
+endCurrentRound event - < 2 >  -- endCurrentRound-res-event is :  ['startRound', 2]
+endCurrentRound-consume-ong-amount is :  0.0257275  ONG
+

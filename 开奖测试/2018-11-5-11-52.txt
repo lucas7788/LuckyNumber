@@ -1,0 +1,8 @@
+test-getCurrentRound is  2
+
+
+Ran 1 test in 0.072s
+
+OK
+test-getFilledPaperAmount is  9860
+
