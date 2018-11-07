@@ -333,6 +333,10 @@ def Main(operation, args):
         return getCurrentPrice()
     if operation == "getCurrentRoundEndTime":
         return getCurrentRoundEndTime()
+    if operation == "getCommissionAmount":
+        if len(args) != 0:
+            return False
+        return getCommissionAmount()
     if operation == "getPaperBalance":
         if len(args) != 1:
             return False
@@ -655,6 +659,7 @@ def endCurrentRound():
     totalFee = Sub(awardVault, totalTaxedAward)
     # update the commission balance, which only admin can touch
     Put(GetContext(), COMMISSION_KEY, Add(totalFee, getCommissionAmount()))
+
     # delete the award vault of this current round
     # Delete(GetContext(), concatKey(concatKey(ROUND_PREFIX, currentRound), AWARD_VAULT_KEY))
 
