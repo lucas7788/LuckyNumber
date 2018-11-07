@@ -574,8 +574,7 @@ def endCurrentRound():
     minDistance = 10000
     # to record the number corresponding with minimum distance
     existLuckyNumber = 10000
-    # luckyNumber = getLuckyNumber()
-    luckyNumber = 5000
+    luckyNumber = getLuckyNumber()
     for number in numberList:
         # get the L1 norm of the distance between number and luckyNumber
         distance = ASub(number, luckyNumber)
