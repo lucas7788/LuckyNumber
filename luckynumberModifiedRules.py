@@ -237,8 +237,9 @@ Admin = ToScriptHash('AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p')
 # PurchaseEvent = RegisterAction("buy", "account", "ongAmount", "paperAmount")
 
 # Beijing time 2018-11-2-16:30:01
-# each round will last 3 minutes
-StartTime = 1541147410
+# each round will last 5 minutes
+StartTime = 1541568300
+RoundDurationMinutes = 5
 
 def Main(operation, args):
     ######################## for Admin to invoke Begin ###############
@@ -454,7 +455,7 @@ def startNewRound():
 
     RequireWitness(Admin)
     currentRound = getCurrentRound()
-    nextRoundNum = currentRound + 1
+    nextRoundNum = Add(currentRound, 1)
 
     if currentRound != 0:
         currentVaultForNext = concatKey(concatKey(ROUND_PREFIX, currentRound), NEXT_VAULT_KEY)
@@ -547,7 +548,7 @@ def endCurrentRound():
     currentRound = getCurrentRound()
 
     # Require(GetTime() > getCurrentRoundEndTime() - 60)
-    if GetTime() >= getCurrentRoundEndTime() - 60:
+    if GetTime() < getCurrentRoundEndTime():
         Notify(["EndCurrentRoundError", "Current round endtime error"])
         return False
 
@@ -573,7 +574,8 @@ def endCurrentRound():
     minDistance = 10000
     # to record the number corresponding with minimum distance
     existLuckyNumber = 10000
-    luckyNumber = getLuckyNumber()
+    # luckyNumber = getLuckyNumber()
+    luckyNumber = 5000
     for number in numberList:
         # get the L1 norm of the distance between number and luckyNumber
         distance = ASub(number, luckyNumber)
@@ -739,7 +741,7 @@ def buyPaper(account, paperAmount):
 
     Put(GetContext(), PROFIT_PER_PAPER_KEY, Add(profitPerPaperToBeAdd, oldProfitPerPaper))
 
-    Notify(["222_buy", oldProfitPerPaper, getProfitPerPaper()])
+    # Notify(["222_buy", oldProfitPerPaper, getProfitPerPaper()])
     # # update profitPerPaperFrom of account
     # Put(GetContext(), concatKey(PROFIT_PER_PAPER_FROM_PREFIX, account), oldProfitPerPaper)
 
@@ -1007,12 +1009,12 @@ def getCurrentRound():
 def getCurrentPrice():
     currentRound = getCurrentRound()
     currentRoundSoldAmount = getRoundSoldPaperAmount(currentRound)
-    currentPrice = InitialPrice + 9260 * currentRoundSoldAmount
+    currentPrice = Add(InitialPrice, Mul(9260, currentRoundSoldAmount))
     return currentPrice
 
 def getCurrentRoundEndTime():
     currentRound = getCurrentRound()
-    currentRoundEndTime = StartTime + Mul(currentRound, 3 * 60)
+    currentRoundEndTime = Add(StartTime, Mul(currentRound, Mul(RoundDurationMinutes, 60)))
     return currentRoundEndTime
 ################## Global Info End #######################
 
@@ -1126,8 +1128,8 @@ def getProfitPerPaper():
 ######################### Utility Methods Start #########################
 def paperToONG(round, paperAmount):
     roundSoldPaperAmount = getRoundSoldPaperAmount(round)
-    averagePrice = InitialPrice + 9260 * roundSoldPaperAmount + 4630 * paperAmount - 4630
-    ongAmount = averagePrice * paperAmount
+    averagePrice = Sub(Add(Add(InitialPrice, Mul(9260, roundSoldPaperAmount)), Mul(4630, paperAmount)), 4630)
+    ongAmount = Mul(averagePrice, paperAmount)
     return ongAmount
 
 def getLuckyNumber():
