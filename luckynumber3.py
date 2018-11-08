@@ -693,7 +693,7 @@ def endCurrentRound():
     Put(GetContext(), concatKey(concatKey(ROUND_PREFIX, currentRound), ROUND_STATUS_KEY), STATUS_OFF)
 
 
-    Notify(["endRound", currentRound, luckyNumber, actualLuckyNumberList, winnersList, winAwardList, GetTime()])
+    Notify(["endRound", currentRound, GetTime(), luckyNumber, actualLuckyNumberList, winnersList, winAwardList])
 
     winList = []
     # winList.append(currentRound)
@@ -894,6 +894,8 @@ def fillPaper(account, guessNumberList):
     # if getGameStatus(currentRound) == STATUS_OFF:
     #     Notify(["FillPaperError", "Current round game status off!"])
     #     return False
+
+    ExecutionEngine.CallingScriptHash;
 
     guessNumberLen = len(guessNumberList)
 

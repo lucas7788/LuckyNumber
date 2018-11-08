@@ -1,5 +1,5 @@
 {
-   "hash":"0xc47c18563a07b7f17bd5431e7e3dfbef1ce31b39",
+   "hash":"0x******************",
    "entrypoint":"Main",
    "functions":[
       {
@@ -35,7 +35,7 @@
          "parameters":[
             {
                "name":"args",
-               "type":"Array"
+               "type":"SpecificArray1"
             }
          ],
         "returntype":"Boolean"
@@ -60,7 +60,7 @@
          "parameters":[
             {
                "name":"args",
-               "type":"Array"
+               "type":"SpecificArray2"
             }
          ],
         "returntype":"Boolean"
@@ -69,14 +69,22 @@
          "name":"withdrawGas",
          "parameters":[
 
-         ]
+         ],
+		 "returntype":"Boolean"
+      },
+	  {
+         "name":"withdrawCommission",
+         "parameters":[
+
+         ],
+		 "returntype":"Boolean"
       },
       {
          "name":"endCurrentRound",
          "parameters":[
 
          ],
-        "returntype":""
+        "returntype":"Boolean"
       },
       {
          "name":"buyPaper",
@@ -90,7 +98,7 @@
                "type":"Integer"
             }
          ],
-        "returntype":""
+        "returntype":"Boolean"
       },
       {
          "name":"reinvest",
@@ -104,7 +112,7 @@
                "type":"Integer"
             }
          ],
-        "returntype":""
+        "returntype":"Boolean"
       },
       {
          "name":"fillPaper",
@@ -118,7 +126,7 @@
                "type":"Array"
             }
          ],
-        "returntype":""
+        "returntype":"Boolean"
       },
       {
          "name":"withdraw",
@@ -128,8 +136,46 @@
                "type":"ByteArray"
             }
          ],
-        "returntype":""
+        "returntype":"Boolean"
       },
+	  {  
+		"name":"migrateContract",
+		"parameters":[  
+			{  
+				"name":"code",
+				"type":"ByteArray"
+			},
+			{  
+				"name":"needStorage",
+				"type":"Boolean"
+			},
+			{  
+				"name":"name",
+				"type":"String"
+			},
+			{  
+				"name":"version",
+				"type":"String"
+			},
+			{  
+				"name":"author",
+				"type":"String"
+			},
+			{  
+				"name":"email",
+				"type":"String"
+			},
+			{  
+				"name":"description",
+				"type":"String"
+			},
+			{  
+				"name":"newContractHash",
+				"type":"ByteArray"
+			}
+		],
+		"returntype":"Boolean"
+	  },
       {
          "name":"updateDividendBalance",
          "parameters":[
@@ -138,7 +184,14 @@
                "type":"ByteArray"
             }
          ],
-        "returntype":""
+        "returntype":"Boolean"
+      },
+	  {
+         "name":"getTotalONGAmount",
+         "parameters":[
+
+         ],
+        "returntype":"Integer"
       },
       {
          "name":"getTotalPaper",
@@ -175,6 +228,14 @@
          ],
         "returntype":"Integer"
       },
+	  {
+         "name":"getCommissionAmount",
+         "parameters":[
+
+         ],
+        "returntype":"Integer"
+      },
+	  
       {
          "name":"getPaperBalance",
          "parameters":[
@@ -233,7 +294,7 @@
                "type":"ByteArray"
             }
          ],
-        "returntype":"Array"
+        "returntype":"NumberList"
       },
       {
          "name":"getWithdrawnBalance",
@@ -244,8 +305,18 @@
             }
          ],
         "returntype":"Integer"
+      }, 
+	  {
+         "name":"getReferral",
+         "parameters":[
+            {
+               "name":"account",
+               "type":"ByteArray"
+            }
+         ],
+        "returntype":"ByteArray"
       },
-      {
+	  {
          "name":"getFilledPaperBalance",
          "parameters":[
             {
@@ -258,16 +329,6 @@
             }
          ],
         "returntype":"Integer"
-      },
-     {
-         "name":"getReferral",
-         "parameters":[
-            {
-               "name":"account",
-               "type":"ByteArray"
-            }
-         ],
-        "returntype":"ByteArray"
       },
       {
          "name":"getAwardVault",
@@ -319,6 +380,16 @@
          ],
         "returntype":"Integer"
       },
+	  {
+         "name":"getWinInfo",
+         "parameters":[
+            {
+               "name":"roundNum",
+               "type":"Integer"
+            }
+         ],
+        "returntype":"SpecificList"
+      },
       {
          "name":"getFilledNumberList",
          "parameters":[
@@ -327,7 +398,7 @@
                "type":"Integer"
             }
          ],
-        "returntype":"Array"
+        "returntype":"NumberList"
       },
       {
          "name":"getPlayersList",
@@ -341,8 +412,29 @@
                "type":"Integer"
             }
          ],
-        "returntype":"Array"
+        "returntype":"AccountList"
       },
+	  {
+            "name":"getPlayerGuessedNumber",
+            "parameters":[
+                {
+                    "name":"roundNum",
+                    "type":"Integer"
+                },
+                {
+                    "name":"account",
+                    "type":"ByteArray"
+                }
+            ],
+			"returntype":"NumberList"
+      },
+	  {
+         "name":"getProfitPerPaper",
+         "parameters":[
+
+         ],
+        "returntype":"Integer"
+      }
       {
          "name":"getLuckyNumber",
          "parameters":[

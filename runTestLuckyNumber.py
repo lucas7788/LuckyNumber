@@ -23,9 +23,9 @@ import random
 from ontology.smart_contract.neo_contract.abi.abi_function import AbiFunction
 from multiprocess import *
 
-rpc_address = "http://127.0.0.1:20336"
+# rpc_address = "http://127.0.0.1:20336"
 # rpc_address = "http://polaris3.ont.io:20336"
-# rpc_address = "http://139.219.139.170:20336"
+rpc_address = "http://139.219.139.170:20336"
 sdk = OntologySdk()
 sdk.set_rpc((rpc_address))
 from datetime import datetime
@@ -33,7 +33,7 @@ from datetime import datetime
 # first contract
 # luckyNumberContractAddress = "96df6058ed643b1a74e3d56ae0c3f2687ca8678f"
 
-luckyNumberContractAddress = "1abb705fce2a82dc390c52837b09d75702fbc6be"  # without magnitude
+luckyNumberContractAddress = "b7737d095fa8067fa58d62752f870b23d35e0c78"  # without magnitude
 # luckyNumberContractAddress = "b8bd3ca229e3a50f53a8ff47272949883c8b3b29"  # with magnitude
 
 # luckyNumberContractAddress = "fd1b0d9475688e9f55a8441a2dd3bfb5886b91e2"
@@ -272,8 +272,8 @@ class TestAsset(unittest.TestCase):
         # print("***** finished read account from wallet.dat ***********\n")
         # return True
         accountListToBeUsed = []
-        accountFromIndex = 1
-        accountEndIndex = 10000
+        accountFromIndex = 2
+        accountEndIndex = 3
         line_num = 0
         with open("privateKey10000.csv") as csvfile:
             csvFile = csv.reader(csvfile, delimiter=',')
@@ -298,7 +298,7 @@ class TestAsset(unittest.TestCase):
                 self.test_transferONG(account, adminAcct, balance - ongAmount)
             i = i + 1
         print("***** finished transfer ONG to these accounts ***********\n")
-        time.sleep(300)
+        time.sleep(30)
         i = 1
         for account in accountListToBeUsed:
             print("<", i, "> ", "Balance -- ", account.get_address_base58(), " -- ", self.test_getONGBalance(account.get_address_base58()))
@@ -309,7 +309,7 @@ class TestAsset(unittest.TestCase):
         hashBuyPaperList = []
         hashFillPaperList = []
         hashFillPaper1List = []
-        paperAmount = 10
+        paperAmount = 1
         i = 0
         for account in accountListToBeUsed:
             unfilledPaperBalance = self.test_getPaperBalance(account)
@@ -318,12 +318,14 @@ class TestAsset(unittest.TestCase):
             hash = None
             if paperBalance < paperAmount:
                 hash = self.test_buyPaper(account, paperAmount - paperBalance)
+                print("hash is ", hash)
+                return True
             hashBuyPaperList.append(hash)
             i = i + 1
             print("<Player", i, ">", "buy -- ",hash)
             print("Before Buy, paperBalance : ", paperBalance, " filledPaperBalance : ", filledPaperBalance, " unfilledPaperBalance : ", unfilledPaperBalance)
             # time.sleep(0.1)
-        time.sleep(300)
+        time.sleep(30)
 
         i = 0
 
@@ -336,7 +338,7 @@ class TestAsset(unittest.TestCase):
             filledPaperBalance = self.test_getFilledPaperBalance(account, roundNum)
             paperBalance = unfilledPaperBalance + filledPaperBalance
 
-            paperNumberFrom = i * 10
+            paperNumberFrom = i * 100
             hash = None
             if unfilledPaperBalance > 0:
 
@@ -350,7 +352,7 @@ class TestAsset(unittest.TestCase):
             print("<Player", i , ">", "fill -- ", hash )
             print("After Buy, paperBalance : ", paperBalance, " filledPaperBalance : ", filledPaperBalance, " unfilledPaperBalance : ", unfilledPaperBalance)
             # time.sleep(0.1)
-        time.sleep(300)
+        time.sleep(30)
 
         i = 0
         for index in range(len(hashBuyPaperList)):
@@ -364,7 +366,7 @@ class TestAsset(unittest.TestCase):
             if hash:
                 self.test_handleEvent("fillPaper1", hash)
 
-        time.sleep(60)
+        time.sleep(10)
         roundNum = self.test_getCurrentRound()
         print("test-getCurrentRound is ", roundNum)
         print("test-getFilledPaperAmount is ", self.test_getFilledPaperAmount(roundNum))
@@ -532,18 +534,8 @@ class TestAsset(unittest.TestCase):
                         roundNumber = int(tmp.hex(), 16)
                         notifyContent.append(roundNumber)
 
-                        if len(event["States"]) != 4:
+                        if len(event["States"]) == 2:
                             continue
-                        winnerList = str(event["States"][3])
-                        # print("winnerList", winnerList, type(winnerList))
-                        # print("winnerList[0]", winnerList[0], type(winnerList[0]))
-                        addressList = []
-
-                        # for winner in winnerList:
-                        #     address = Address(binascii.a2b_hex(winner))
-                        #     addressList.append(address)
-
-                        addressList.append(winnerList)
 
                         luckyNumber = str(event["States"][2])
                         if not luckyNumber:
@@ -552,7 +544,27 @@ class TestAsset(unittest.TestCase):
                         luckyNumber.reverse()
                         luckyNumber = int(luckyNumber.hex(), 16)
                         notifyContent.append(luckyNumber)
-                        notifyContent.append(addressList)
+
+                        actualLuckyNumberList = event["States"][3]
+                        actualLuckyNumberList1 = []
+                        for actualLuckyNumber in actualLuckyNumberList:
+                            if not actualLuckyNumber:
+                                actualLuckyNumber = "0"
+                            actualLuckyNumber = bytearray.fromhex(actualLuckyNumber)
+                            actualLuckyNumber.reverse()
+                            actualLuckyNumber = int(actualLuckyNumber.hex(), 16)
+                            actualLuckyNumberList1.append(actualLuckyNumber)
+                        notifyContent.append(actualLuckyNumberList1)
+
+                        winAwardList = str(event["States"][4])
+                        notifyContent.append(winAwardList)
+
+                        time = str(event["States"][5])
+                        time = bytearray.fromhex(time)
+                        time.reverse()
+                        time = int(time.hex(), 16)
+                        notifyContent.append(time)
+
                         # print("endCurrentRound-res-event is : ", notifyContent)
                     elif first == "destroyPaper":
                         address1 = Address(binascii.a2b_hex(event["States"][1]))
@@ -876,7 +888,14 @@ class TestAsset(unittest.TestCase):
         print("withraw-res is ", res)
         return True
 
-
+    def test_getWinInfo(self):
+        currentRound = self.test_getCurrentRound()
+        roundNum = self.test_getCurrentRound() - 1
+        abi_function = AbiFunction("getWinInfo", "", [{"name": "roundNum", "type": ""}])
+        abi_function.set_params_value((roundNum,))
+        res, nil = sdk.neo_vm().send_transaction(contract_address, adminAcct, adminAcct, 0, 0, abi_function, True)
+        print("test-getGameStatus is : ", res, " in round ", roundNum)
+        return True
 
 
 
