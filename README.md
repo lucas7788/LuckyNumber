@@ -1,7 +1,7 @@
 ### contracts
 luckynumber1.py is the original contract.
 
-luckynumber2.py is the improved version of luckynumber1.py, but the problem that the invocation fee of ```endCurrentRound``` is still so high.
+luckynumber2.py is the improved version of luckynumber1.py. But the problem that the invocation fee of ```endCurrentRound``` is so high still exists.
 
 luckynumber3.py is the vertion after some rules are modified in order to decrease the invocation fee of ```endCurrentRound``` method.
 
