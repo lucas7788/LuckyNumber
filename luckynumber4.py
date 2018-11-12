@@ -7,10 +7,7 @@ from boa.interop.System.Runtime import CheckWitness, GetTime, Notify, Serialize,
 from boa.interop.System.ExecutionEngine import GetExecutingScriptHash, GetCallingScriptHash, GetEntryScriptHash
 from boa.interop.Ontology.Native import Invoke
 from boa.interop.Ontology.Runtime import GetRandomHash
-from boa.interop.System.Blockchain import GetHeight, GetHeader, GetBlock
-from boa.interop.System.Header import GetHash
 from boa.builtins import ToScriptHash, concat, state
-from boa.interop.System.Action import RegisterAction
 
 
 """
@@ -162,43 +159,31 @@ REFERRAL_BALANCE_OF_PREFIX = "G08"
 AWARD_BALANCE_OF_PREFFIX = "G09"
 # PAPER_BALANCE_PREFIX + account -- store the current blank paper amount of account
 PAPER_BALANCE_PREFIX = "G10"
-# WITHDRAWN_BALANCE_OF_PREFFIX + account -- store the asset value that has been withdrawn
-WITHDRAWN_BALANCE_OF_PREFFIX = "G11"
+
 REFERRAL_PREFIX = "G13"
 
 # PROFIT_PER_PAPER_FROM_PREFIX + account -- store the filled paper amount in round i
 PROFIT_PER_PAPER_FROM_PREFIX = "G14"
 
-
-################## Round i User info ##################
-# ROUND_PREFIX + CURRET_ROUND_NUM_KEY + FILLED_PAPER_BALANCE_PREFIX + account -- store the filled paper amount in round i
-FILLED_PAPER_BALANCE_PREFIX = "U01"
-
 ###################### Round i Public info ###########################
 # ROUND_PREFIX + CURRET_ROUND_NUM_KEY + AWARD_VAULT_KEY -- store the total award for the winner in roung i
 AWARD_VAULT_KEY = "R01"
 
-# ROUND_PREFIX + CURRET_ROUND_NUM_KEY + ROUND_SOLD_PAPER_AMOUNT -- store the paper amount sold in this round
-ROUND_SOLD_PAPER_AMOUNT = "R03"
-
-# ROUND_PREFIX + CURRET_ROUND_NUM_KEY + FILLED_PAPER_AMOUNT -- store the asset for the next round in round i+1
-FILLED_PAPER_AMOUNT = "R04"
-
 # ROUND_PREFIX + CURRET_ROUND_NUM_KEY + FILLED_NUMBER_LIST_KEY -- store the filled number on papers
-FILLED_NUMBER_LIST_KEY = "R05"
+FILLED_NUMBER_LIST_KEY = "R02"
 
 # ROUND_PREFIX + CURRET_ROUND_NUM_KEY + FILLED_NUMBER_KEY + number -- store the accounts that filled number
 # key = ROUND_PREFIX + CURRET_ROUND_NUM_KEY + FILLED_NUMBER_KEY + number
 # value = [account1, account2, account3]
-FILLED_NUMBER_KEY = "R06"
+FILLED_NUMBER_KEY = "R03"
 
 # ROUND_PREFIX + CURRET_ROUND_NUM_KEY + ROUND_STATUS_KEY -- store the status of round i game
-ROUND_STATUS_KEY = "R07"
+ROUND_STATUS_KEY = "R04"
 
 # ROUND_PREFIX + CURRET_ROUND_NUM_KEY  + WINNER_KEY -- store the win info
 # key = ROUND_PREFIX + CURRET_ROUND_NUM_KEY  + WINNER_KEY
 # value = [generatedLuckyNumber, actualLuckyNumberList, allWinnerList, winAwardList]
-WINNER_KEY = "R08"
+WINNER_KEY = "R05"
 
 ############################### other info ###################################
 INIIT_KEY = "Initialized"
@@ -210,7 +195,6 @@ MagnitudeForProfitPerPaper = 100000000000000000000
 
 
 InitialPrice = 1000000000
-PriceIncremental = 9260
 PaperHolderPercentage = 50
 ReferralAwardPercentage = 1
 AwardPercentage = 45
@@ -309,6 +293,11 @@ def Main(operation, args):
         description = args[6]
         newContractHash = args[7]
         return migrateContract(code, needStorage, name, version, author, email, description, newContractHash)
+    if operation == "updateDividendBalance":
+        if len(args) != 1:
+            return False
+        account = args[0]
+        return updateDividendBalance(account)
     ######################## for User to invoke End ###############
     ######################### General Info to pre-execute Begin ##############
     if operation == "getTotalONGAmount":
@@ -327,10 +316,6 @@ def Main(operation, args):
         if len(args) != 0:
             return False
         return getCurrentRound()
-    if operation == "getCurrentPrice":
-        if len(args) != 0:
-            return False
-        return getCurrentPrice()
     if operation == "getCurrentRoundEndTime":
         return getCurrentRoundEndTime()
     if operation == "getCommissionAmount":
@@ -362,11 +347,6 @@ def Main(operation, args):
             return False
         account = args[0]
         return getDividendsBalance(account)
-    if operation == "getWithdrawnBalance":
-        if len(args) != 1:
-            return False
-        account = args[0]
-        return getWithdrawnBalance(account)
     if operation == "getReferral":
         if len(args) != 1:
             return False
@@ -382,16 +362,6 @@ def Main(operation, args):
             return False
         currentRound = args[0]
         return getGameStatus(currentRound)
-    if operation == "getRoundSoldPaperAmount":
-        if len(args) != 1:
-            return False
-        currentRound = args[0]
-        return getRoundSoldPaperAmount(currentRound)
-    if operation == "getFilledPaperAmount":
-        if len(args) != 1:
-            return False
-        currentRound = args[0]
-        return getFilledPaperAmount(currentRound)
     if operation == "getWinInfo":
         if len(args) != 1:
             return False
@@ -400,12 +370,6 @@ def Main(operation, args):
     ######################### General Info to pre-execute Begin ##############
 
     ######################### For testing purchase Begin ##############
-    if operation == "getFilledPaperBalance":
-        if len(args) != 2:
-            return False
-        account = args[0]
-        currentRound = args[1]
-        return getFilledPaperBalance(account, currentRound)
     if operation == "getLuckyNumber":
         return getLuckyNumber()
     if operation == "getFilledNumberList":
@@ -502,12 +466,6 @@ def assignPaper(account, paperAmount):
 
     # update total paper amount
     Put(GetContext(), TOTAL_PAPER_KEY, Add(paperAmount, getTotalPaper()))
-
-    # update the sold paper amount in this round
-    currentRound = getCurrentRound()
-    Put(GetContext(), concatKey(concatKey(ROUND_PREFIX, currentRound), ROUND_SOLD_PAPER_AMOUNT), Add(paperAmount, getRoundSoldPaperAmount(currentRound)))
-
-
 
     Notify(["assignPaper", account, paperAmount, GetTime()])
 
@@ -688,7 +646,7 @@ def buyPaper(account, paperAmount):
     #     return False
 
 
-    ongAmount = paperToONG(currentRound, paperAmount)
+    ongAmount = paperToONG(paperAmount)
 
     Require(transferONG(account, ContractAddress, ongAmount))
     # res = transferONG(account, ContractAddress, ongAmount)
@@ -716,10 +674,6 @@ def buyPaper(account, paperAmount):
     # update gas vault
     gasVaultToBeAdd = Sub(Sub(ongAmount, dividend1), awardVaultToBeAdd)
     Put(GetContext(), GAS_VAULT_KEY, Add(gasVaultToBeAdd, getGasVault()))
-
-    # update sold paper amount for the usage of calculating the price
-    key = concatKey(concatKey(ROUND_PREFIX, currentRound), ROUND_SOLD_PAPER_AMOUNT)
-    Put(GetContext(), key, Add(paperAmount, getRoundSoldPaperAmount(currentRound)))
 
     oldProfitPerPaper = Get(GetContext(), PROFIT_PER_PAPER_KEY)
     oldTotalPaperAmount = getTotalPaper()
@@ -758,7 +712,7 @@ def reinvest(account, paperAmount):
     #     Notify(["ReinvestError", "Current round game status off!"])
     #     return False
 
-    ongAmount = paperToONG(currentRound, paperAmount)
+    ongAmount = paperToONG(paperAmount)
 
     # updateDividendBalance(account)
     dividendBalance = getDividendBalance(account)
@@ -789,10 +743,6 @@ def reinvest(account, paperAmount):
     # update gas vault
     gasVaultToBeAdd = Sub(Sub(ongAmount, dividend1), awardVaultToBeAdd)
     Put(GetContext(), GAS_VAULT_KEY, Add(gasVaultToBeAdd, getGasVault()))
-
-    # update sold paper amount for the usage of calculating the price
-    key = concatKey(concatKey(ROUND_PREFIX, currentRound), ROUND_SOLD_PAPER_AMOUNT)
-    Put(GetContext(), key, Add(paperAmount, getRoundSoldPaperAmount(currentRound)))
 
     # update profitPerPaper
     oldProfitPerPaper = Get(GetContext(), PROFIT_PER_PAPER_KEY)
@@ -849,10 +799,9 @@ def fillPaper(account, guessNumberList):
     #     Notify(["FillPaperError", "guess number list illegal!"])
 
     currentPaperBalance = getPaperBalance(account)
-    currentFilledPaperBalance = getFilledPaperBalance(account, currentRound)
 
     # # make sure his balance is greater or equal to current filled paper balance + guessNumberList length
-    Require(currentPaperBalance >= Add(currentFilledPaperBalance, guessNumberLen))
+    Require(currentPaperBalance >= guessNumberLen)
     # if currentPaperBalance < Add(currentFilledPaperBalance, guessNumberLen):
     #     Notify(["FillPaperError", "Not enough paper balance to fill papers!"])
     #     return False
@@ -892,21 +841,8 @@ def fillPaper(account, guessNumberList):
     numberListInfo = Serialize(numberList)
     Put(GetContext(), numberListKey, numberListInfo)
 
-    # update the filled paper amount in current round
-    key = concatKey(concatKey(ROUND_PREFIX, currentRound), FILLED_PAPER_AMOUNT)
-    Put(GetContext(), key, Add(guessNumberLen, getFilledPaperAmount(currentRound)))
-
-    # update the filled paper balance in current round
-    key1 = concatKey(ROUND_PREFIX, currentRound)
-    key2 = concatKey(FILLED_PAPER_BALANCE_PREFIX, account)
-    key = concatKey(key1, key2)
-    Put(GetContext(), key, Add(guessNumberLen, currentFilledPaperBalance))
-
     # update dividend
     updateDividendBalance(account)
-
-    # update the paper balance of account
-    Put(GetContext(), concatKey(PAPER_BALANCE_PREFIX, account), Sub(currentPaperBalance, getFilledPaperBalance(account, currentRound)))
 
     # update total paper amount
     Put(GetContext(), TOTAL_PAPER_KEY, Sub(getTotalPaper(), guessNumberLen))
@@ -944,8 +880,6 @@ def withdraw(account):
 
     # update total ong amount
     Put(GetContext(), TOTAL_ONG_KEY, Sub(getTotalONGAmount(), assetToBeWithdrawn))
-    # update withdrawn records
-    Put(GetContext(), concatKey(WITHDRAWN_BALANCE_OF_PREFFIX, account), Add(assetToBeWithdrawn, getWithdrawnBalance(account)))
 
     Notify(["withdraw", ContractAddress, account, assetToBeWithdrawn, GetTime()])
 
@@ -1002,12 +936,6 @@ def getGasVault():
 def getCurrentRound():
     return Get(GetContext(), CURRET_ROUND_NUM_KEY)
 
-def getCurrentPrice():
-    currentRound = getCurrentRound()
-    currentRoundSoldAmount = getRoundSoldPaperAmount(currentRound)
-    currentPrice = Add(InitialPrice, Mul(9260, currentRoundSoldAmount))
-    return currentPrice
-
 def getCurrentRoundEndTime():
     currentRound = getCurrentRound()
     currentRoundEndTime = Add(StartTime, Mul(currentRound, Mul(RoundDurationMinutes, 60)))
@@ -1042,16 +970,9 @@ def getAwardBalance(account):
 def getDividendsBalance(account):
     return [getReferralBalance(account), getDividendBalance(account), getAwardBalance(account)]
 
-def getWithdrawnBalance(account):
-    return Get(GetContext(), concatKey(WITHDRAWN_BALANCE_OF_PREFFIX, account))
 
 def getReferral(account):
     return Get(GetContext(), concatKey(REFERRAL_PREFIX, account))
-
-def getFilledPaperBalance(account, roundNum):
-    key1 = concatKey(ROUND_PREFIX, roundNum)
-    key2 = concatKey(FILLED_PAPER_BALANCE_PREFIX, account)
-    return Get(GetContext(), concatKey(key1, key2))
 ####################### User Info Start #####################
 
 
@@ -1061,14 +982,6 @@ def getAwardVault(roundNum):
 
 def getGameStatus(roundNum):
     return Get(GetContext(), concatKey(concatKey(ROUND_PREFIX, roundNum), ROUND_STATUS_KEY))
-
-def getRoundSoldPaperAmount(roundNum):
-    roundSoldPaperAmountKey = concatKey(concatKey(ROUND_PREFIX, roundNum), ROUND_SOLD_PAPER_AMOUNT)
-    return Get(GetContext(), roundSoldPaperAmountKey)
-
-def getFilledPaperAmount(roundNum):
-    key = concatKey(concatKey(ROUND_PREFIX, roundNum), FILLED_PAPER_AMOUNT)
-    return Get(GetContext(), key)
 
 def getWinInfo(roundNum):
     key = concatKey(concatKey(ROUND_PREFIX, roundNum), WINNER_KEY)
@@ -1136,10 +1049,8 @@ def getProfitPerPaper():
 ####################### Round Info End #############################
 
 ######################### Utility Methods Start #########################
-def paperToONG(round, paperAmount):
-    roundSoldPaperAmount = getRoundSoldPaperAmount(round)
-    averagePrice = Sub(Add(Add(InitialPrice, Mul(9260, roundSoldPaperAmount)), Mul(4630, paperAmount)), 4630)
-    ongAmount = Mul(averagePrice, paperAmount)
+def paperToONG(paperAmount):
+    ongAmount = Mul(InitialPrice, paperAmount)
     return ongAmount
 
 def getLuckyNumber():
@@ -1150,7 +1061,7 @@ def getLuckyNumber():
     '''
     blockHash = GetRandomHash()
     # The number should be in the range from 0 to 9999
-    luckyNumber = abs(blockHash) % 10000
+    luckyNumber = abs(blockHash) % 100
     luckyNumber = abs(luckyNumber)
     return luckyNumber
 

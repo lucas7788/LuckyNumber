@@ -214,13 +214,6 @@
          ],
         "returntype":"Integer"
       },
-      {
-         "name":"getCurrentPrice",
-         "parameters":[
-
-         ],
-        "returntype":"Integer"
-      },
      {
          "name":"getCurrentRoundEndTime",
          "parameters":[
@@ -296,20 +289,6 @@
          ],
         "returntype":"ByteArray"
       },
-	  {
-         "name":"getFilledPaperBalance",
-         "parameters":[
-            {
-               "name":"account",
-               "type":"ByteArray"
-            },
-            {
-               "name":"roundNum",
-               "type":"Integer"
-            }
-         ],
-        "returntype":"Integer"
-      },
       {
          "name":"getAwardVault",
          "parameters":[
@@ -330,26 +309,6 @@
             }
          ],
         "returntype":"String"
-      },
-      {
-         "name":"getRoundSoldPaperAmount",
-         "parameters":[
-            {
-               "name":"roundNum",
-               "type":"Integer"
-            }
-         ],
-        "returntype":"Integer"
-      },
-      {
-         "name":"getFilledPaperAmount",
-         "parameters":[
-            {
-               "name":"roundNum",
-               "type":"Integer"
-            }
-         ],
-        "returntype":"Integer"
       },
 	  {
          "name":"getWinInfo",
