@@ -520,7 +520,7 @@ def endCurrentRound():
     #     return False
 
     currentRound = getCurrentRound()
-
+    Notify(["000_end"])
     Require(GetTime() >= getCurrentRoundEndTime())
     # if GetTime() < getCurrentRoundEndTime():
     #     Notify(["EndCurrentRoundError", "Current round endtime error"])
@@ -531,6 +531,7 @@ def endCurrentRound():
     #     Notify(["EndCurrentRoundError", "Game status off"])
     #     return False
 
+    Notify(["111_end"])
     numberListKey = concatKey(concatKey(ROUND_PREFIX, currentRound), FILLED_NUMBER_LIST_KEY)
     numberListInfo = Get(GetContext(), numberListKey)
     numberList = []
@@ -546,6 +547,7 @@ def endCurrentRound():
         startNewRound()
         return True
 
+    Notify(["222_end"])
     # to record the minimum distance
     minDistance = 10000
     # to record the number corresponding with minimum distance
@@ -559,15 +561,15 @@ def endCurrentRound():
             minDistance = distance
             existLuckyNumber = number
 
-    luckyDis = 0
+    Notify(["333_end", luckyNumber, minDistance, existLuckyNumber])
+    luckyDis = ASub(luckyNumber, existLuckyNumber)
     tryExistLuckyNumber = 10000
     if existLuckyNumber < luckyNumber:
-        luckyDis = Sub(luckyNumber, existLuckyNumber)
         tryExistLuckyNumber = Add(luckyNumber, luckyDis)
     elif existLuckyNumber > luckyNumber:
-        luckyDis = Sub(existLuckyNumber, luckyNumber)
         tryExistLuckyNumber = Sub(luckyNumber, luckyDis)
 
+    Notify(["444_end", luckyDis, tryExistLuckyNumber])
     # save the actual lucky number
     actualLuckyNumberList = []
     actualLuckyNumberList.append(existLuckyNumber)
@@ -585,6 +587,7 @@ def endCurrentRound():
         for tryWinner in tryWinnersList:
             winnersList.append(tryWinner)
 
+    Notify(["555_end"])
     # split the Award Vault to the winners
     awardVault = getAwardVault(currentRound)
 
@@ -604,6 +607,7 @@ def endCurrentRound():
         totalPureAward = Add(totalPureAward, pureWinnerAwardToBeAdd)
         winAwardList.append(pureWinnerAwardToBeAdd)
 
+    Notify(["666_end"])
     # get the commission fee
     totalCommission = Sub(awardVault, totalPureAward)
     # update the commission balance, which only admin can touch
@@ -613,7 +617,7 @@ def endCurrentRound():
     Put(GetContext(), concatKey(concatKey(ROUND_PREFIX, currentRound), ROUND_STATUS_KEY), STATUS_OFF)
 
     Notify(["endRound", currentRound, luckyNumber, actualLuckyNumberList, winnersList, winAwardList, GetTime()])
-
+    Notify(["777_end"])
     winList = []
     winList.append(luckyNumber)
     winList.append(Serialize(actualLuckyNumberList))
@@ -678,11 +682,15 @@ def buyPaper(account, paperAmount):
     oldProfitPerPaper = Get(GetContext(), PROFIT_PER_PAPER_KEY)
     oldTotalPaperAmount = getTotalPaper()
 
-    # profitPerPaperToBeAdd = Div(dividend, totalPaperAmount)
-    profitPerPaperToBeAdd = Div(Mul(dividend, MagnitudeForProfitPerPaper), oldTotalPaperAmount)
+    profitPerPaperToBeAdd = 0
+    if oldTotalPaperAmount != 0:
+        # profitPerPaperToBeAdd = Div(dividend, totalPaperAmount)
+        profitPerPaperToBeAdd = Div(Mul(dividend, MagnitudeForProfitPerPaper), oldTotalPaperAmount)
+        # update profitPerPaper
 
-    # update profitPerPaper
-    Put(GetContext(), PROFIT_PER_PAPER_KEY, Add(profitPerPaperToBeAdd, oldProfitPerPaper))
+        Put(GetContext(), PROFIT_PER_PAPER_KEY, Add(profitPerPaperToBeAdd, oldProfitPerPaper))
+    else:
+        Put(GetContext(), COMMISSION_KEY, Add(dividend, getCommissionAmount()))
 
     updateDividendBalance(account)
 
@@ -746,9 +754,17 @@ def reinvest(account, paperAmount):
 
     # update profitPerPaper
     oldProfitPerPaper = Get(GetContext(), PROFIT_PER_PAPER_KEY)
+    oldTotalPaperAmount = getTotalPaper()
 
-    # profitPerPaperToBeAdd = Div(dividend, getTotalPaper())
-    profitPerPaperToBeAdd = Div(Mul(dividend, MagnitudeForProfitPerPaper), getTotalPaper())
+    profitPerPaperToBeAdd = 0
+    if oldTotalPaperAmount != 0:
+        # profitPerPaperToBeAdd = Div(dividend, totalPaperAmount)
+        profitPerPaperToBeAdd = Div(Mul(dividend, MagnitudeForProfitPerPaper), oldTotalPaperAmount)
+        # update profitPerPaper
+        Put(GetContext(), PROFIT_PER_PAPER_KEY, Add(profitPerPaperToBeAdd, oldProfitPerPaper))
+    else:
+        Put(GetContext(), COMMISSION_KEY, Add(dividend, getCommissionAmount()))
+
 
     Put(GetContext(), PROFIT_PER_PAPER_KEY, Add(profitPerPaperToBeAdd, oldProfitPerPaper))
 
