@@ -1,5 +1,5 @@
 {
-   "hash":"0x******************",
+   "hash":"0x59752c655f7f1d746b0a3a229c5bfe63babdf2b7",
    "entrypoint":"Main",
    "functions":[
       {
@@ -299,7 +299,6 @@
          ],
         "returntype":"Integer"
       },
-
       {
          "name":"getGameStatus",
          "parameters":[
@@ -311,6 +310,16 @@
         "returntype":"String"
       },
 	  {
+         "name":"getFilledPaperAmount",
+         "parameters":[
+            {
+               "name":"roundNum",
+               "type":"Integer"
+            }
+         ],
+        "returntype":"Integer"
+      },
+	  {
          "name":"getWinInfo",
          "parameters":[
             {
@@ -319,6 +328,20 @@
             }
          ],
         "returntype":"SpecificList"
+      },
+	  {
+         "name":"getFilledPaperBalance",
+         "parameters":[
+			{
+               "name":"account",
+               "type":"ByteArray"
+            },
+            {
+               "name":"roundNum",
+               "type":"Integer"
+            }
+         ],
+        "returntype":"Integer"
       },
       {
          "name":"getFilledNumberList",
