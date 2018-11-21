@@ -24,8 +24,8 @@ from ontology.smart_contract.neo_contract.abi.abi_function import AbiFunction
 from multiprocess import *
 
 # rpc_address = "http://127.0.0.1:20336"
-# rpc_address = "http://polaris3.ont.io:20336"
-rpc_address = "http://139.219.139.170:20336"
+rpc_address = "http://polaris3.ont.io:20336"
+# rpc_address = "http://139.219.139.170:20336"
 sdk = OntologySdk()
 sdk.set_rpc((rpc_address))
 from datetime import datetime
@@ -33,7 +33,7 @@ from datetime import datetime
 # first contract
 # luckyNumberContractAddress = "96df6058ed643b1a74e3d56ae0c3f2687ca8678f"
 
-luckyNumberContractAddress = "b7737d095fa8067fa58d62752f870b23d35e0c78"  # without magnitude
+luckyNumberContractAddress = "c356063581cbe97d8a49cb406291be99224b9379"  # without magnitude
 # luckyNumberContractAddress = "b8bd3ca229e3a50f53a8ff47272949883c8b3b29"  # with magnitude
 
 # luckyNumberContractAddress = "fd1b0d9475688e9f55a8441a2dd3bfb5886b91e2"
@@ -49,7 +49,7 @@ contract_address.reverse()
 wallet_path = "C:\\Go_WorkSpace\\src\\github.com\\ontio\\ontology\\_Wallet_\\wallet.dat"
 wallet_path1 = "D:\\SmartX_accounts\\Cyano Wallet\\lucknumberAccount\\wallet1.dat"
 wallet_path10000 = "C:\\Go_WorkSpace\\src\\github.com\\ontio\\ontology\\_Wallet_\\wallet10000.dat"
-sdk.wallet_manager.open_wallet(wallet_path10000)
+sdk.wallet_manager.open_wallet(wallet_path)
 # sdk.wallet_manager.open_wallet(wallet_path1)
 
 
@@ -64,10 +64,9 @@ adminAcct = sdk.wallet_manager.get_account(admin_addr, admin_pwd)
 # adminAcct1 = sdk.wallet_manager.get_account(admin_addr1, admin_pwd1)
 # # payerAcct = sdk.wallet_manager.get_account("AUnhXaudVSBFqjH92a6HrhQySUTiQjf5VR", pwd)
 
-admin_addr2 = "AGsnRLY3CqSJzsVZKPJeyvxiy2pq537rsi"
-admin_pwd2 = "xinhao"
-adminAcct2 = sdk.wallet_manager.get_account(admin_addr2, admin_pwd2)
-# payerAcct = sdk.wallet_manager.get_account("AUnhXaudVSBFqjH92a6HrhQySUTiQjf5VR", pwd)
+# admin_addr2 = "AGsnRLY3CqSJzsVZKPJeyvxiy2pq537rsi"
+# admin_pwd2 = "xinhao"
+# adminAcct2 = sdk.wallet_manager.get_account(admin_addr2, admin_pwd2)
 
 accountNum = 2
 accountAvgPaperNum = 10
@@ -119,7 +118,7 @@ class TestAsset(unittest.TestCase):
         self.test_handleEvent("endCurrentRound", hash)
         return True
     def test_check_withdraw_hash(self):
-        hash = "eb03a15796586f4b9067937487d1f4a211a9acde041bbfcc689f13d71122fe41"
+        hash = "075f1ac8b04961b2748aeac5fd76b56ee95a0a8d5d5950a37c016e7a8ecc9998"
         print("************** Round 2_1 *************** \n")
         res = sdk.rpc.get_smart_contract_event_by_tx_hash(hash)
         print("res is ", res)
@@ -371,6 +370,80 @@ class TestAsset(unittest.TestCase):
         print("test-getCurrentRound is ", roundNum)
         print("test-getFilledPaperAmount is ", self.test_getFilledPaperAmount(roundNum))
         return True
+
+    def test_buyAndFillPaper(self):
+        accountListToBeUsed = []
+        accountFromIndex = 2
+        accountEndIndex = 20
+        line_num = 0
+        with open("privateKey10000.csv") as csvfile:
+            csvFile = csv.reader(csvfile, delimiter=',')
+            rowsToBeUsed = [row for idx, row in enumerate(csvFile) if
+                            idx in range(accountFromIndex - 1, accountEndIndex)]
+            for line in rowsToBeUsed:
+                print(line[0], " account is loading... ")
+                accountListToBeUsed.append(Account(line[2], SignatureScheme.SHA256withECDSA))
+
+        ongUnit = 1000000000
+        ongAmount = 5 * ongUnit
+        i = 1
+        for account in accountListToBeUsed:
+            print("transfer", i)
+            balance = self.test_getONGBalance(account.get_address_base58())
+            if balance < ongAmount:
+                self.test_transferONG(adminAcct, account, ongAmount - balance)
+            elif balance > ongAmount:
+                self.test_transferONG(account, adminAcct, balance - ongAmount)
+            i = i + 1
+        print("***** finished transfer ONG to these accounts ***********\n")
+        time.sleep(10)
+        with open(".\\buyAndFillPaper.csv", "a", newline="") as csvfile:
+            writer = csv.writer(csvfile)
+            paperAmount = 1
+            roundNum = self.test_getCurrentRound()
+            i = accountFromIndex
+            for account in accountListToBeUsed:
+                unfilledPaperBalance = self.test_getPaperBalance(account)
+
+                hash = None
+                if unfilledPaperBalance < paperAmount:
+                    buyStartTime = time.time()
+                    hash = self.test_buyPaper(account, paperAmount - unfilledPaperBalance)
+                    res = self.test_WaitBlock(hash)
+                    buyEndTime = time.time()
+                    print("res is ", res)
+                    print("<Account", i, ">",  " -- **** buyPaper consumed time: ", buyEndTime - buyStartTime, "****")
+                    accountInfo = "<Account" + str(i) + ">"
+                    consumedTime = buyEndTime - buyStartTime
+                    action = "buyPaper"
+                    writer.writerow([accountInfo, consumedTime, action, hash])
+
+                    # return True
+                unfilledPaperBalance = self.test_getPaperBalance(account)
+                filledPaperBalance = self.test_getFilledPaperBalance(account, roundNum)
+                paperBalance = unfilledPaperBalance + filledPaperBalance
+
+                paperNumberFrom = i * 100
+                hash = None
+                if unfilledPaperBalance > 0:
+                    fillStartTime = time.time()
+                    hash = self.test_fillPaper1(account, unfilledPaperBalance, paperNumberFrom + filledPaperBalance)
+                    res = self.test_WaitBlock(hash)
+                    fillEndTime = time.time()
+                    print("res is ", res)
+                    print("<Account", i, ">", " -- **** fillPaper consumed time: ", fillEndTime - fillStartTime, "****")
+                    accountInfo = "<Account" + str(i) + ">"
+                    consumedTime = fillEndTime - fillStartTime
+                    action = "fillPaper"
+                    writer.writerow([accountInfo, consumedTime, action, hash])
+                i = i + 1
+        time.sleep(30)
+
+    def test_WaitBlock(self, hash):
+        res = sdk.rpc.get_smart_contract_event_by_tx_hash(hash)
+        while not res:
+            res = sdk.rpc.get_smart_contract_event_by_tx_hash(hash)
+        return res
 
 
     def test_buyPaper(self, invokeAcct, paperAmount):
@@ -670,7 +743,7 @@ class TestAsset(unittest.TestCase):
         param_list2 = []
         for i in range(fillAmount):
             num = paperNumberFrom + i
-            num = num % 10000
+            num = num % 100
             num = int(num)
             param_list2.append(num)
 
@@ -770,7 +843,7 @@ class TestAsset(unittest.TestCase):
         # when pre-execute, don't use 0x67
         abi_function = AbiFunction("getCurrentRound", "", param_list)
         res, nil = sdk.neo_vm().send_transaction(contract_address, adminAcct, adminAcct, 0, 0, abi_function, True)
-        # print("getCurrentRound-res is ", res)
+        print("res getCurrentRound is ", res)
         tmp = str(res)
         if not tmp:
             tmp = "0"
@@ -851,9 +924,11 @@ class TestAsset(unittest.TestCase):
         # print("test-getFilledPaperAmount is ", returnedInt, " in round ", roundNum)
         return returnedInt
     def test_getDividendsBalance(self):
-        account = adminAcct2
+        account = adminAcct
+        userBase58Address = "AVrfqSiVb8pZTrDwWk1CtwYN6ANFfS2BC2"
+        print(Address.b58decode(userBase58Address).to_array())
         abi_function = AbiFunction("getDividendsBalance", "", [{"name": "account", "type": ""}])
-        abi_function.set_params_value((account.get_address().to_array(),))
+        abi_function.set_params_value((Address.b58decode(userBase58Address).to_array(),))
         res, nil = sdk.neo_vm().send_transaction(contract_address, adminAcct, adminAcct, 0, 0, abi_function, True)
         print("res is ", res)
         tmp = res
@@ -896,7 +971,33 @@ class TestAsset(unittest.TestCase):
         res, nil = sdk.neo_vm().send_transaction(contract_address, adminAcct, adminAcct, 0, 0, abi_function, True)
         print("test-getGameStatus is : ", res, " in round ", roundNum)
         return True
+    def test_getPlayersList(self):
+        roundNum = 11
+        guessedNum = 110
+        # abi_function = AbiFunction("getPlayersList", "", [{"name": "roundNum", "type": ""},{"name": "guessNumber", "type": ""}])
+        # abi_function.set_params_value((roundNum,guessedNum,))
+        # res, nil = sdk.neo_vm().send_transaction(contract_address, adminAcct, adminAcct, 0, 0, abi_function, True)
+        # print("test-getPlayersList is : ", res, " in round ", roundNum)
+        # return True
 
+        param_list = []
+        param_list.append("getPlayersList".encode())
+        param_list1 = []
+        param_list1.append(roundNum)
+        # print("11", bytearray.fromhex(hex(100).replace("0x","")))
+        # p2= bytearray.fromhex(hex(guessedNum).replace("0x", ""))
+        p2 = bytearray.fromhex("6e00000000000000")
+        param_list1.append(p2)
+        # param_list1.append(guessedNum)
+        param_list.append(param_list1)
+        print("***** getPlayersList", param_list)
+        params = BuildParams.create_code_params_script(param_list)
+
+        tx = NeoVm.make_invoke_transaction(bytearray(contract_address), bytearray(params), b'', 20000, 500)
+        sdk.sign_transaction(tx, adminAcct)
+        res, gaslimit = sdk.rpc.send_raw_transaction_pre_exec(tx)
+        print("res in getPlayersList is ", res)
+        return True
 
 
 
@@ -923,9 +1024,21 @@ class TestAsset(unittest.TestCase):
         # print("res in test_transfer_Ont is ", res)
         return True
     def test_getONGBalance(self, address):
+        # userBase58Address = "AVXBV2ASKNRRBieKtE3SSBkPS45CyaAriW"
+        # address = Address.b58decode(userBase58Address).to_array()
         balances = sdk.rpc.get_balance(address)
         ongBalance = balances["ong"]
         ongBalance = int(ongBalance)
+        return ongBalance
+
+    def test_getONGBalance1(self):
+        userBase58Address = "AdtXwrHU5vxmgnja1hxWm4vFM9XM2j2bAJ"
+        # address = Address.b58decode(userBase58Address).to_array()
+        address = Address.b58decode(userBase58Address)
+        balances = sdk.rpc.get_balance(userBase58Address)
+        ongBalance = balances["ong"]
+        ongBalance = int(ongBalance)
+        print("ongBalance is ", ongBalance)
         return ongBalance
 
     def test_getCurrentRound2(self):
@@ -951,4 +1064,39 @@ class TestAsset(unittest.TestCase):
         tmp.reverse()
         returnedInt = int(tmp.hex(), 16)
         print("test-getCurrentRound is ", returnedInt)
+        return True
+
+    def test_checkNumList(self):
+        numList = [18, 33, 5139, 12849, 2368291, 3551794, 353637396, 1178681665, 94842983701, 353551602001, 43044802274854, 114771766698594, 14978884054759223, 32778036993815411, 1333374065751429236808, 2444519120544286934148]
+        param_list = []
+        param_list.append("checkNumberList".encode())
+        param_list1 = []
+        param_list2 = []
+        for num in numList:
+            param_list2.append(num)
+        param_list1.append(param_list2)
+        param_list.append(param_list1)
+        print("***** checkNumberList", param_list)
+        params = BuildParams.create_code_params_script(param_list)
+
+        tx = NeoVm.make_invoke_transaction(bytearray(contract_address), bytearray(params), b'', 20000, 500)
+        sdk.sign_transaction(tx, adminAcct)
+        res, gaslimit = sdk.rpc.send_raw_transaction_pre_exec(tx)
+        print("Pre-execute res in checkNumberList is ", res)
+
+        params.append(0x67)
+        for i in contract_address:
+            params.append(i)
+
+        gaslimit = 20000000
+        gaslimit = gaslimit * 2
+        unix_time_now = int(time.time())
+        tx = Transaction(0, 0xd1, unix_time_now, 500, gaslimit, adminAcct.get_address().to_array(), params, bytearray(), [], bytearray())
+        sdk.sign_transaction(tx, adminAcct)
+        hash = sdk.rpc.send_raw_transaction(tx)
+        time.sleep(6)
+        res = sdk.rpc.get_smart_contract_event_by_tx_hash(hash)
+
+        print("Execute res in checkNumberList is ", res)
+
         return True
