@@ -1,12 +1,12 @@
-'''
+"""
 Lucky Number Game
-'''
+"""
 from boa.interop.Ontology.Contract import Migrate
 from boa.interop.System.Storage import GetContext, Get, Put, Delete
 from boa.interop.System.Runtime import CheckWitness, GetTime, Notify, Serialize, Deserialize
 from boa.interop.System.ExecutionEngine import GetExecutingScriptHash, GetCallingScriptHash, GetEntryScriptHash
 from boa.interop.Ontology.Native import Invoke
-from boa.interop.Ontology.Runtime import GetRandomHash
+from boa.interop.Ontology.Runtime import GetCurrentBlockHash
 from boa.builtins import ToScriptHash, concat, state
 
 
@@ -201,7 +201,6 @@ STATUS_OFF = "END"
 
 MagnitudeForProfitPerPaper = 100000000000000000000
 
-
 InitialPrice = 1000000000
 PaperHolderPercentage = 50
 ReferralAwardPercentage = 1
@@ -212,26 +211,22 @@ PureAwardExcludeCommissionFee = 98
 # the script hash of this contract
 ContractAddress = GetExecutingScriptHash()
 ONGAddress = bytearray(b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02')
-# Skyinglyh account
+######################## Skyinglyh account
 # Admin = ToScriptHash('AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p')
-# LuckyNumber  account
+######################## LuckyNumber account
 Admin = ToScriptHash('AYqCVffRcbPkf1BVCYPJqqoiFTFmvwYKhG')
 
 
-# Beijing time 2018-11-15-16:30:00
+# Beijing time 2018-11-22-15:09:00
 # each round will last 3 minutes
-StartTime = 1542270600
+StartTime = 1542870540
 RoundDurationMinutes = 3
 
 def Main(operation, args):
     ######################## for Admin to invoke Begin ###############
     if operation == "init":
-        # if len(args) != 0:
-        #     return False
         return init()
     if operation == "startNewRound":
-        # if len(args) != 0:
-        #     return False
         return startNewRound()
     if operation =="addReferral":
         if len(args) != 2:
@@ -250,16 +245,10 @@ def Main(operation, args):
     if operation == "multiAssignPaper":
         return multiAssignPaper(args)
     if operation == "withdrawGas":
-        # if len(args) != 0:
-        #     return False
         return withdrawGas()
     if operation == "withdrawCommission":
-        # if len(args) != 0:
-        #     return False
         return withdrawCommission()
     if operation == "endCurrentRound":
-        # if len(args) != 0:
-        #     return False
         return endCurrentRound()
     if operation == "getTest":
         return getTest()
@@ -308,26 +297,16 @@ def Main(operation, args):
     ######################## for User to invoke End ###############
     ######################### General Info to pre-execute Begin ##############
     if operation == "getTotalONGAmount":
-        # if len(args) != 0:
-        #     return False
         return getTotalONGAmount()
     if operation == "getTotalPaper":
-        # if len(args) != 0:
-        #     return False
         return getTotalPaper()
     if operation == "getGasVault":
-        # if len(args) != 0:
-        #     return False
         return getGasVault()
     if operation == "getCurrentRound":
-        # if len(args) != 0:
-        #     return False
         return getCurrentRound()
     if operation == "getCurrentRoundEndTime":
         return getCurrentRoundEndTime()
     if operation == "getCommissionAmount":
-        # if len(args) != 0:
-        #     return False
         return getCommissionAmount()
     if operation == "getPaperBalance":
         if len(args) != 1:
@@ -502,13 +481,8 @@ def withdrawGas():
     :return:
     """
     RequireWitness(Admin)
-    # if CheckWitness(Admin) == False:
-    #     Notify(["withdrawGas checkwitness failed"])
-    #     return False
+
     Require(transferONGFromContact(Admin, getGasVault()))
-    # if transferONGFromContact(Admin, getGasVault()) == False:
-    #     Notify(["withdrawGas transfer failed"])
-    #     return False
 
     # update total ong amount
     Put(GetContext(), TOTAL_ONG_KEY, Sub(getTotalONGAmount(), getGasVault()))
@@ -517,13 +491,8 @@ def withdrawGas():
 
 def withdrawCommission():
     RequireWitness(Admin)
-    # if CheckWitness(Admin) == False:
-    #     Notify(["withdrawCommission checkwitness failed"])
-    #     return False
+
     Require(transferONGFromContact(Admin, getCommissionAmount()))
-    # if transferONGFromContact(Admin, getCommissionAmount()) == False:
-    #     Notify(["withdrawCommission transfer failed"])
-    #     return False
 
     # update total ong amount
     Put(GetContext(), TOTAL_ONG_KEY, Sub(getTotalONGAmount(), getCommissionAmount()))
@@ -539,9 +508,6 @@ def endCurrentRound():
     Require(GetTime() >= getCurrentRoundEndTime())
 
     Require(getGameStatus(currentRound) == STATUS_ON)
-
-    # # mark this round game as END to prevent admin's frequent invocation
-    # Put(GetContext(), concatKey(concatKey(ROUND_PREFIX, currentRound), ROUND_STATUS_KEY), STATUS_OFF)
 
     numberListKey = concatKey(concatKey(ROUND_PREFIX, currentRound), FILLED_NUMBER_LIST_KEY)
     numberListInfo = Get(GetContext(), numberListKey)
@@ -741,7 +707,6 @@ def reinvest(account, paperAmount):
     oldTotalPaperAmount = getTotalPaper()
 
     if oldTotalPaperAmount != 0:
-        # profitPerPaperToBeAdd = Div(dividend, totalPaperAmount)
         profitPerPaperToBeAdd = Div(Mul(dividend, MagnitudeForProfitPerPaper), oldTotalPaperAmount)
         # update profitPerPaper
         Put(GetContext(), PROFIT_PER_PAPER_KEY, Add(profitPerPaperToBeAdd, oldProfitPerPaper))
@@ -750,20 +715,12 @@ def reinvest(account, paperAmount):
         Put(GetContext(), COMMISSION_KEY, Add(dividend, getCommissionAmount()))
 
     updateDividendBalance(account)
-    # # update profit per paper from of account
-    # Put(GetContext(), concatKey(PROFIT_PER_PAPER_FROM_PREFIX, account), getProfitPerPaper())
 
     # update paper balance of account
     Put(GetContext(), concatKey(PAPER_BALANCE_PREFIX, account), Add(paperAmount, getPaperBalance(account)))
 
     # update total paper amount
     Put(GetContext(), TOTAL_PAPER_KEY, Add(paperAmount, getTotalPaper()))
-
-    # # update the account balances of dividend, award, referral
-    # Delete(GetContext(), concatKey(AWARD_BALANCE_OF_PREFFIX, account))
-    # Delete(GetContext(), concatKey(REFERRAL_BALANCE_OF_PREFIX, account))
-    # ongAmountLeft = Sub(assetToBeReinvest, ongAmount)
-    # Put(GetContext(), concatKey(TOTAL_DIVIDEND_OF_PREFIX, account), ongAmountLeft)
 
     # update the account balances of dividend, award, referral
     ongAmountNeedToBeDeduct = ongAmount
@@ -789,6 +746,8 @@ def reinvest(account, paperAmount):
     # PurchaseEvent(account, ongAmount, paperAmount)
     Notify(["reBuyPaper", account, ongAmount, paperAmount, GetTime()])
 
+    return True
+
 
 def fillPaper(account, guessNumberList):
     """
@@ -806,7 +765,6 @@ def fillPaper(account, guessNumberList):
     callerHash = GetCallingScriptHash()
     entryHash = GetEntryScriptHash()
     Require(callerHash == entryHash)
-    # Require(entryHash == ContractAddress)
 
     guessNumberLen = len(guessNumberList)
 
@@ -871,7 +829,7 @@ def fillPaper(account, guessNumberList):
     key = concatKey(concatKey(ROUND_PREFIX, currentRound), FILLED_PAPER_AMOUNT)
     Put(GetContext(), key, Add(guessNumberLen, getFilledPaperAmount(currentRound)))
 
-    Notify(["fillPaper", account, guessNumberList, GetTime()])
+    Notify(["fillPaper", account, guessNumberList, GetTime(), currentRound])
 
     return True
 
@@ -892,12 +850,6 @@ def withdraw(account):
 
     Require(assetToBeWithdrawn > 0)
     Require(transferONGFromContact(account, assetToBeWithdrawn))
-    # if assetToBeWithdrawn > 0:
-    #     if transferONGFromContact(account, assetToBeWithdrawn) == False:
-    #         Notify(["WithdrawError", "transfer ONG failed"])
-    #         return False
-    # else:
-    #     return False
 
     Delete(GetContext(), concatKey(TOTAL_DIVIDEND_OF_PREFIX, account))
     Delete(GetContext(), concatKey(AWARD_BALANCE_OF_PREFFIX, account))
@@ -939,7 +891,6 @@ def updateDividendBalance(account):
     profitPerPaper = Sub(profitPerPaperNow, profitPerPaperFrom)
 
     if profitPerPaper != 0:
-        # profit = Mul(profitPerPaper, getPaperBalance(account))
         Put(GetContext(), concatKey(TOTAL_DIVIDEND_OF_PREFIX, account), getDividendBalance(account))
         Put(GetContext(), concatKey(PROFIT_PER_PAPER_FROM_PREFIX, account), profitPerPaperNow)
 
@@ -982,9 +933,7 @@ def getDividendBalance(account):
     profitPerPaper = profitPerPaperNow - profitPerPaperFrom
     profit = 0
     if profitPerPaper != 0:
-        # profit = Mul(profitPerPaper, getPaperBalance(account))
         profit = Div(Mul(profitPerPaper, getPaperBalance(account)), MagnitudeForProfitPerPaper)
-    # Get(GetContext(), concatKey(TOTAL_DIVIDEND_OF_PREFIX, account))
     return Add(Get(GetContext(), concatKey(TOTAL_DIVIDEND_OF_PREFIX, account)), profit)
 
 def getAwardBalance(account):
@@ -1086,13 +1035,12 @@ def paperToONG(paperAmount):
     return ongAmount
 
 def getLuckyNumber():
-    '''
-     Generate the lucky number in specific round
-    :param round: the game round number
-    :return: lucky number
-    '''
-    blockHash = GetRandomHash()
-    # The number should be in the range from 0 to 9999
+    """
+    Generate the lucky number in specific round
+    :return:
+    """
+    blockHash = GetCurrentBlockHash()
+    # The number should be in the range from 0 to 99
     luckyNumber = abs(blockHash) % 100
     luckyNumber = abs(luckyNumber)
     return luckyNumber
