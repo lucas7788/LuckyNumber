@@ -4,13 +4,11 @@ Lucky Number Game
 from boa.interop.Ontology.Contract import Migrate
 from boa.interop.System.Storage import GetContext, Get, Put, Delete
 from boa.interop.System.Runtime import CheckWitness, GetTime, Notify, Serialize, Deserialize
-from boa.interop.System.ExecutionEngine import GetExecutingScriptHash, GetCallingScriptHash, GetEntryScriptHash, GetScriptContainer
-from boa.interop.System.Blockchain import GetHeight, GetHeader
-from boa.interop.System.Header import GetBlockHash
+from boa.interop.System.ExecutionEngine import GetExecutingScriptHash, GetCallingScriptHash, GetEntryScriptHash
 from boa.interop.Ontology.Native import Invoke
 from boa.interop.Ontology.Runtime import GetCurrentBlockHash
-from boa.builtins import ToScriptHash, concat, state, sha256
-from boa.interop.System.Transaction import GetTransactionHash
+from boa.builtins import ToScriptHash, concat, state
+
 
 """
 https://github.com/tonyclarking/python-template/blob/master/libs/Utils.py
@@ -599,6 +597,7 @@ def endCurrentRound():
     startNewRound()
 
     return True
+
 ####################### Methods that only Admin can invoke End #######################
 
 
@@ -1034,18 +1033,10 @@ def getLuckyNumber():
     Generate the lucky number in specific round
     :return:
     """
-    # blockHash = GetCurrentBlockHash()
-    # # The number should be in the range from 0 to 99
-    # luckyNumber = abs(blockHash) % 100
-    # luckyNumber = abs(luckyNumber)
-
-    height = GetHeight()
-    header = GetHeader(height)
-    headerHash = GetBlockHash(header)
-    txHash = GetScriptContainer()
-    mixedHash = sha256(str(headerHash) + str(txHash) + str(GetTime()))
-    luckyNumber = abs(mixedHash) % 100
-    Notify([height, header, headerHash, txHash])
+    blockHash = GetCurrentBlockHash()
+    # The number should be in the range from 0 to 99
+    luckyNumber = abs(blockHash) % 100
+    luckyNumber = abs(luckyNumber)
     return luckyNumber
 
 def transferONG(fromAcct, toAcct, amount):
