@@ -627,14 +627,14 @@ def migrateContract(code, needStorage, name, version, author, email, description
 def buyPaper(account, paperAmount):
     # RequireWitness(account)
     if CheckWitness(account) == False:
-        Notify(["BuyPaperError", "Check witness failed!"])
+        Notify(["BuyPaperError", "Check witness failed!", 1000])
         return False
 
     currentRound = getCurrentRound()
 
     # Require(getGameStatus(currentRound) == STATUS_ON)
     if getGameStatus(currentRound) == STATUS_OFF:
-        Notify(["BuyPaperError", "Current round game status off!"])
+        Notify(["BuyPaperError", "Current round game status off!", 1001])
         return False
 
     ongAmount = paperToONG(paperAmount)
@@ -642,7 +642,7 @@ def buyPaper(account, paperAmount):
     # Require(transferONG(account, ContractAddress, ongAmount))
     res = transferONG(account, ContractAddress, ongAmount)
     if res == False:
-        Notify(["BuyPaperError", "Buyer transfers ONG failed!"])
+        Notify(["BuyPaperError", "Buyer transfers ONG failed!", 1002])
         return False
 
     # PaperHolderPercentage = 50
@@ -696,14 +696,14 @@ def buyPaper(account, paperAmount):
 def reinvest(account, paperAmount):
     # RequireWitness(account)
     if CheckWitness(account) == False:
-        Notify(["ReinvestError", "Check witness failed!"])
+        Notify(["ReinvestError", "Check witness failed!", 1000])
         return False
 
     currentRound = getCurrentRound()
 
     # Require(getGameStatus(currentRound) == STATUS_ON)
     if getGameStatus(currentRound) == STATUS_OFF:
-        Notify(["ReinvestError", "Current round game status off!"])
+        Notify(["ReinvestError", "Current round game status off!", 1001])
         return False
 
     ongAmount = paperToONG(paperAmount)
@@ -716,7 +716,7 @@ def reinvest(account, paperAmount):
 
     # Require(assetToBeReinvest >= ongAmount)
     if assetToBeReinvest < ongAmount:
-        Notify(["ReinvestError", "Not enough ONG to rebuy papers!"])
+        Notify(["ReinvestError", "Not enough ONG to rebuy papers!", 1003])
         return False
 
     dividend1 = Div(Mul(ongAmount, PaperHolderPercentage), 100)
@@ -792,14 +792,14 @@ def fillPaper(account, guessNumberList):
     """
     # RequireWitness(account)
     if CheckWitness(account) == False:
-        Notify(["FillPaperError", "Check witness failed!"])
+        Notify(["FillPaperError", "Check witness failed!", 1000])
         return False
 
     currentRound = getCurrentRound()
 
     # Require(getGameStatus(currentRound) == STATUS_ON)
     if getGameStatus(currentRound) == STATUS_OFF:
-        Notify(["FillPaperError", "Current round game status off!"])
+        Notify(["FillPaperError", "Current round game status off!", 1001])
         return False
 
     # to prevent hack from other contract
@@ -811,14 +811,14 @@ def fillPaper(account, guessNumberList):
 
     # Require(guessNumberLen >= 1)
     if guessNumberLen < 1:
-        Notify(["FillPaperError", "Guess number list illegal!"])
+        Notify(["FillPaperError", "Guess number list illegal!", 1004])
 
     currentPaperBalance = getPaperBalance(account)
 
     # make sure his balance is greater or equal to guessNumberList length
     # Require(currentPaperBalance >= guessNumberLen)
     if currentPaperBalance < guessNumberLen:
-        Notify(["FillPaperError", "Not enough paper balance to fill papers!"])
+        Notify(["FillPaperError", "Not enough paper balance to fill papers!", 1005])
         return False
 
     numberListKey = concatKey(concatKey(ROUND_PREFIX, currentRound), FILLED_NUMBER_LIST_KEY)
