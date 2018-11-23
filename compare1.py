@@ -4,11 +4,13 @@ Lucky Number Game
 from boa.interop.Ontology.Contract import Migrate
 from boa.interop.System.Storage import GetContext, Get, Put, Delete
 from boa.interop.System.Runtime import CheckWitness, GetTime, Notify, Serialize, Deserialize
-from boa.interop.System.ExecutionEngine import GetExecutingScriptHash, GetCallingScriptHash, GetEntryScriptHash
+from boa.interop.System.ExecutionEngine import GetExecutingScriptHash, GetCallingScriptHash, GetEntryScriptHash, GetScriptContainer
+from boa.interop.System.Blockchain import GetHeight, GetHeader
+from boa.interop.System.Header import GetBlockHash
 from boa.interop.Ontology.Native import Invoke
 from boa.interop.Ontology.Runtime import GetCurrentBlockHash
-from boa.builtins import ToScriptHash, concat, state
-
+from boa.builtins import ToScriptHash, concat, state, sha256
+from boa.interop.System.Transaction import GetTransactionHash
 
 """
 https://github.com/tonyclarking/python-template/blob/master/libs/Utils.py
@@ -27,10 +29,10 @@ https://github.com/tonyclarking/python-template/blob/master/libs/SafeCheck.py
 """
 def Require(condition):
     """
-	If condition is not satisfied, return false
-	:param condition: required condition
-	:return: True or false
-	"""
+    If condition is not satisfied, return false
+    :param condition: required condition
+    :return: True or false
+    """
     if not condition:
         Revert()
     return True
@@ -47,11 +49,11 @@ def RequireScriptHash(key):
 
 def RequireWitness(witness):
     """
-	Checks the transaction sender is equal to the witness. If not
-	satisfying, revert the transaction.
-	:param witness: required transaction sender
-	:return: True if transaction sender or revert the transaction.
-	"""
+    Checks the transaction sender is equal to the witness. If not
+    satisfying, revert the transaction.
+    :param witness: required transaction sender
+    :return: True if transaction sender or revert the transaction.
+    """
     Require(CheckWitness(witness))
     return True
 """
@@ -59,22 +61,22 @@ SafeMath
 """
 
 def Add(a, b):
-	"""
-	Adds two numbers, throws on overflow.
-	"""
-	c = a + b
-	Require(c >= a)
-	return c
+    """
+    Adds two numbers, throws on overflow.
+    """
+    c = a + b
+    Require(c >= a)
+    return c
 
 def Sub(a, b):
-	"""
-	Substracts two numbers, throws on overflow (i.e. if subtrahend is greater than minuend).
+    """
+    Substracts two numbers, throws on overflow (i.e. if subtrahend is greater than minuend).
     :param a: operand a
     :param b: operand b
     :return: a - b if a - b > 0 or revert the transaction.
-	"""
-	Require(a>=b)
-	return a-b
+    """
+    Require(a>=b)
+    return a-b
 
 def ASub(a, b):
     if a > b:
@@ -85,25 +87,25 @@ def ASub(a, b):
         return 0
 
 def Mul(a, b):
-	"""
-	Multiplies two numbers, throws on overflow.
+    """
+    Multiplies two numbers, throws on overflow.
     :param a: operand a
     :param b: operand b
     :return: a - b if a - b > 0 or revert the transaction.
-	"""
-	if a == 0:
-		return 0
-	c = a * b
-	Require(c / a == b)
-	return c
+    """
+    if a == 0:
+        return 0
+    c = a * b
+    Require(c / a == b)
+    return c
 
 def Div(a, b):
-	"""
-	Integer division of two numbers, truncating the quotient.
-	"""
-	Require(b > 0)
-	c = a / b
-	return c
+    """
+    Integer division of two numbers, truncating the quotient.
+    """
+    Require(b > 0)
+    c = a / b
+    return c
 
 def Pwr(a, b):
     """
@@ -597,7 +599,6 @@ def endCurrentRound():
     startNewRound()
 
     return True
-
 ####################### Methods that only Admin can invoke End #######################
 
 
@@ -1033,10 +1034,18 @@ def getLuckyNumber():
     Generate the lucky number in specific round
     :return:
     """
-    blockHash = GetCurrentBlockHash()
-    # The number should be in the range from 0 to 99
-    luckyNumber = abs(blockHash) % 100
-    luckyNumber = abs(luckyNumber)
+    # blockHash = GetCurrentBlockHash()
+    # # The number should be in the range from 0 to 99
+    # luckyNumber = abs(blockHash) % 100
+    # luckyNumber = abs(luckyNumber)
+
+    height = GetHeight()
+    header = GetHeader(height)
+    headerHash = GetBlockHash(header)
+    txHash = GetScriptContainer()
+    mixedHash = sha256(str(headerHash) + str(txHash) + str(GetTime()))
+    luckyNumber = abs(mixedHash) % 100
+    Notify([height, header, headerHash, txHash])
     return luckyNumber
 
 def transferONG(fromAcct, toAcct, amount):
