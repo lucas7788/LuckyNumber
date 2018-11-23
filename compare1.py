@@ -597,7 +597,6 @@ def endCurrentRound():
     startNewRound()
 
     return True
-
 ####################### Methods that only Admin can invoke End #######################
 
 
@@ -1037,6 +1036,7 @@ def getLuckyNumber():
     # The number should be in the range from 0 to 99
     luckyNumber = abs(blockHash) % 100
     luckyNumber = abs(luckyNumber)
+
     return luckyNumber
 
 def transferONG(fromAcct, toAcct, amount):
