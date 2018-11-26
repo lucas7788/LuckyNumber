@@ -630,6 +630,10 @@ def buyPaper(account, paperAmount):
         # "Check witness failed!",
         Notify(["BuyPaperError", 1000])
         return False
+    if paperAmount <= 0:
+        # "buy paperAmount illegal!",
+        Notify(["BuyPaperError", 1006])
+        return False
 
     currentRound = getCurrentRound()
 
@@ -701,6 +705,11 @@ def reinvest(account, paperAmount):
     if CheckWitness(account) == False:
         # , "Check witness failed!"
         Notify(["ReinvestError", 1000])
+        return False
+
+    if paperAmount <= 0:
+        # "buy paperAmount illegal!",
+        Notify(["BuyPaperError", 1006])
         return False
 
     currentRound = getCurrentRound()
